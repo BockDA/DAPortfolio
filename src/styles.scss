@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'color.scss';
+@import 'fonts.scss';
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  max-width: 1980px;
+  background-color: $mainColor;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Anta";
+  overflow-x: hidden;
+  color:white
+}
