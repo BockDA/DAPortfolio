@@ -1,0 +1,58 @@
+
+
+main {
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+  gap:20px; 
+  margin-left: 114px;
+   margin-right: 114px;
+  margin-top: 41px;
+  height: 705px;
+  //width: 1214px;
+  background-color: red;
+}
+
+
+
+.hero_section {
+  display: grid;
+  background-color: green;
+
+  height: 100%;
+  
+
+.img_Background{
+       grid-area: 1 / 1;
+       margin-top: 66px;
+  
+ width: 580px;
+ height: 616px;
+}
+
+.img_Hero{
+      grid-area: 1 / 1;
+      z-index: 1;
+
+}
+
+
+}
+
+
+
+.hero_Personal {
+    display: flex;
+    flex-direction: column;
+margin-top: 144px;
+    align-items: center;
+    gap:50px;
+  background-color: yellow;
+  height: 100%;
+
+  p{
+    color:black;
+    font-size: 78px;
+  }
+
+}
