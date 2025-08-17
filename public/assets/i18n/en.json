@@ -1,0 +1,17 @@
+{
+     "NAV": {
+    "ABOUT_ME": "About me",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact"
+    },
+     "HERO": {
+    "NAME": "Christian Bock",
+    "ROLE": "FRONTEND DEVELOPER",
+    "I_AM": "I am",
+    "CTA": "Let’s talk!"
+  }
+
+
+
+}
