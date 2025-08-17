@@ -12,6 +12,13 @@
     "ROLE": "FRONTEND-ENTWICKLER",
     "I_AM": "Ich bin",
     "CTA": "Lassen Sie uns reden!"
+  },
+  "WHYME": {
+    "TITEL":"Warum ich",
+    "LOCAL":"",
+    "DESCRIPTION":"Warum programmieren Sie leidenschaftlich gern? Sie können einige wichtige Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamgeist angeben.Eine lösungsorientierte Denkweise ist immer von Vorteil."
+   
   }
+
 
 }
