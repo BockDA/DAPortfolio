@@ -2,7 +2,7 @@
 
     
   "NAV": {
-    "ABOUT_ME": "Über mich",
+    "WHY_ME": "Über mich",
     "SKILLS": "Fähigkeiten",
     "PORTFOLIO": "Portfolio",
     "CONTACT": "Kontakt"
@@ -14,11 +14,9 @@
     "CTA": "Lassen Sie uns reden!"
   },
   "WHYME": {
-    "TITEL":"Warum ich",
     "LOCAL":"Ich bin in München ansässig..|",
     "DESCRIPTION":"Warum programmieren Sie leidenschaftlich gern? Sie können einige wichtige Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamgeist angeben.Eine lösungsorientierte Denkweise ist immer von Vorteil."
-   
-  }
+     }
 
   
 
