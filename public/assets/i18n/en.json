@@ -1,6 +1,6 @@
 {
      "NAV": {
-    "ABOUT_ME": "About me",
+    "ABOUT_ME": "Why me",
     "SKILLS": "Skills",
     "PORTFOLIO": "Portfolio",
     "CONTACT": "Contact"
@@ -13,7 +13,7 @@
   },
   "WHYME": {
     "TITEL":"Why me",
-    "LOCAL":"",
+    "LOCAL":"I am located in Munich..|",
     "DESCRIPTION":"Why are you passionate about coding? You can include some key traits like: analytical thinking, creativity, persistence and  collaboration. A problem-solving mindset is always nice to have."
      }
 

@@ -1,12 +1,11 @@
-@import 'color.scss';
-@import 'fonts.scss';
+@import "color.scss";
+@import "fonts.scss";
 
 * {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 
 body {
   max-width: 1980px;
@@ -18,28 +17,31 @@ body {
   font-weight: 200;
   font-style: normal;
   font-family: "Anta";
-  
- 
 }
 
-h1{
-  font-size:88px;
-  
-
+h1 {
+  font-size: 88px;
 }
-h2{
+h2 {
   font-size: 40px;
 }
-h3{
+h3 {
   font-size: 26px;
   width: 500;
 }
-h4{
+h4 {
   font-size: 16px;
-  
-  }
+}
 
-  h5{
-    font-size: 60px;
-    width: 400;
-  }
+h5 {
+  font-size: 60px;
+  width: 400;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.h7{
+  font-size: 30px;
+}

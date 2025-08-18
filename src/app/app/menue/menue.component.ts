@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { LogoComponent } from "../logo/logo.component";
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-menue',
-  imports: [LogoComponent],
+  imports: [LogoComponent,TranslateModule],
   templateUrl: './menue.component.html',
   styleUrl: './menue.component.scss'
 })
