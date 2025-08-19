@@ -6,16 +6,18 @@
 
 
 <div class="myprojects_tabs_header">
-  <button (click)='selectTab(1)' [class.active]='activeTab ===1'> Tab1</button>
-  <button (click)='selectTab(2)'[class.active]='activeTab ===2'> Tab1</button>
-  <button (click)='selectTab(3)' [class.active]='activeTab ===3'> Tab1</button>
+  <button (click)='selectTab(1)' [class.active]='activeTab ===1'>1. Join</button>
+  <button (click)='selectTab(2)'[class.active]='activeTab ===2'>2. El Pollo Logo</button>
+  <button (click)='selectTab(3)' [class.active]='activeTab ===3'>3. DA Bubble</button>
+  <button (click)='selectTab(4)' [class.active]='activeTab ===4'>4. Pokemon</button>
 </div>
 
 
 <div class="myprojects_tab">
- @if (activeTab===1){<div> Inhalt Tab 1 </div>}
- @if (activeTab===2){<div> Inhalt Tab 2 </div>}
- @if (activeTab===3){<div> Inhalt Tab 3 </div>}
+ @if (activeTab===1){<div><app-tab-my-projects></app-tab-my-projects></div>}
+ @if (activeTab===2){<div>2. El Pollo loco</div>}
+ @if (activeTab===3){<div>3. DA Bubble</div>}
+ @if (activeTab===4){<div>4. Pokemon</div>}
 
 
 </div>
