@@ -12,18 +12,20 @@ main{
   font-family: "Josefin Sans";
   font-weight: 400;
   width: 100%;
- // background-color:yellow ;
+  //background-color:yellow ;
 }
 
 
 .myskills_innerSection{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-     margin-left: 160px;
-    margin-right: 160px;
+   align-items: center;
    
-   // background-color: green;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 40px;
+   
+   //background-color: green;
 }
 
 .myskills_Titel {
@@ -48,8 +50,7 @@ main{
 }
 
 .myskills_grid-item {
-  //background-color: #89BCD9;
-  display: flex;
+   display: flex;
   flex-direction: column;
   gap:15px;
    text-align: center;
@@ -61,11 +62,10 @@ main{
    border-radius: 8px;
 }
 
+
 .myskills_Info_Section{
     display: grid;
-    
-     //background-color: aqua;
-         
+           
 }
 
 .myskills_Layer{
@@ -73,18 +73,27 @@ main{
 }
 
 
-.myskills_Info{   
+.myskills_Info{  
      display: flex;
-     flex-direction: column;
-     align-items: center;
+    flex-direction: column;
+    align-items:  center;
      justify-content: center;
-  
+    gap:20px;
     //background-color: yellow;
 }
 
 
 .myskills_Info_img{
-    
+    display: flex;
+    gap:15px;    
 
 }
 
+
+.myskills_Infotext{
+    width: 307px;
+    color: white;
+    font-size:18px;
+    text-align: center;
+
+}

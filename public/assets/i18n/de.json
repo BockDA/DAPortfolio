@@ -16,7 +16,12 @@
   "WHYME": {
     "LOCAL":"Ich bin in München ansässig..|",
     "DESCRIPTION":"Warum programmieren Sie leidenschaftlich gern? Sie können einige wichtige Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamgeist angeben.Eine lösungsorientierte Denkweise ist immer von Vorteil."
-     }
+     },
+
+     "MYSKILLS": {
+    "LEARNING": "Ich lerne derzeit",
+    "INFOTEXT": "Zeigen Sie, dass Sie motiviert sind, Ihre Fähigkeiten kontinuierlich zu verbessern, innovative Lösungen umzusetzen und über neue Technologien auf dem Laufenden zu bleiben."
+  }
 
   
 

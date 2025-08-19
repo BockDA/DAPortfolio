@@ -1,22 +1,23 @@
 {
-     "NAV": {
+  "NAV": {
     "WHY_ME": "Why me",
     "SKILLS": "My Skills",
     "PORTFOLIO": "Portfolio",
     "CONTACT": "Contact"
-    },
-     "HERO": {
+  },
+  "HERO": {
     "NAME": "Christian Bock",
     "ROLE": "FRONTEND DEVELOPER",
     "I_AM": "I am",
     "CTA": "Let’s talk!"
   },
   "WHYME": {
-    "LOCAL":"I am located in Munich..|",
-    "DESCRIPTION":"Why are you passionate about coding? You can include some key traits like: analytical thinking, creativity, persistence and  collaboration. A problem-solving mindset is always nice to have."
-     }
+    "LOCAL": "I am located in Munich..|",
+    "DESCRIPTION": "Why are you passionate about coding? You can include some key traits like: analytical thinking, creativity, persistence and  collaboration. A problem-solving mindset is always nice to have."
+  },
 
-
-
-
+  "MYSKILLS": {
+    "LEARNING": "I am currently learning",
+    "INFOTEXT": "Show that you are motivated to continually improve your skills, implement innovative solutions and stay abreast of new technologies."
+  }
 }
