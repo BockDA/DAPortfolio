@@ -8,5 +8,12 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './myprojects.component.scss'
 })
 export class MyprojectsComponent {
+  activeTab =1;
+
+
+selectTab(tabNumber:number){
+  this.activeTab=tabNumber;
+  console.log("Test");
+}
 
 }
