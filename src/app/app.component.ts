@@ -1,3 +1,4 @@
+
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -14,14 +15,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
 
-cards:any[]=[];
-
-
-  ngOnInit() {
-    this.http.get<any[]>('assets/projectData/data.json').subscribe(data=>{
-      this.cards=data;
-    })
-      }
 
 
   title = 'DAPortfolio';
@@ -33,8 +26,5 @@ cards:any[]=[];
         translate.setDefaultLang('de');
      translate.use('en');
    
-
-
-
   }
 }

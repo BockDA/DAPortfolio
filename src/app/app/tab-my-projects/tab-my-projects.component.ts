@@ -1,4 +1,5 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-tab-my-projects',
@@ -7,9 +8,6 @@ import { Component,Input } from '@angular/core';
   styleUrl: './tab-my-projects.component.scss'
 })
 export class TabMyProjectsComponent {
-
-  @Input() title!:string;
-  @Input() inhalt!:string;
 
 
 }

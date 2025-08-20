@@ -1,9 +1,10 @@
 import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { HttpClient, withInterceptorsFromDi, provideHttpClient } from '@angular/common/http';
+import { HttpClient,  provideHttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { routes } from './app.routes';
+
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -14,8 +15,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-     provideHttpClient(withInterceptorsFromDi()),
-    importProvidersFrom(
+      provideHttpClient(), 
+       importProvidersFrom(
          TranslateModule.forRoot({
         loader: {
           provide: TranslateLoader,
