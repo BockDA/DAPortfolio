@@ -1,6 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+
+
 
 @Component({
   selector: 'app-root',
@@ -10,12 +13,28 @@ import { TranslateService } from '@ngx-translate/core';
 
 })
 export class AppComponent {
+
+cards:any[]=[];
+
+
+  ngOnInit() {
+    this.http.get<any[]>('assets/projectData/data.json').subscribe(data=>{
+      this.cards=data;
+    })
+      }
+
+
   title = 'DAPortfolio';
-  constructor(public translate: TranslateService) {
+
+
+  constructor(public translate: TranslateService,private http: HttpClient) {
     // verfügbare Sprachen
     translate.addLangs(['de', 'en']);
         translate.setDefaultLang('de');
      translate.use('en');
    
+
+
+
   }
 }
