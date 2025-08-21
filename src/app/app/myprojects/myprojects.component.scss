@@ -1,74 +1,61 @@
-main{
-  min-width: 320px;
-  max-width: 1440px;
+main {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 
   //margin-right: 114px;
-//  margin-top: 41px;
+  //  margin-top: 41px;
   height: 655px;
   color: #f8f5ec;
   //background-color: red;
 }
-
-
 
 .myprojects_Section {
   font-family: "Josefin Sans";
   font-weight: 400;
   width: 100%;
   //background-color:yellow ;
- 
 }
 
 .myprojects_Titel {
-  font-family: Anta;
   color: #89bcd9;
   display: flex;
   justify-content: center;
   color: #89bcd9;
 }
 
-
-.myprojects_tabs_header{
-  display: flex;  
+.myprojects_tabs_header {
+  display: flex;
   justify-content: start;
-   margin-left: 115px;
-   padding-top: 80px;
+  margin-left: 115px;
+  padding-top: 80px;
+}
 
-
-  }
-
-.myprojects_tabs_header button{
+.myprojects_tabs_header button {
   display: flex;
   height: 97px;
   width: 248px;
   align-items: center;
   justify-content: center;
-  border-radius: 16px 16px 0 0 ;
-  background-color: #262E34;
+  border-radius: 16px 16px 0 0;
+  background-color: #262e34;
   font-family: "Josefin Sans";
   font-size: 30px;
-    color:#89BCD9;
-  
+  color: #89bcd9;
+
   border: none;
   cursor: pointer;
- 
- 
-
 }
 
-.myprojects_tabs_header button.active{
-      background-color: #89BCD912;
-      color:#F8F5EC;
-      
-   
+.myprojects_tabs_header button.active {
+  background-color: #89bcd912;
+  color: #f8f5ec;
 }
 
-.myprojects_tab{
-  background-color:#89BCD912; 
+.myprojects_tab {
+  background-color: #89bcd912;
   width: 100%;
   height: 300px;
 }

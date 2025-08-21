@@ -1,4 +1,4 @@
-@import "color.scss";
+@import "colors.scss";
 @import "fonts.scss";
 
 * {
@@ -8,22 +8,26 @@
 }
 
 body {
+  min-width: 320px;
+  //max-width: 1440px;
   max-width: 1980px;
-  background-color: $mainColor;
+  background-color: #262e34; // $mainColor;
   display: flex;
   flex-direction: column;
   margin: 0;
   overflow-x: hidden;
   font-weight: 200;
   font-style: normal;
-  font-family: "Anta";
+  font-family: "Anta Regular";
 }
 
 h1 {
   font-size: 88px;
+  font-weight: 400;
 }
 h2 {
   font-size: 40px;
+  font-weight: 400;
 }
 h3 {
   font-size: 26px;
@@ -31,17 +35,18 @@ h3 {
 }
 h4 {
   font-size: 16px;
+  font-weight: 400;
 }
 
 h5 {
   font-size: 60px;
-  width: 200;
+  font-weight: 400;
 }
 
 h6 {
   font-size: 18px;
 }
 
-.h7{
+.h7 {
   font-size: 30px;
 }
