@@ -1,13 +1,16 @@
+@use "colors.scss" as *;
+
 main {
   width: 100%;
   display: flex;
+
   align-items: center;
   justify-content: center;
   gap: 30px;
   margin-left: 114px;
   margin-top: 41px;
   height: 655px;
-  color: #f8f5ec; //cremewihe
+  color: $cremeWhite;
   //background-color: red;
 }
 

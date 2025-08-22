@@ -1,3 +1,5 @@
+@use "colors.scss" as *;
+
 main {
   width: 100%;
   display: flex;
@@ -8,7 +10,7 @@ main {
   //margin-right: 114px;
   //  margin-top: 41px;
   height: 655px;
-  color: #f8f5ec;
+  color: $cremeWhite; // #f8f5ec;
   //background-color: red;
 }
 
@@ -20,10 +22,9 @@ main {
 }
 
 .myprojects_Titel {
-  color: #89bcd9;
+  color: $primaryBlue; // #89bcd9;
   display: flex;
   justify-content: center;
-  color: #89bcd9;
 }
 
 .myprojects_tabs_header {
@@ -40,18 +41,18 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 16px 16px 0 0;
-  background-color: #262e34;
+  background-color: $mainColor; // #262e34;
   font-family: "Josefin Sans";
   font-size: 30px;
-  color: #89bcd9;
+  color: $primaryBlue; // #89bcd9;
 
   border: none;
   cursor: pointer;
 }
 
 .myprojects_tabs_header button.active {
-  background-color: #89bcd912;
-  color: #f8f5ec;
+  background-color: $mainColor; // #89bcd912;
+  color: $cremeWhite; // #f8f5ec;
 }
 
 .myprojects_tab {

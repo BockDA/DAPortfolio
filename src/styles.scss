@@ -1,5 +1,5 @@
-@import "colors.scss";
-@import "fonts.scss";
+@use "colors.scss" as *;
+@use "fonts.scss" as *;
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ body {
   min-width: 320px;
   //max-width: 1440px;
   max-width: 1980px;
-  background-color: #262e34; // $mainColor;
+  background-color: $mainColor;
   display: flex;
   flex-direction: column;
   margin: 0;
