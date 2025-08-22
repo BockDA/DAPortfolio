@@ -1,9 +1,9 @@
 @use "styles/colors.scss" as *;
+@use "styles/fonts.scss" as *;
 
 main {
   width: 100%;
   display: flex;
-
   align-items: center;
   justify-content: center;
   gap: 30px;

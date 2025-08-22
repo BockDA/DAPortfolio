@@ -1,4 +1,5 @@
 @use "styles/colors.scss" as *;
+@use "styles/fonts.scss" as *;
 
 main {
   position: sticky;
@@ -21,8 +22,7 @@ main {
 
   a {
     text-decoration: none;
-    color: inherit;
-    font-size: 26px;
+    color: $mainColor; // red; // inherit;
   }
   //background-color: yellow;
 }
@@ -31,6 +31,7 @@ main {
   width: 677px;
   display: flex;
   justify-content: space-between;
-
+  font-family: "Josefin Sans";
+  // $mainColor;
   //background-color: green;
 }

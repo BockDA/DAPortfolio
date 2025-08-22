@@ -1,19 +1,21 @@
+@use "styles/colors.scss" as *;
+@use "styles/fonts.scss" as *;
+
 main {
   display: flex;
   font-family: Anta;
-  color: #f8f5ec;
+  color: $cremeWhite; // #f8f5ec;
   width: 100%;
   height: auto;
 }
 
 .whyme_Section {
   font-family: "Josefin Sans";
-  font-weight: 400;
   width: 100%;
 }
 
 .whyme_Titel {
-  color: #89bcd9;
+  color: $primaryBlue; // #89bcd9;
   display: flex;
   justify-content: center;
   margin-top: 115px;

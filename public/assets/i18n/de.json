@@ -21,8 +21,14 @@
      "MYSKILLS": {
     "LEARNING": "Ich lerne derzeit",
     "INFOTEXT": "Zeigen Sie, dass Sie motiviert sind, Ihre Fähigkeiten kontinuierlich zu verbessern, innovative Lösungen umzusetzen und über neue Technologien auf dem Laufenden zu bleiben."
+  },
+  "PROJECT_STANDARD":{
+    "DESCRIPTION":"About the project",
+    "WORKPROCESS":"Duration: 3 weeks",
+    "CONTENT":"Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation.",
+    "TECHNOLOGIEN":""
   }
 
-  
+    
 
 }

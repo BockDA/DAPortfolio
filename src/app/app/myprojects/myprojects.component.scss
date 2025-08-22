@@ -1,22 +1,19 @@
 @use "styles/colors.scss" as *;
+@use "styles/fonts.scss" as *;
 
 main {
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
-
-  //margin-right: 114px;
-  //  margin-top: 41px;
-  height: 655px;
-  color: $cremeWhite; // #f8f5ec;
-  //background-color: red;
+  color: $cremeWhite;
+  background-color: $mainColor;
 }
 
 .myprojects_Section {
   font-family: "Josefin Sans";
-  font-weight: 400;
   width: 100%;
   //background-color:yellow ;
 }
@@ -43,20 +40,17 @@ main {
   border-radius: 16px 16px 0 0;
   background-color: $mainColor; // #262e34;
   font-family: "Josefin Sans";
-  font-size: 30px;
   color: $primaryBlue; // #89bcd9;
-
   border: none;
   cursor: pointer;
 }
 
 .myprojects_tabs_header button.active {
-  background-color: $mainColor; // #89bcd912;
+  background-color: $lightGrey; // #89bcd912;
   color: $cremeWhite; // #f8f5ec;
 }
 
 .myprojects_tab {
   background-color: #89bcd912;
   width: 100%;
-  height: 300px;
 }
