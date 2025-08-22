@@ -1,4 +1,4 @@
-@use "colors.scss" as *;
+@use "styles/colors.scss" as *;
 @use "fonts.scss" as *;
 
 * {
@@ -9,7 +9,6 @@
 
 body {
   min-width: 320px;
-  //max-width: 1440px;
   max-width: 1980px;
   background-color: $mainColor;
   display: flex;
@@ -50,3 +49,7 @@ h6 {
 .h7 {
   font-size: 30px;
 }
+
+
+
+
