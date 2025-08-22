@@ -15,7 +15,6 @@ import { TabMyProjectsComponent } from '../tab-my-projects/tab-my-projects.compo
     WhyMeComponent,
     MyskillsComponent,
     MyprojectsComponent,
-    TabMyProjectsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

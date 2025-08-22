@@ -1,7 +1,21 @@
 [
-    {
-        "title":"Karte1",
-        "inhalt":"TestInhalztd nhdhd dhdhdh",
-        "img":"/public/assets/icons/bgshape.png"
-    }
+  {
+    "id": "Join",
+    "title": "Karte1",
+    "inhalt": "TestInhalt nhdhd dhdhdh",
+    "img": "/assets/icons/bgshape.png"
+  },
+  {
+    "id": "ElPolloLoco",
+    "title": "Projekt 2",
+    "umsetzung": "Demo",
+    "test": "Hallo",
+    "technologiesImg": [
+      "assets/icons/angular.png",
+      "assets/icons/typescript.png",
+      "assets/icons/firebase.png"
+    ],
+    "screenShot":""
+
+  }
 ]

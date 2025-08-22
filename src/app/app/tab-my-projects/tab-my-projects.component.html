@@ -48,19 +48,27 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-
+  <!--      22   TAB TAB TAB 22                     -->
 
   <div class="tab_secondSection">
-    <p>Technologies</p>
+    <div class="tab_Technologies">
+      <p>{{"PROJECT_STANDARD.TECHNOLOGIES" |translate}}</p>
+      <div *ngIf="cards && cards.length > 1" class="tab_Icons">
 
+        <img *ngFor="let techImg of cards[1].technologiesImg" [src]="techImg">
+        <p>{{ cards[1].test}}</p>
+      </div>
+    </div>
+    <div class="tab_Project_Preview">
+      <img src="assets/screenshots/ScreenshotDABubble.png">
+    </div>
+    <div class="tab_Buttons">
+      <a href="">Live Test</a>
+      <a href="">GitHub</a>
+
+    </div>
   </div>
+
 
 
 
