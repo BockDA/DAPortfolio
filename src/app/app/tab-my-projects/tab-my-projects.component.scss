@@ -7,15 +7,16 @@ main {
   height: auto;
   font-family: "Josefin Sans";
   color: $cremeWhite;
+  //background-color: red;
 }
 
 .tab_firstSection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-left: 130px;
-  margin-top: 40px;
-
-  width: 100%;
+  padding-top: 40px;
+  width: 50%;
   //background-color: red;
 
   .first_paragraph {
@@ -32,14 +33,76 @@ main {
   }
 
   .first_paragraph_Text {
+    display: flex;
+    justify-content: center;
     margin-left: 60px;
-    width: 641px;
-
-    //background-color: bisque;
   }
 }
 
 .tab_secondSection {
-  background-color: green;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+  width: 50%;
+  padding-bottom: 20px;
+  //  background-color: green;
+
+  .tab_Technologies {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab_Icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .tab_Icons img {
+    width: 34px;
+    height: 36px;
+  }
+
+  .tab_Project_Preview {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+  }
+
+  .tab_Project_Preview img {
+    width: 452px;
+    height: 312px;
+  }
+
+  .tab_Buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    //
+  }
+
+  .tab_Buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 132px;
+    height: 48px;
+    border-radius: 30px;
+  }
+
+  .tab_Buttons a:first-child {
+    background-color: $primaryBlue;
+  }
+  .tab_Buttons a:last-child {
+    color: $primaryBlue;
+    border-color: $primaryBlue;
+    background-color: $lightGrey;
+    border-style: solid;
+    border-width: 1px;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TabMyProjectsComponent } from '../tab-my-projects/tab-my-projects.component';
 
@@ -9,7 +9,7 @@ import { TabMyProjectsComponent } from '../tab-my-projects/tab-my-projects.compo
   styleUrl: './myprojects.component.scss',
 })
 export class MyprojectsComponent {
-  activeTab = 1;
+  public activeTab = 1;
 
   selectTab(tabNumber: number) {
     this.activeTab = tabNumber;

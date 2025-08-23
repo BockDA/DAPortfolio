@@ -5,14 +5,12 @@
       <div class="first_paragraph_Section">
         <img src="assets/icons/circle_full.png">
         <p class="font_7">
-          {{'PROJECT_STANDARD.DESCRIPTION'|translate}}
+          {{'PROJECTE.P'+activeTab+'.Tab1.DESCRIPTION1'|translate}}
         </p>
-        <p class="font_8">{{'PROJECT_STANDARD.WORKPROCESS'|translate}}</p>
+        <p class="font_8">{{'PROJECTE.P'+activeTab+'.Tab1.WORKPROCESS1'|translate}}</p>
       </div>
       <div class="first_paragraph_Text">
-        <p>
-        <p class="font_9">{{'PROJECT_STANDARD.CONTENT'|translate}}
-        </p>
+        <p class="font_9">{{'PROJECTE.P'+activeTab+'.Tab1.CONTENT1'|translate}}</p>
       </div>
     </div>
 
@@ -20,30 +18,23 @@
       <div class="first_paragraph_Section">
         <img src="assets/icons/circle_full.png">
         <p class="font_7">
-          {{'PROJECT_STANDARD.DESCRIPTION'|translate}}
+          {{'PROJECTE.P'+activeTab+'.Tab1.DESCRIPTION2'|translate}}
         </p>
-        <p class="font_8">{{'PROJECT_STANDARD.WORKPROCESS'|translate}}</p>
       </div>
       <div class="first_paragraph_Text">
-        <p>
-        <p class="font_9">{{'PROJECT_STANDARD.CONTENT'|translate}}
-        </p>
+        <p class="font_9">{{'PROJECTE.P'+activeTab+'.Tab1.CONTENT2'|translate}}</p>
       </div>
     </div>
-
 
     <div class="first_paragraph">
       <div class="first_paragraph_Section">
         <img src="assets/icons/circle_full.png">
         <p class="font_7">
-          {{'PROJECT_STANDARD.DESCRIPTION'|translate}}
+          {{'PROJECTE.P'+activeTab+'.Tab1.DESCRIPTION3'|translate}}
         </p>
-        <p class="font_8">{{'PROJECT_STANDARD.WORKPROCESS'|translate}}</p>
       </div>
       <div class="first_paragraph_Text">
-        <p>
-        <p class="font_9">{{'PROJECT_STANDARD.CONTENT'|translate}}
-        </p>
+        <p class="font_9">{{'PROJECTE.P'+activeTab+'.Tab1.CONTENT3'|translate}}</p>
       </div>
     </div>
   </div>
@@ -51,25 +42,19 @@
   <!--      22   TAB TAB TAB 22                     -->
 
   <div class="tab_secondSection">
-    <div class="tab_Technologies">
-      <p>{{"PROJECT_STANDARD.TECHNOLOGIES" |translate}}</p>
-      <div *ngIf="cards && cards.length > 1" class="tab_Icons">
-
-        <img *ngFor="let techImg of cards[1].technologiesImg" [src]="techImg">
-        <p>{{ cards[1].test}}</p>
-      </div>
+    <div class="tab_Technologies font_9">
+      <p>{{'PROJECTE.P'+activeTab+'.Tab2.TECHNOLOGIES'|translate}}</p>
     </div>
+    <div class="tab_Icons">
+      <img *ngFor="let img of('PROJECTE.P'+activeTab+'.Tab2.IMGS'|translate)" [src]="img">
+    </div>
+
     <div class="tab_Project_Preview">
-      <img src="assets/screenshots/ScreenshotDABubble.png">
+      <img [src]="'PROJECTE.P'+activeTab+'.Tab2.SCREEN' |translate">
     </div>
     <div class="tab_Buttons">
-      <a href="">Live Test</a>
-      <a href="">GitHub</a>
-
+      <a class="font_9" href="">Live Test</a>
+      <a class="font_9" href="">GitHub</a>
     </div>
   </div>
-
-
-
-
 </main>

@@ -11,6 +11,7 @@ import { NgFor } from '@angular/common';
   styleUrl: './tab-my-projects.component.scss',
 })
 export class TabMyProjectsComponent implements OnInit {
+  @Input() activeTab!: number;
   cards: any[] = [];
   constructor(private http: HttpClient) {}
   ngOnInit(): void {

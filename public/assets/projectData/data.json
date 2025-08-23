@@ -9,13 +9,31 @@
     "id": "ElPolloLoco",
     "title": "Projekt 2",
     "umsetzung": "Demo",
-    "test": "Hallo",
+    "test": "Projekt2",
     "technologiesImg": [
-      "assets/icons/angular.png",
-      "assets/icons/typescript.png",
-      "assets/icons/firebase.png"
+      "assets/icons/Icon_Angular.png",
+      "assets/icons/Icon_TypeScript.png",
+      "assets/icons/Icon_Firebase.png"
     ],
-    "screenShot":""
+    "screenShot":"assets/screenshots/ScreenshotJoin.png"
+  },
 
+  {
+    "id": "ElPolloLoco",
+    "title": "Projekt 3",
+    "umsetzung": "Demo",
+    "test": "Projekt3",
+    "technologiesImg": [
+      "assets/icons/Icon_Angular.png",
+      "assets/icons/Icon_TypeScript.png",
+      "assets/icons/Icon_Firebase.png",
+      "assets/icons/Icon_Firebase.png",
+      "assets/icons/Icon_Firebase.png"
+
+    ],
+    "screenShot":"assets/screenshots/ScreenshotDABubble.png"
   }
+
+
+
 ]

@@ -15,6 +15,6 @@ export class AppComponent {
     // verfügbare Sprachen
     translate.addLangs(['de', 'en']);
     translate.setDefaultLang('de');
-    translate.use('en');
+    translate.use('de');
   }
 }

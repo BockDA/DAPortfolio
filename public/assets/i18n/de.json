@@ -1,6 +1,4 @@
 {
-
-    
   "NAV": {
     "WHY_ME": "Über mich",
     "SKILLS": "Fähigkeiten",
@@ -14,22 +12,55 @@
     "CTA": "Lassen Sie uns reden!"
   },
   "WHYME": {
-    "LOCAL":"Ich bin in München ansässig..|",
-    "DESCRIPTION":"Warum programmieren Sie leidenschaftlich gern? Sie können einige wichtige Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamgeist angeben.Eine lösungsorientierte Denkweise ist immer von Vorteil."
-     },
-
-     "MYSKILLS": {
+    "LOCAL": "Ich bin in München ansässig..|",
+    "DESCRIPTION": "Warum programmieren Sie leidenschaftlich gern? Sie können einige wichtige Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamgeist angeben.Eine lösungsorientierte Denkweise ist immer von Vorteil."
+  },
+  "MYSKILLS": {
     "LEARNING": "Ich lerne derzeit",
     "INFOTEXT": "Zeigen Sie, dass Sie motiviert sind, Ihre Fähigkeiten kontinuierlich zu verbessern, innovative Lösungen umzusetzen und über neue Technologien auf dem Laufenden zu bleiben."
   },
-  "PROJECT_STANDARD":{
-    "DESCRIPTION":"About the project",
-    "WORKPROCESS":"Duration: 3 weeks",
-    "CONTENT":"Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation.",
-    "TECHNOLOGIES":"Technologien"
-    
+  "PROJECTE": {
+    "P1": {
+      "Tab1": {
+        "DESCRIPTION1": "Über das Projekt",
+        "WORKPROCESS1": "Dauer: 2 Monate",
+        "CONTENT1": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag & Drop, weisen Sie Benutzer und Kategorien zu.",
+        "DESCRIPTION2": "Wie ich meine Arbeit organisiert habe",
+        "CONTENT2": "Mein Code ist in klar strukturierte Module zerlegt (UI, Services, Firebase-Anbindung), um Wiederverwendbarkeit zu sichern. Dateien, Variablen und Klassen sind konsistent und sprechend benannt. Die Dokumentation erfolgt direkt im Code über JS Doc-Kommentare zur besseren Verständlichkeit. Codequalität sichere ich durch Prettier und Versionsverwaltung über Git ",
+        "DESCRIPTION3": "Meine Gruppenarbeitserfahrung",
+        "CONTENT3": "Unser Team bestand aus 4 Personen, ich hatte bei dem Projekt die Aufgabe, die Task Komponenten zur erstellen, die Technologien waren natürlich HTML, CSS und JavaScript und da war das lesen uns speichern über Firbase die vorrangige Implementierung. Es war ein sehr gutes Team und haben gut harmoniert."
+      },
+      "Tab2": {
+        "TECHNOLOGIES": "Technologien",
+        "IMGS": [
+          "assets/icons/Icon_HTML.png",
+          "assets/icons/Icon_Javascript.png",
+          "assets/icons/Icon_CSS.png",
+          "assets/icons/Icon_Firebase.png"
+        ],
+        "SCREEN": "assets/screenshots/ScreenshotJoin.png"
+      }
+    },
+    "P2": {
+      "Tab1": {
+        "DESCRIPTION1": "About the project",
+        "WORKPROCESS1": "Duration: 3 weeks",
+        "CONTENT1": "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation.",
+        "DESCRIPTION2": "About the project",
+        "WORKPROCESS2": "Duration: 3 weeks",
+        "CONTENT2": "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation.",
+        "DESCRIPTION3": "About the project",
+        "WORKPROCESS3": "Duration: 3 weeks",
+        "CONTENT3": "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation."
+      },
+      "Tab2": {
+        "TECHNOLOGIES": "Technologien",
+        "IMGS": [
+          "assets/icons/Icon_Angular.png",
+          "assets/icons/Icon_Angular.png"
+        ],
+        "SCREEN": "assets/screenshots/ScreenshotJoin.png"
+      }
+    }
   }
-
-    
-
 }
