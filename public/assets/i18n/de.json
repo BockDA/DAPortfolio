@@ -19,7 +19,8 @@
     "LEARNING": "Ich lerne derzeit",
     "INFOTEXT": "Zeigen Sie, dass Sie motiviert sind, Ihre Fähigkeiten kontinuierlich zu verbessern, innovative Lösungen umzusetzen und über neue Technologien auf dem Laufenden zu bleiben."
   },
-  "PROJECTE": {
+  "PROJECTE": 
+  {
     "P1": {
       "Tab1": {
         "DESCRIPTION1": "Über das Projekt",
@@ -62,5 +63,33 @@
         "SCREEN": "assets/screenshots/ScreenshotJoin.png"
       }
     }
+  },
+
+  "TEAMPLAYER":{
+    "HEADLINE":"Brauchen Sie einen Teamplayer? Hören Sie, was meine Kollegen über mich sagen",
+    "PLAYER":[
+   {
+      "TPLAYER_NAME":"Eric Braun",
+      "PROJECT":"Join",
+      "DESCRIPTION": "sfsdh jksfhs sjk kjsfh sfhsf skfjshfskjshjkfsh shfs fhs",
+      "PROFILLINK":""
+    },
+    {
+      "TPLAYER_NAME": "Anton Flynn",
+      "PROJECT": "Join",
+      "DESCRIPTION": "sfsdh jksfhs sjk kjsfh sfhsf skfjshfskjshjkfsh shfs fhs",
+      "PROFILLINK": ""
+    },
+    {
+      "TPLAYER_NAME": "Oli P.",
+      "PROJECT": "Join",
+      "DESCRIPTION": "",
+      "PROFILLINK": ""
+    }
+  ]
+
   }
+
+
+
 }
