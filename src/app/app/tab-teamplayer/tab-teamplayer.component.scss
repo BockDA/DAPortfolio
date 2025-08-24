@@ -2,46 +2,55 @@
 @use "styles/fonts.scss" as *;
 
 main {
-  display: flex;
-  gap: 50px;
-  //justify-content: space-between;
-  //background-color: red;
-  font-family: "Josefin Sans";
+}
 
-  //display: flex;
-  //justify-content: space-between;
+.player_Cards {
+  font-family: "Josefin Sans";
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+  padding: 20px;
 }
 
 .player_Card_Section {
   display: grid;
-  align-items: center;
-  justify-content: center;
-  border-style: dotted;
-  border-color: white;
+  position: relative;
+  border: 1px dotted white;
   color: black;
 
-  //background-color: antiquewhite;
-}
-
-.player_Card_Img img {
-
-    //width: 100%;
-  //height: 100%;
-  //object-fit: cover;
-}
-
-.players_Card_Contents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-
-  .color_Text {
-  color: $primaryBlue;
+  .player_Card_Img {
+    grid-area: 1 / 1;
   }
 
-  .description_Text {
+  .player_Card_Img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .tplayer_name{
+    padding-bottom: 12px;
+  }
+
+  .players_Card_Contents {
+    grid-area: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* oben statt zentriert */
+    color: white;
     text-align: center;
-    max-width: 292px;
+    padding-top: 100px; /* etwas Abstand vom Rand */
+
+    .color_Text {
+      color: $primaryBlue;
+    }
+
+    .description_Text {
+      text-align: center;
+      max-width: 260px;
+      height: 121px;
+      padding-bottom: 19px;
+    }
   }
 }
