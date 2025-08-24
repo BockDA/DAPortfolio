@@ -1,8 +1,17 @@
 <main>
 
-<p>{{}}</p>
+    <div class="player_Card_Section" *ngFor="let player of ('TEAMPLAYER.PLAYER' | translate)">
+        <div class="player_Card_Img">
+            <img src="assets/icons/background_Tplayer.png">
+        </div>
+        <div class="players_Card_Contents">
+            <p class="font_3">{{ player.TPLAYER_NAME }}</p>
+            <br>
+            <p class="font_8">Projekt<span class="color_Text"> {{player.PROJECT}}</span></p>
+            <p class="font_8 description_Text ">{{ player.DESCRIPTION }}</p>
+            <a class="font_4 color_Text" href="">{{ player.PROFILLINK}}</a>
 
+        </div>
+    </div>
 
-
-
-</main>>
+</main>
