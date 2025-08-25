@@ -9,7 +9,7 @@
 
 body {
   min-width: 320px;
-  max-width: 1980px;
+  max-width: 100%;//1980px;
   background-color: $mainColor;
   display: flex;
   flex-direction: column;

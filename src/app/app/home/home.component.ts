@@ -5,6 +5,7 @@ import { WhyMeComponent } from '../why-me/why-me.component';
 import { MyskillsComponent } from '../myskills/myskills.component';
 import { MyprojectsComponent } from '../myprojects/myprojects.component';
 import { TeamplayerComponent } from "../teamplayer/teamplayer.component";
+import { ContactMeComponent } from "../contact-me/contact-me.component";
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,8 @@ import { TeamplayerComponent } from "../teamplayer/teamplayer.component";
     WhyMeComponent,
     MyskillsComponent,
     MyprojectsComponent,
-    TeamplayerComponent
+    TeamplayerComponent,
+    ContactMeComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

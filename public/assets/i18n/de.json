@@ -85,6 +85,16 @@
         "PROFILLINK": "Linkedin-Profil"
       }
     ]
-    
+  },
+  "CONTACT": {
+    "HEADLINE": "Kontaktieren Sie mich",
+    "DESCRIPTION": "Ermutigen Sie Interessenten, mit Ihnen Kontakt aufzunehmen und zu beschreiben, für welche Rolle Sie sich interessieren. Zeigen Sie, dass Sie mit Ihrer Arbeit einen Mehrwert für deren Projekte schaffen. Beispiel: Melden Sie sich gerne bei Stellenangeboten oder Gelegenheiten wie: ...",
+    "EMAIL": "cbock2011@gmail.com",
+    "PHONE": "08029-997896",
+    "FORMULAR_NAME": "",
+    "FORMULAR_EMAIL": "cbock2011@gmail.com",
+    "FORMULAR_MESSAGE": "",
+    "PRIVACYPOLICY_NOTICE": "Ich habe die Datenschutzerklärung gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
+    "SEND_BTN": "Senden"
   }
 }

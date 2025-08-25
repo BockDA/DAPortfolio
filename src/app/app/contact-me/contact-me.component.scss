@@ -1,0 +1,57 @@
+@use "styles/colors.scss" as *;
+@use "styles/fonts.scss" as *;
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Josefin Sans";
+  color: $primaryBlue; // #f8f5ec;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 60px;
+  //background-color: blue;
+}
+
+.contac_Headline {
+  font-family: "Anta Regular";
+}
+
+.contac_Introduction {
+  margin-top: 60px;
+  width: 911px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  color: white;
+  //background-color: aqua;
+
+  .contac_Description {
+    width: 50%;
+  }
+
+.contac_Description p{
+    line-height:1.4 ;
+  }
+
+  .contac_Section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+  }
+
+  .contact_Mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     gap: 19px;
+  }
+
+  .contact_Phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 19px;
+  }
+}
