@@ -8,26 +8,40 @@
         <div class=" contac_Section">
             <div class="contact_Mail">
                 <img src="assets/icons/email.png">
-                <p class="font_13" >{{"CONTACT.EMAIL" |translate}}</p>
+                <p class="font_13">{{"CONTACT.EMAIL" |translate}}</p>
             </div>
             <div class="contact_Phone">
                 <img src="assets/icons/phone.png">
-                <p class="font_13" >{{"CONTACT.PHONE" |translate}}</p>
+                <p class="font_13">{{"CONTACT.PHONE" |translate}}</p>
             </div>
         </div>
-</div>
-        <div class="contac_FormularSection">
+    </div>
 
-        </div>
+    <div class="contac_FormularSection">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-        <div class="contac_PrivacyPolicy">
+            <label for="name">First Name</label>
+            <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.." required>
 
-        </div>
+            <label for="email">E-Mail</label>
+            <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your mail adress.."
+                required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
-        <div class="contac_BTN">
+            <label for="message">Subject</label>
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message" placeholder="write something.." required></textarea>
+            @if(!message.valid && message.touched){
+                <span>Please enter a message</span>
+            }
 
-        </div>
+            <input type="submit" value="Submit">
 
-   
+        </form>
+
+
+    </div>
+
+    <div class="contac_PrivacyPolicy"></div>
+
+    <div class="contac_BTN"></div>
 
 </main>
