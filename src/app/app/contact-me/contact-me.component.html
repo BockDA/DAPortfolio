@@ -1,6 +1,13 @@
 <main>
-    <p class="contac_Headline font_12">{{'CONTACT.HEADLINE' |translate}}</p>
+    <div class="contact_Headline_Container">
+        <div class="contac_Headline">
+            <p class="font_12">{{'CONTACT.HEADLINE' |translate}}</p>
+        </div>
 
+        <div class="hero_ArrowUp">
+            <img src="assets/icons/ArrowUp.png" />
+        </div>
+    </div>
     <div class="contac_Introduction">
         <div class="contac_Description">
             <p class="font_8">{{'CONTACT.DESCRIPTION' |translate}}</p>
@@ -17,28 +24,37 @@
         </div>
     </div>
 
-    <div class="contac_FormularSection">
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-            <label for="name">First Name</label>
-            <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.." required>
+    <form class="contac_Formular_Section" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-            <label for="email">E-Mail</label>
-            <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your mail adress.."
-                required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+        <div class="contac_Field_Sec1">
+            <div class="contact_Field" >
+                <label for="name">Your Name</label>
+                <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.."
+                    required>
+            </div>
+            <div>
+                <label for="email">Your Email</label>
+                <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                    placeholder="Your mail adress.." required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            </div>
+        </div>
 
-            <label for="message">Subject</label>
-            <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message" placeholder="write something.." required></textarea>
-            @if(!message.valid && message.touched){
-                <span>Please enter a message</span>
-            }
-
-            <input type="submit" value="Submit">
-
-        </form>
+        <label for="message">Your Message</label>
+        <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
+            placeholder="write something.." required></textarea>
+        @if(!message.valid && message.touched){
+        <span>Please enter a message</span>
+        }
 
 
-    </div>
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+
 
     <div class="contac_PrivacyPolicy"></div>
 

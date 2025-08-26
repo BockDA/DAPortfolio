@@ -11,6 +11,17 @@ main {
   //background-color: blue;
 }
 
+.contact_Headline_Container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.hero_ArrowUp {
+  position: absolute;
+  right: 230px;
+}
+
 .contac_Headline {
   font-family: "Anta";
 }
@@ -22,6 +33,7 @@ main {
   justify-content: center;
   gap: 100px;
   color: white;
+  margin-bottom: 150px;
   //background-color: aqua;
 
   .contac_Description {
@@ -55,7 +67,58 @@ main {
   }
 }
 
-.contac_FormularSection {
+.contac_Formular_Section {
   display: flex;
-  margin-top: 150px;
+  flex-direction: column;
+  width: 911px;
+  color: $primaryBlue;
+
+  //background-color: antiquewhite;
+  label {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.contac_Field_Sec1 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 21px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+  }
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  padding: 12px;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: $primaryBlue;
+  background-color: $mainColor;
+}
+
+#message {
+  height: 146px;
+}
+
+input[type="submit"] {
+  width: 101px;
+  height: 48px;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: $primaryBlue;
+  background-color: $mainColor;
+  color: white;
+  cursor: pointer;
+  margin-top: 21px;
 }
