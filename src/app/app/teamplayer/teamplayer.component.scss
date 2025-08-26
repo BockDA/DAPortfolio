@@ -1,11 +1,10 @@
-@use "styles/colors.scss" as *;
-@use "styles/fonts.scss" as *;
 
+@use "styles/colors" as *;
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Josefin Sans";
+  font-family: "Josefin";
   color: $primaryBlue; // #f8f5ec;
   width: 100%;
   height: auto;

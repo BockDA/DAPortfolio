@@ -1,6 +1,4 @@
-@use "styles/colors.scss" as *;
-@use "styles/fonts.scss" as *;
-
+@use "styles/colors" as *;
 main {
   display: flex;
   width: 100%;
@@ -10,7 +8,7 @@ main {
 }
 
 .myskills_Section {
-  font-family: "Josefin Sans";
+  font-family: "Josefin";
   width: 100%;
   //background-color:yellow ;
 }
@@ -47,7 +45,7 @@ main {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-family: "Josefin Sans";
+  font-family: "Josefin";
   //font-size: 18px;
   color: $primaryBlue; //#89bcd9;
   border-radius: 8px;

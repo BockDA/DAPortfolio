@@ -1,9 +1,8 @@
-@use "styles/colors.scss" as *;
-@use "styles/fonts.scss" as *;
 
+@use "styles/colors" as *;
 main {
   display: flex;
-  font-family: Anta;
+  font-family: "Anta";
   color: $cremeWhite; // #f8f5ec;
   width: 100%;
   height: auto;
@@ -11,7 +10,7 @@ main {
 }
 
 .whyme_Section {
-  font-family: "Josefin Sans";
+  font-family: "Josefin";
   width: 100%;
 }
 

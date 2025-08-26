@@ -1,5 +1,4 @@
-@use "/styles/colors.scss" as *;
-@use "/styles/fonts.scss" as *;
+@use "styles/colors" as *;
 
 main {
   position: sticky;
@@ -31,7 +30,7 @@ main {
   width: 677px;
   display: flex;
   justify-content: space-between;
-  font-family: "Josefin Sans";
+  font-family: "Josefin";
   // $mainColor;
   //background-color: green;
 }

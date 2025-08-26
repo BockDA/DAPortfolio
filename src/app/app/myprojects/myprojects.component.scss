@@ -1,5 +1,5 @@
-@use "styles/colors.scss" as *;
-@use "styles/fonts.scss" as *;
+
+@use "styles/colors" as *;
 
 main {
   width: 100%;
@@ -14,7 +14,7 @@ main {
 }
 
 .myprojects_Section {
-  font-family: "Josefin Sans";
+  font-family: "Josefin";
   width: 100%;
   //background-color:yellow ;
 }
@@ -40,7 +40,7 @@ main {
   justify-content: center;
   border-radius: 16px 16px 0 0;
   background-color: $mainColor; // #262e34;
-  font-family: "Josefin Sans";
+  font-family: "Josefin";
   color: $primaryBlue; // #89bcd9;
   border: none;
   cursor: pointer;

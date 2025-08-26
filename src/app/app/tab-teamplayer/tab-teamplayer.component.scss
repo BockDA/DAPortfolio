@@ -1,9 +1,7 @@
-@use "styles/colors.scss" as *;
-@use "styles/fonts.scss" as *;
 
-
+@use "styles/colors" as *;
 .player_Cards {
-  font-family: "Josefin Sans";
+  font-family: "Josefin";
   display: grid;
   grid-auto-flow: column;
   gap: 30px;
