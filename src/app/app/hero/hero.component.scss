@@ -46,6 +46,9 @@ main {
 
   .hero_media {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    //background-color: aqua;
   }
 
   .hero_socialMedia {
@@ -54,15 +57,18 @@ main {
     gap: 15px;
     width: 30px;
     height: 122px;
-    position: absolute;
-    top: 68px;
-    left: 1300px;
+    position: relative;
+    left: 250px;
 
     img {
       height: 30px;
       width: 30px;
     }
   }
+
+  .hero_socialMedia img:hover {
+    cursor: pointer;
+
 
   .hero_Name {
     display: flex;
