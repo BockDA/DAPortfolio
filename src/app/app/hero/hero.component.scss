@@ -12,6 +12,12 @@ main {
   //background-color: red;
 }
 
+:host ::ng-deep app-logo .logo:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
 .hero_section {
   display: grid;
   width: 594px;
@@ -66,19 +72,51 @@ main {
     }
   }
 
-  .hero_socialMedia img:hover {
+  .social_section {
+    position: relative; /* Für absolutes Positionieren */
+    width: 30px; /* Breite des Icons */
+    height: 30px; /* Höhe des Icons */
+    //display: inline-block;
     cursor: pointer;
-
-
-  .hero_Name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
   }
+  .social_section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+  }
+  .social_section .original {
+    opacity: 1;
+    //z-index: 2;
+  }
+  .social_section .hover {
+    opacity: 0;
+    //z-index: 1;
+  }
+  .social_section:hover .original {
+    opacity: 0;
+  }
+  .social_section:hover .hover {
+    opacity: 1;
+  }
+}
 
-  .hero_Arrow {
-    margin-top: 160px;
+.hero_Name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hero_Arrow {
+  margin-top: 160px;
+
+  :hover {
+    cursor: pointer;
+    background-color: $lightGrey;
+    border-radius: 30px;
+    width: 38px;
+    height: 89px;
   }
 }

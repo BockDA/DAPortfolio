@@ -1,0 +1,14 @@
+
+C:\daten\Weiterbildung\Projekte\Portfolio\DAPortfolio>git pull 
+Already up to date.
+
+C:\daten\Weiterbildung\Projekte\Portfolio\DAPortfolio>git add . 
+
+C:\daten\Weiterbildung\Projekte\Portfolio\DAPortfolio>git commit -m "begin the revised - effects" 
+[main b78796d] begin the revised - effects
+ 6 files changed, 11 insertions(+), 5 deletions(-)
+ create mode 100644 hover
+ create mode 100644 public/assets/icons/Email_btn.png
+ create mode 100644 public/assets/icons/Email_btn_hover.png
+
+C:\daten\Weiterbildung\Projekte\Portfolio\DAPortfolio>git push  
