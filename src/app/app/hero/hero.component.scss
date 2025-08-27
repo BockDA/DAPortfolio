@@ -12,10 +12,12 @@ main {
   //background-color: red;
 }
 
-:host ::ng-deep app-logo .logo:hover {
-  transform: scale(1.2);
+:host ::ng-deep app-logo .logo:first-of-type {
   transition: transform 0.3s ease;
-  cursor: pointer;
+}
+
+:host ::ng-deep app-logo .logo:first-of-type:hover {
+  transform: scaleX(1.2);
 }
 
 .hero_section {
