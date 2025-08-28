@@ -5,7 +5,7 @@
         </div>
 
         <div class="hero_ArrowUp">
-            <img src="assets/icons/ArrowUp.png" />
+            <a href="#"><img src="assets/icons/ArrowUp.png" /></a>
         </div>
     </div>
     <div class="contac_Introduction">
@@ -28,7 +28,7 @@
     <form class="contac_Formular_Section" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
         <div class="contac_Field_Sec1">
-            <div class="contact_Field" >
+            <div class="contact_Field">
                 <label for="name">Your Name</label>
                 <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.."
                     required>

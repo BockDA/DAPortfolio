@@ -31,11 +31,34 @@ main {
   display: flex;
   justify-content: space-between;
   font-family: "Josefin";
-  p:hover {
-    color: $cremeWhite;
+
+  p {
+    &:hover {
+      color: $cremeWhite;
+    }
   }
 }
 
-:host ::ng-deep app-logo .logo:first-of-type {
+.menue_Entries a {
+  text-decoration: none;
+  color: $mainColor;
+  position: relative;
+}
+.active {
+  color: $cremeWhite;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 83px;
+    height: 56px;
+    transform: translate(-50%, -50%);
+    background: url("/assets/icons/menuBack.png") no-repeat center / contain;
+    z-index: -1; /* Hintergrund hinter Text */
+  }
+}
+
+:host ::ng-deep app-logo .logo {
   cursor: pointer;
 }

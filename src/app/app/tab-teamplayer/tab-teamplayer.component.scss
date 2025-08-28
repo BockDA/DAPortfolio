@@ -1,4 +1,3 @@
-
 @use "styles/colors" as *;
 .player_Cards {
   font-family: "Josefin";
@@ -23,7 +22,7 @@
     display: block;
   }
 
-  .tplayer_name{
+  .tplayer_name {
     padding-bottom: 12px;
   }
 
@@ -36,7 +35,6 @@
     color: white;
     text-align: center;
     padding-top: 100px; /* etwas Abstand vom Rand */
-
     .color_Text {
       color: $primaryBlue;
     }

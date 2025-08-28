@@ -9,7 +9,6 @@ main {
   margin-top: 41px;
   height: 100%;
   color: $cremeWhite;
-  //background-color: red;
 }
 
 :host ::ng-deep app-logo .logo:first-of-type {
@@ -72,11 +71,11 @@ main {
 
 .hero_bg_section .original {
   opacity: 1;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 .hero_bg_section .hover {
   opacity: 0;
-  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 4x 4px rgba(0, 0, 0, 0.4));
   transform: scale(1);
 }
 .hero_bg_section:hover .original {
@@ -86,7 +85,6 @@ main {
   opacity: 1;
   transform: scale(1);
 }
-
 
 .hero_Personal {
   display: flex;
@@ -112,7 +110,6 @@ main {
     height: 122px;
     position: relative;
     left: 250px;
-
     img {
       height: 30px;
       width: 30px;
@@ -155,7 +152,6 @@ main {
 
 .hero_Arrow {
   margin-top: 160px;
-
   :hover {
     cursor: pointer;
     background-color: $lightGrey;
