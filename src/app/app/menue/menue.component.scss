@@ -31,6 +31,11 @@ main {
   display: flex;
   justify-content: space-between;
   font-family: "Josefin";
-  // $mainColor;
-  //background-color: green;
+  p:hover {
+    color: $cremeWhite;
+  }
+}
+
+:host ::ng-deep app-logo .logo:first-of-type {
+  cursor: pointer;
 }
