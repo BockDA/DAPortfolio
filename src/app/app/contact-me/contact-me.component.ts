@@ -5,7 +5,7 @@ import { MenueComponent } from '../menue/menue.component';
 
 @Component({
   selector: 'app-contact-me',
-  imports: [TranslateModule, FormsModulem;MenueComponent],
+  imports: [TranslateModule, FormsModule],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss'
 })
