@@ -23,7 +23,7 @@
   }
 
   .tplayer_name {
-    padding-bottom: 12px;
+    padding-bottom: 10px;
   }
 
   .players_Card_Contents {
@@ -32,9 +32,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* oben statt zentriert */
-    color: white;
+    color: $cremeWhite; // white;
     text-align: center;
-    padding-top: 100px; /* etwas Abstand vom Rand */
+    padding-top: 50px; /* etwas Abstand vom Rand */
     .color_Text {
       color: $primaryBlue;
     }
@@ -42,7 +42,7 @@
     .description_Text {
       text-align: center;
       max-width: 260px;
-      height: 121px;
+      height: auto;
       padding-bottom: 19px;
     }
   }
