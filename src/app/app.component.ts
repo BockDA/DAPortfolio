@@ -12,9 +12,8 @@ export class AppComponent {
   title = 'DAPortfolio';
 
   constructor(public translate: TranslateService) {
-    // verfügbare Sprachen
     translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('de');
+    translate.setDefaultLang('de'); // Sprach wnn kein wert vorhanden
     translate.use('en');
   }
 }

@@ -56,3 +56,21 @@ main {
 :host ::ng-deep app-logo .logo {
   cursor: pointer;
 }
+
+.language_Icon {
+  display: flex;
+  gap: 10px;
+
+  button {
+    border-style: none;
+    border-width: 0;
+    font-family: "Josefin";
+    background-color: $primaryBlue;
+
+    &:hover {
+      background-color: red;
+      cursor: pointer;
+      padding: 5px;
+    }
+  }
+}
