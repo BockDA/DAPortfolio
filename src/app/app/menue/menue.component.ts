@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { MyFunctionsService } from '../../services/my-functions.service';
 
 @Component({
   selector: 'app-menue',
@@ -9,10 +10,8 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './menue.component.scss',
 })
 export class MenueComponent {
-  menuAktiv: string = '';
-
-  setMenuAktiv(section: string) {
-    console.log('tsdgdssg');
-    this.menuAktiv = section;
+  constructor(public setAktiv: MyFunctionsService) {}
+  setPosMenu(value: string) {
+    this.setAktiv.setMenuAktiv(value);
   }
 }
