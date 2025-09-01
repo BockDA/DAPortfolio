@@ -16,12 +16,12 @@
       </a>
       <a class="font_3" href="#contact" (click)="setPosMenu('contact')">
         <p [class.active]="setAktiv.getMenuAktiv()==='contact'">{{'NAV.CONTACT' |translate}}</p>
-      </a >
+      </a>
     </div>
 
     <div class="language_Icon">
-      <button class="font_9">DE</button>
-      <button class="font_9">EN</button>
+      <button class="font_9" [class.language_aktiv]="isGerman()" (click)="setLanguage('de')">DE</button>
+      <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="setLanguage ('en')">EN</button>
     </div>
   </div>
 </main>

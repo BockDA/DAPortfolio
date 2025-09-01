@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { statusLanguage } from '../state/language.state';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,9 @@ export class AppComponent {
   constructor(public translate: TranslateService) {
     translate.addLangs(['de', 'en']);
     translate.setDefaultLang('de'); // Sprach wnn kein wert vorhanden
-    translate.use('en');
+
+    effect(() => {
+      this.translate.use(statusLanguage());
+    });
   }
 }
