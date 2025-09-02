@@ -54,16 +54,16 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 420px; // Größe der Fläche pro Icon
-  height: 420px;
+  width: 380px; // Größe der Fläche pro Icon
+  height: 380px;
 }
 
 .myskills_Layer img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 420px;
-  height: 420px;
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 380px;
   transform: translate rotate(90deg); /* Exakte Zentrierung */
   object-fit: contain;
   transition: opacity 1s ease, filter 1s ease-in-out, transform 1s ease-in-out;
@@ -73,23 +73,23 @@ main {
   opacity: 1;
   //transform: scale(1);
 
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
 }
 
 .myskills_Layer .hover {
   opacity: 0;
   transform: rotate(90deg);
-  filter: drop-shadow(0 4x 8px rgba(0, 0, 0, 0.35));
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
 }
 
 .myskills_Layer:hover .original {
   opacity: 0;
-  transform: scale(1);
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
 }
 
 .myskills_Layer:hover .hover {
   opacity: 1;
-  transform: scale(1);
+  transform: translate(-50%, -50%) rotate(45deg) scale(1);
 }
 
 .myskills_Info {
@@ -97,6 +97,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+
   gap: 20px;
   //background-color: yellow;
 }
