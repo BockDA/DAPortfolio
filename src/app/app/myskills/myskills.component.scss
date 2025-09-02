@@ -15,7 +15,8 @@ main {
 .myskills_innerSection {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 150px;
   margin-left: 160px;
   margin-right: 160px;
   margin-top: 70px;
@@ -48,12 +49,47 @@ main {
   border-radius: 8px;
 }
 
-.myskills_Info_Section {
-  display: grid;
+.myskills_Layer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px; // Größe der Fläche pro Icon
+  height: 420px;
 }
 
-.myskills_Layer {
-  grid-area: 1/1;
+.myskills_Layer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  transform: translate rotate(90deg); /* Exakte Zentrierung */
+  object-fit: contain;
+  transition: opacity 1s ease, filter 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.myskills_Layer .original {
+  opacity: 1;
+  //transform: scale(1);
+
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+}
+
+.myskills_Layer .hover {
+  opacity: 0;
+  transform: rotate(90deg);
+  filter: drop-shadow(0 4x 8px rgba(0, 0, 0, 0.35));
+}
+
+.myskills_Layer:hover .original {
+  opacity: 0;
+  transform: scale(1);
+}
+
+.myskills_Layer:hover .hover {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .myskills_Info {
