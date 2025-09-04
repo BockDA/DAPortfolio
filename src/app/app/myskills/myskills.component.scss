@@ -49,68 +49,77 @@ main {
   border-radius: 8px;
 }
 
-.myskills_Layer {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 380px; // Größe der Fläche pro Icon
-  height: 380px;
-}
+//--------------------rechts Seite ---------------------------------//
 
-.myskills_Layer img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 380px;
-  height: 380px;
-  transform: translate rotate(90deg); /* Exakte Zentrierung */
-  object-fit: contain;
-  transition: opacity 1s ease, filter 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.myskills_Layer .original {
-  opacity: 1;
-  //transform: scale(1);
-
-  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
-}
-
-.myskills_Layer .hover {
-  opacity: 0;
-  transform: rotate(90deg);
-  transform: translate(-50%, -50%) rotate(0deg) scale(1);
-}
-
-.myskills_Layer:hover .original {
-  opacity: 0;
-  transform: translate(-50%, -50%) rotate(0deg) scale(1);
-}
-
-.myskills_Layer:hover .hover {
-  opacity: 1;
-  transform: translate(-50%, -50%) rotate(45deg) scale(1);
-}
-
-.myskills_Info {
+.myskills_Section {
+  //background-color: gray;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+}
 
-  gap: 20px;
-  //background-color: yellow;
+.myskills_Back {
+  position: relative;
+  width: 375px;
+  height: 391px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myskills_Back > img {
+  position: absolute;
+  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.myskills_Back .img_original {
+  opacity: 1;
+  z-index: 1;
+}
+
+.myskills_Back .img_hover {
+  opacity: 0;
+}
+
+.myskills_Back:hover .img_original {
+  opacity: 0;
+}
+
+.myskills_Back:hover .img_hover {
+  opacity: 1;
+}
+
+.myskills_Info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 3;
+}
+
+.info_contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+  width: 100%;
+  color: $cremeWhite;
 }
 
 .myskills_Info_img {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
+  width: 36px;
+  height: 54px;
 }
 
-.myskills_Infotext {
+.myskills_Infotext{
   width: 307px;
-  color: $cremeWhite; // white;
-  font-size: 18px;
-  text-align: center;
+  height: auto;
 }
