@@ -1,9 +1,10 @@
 @use "styles/colors" as *;
+@use "styles/mixin/mixin" as *;
+
 main {
   display: flex;
   width: 100%;
   height: auto;
-  //background-color: red;
   padding-top: 120px;
 }
 
@@ -13,14 +14,8 @@ main {
 }
 
 .myskills_innerSection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 150px;
-  margin-left: 160px;
-  margin-right: 160px;
+  @include flex_Box(row, 150px);
   margin-top: 70px;
-  //background-color: green;
 }
 
 .myskills_Titel {
@@ -35,15 +30,12 @@ main {
   grid-template-rows: repeat(3, auto);
   gap: 40px;
   margin-top: 60px;
+  margin-right: 120px;
 }
 
 .myskills_grid-item {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  @include flex_Box(column, 15px);
   text-align: center;
-  justify-content: center;
-  align-items: center;
   font-family: "Josefin";
   color: $primaryBlue;
   border-radius: 8px;
@@ -51,62 +43,8 @@ main {
 
 //--------------------rechts Seite ---------------------------------//
 
-.myskills_Section {
-  //background-color: gray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.myskills_Back {
-  position: relative;
-  width: 375px;
-  height: 391px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.myskills_Back > img {
-  position: absolute;
-  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
-}
-
-.myskills_Back .img_original {
-  opacity: 1;
-  z-index: 1;
-}
-
-.myskills_Back .img_hover {
-  opacity: 0;
-}
-
-.myskills_Back:hover .img_original {
-  opacity: 0;
-}
-
-.myskills_Back:hover .img_hover {
-  opacity: 1;
-}
-
-.myskills_Info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  z-index: 3;
-}
-
-.info_contents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  text-align: center;
-  width: 100%;
+@include background_Animation();
+.section_content_block {
   color: $cremeWhite;
 }
 
@@ -119,7 +57,7 @@ main {
   height: 54px;
 }
 
-.myskills_Infotext{
+.myskills_Infotext {
   width: 307px;
   height: auto;
 }
