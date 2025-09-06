@@ -41,6 +41,11 @@ main {
   width: 379px;
   margin-top: 30px;
   // height: 176px;
+  :hover {
+    cursor: pointer;
+    background-color: $lightGrey;
+    border-radius: 30px;
+  }
 }
 
 .whyme_locale {
