@@ -12,7 +12,8 @@
     "CTA": "Let’s talk!"
   },
   "WHYME": {
-    "LOCAL": "I am located in Munich..|",
+    "LOCAL1": "I am ",
+    "LOCAL2": "located in Munich..|",
     "DESCRIPTION": "Why are you passionate about coding? You can include some key traits like: analytical thinking, creativity, persistence and  collaboration. A problem-solving mindset is always nice to have."
   },
 
