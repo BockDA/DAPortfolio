@@ -39,28 +39,68 @@
           "assets/icons/Icon_CSS.png",
           "assets/icons/Icon_Firebase.png"
         ],
-        "SCREEN": "assets/screenshots/ScreenshotJoin.png"
+        "SCREEN": "assets/screenshots/joinDA.png"
       }
     },
     "P2": {
       "Tab1": {
-        "DESCRIPTION1": "About the project",
-        "WORKPROCESS1": "Duration: 3 weeks",
-        "CONTENT1": "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation.",
-        "DESCRIPTION2": "About the project",
-        "WORKPROCESS2": "Duration: 3 weeks",
-        "CONTENT2": "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation.",
-        "DESCRIPTION3": "About the project",
-        "WORKPROCESS3": "Duration: 3 weeks",
-        "CONTENT3": "Diese App ist eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation."
+        "DESCRIPTION1": "Über das Projekt",
+        "WORKPROCESS1": "Dauer: 3 Monate",
+        "CONTENT1": "Erlernen & Anwendung Objektorientierter Programmierung (OOP).",
+        "DESCRIPTION2": "Wie ich meine Arbeit organisiert habe",
+        "CONTENT2": "Mein Code ist in klare Module unterteilt (HTML, CSS, Canvas-Rendering, JS-Logik) für bessere Wartbarkeit, Dateien, Variablen, Funktionen und Klassen sind konsistent und sprechend benannt, Wichtige Funktionen sind mit JSDoc dokumentiert, komplexe Logik erhält kurze Kommentare,Git wird für Versionskontrolle und saubere Commit-Struktur genutzt.",
+        "DESCRIPTION3": "Wichtige Erkenntnisse",
+        "CONTENT3": "Die Arbeit an diesem Projekt hat mir Spaß gemacht, weil ich mein Wissen in HTML, CSS, Canvas und JavaScript vertiefen konnte.Besonders interessant war die Arbeit mit der Canvas-API für Zeichnungen, Animationen und interaktive Elemente."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologien",
         "IMGS": [
-          "assets/icons/Icon_Angular.png",
-          "assets/icons/Icon_Angular.png"
+          "assets/icons/Icon_HTML.png",
+          "assets/icons/Icon_Javascript.png"
         ],
-        "SCREEN": "assets/screenshots/ScreenshotJoin.png"
+        "SCREEN": "assets/screenshots/elpolloloco.png"
+      }
+    },
+    "P3": {
+      "Tab1": {
+        "DESCRIPTION1": "Über das Projekt",
+        "WORKPROCESS1": "Dauer: 1 Woche",
+        "CONTENT1": "Mithilfe von JavaScript habe ich Daten aus einer Pokémon-API abgerufen und als JSON verarbeitet. Die Ergebnisse wurden anschließend dynamisch im Browser dargestellt.",
+        "DESCRIPTION2": "Wie bin ich vorgegangen",
+        "CONTENT2": "Zuerst habe ich die HTML-Struktur erstellt und das Layout mit CSS gestaltet. Anschließend habe ich mit JavaScript die Logik implementiert und Funktionen modular aufgebaut.Zum Schluss habe ich das Abrufen und Verarbeiten von Daten aus Web-APIs integriert, um dynamische Inhalte darzustellen.",
+        "DESCRIPTION3": "Wichtige Erkenntnisse",
+        "CONTENT3": "Die Arbeit an diesem Projekt hat mir Spaß gemacht, weil ich mein Wissen in HTML, CSS und JavaScript vertiefen konnte. Besonders interessant war das Abrufen und Verarbeiten von Daten aus Web-APIs."
+      },
+      "Tab2": {
+        "TECHNOLOGIES": "Technologien",
+        "IMGS": [
+          "assets/icons/Icon_HTML.png",
+          "assets/icons/Icon_Javascript.png",
+          "assets/icons/Icon_Git.png",
+          "assets/icons/Icon_Api.png"
+        ],
+        "SCREEN": "assets/screenshots/pokemonDa.png"
+      }
+    },
+    "P4": {
+      "Tab1": {
+        "DESCRIPTION1": "In Arbeit",
+        "WORKPROCESS1": "",
+        "CONTENT1": "",
+        "DESCRIPTION2": "In Arbeit",
+        "CONTENT2": "",
+        "DESCRIPTION3": "In Arbeit",
+        "CONTENT3": ""
+      },
+      "Tab2": {
+        "TECHNOLOGIES": "Technologien",
+        "IMGS": [
+          "assets/icons/Icon_HTML.png",
+          "assets/icons/Icon_Javascript.png",
+          "assets/icons/Icon_Git.png",
+          "assets/icons/Icon_Api.png"
+        ],
+        "SCREEN": "assets/screenshots/DABubbleinWork.png"
       }
     }
   },

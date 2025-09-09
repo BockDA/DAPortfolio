@@ -2,10 +2,9 @@
 main {
   display: flex;
   width: 100%;
-  height: auto;
+  height: 600px;
   font-family: "Josefin";
   color: $cremeWhite;
-  //background-color: red;
 }
 
 .tab_firstSection {
@@ -31,8 +30,6 @@ main {
   }
 
   .first_paragraph_Text {
-    display: flex;
-    justify-content: center;
     margin-left: 60px;
   }
 }
@@ -68,12 +65,12 @@ main {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    border-radius: 30px;
   }
 
   .tab_Project_Preview img {
     width: 452px;
     height: 312px;
+    border-radius: 16px;
   }
 
   .tab_Buttons {
