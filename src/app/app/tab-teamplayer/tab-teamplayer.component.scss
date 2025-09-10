@@ -1,49 +1,32 @@
 @use "styles/colors" as *;
+@use "styles/mixin/mixin" as *;
 .player_Cards {
+  @include flex_Box(row, 150px);
   font-family: "Josefin";
-  display: grid;
-  grid-auto-flow: column;
-  gap: 30px;
-  padding: 20px;
+   padding: 20px;
 }
 
-.player_Card_Section {
-  display: grid;
-  position: relative;
-  color: black;
-
-  .player_Card_Img {
-    grid-area: 1 / 1;
+.players_Card_Contents {
+  @include flex_Box(column, 20px);
+  color: $cremeWhite;
+  text-align: center;
+  .color_Text {
+    color: $primaryBlue;
   }
-
-  .player_Card_Img img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .tplayer_name {
-    padding-bottom: 10px;
-  }
-
-  .players_Card_Contents {
-    grid-area: 1 / 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* oben statt zentriert */
-    color: $cremeWhite; // white;
+  .description_Text {
+    z-index: 3;
     text-align: center;
-    padding-top: 50px; /* etwas Abstand vom Rand */
-    .color_Text {
-      color: $primaryBlue;
+    max-width: 260px;
+    max-height: 180px;
+    padding-bottom: 19px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 3px;
     }
-
-    .description_Text {
-      text-align: center;
-      max-width: 260px;
-      height: auto;
-      padding-bottom: 19px;
+    &::-webkit-scrollbar-thumb {
+      background: $primaryBlue;
+      border-radius: 6px;
     }
   }
 }
+@include background_Animation();

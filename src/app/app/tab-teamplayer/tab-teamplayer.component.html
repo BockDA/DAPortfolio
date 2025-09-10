@@ -1,10 +1,9 @@
-<main>
-    <div class="player_Cards">
-        <div class="player_Card_Section" *ngFor="let player of ('TEAMPLAYER.PLAYER' | translate)">
-            <div class="player_Card_Img">
-                <img src="assets/icons/background_Tplayer.png">
-            </div>
-            <div class="players_Card_Contents">
+<div class="player_Cards">
+    <div class="background_Animation" *ngFor="let player of ('TEAMPLAYER.PLAYER' | translate)">
+        <div class="section">
+            <img class="img_1" src="assets/icons/myskills_Back.png" />
+            <img class="img_2" src="assets/icons/myskills_Back_Hover.png">
+            <div class="players_Card_Contents ">
                 <p class="font_3 tplayer_name">{{ player.TPLAYER_NAME }}</p>
                 <p class="font_8">Projekt<span class="color_Text"> {{player.PROJECT}}</span></p>
                 <p class="font_4 description_Text">{{ player.DESCRIPTION }}</p>
@@ -12,4 +11,4 @@
             </div>
         </div>
     </div>
-</main>
+</div>
