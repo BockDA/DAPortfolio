@@ -45,16 +45,22 @@
         <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
             placeholder="{{'CONTACT.PLACEHOLDER_MESSAGE' | translate}}" required></textarea>
         @if(!message.valid && message.touched){
-
         }
 
 
-        <input type="submit" value="{{'CONTACT.SEND_BTN'|translate}}">
+        <div class="contac_PrivacyPolicy">
+            <img src="assets/icons/policy_check_box.png">
+            <p class="font_14" >Testhjsdjsj</p>
+        </div>
 
+
+        <div class="section_submit">
+            <input type="submit" value="{{'CONTACT.SEND_BTN'|translate}}">
+        </div>
     </form>
 
 
-    <div class="contac_PrivacyPolicy"></div>
+
 
     <div class="contac_BTN"></div>
 

@@ -124,7 +124,28 @@ textarea {
   resize: none;
 }
 
+//Policity
+
+.contac_PrivacyPolicy {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  img:hover {
+    cursor: pointer;
+  }
+}
+
 //Button Submit
+
+.section_submit {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
 input[type="submit"] {
   width: 101px;
@@ -138,4 +159,3 @@ input[type="submit"] {
   cursor: pointer;
   margin-top: 21px;
 }
-
