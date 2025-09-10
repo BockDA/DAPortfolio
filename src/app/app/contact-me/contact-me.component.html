@@ -25,31 +25,31 @@
     </div>
 
 
-    <form class="contac_Formular_Section" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <form class="contac_Formular_Section font_13" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-        <div class="contac_Field_Sec1">
+        <div class="contac_Field_Sec1 ">
             <div class="contact_Field">
-                <label for="name">Your Name</label>
-                <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.."
-                    required>
+                <label for="name">{{'CONTACT.FORMULAR_NAME'|translate}}</label>
+                <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                    placeholder="{{'CONTACT.PLACEHOLDER_NAME'|translate}}" required>
             </div>
             <div>
-                <label for="email">Your Email</label>
+                <label for="email">{{'CONTACT.FORMULAR_EMAIL' |translate}}</label>
                 <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="Your mail adress.." required
+                    placeholder="{{'CONTACT.PLACEHOLDER_EMAIL' | translate}}" required
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
         </div>
 
-        <label for="message">Your Message</label>
+        <label for="message">{{'CONTACT.FORMULAR_MESSAGE'|translate}}</label>
         <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
-            placeholder="write something.." required></textarea>
+            placeholder="{{'CONTACT.PLACEHOLDER_MESSAGE' | translate}}" required></textarea>
         @if(!message.valid && message.touched){
-        <span>Please enter a message</span>
+
         }
 
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="{{'CONTACT.SEND_BTN'|translate}}">
 
     </form>
 

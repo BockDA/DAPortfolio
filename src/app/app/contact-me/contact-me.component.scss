@@ -74,8 +74,8 @@ main {
   width: 911px;
   color: $primaryBlue;
 
-  //background-color: antiquewhite;
   label {
+    padding-bottom: 5px;
     margin-left: 20px;
     font-size: 14px;
     font-weight: 400;
@@ -91,6 +91,9 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  input {
     height: 60px;
   }
 }
@@ -105,11 +108,23 @@ textarea {
   border-width: 1.5px;
   border-color: $primaryBlue;
   background-color: $mainColor;
+  color: $cremeWhite;
+  outline: none;
+  font-size: 16px;
+  font-family: "Josefin";
+  &:focus {
+    background-color: $inputColor;
+    border-color: $primaryBlue;
+    box-shadow: none;
+  }
 }
 
 #message {
-  height: 146px;
+  height: 162px;
+  resize: none;
 }
+
+//Button Submit
 
 input[type="submit"] {
   width: 101px;
@@ -123,3 +138,4 @@ input[type="submit"] {
   cursor: pointer;
   margin-top: 21px;
 }
+
