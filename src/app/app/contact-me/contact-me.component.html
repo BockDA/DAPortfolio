@@ -31,31 +31,41 @@
             <div class="contact_Field">
                 <label for="name">{{'CONTACT.FORMULAR_NAME'|translate}}</label>
                 <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                    placeholder="{{'CONTACT.PLACEHOLDER_NAME'|translate}}" required>
+                    placeholder="{{'CONTACT.PLACEHOLDER_NAME'|translate}}" required autocomplete="off">
             </div>
             <div>
                 <label for="email">{{'CONTACT.FORMULAR_EMAIL' |translate}}</label>
                 <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="{{'CONTACT.PLACEHOLDER_EMAIL' | translate}}" required
+                    placeholder="{{'CONTACT.PLACEHOLDER_EMAIL' | translate}}" required autocomplete="off"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
         </div>
 
         <label for="message">{{'CONTACT.FORMULAR_MESSAGE'|translate}}</label>
         <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
-            placeholder="{{'CONTACT.PLACEHOLDER_MESSAGE' | translate}}" required></textarea>
+            placeholder="{{'CONTACT.PLACEHOLDER_MESSAGE' | translate}}" required autocomplete="off"></textarea>
         @if(!message.valid && message.touched){
         }
 
-
+        <!--
         <div class="contac_PrivacyPolicy">
             <img src="assets/icons/policy_check_box.png">
-            <p class="font_14" >Testhjsdjsj</p>
+            <p class="font_14" [innerHTML]="'CONTACT.PRIVACYPOLICY_NOTICE'|translate"></p>
+        </div>
+        -->
+        <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden">
+        <div class="contac_PrivacyPolicy" [attr.aria-checked]="privacyCtrl.value"
+            (click)="privacyCtrl.control.setValue(!privacyCtrl.value)">
+           <img [src]="privacyCtrl.value
+                ? 'assets/icons/policy_check_box_checked.png'
+                : 'assets/icons/policy_check_box.png'">
+            <p class="font_14" [innerHTML]="'CONTACT.PRIVACYPOLICY_NOTICE'|translate"></p>
         </div>
 
 
+
         <div class="section_submit">
-            <input type="submit" value="{{'CONTACT.SEND_BTN'|translate}}">
+            <input [class.disabled]="!contactForm.valid" type="submit" value="{{'CONTACT.SEND_BTN'|translate}}">
         </div>
     </form>
 

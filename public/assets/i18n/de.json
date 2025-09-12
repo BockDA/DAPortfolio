@@ -138,7 +138,7 @@
     "PLACEHOLDER_NAME": "hier denn Namen eingeben..",
     "PLACEHOLDER_EMAIL": "Mail Adresse eingeben..",
     "PLACEHOLDER_MESSAGE": "Mitteilung schreiben..",
-    "PRIVACYPOLICY_NOTICE": "Ich habe die Datenschutzerklärung gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
+    "PRIVACYPOLICY_NOTICE": "Ich habe die <a href='/Datenschutzerklärung' target='_blank'>Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
     "SEND_BTN": "Senden"
   }
 }

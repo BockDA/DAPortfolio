@@ -124,24 +124,64 @@ textarea {
   resize: none;
 }
 
-//Policity
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
 
 .contac_PrivacyPolicy {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
 
-  img:hover {
-    cursor: pointer;
+  &:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+    outline-offset: 2px;
   }
+  img {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  p {
+    margin: 0;
+    color:$cremeWhite;
+  }
+
+  /* Link im Translate-HTML stylen (wegen innerHTML mit ::ng-deep) */
+  p ::ng-deep a {
+    text-decoration: none;
+    color: $primaryBlue;
+  }
+}
+
+.section_submit input.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 6px;
+  color: #d32f2f;
+  font-size: 0.9rem;
 }
 
 //Button Submit
 
 .section_submit {
   width: 100%;
-  background-color: red;
+  //background-color: red;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -158,4 +198,18 @@ input[type="submit"] {
   color: white;
   cursor: pointer;
   margin-top: 21px;
+}
+
+input[type="submit"].disabled {
+  pointer-events: none; // Klicks verhindern
+  opacity: 0.6; // ausgegraut darstellen
+  cursor: not-allowed; // Mauszeiger sperren
+}
+/* Aktiviert (wird animiert sichtbar) */
+input[type="submit"]:not(:disabled) {
+  background-color: $mainColor;
+  border-color: $primaryBlue;
+  color: white;
+  transform: scale(1.05); // leichter „Pop“
+  box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
 }
