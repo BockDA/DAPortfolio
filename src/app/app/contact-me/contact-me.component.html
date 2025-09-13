@@ -12,13 +12,15 @@
         <div class="contac_Description">
             <p class="font_8">{{'CONTACT.DESCRIPTION' |translate}}</p>
         </div>
-        <div class=" contac_Section">
+        <div class="contac_Section">
             <div class="contact_Mail">
-                <img src="assets/icons/email.png">
+                <img class="img_start" src="assets/icons/email.png">
+                <img class="img_hover" src="assets/icons/email_hover.png">
                 <p class="font_13">{{"CONTACT.EMAIL" |translate}}</p>
             </div>
             <div class="contact_Phone">
-                <img src="assets/icons/phone.png">
+                <img class="img_start" src="assets/icons/phone.png">
+                <img class="img_hover" src="assets/icons/phone_hover.png">
                 <p class="font_13">{{"CONTACT.PHONE" |translate}}</p>
             </div>
         </div>
@@ -47,31 +49,19 @@
         @if(!message.valid && message.touched){
         }
 
-        <!--
-        <div class="contac_PrivacyPolicy">
-            <img src="assets/icons/policy_check_box.png">
-            <p class="font_14" [innerHTML]="'CONTACT.PRIVACYPOLICY_NOTICE'|translate"></p>
-        </div>
-        -->
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden">
         <div class="contac_PrivacyPolicy" [attr.aria-checked]="privacyCtrl.value"
             (click)="privacyCtrl.control.setValue(!privacyCtrl.value)">
-           <img [src]="privacyCtrl.value
+            <img [src]="privacyCtrl.value
                 ? 'assets/icons/policy_check_box_checked.png'
                 : 'assets/icons/policy_check_box.png'">
             <p class="font_14" [innerHTML]="'CONTACT.PRIVACYPOLICY_NOTICE'|translate"></p>
         </div>
 
-
-
         <div class="section_submit">
             <input [class.disabled]="!contactForm.valid" type="submit" value="{{'CONTACT.SEND_BTN'|translate}}">
         </div>
     </form>
-
-
-
-
     <div class="contac_BTN"></div>
 
 </main>

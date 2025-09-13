@@ -51,6 +51,11 @@ main {
     flex-direction: column;
     gap: 30px;
     width: 50%;
+
+    &:hover .img_start{display:none;}
+    &:hover .img_hover{display: inline-block;}
+
+
   }
 
   .contact_Mail {

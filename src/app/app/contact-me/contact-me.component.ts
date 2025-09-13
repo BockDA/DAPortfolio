@@ -14,20 +14,12 @@ import { MyFunctionsService } from '../../services/my-functions.service';
 export class ContactMeComponent {
   constructor(public setAktiv: MyFunctionsService) {}
 
-  policyAccepted = false;
   contactData = {
     name: '',
     email: '',
     message: '',
   };
-  
-  togglePolicy() {
-    this.policyAccepted = !this.policyAccepted;
-    console.log('Aäönderunf');
-  }
 
-
-  
   onSubmit(ngForm: NgForm) {
     if (ngForm.valid && ngForm.submitted) {
       console.log(this.contactData);
