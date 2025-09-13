@@ -52,10 +52,40 @@ main {
     gap: 30px;
     width: 50%;
 
-    &:hover .img_start{display:none;}
-    &:hover .img_hover{display: inline-block;}
+    //&:hover .img_start{display:none;}
+    //&:hover .img_hover{display: inline-block;}
+  }
 
+  .contact_Mail,
+  .contact_Phone {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    position: relative;
+  }
 
+  .contact_Mail img,
+  .contact_Phone img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: opacity 0.3s ease; /* für Überblendung */
+  }
+  .img_start {
+    opacity: 1;
+  }
+
+  .img_hover {
+    opacity: 0;
+  }
+
+  .img_start:hover {
+    opacity: 0;
+  }
+  .img_hover:hover {
+    opacity: 1;
   }
 
   .contact_Mail {
@@ -161,7 +191,7 @@ textarea {
   }
   p {
     margin: 0;
-    color:$cremeWhite;
+    color: $cremeWhite;
   }
 
   /* Link im Translate-HTML stylen (wegen innerHTML mit ::ng-deep) */
