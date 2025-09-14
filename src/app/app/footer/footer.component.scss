@@ -17,6 +17,16 @@ main {
   margin: 81px 112px 0 112px;
 }
 
+.footer_sec_left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer_sec_right {
+  display: flex;
+}
+
 p .copy {
   font-size: 30px;
   vertical-align: middle;
@@ -26,6 +36,7 @@ p .copy {
   display: flex;
   align-items: center;
   gap: 10px;
+
   .section_img {
     @include icon_toggle();
   }

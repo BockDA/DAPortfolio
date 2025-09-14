@@ -73,10 +73,10 @@
 /*---------------toole IMG---------------------------------------------*/
 
 @mixin icon_toggle() {
+  
   position: relative;
   width: 30px;
   height: 30px;
-  //background-color: yellow;
 
   img {
     position: absolute;
@@ -104,3 +104,15 @@
     }
   }
 }
+
+/*
+  .img_start {
+      opacity: 0;
+      cursor: pointer;
+    }
+    .img_hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+  */
