@@ -41,61 +41,28 @@ main {
   .contac_Description {
     width: 50%;
   }
-
   .contac_Description p {
     line-height: 1.4;
     height: 124px;
   }
-
   .contac_Section {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     width: 50%;
   }
+}
 
-  .contact_Mail,
-  .contact_Phone {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-
-  .contact_Mail img,
-  .contact_Phone img {
-    position: absolute;
-    top: 0;
-    left: -10%;
-  }
-  .img_start {
-    opacity: 1;
-  }
-
-  .img_hover {
-    opacity: 0;
-  }
-
-  .img_start:hover {
-    opacity: 0;
-  }
-  .img_hover:hover {
-    opacity: 1;
-  }
-
-  .contact_Mail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 19px;
-  }
-
-  .contact_Phone {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 19px;
+.section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .section_img {
+    @include icon_toggle();
   }
 }
+
+
 
 .contac_Formular_Section {
   display: flex;
@@ -210,7 +177,6 @@ textarea {
 
 .section_submit {
   width: 100%;
-  //background-color: red;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -244,12 +210,3 @@ input[type="submit"]:not(:disabled) {
   box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
 }
 
-.section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  .section_img {
-    @include icon_toggle();
-  }
-}

@@ -86,19 +86,19 @@
     height: 100%;
   }
 
-  .icon_start {
+  .img_start {
     opacity: 1;
   }
-  .icon_hover {
+  .img_hover {
     opacity: 0;
   }
 
   &:hover {
-    .icon_start {
+    .img_start {
       opacity: 0;
       cursor: pointer;
     }
-    .icon_hover {
+    .img_hover {
       opacity: 1;
       cursor: pointer;
     }
