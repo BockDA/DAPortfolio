@@ -140,5 +140,8 @@
     "PLACEHOLDER_MESSAGE": "Mitteilung schreiben..",
     "PRIVACYPOLICY_NOTICE": "Ich habe die <a href='/Datenschutzerklärung' target='_blank'>Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
     "SEND_BTN": "Senden"
+  },
+  "FOTTER":{
+    "NOTICE":"Rechtliche Hinweise"
   }
 }

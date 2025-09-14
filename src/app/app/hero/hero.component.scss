@@ -1,4 +1,5 @@
 @use "styles/colors" as *;
+@use "styles/mixin/mixin" as *;
 main {
   width: 100%;
   display: flex;
@@ -95,51 +96,29 @@ main {
   height: 710px;
   padding-top: 105px;
   //background-color: yellow;
+}
 
-  .hero_media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    //background-color: aqua;
-  }
+.hero_media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .hero_socialMedia {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.section {
+  transform: translate(250px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 30px;
+  height: 122px;
+ 
+  img {
+    height: 30px;
     width: 30px;
-    height: 122px;
-    position: relative;
-    left: 250px;
-    img {
-      height: 30px;
-      width: 30px;
-    }
   }
-
-  .social_section {
-    position: relative; /* Für absolutes Positionieren */
-    width: 30px; /* Breite des Icons */
-    height: 30px; /* Höhe des Icons */
-    cursor: pointer;
-  }
-  .social_section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease;
-  }
-  .social_section .original {
-    opacity: 1;
-  }
-  .social_section .hover {
-    opacity: 0;
-  }
-  .social_section:hover .original {
-    opacity: 0;
-  }
-  .social_section:hover .hover {
-    opacity: 1;
+  .section_img {
+    @include icon_toggle();
   }
 }
 
