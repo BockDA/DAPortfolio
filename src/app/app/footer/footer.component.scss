@@ -1,0 +1,32 @@
+@use "styles/colors" as *;
+@use "styles/mixin/mixin" as *;
+main {
+  width: 100%;
+  height: 214px;
+  background-color: $primaryBlue;
+  margin-top: 60px;
+  display: flex;
+  //align-items: center;
+}
+
+.footer_section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 81px 112px 0 112px;
+}
+
+p .copy {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .section_img {
+    @include icon_toggle();
+  }
+}
