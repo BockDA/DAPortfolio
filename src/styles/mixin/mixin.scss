@@ -1,3 +1,5 @@
+/*---------------------Display Flex ------------------------*/
+
 @mixin flex_Box($orientation, $gapPx) {
   display: flex;
   flex-direction: $orientation;
@@ -6,7 +8,7 @@
   gap: $gapPx;
 }
 
-/*-----------------------------------------------------------*/
+/*-----------------Animation Backround img------------------------------------------*/
 
 @mixin background_Animation() {
   .background_Animation {
@@ -65,5 +67,40 @@
     display: block;
     margin: 0;
     text-align: center;
+  }
+}
+
+/*---------------toole IMG---------------------------------------------*/
+
+@mixin icon_toggle() {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  //background-color: yellow;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .icon_start {
+    opacity: 1;
+  }
+  .icon_hover {
+    opacity: 0;
+  }
+
+  &:hover {
+    .icon_start {
+      opacity: 0;
+      cursor: pointer;
+    }
+    .icon_hover {
+      opacity: 1;
+      cursor: pointer;
+    }
   }
 }

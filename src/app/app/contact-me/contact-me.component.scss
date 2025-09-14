@@ -1,4 +1,5 @@
 @use "styles/colors" as *;
+@use "styles/mixin/mixin" as *;
 main {
   display: flex;
   flex-direction: column;
@@ -51,17 +52,12 @@ main {
     flex-direction: column;
     gap: 30px;
     width: 50%;
-
-    //&:hover .img_start{display:none;}
-    //&:hover .img_hover{display: inline-block;}
   }
 
   .contact_Mail,
   .contact_Phone {
     display: flex;
     align-items: center;
-    text-align: center;
-    gap: 40px;
     position: relative;
   }
 
@@ -69,9 +65,7 @@ main {
   .contact_Phone img {
     position: absolute;
     top: 0;
-    left: 0;
-
-    transition: opacity 0.3s ease; /* für Überblendung */
+    left: -10%;
   }
   .img_start {
     opacity: 1;
@@ -240,6 +234,7 @@ input[type="submit"].disabled {
   opacity: 0.6; // ausgegraut darstellen
   cursor: not-allowed; // Mauszeiger sperren
 }
+
 /* Aktiviert (wird animiert sichtbar) */
 input[type="submit"]:not(:disabled) {
   background-color: $mainColor;
@@ -247,4 +242,14 @@ input[type="submit"]:not(:disabled) {
   color: white;
   transform: scale(1.05); // leichter „Pop“
   box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .section_img {
+    @include icon_toggle();
+  }
 }
