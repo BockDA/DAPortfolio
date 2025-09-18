@@ -2,7 +2,11 @@ import { Component, computed, signal } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { MyFunctionsService } from '../../services/my-functions.service';
-import { isGerman, setLanguage, statusLanguage } from '../../../state/language.state';
+import {
+  isGerman,
+  setLanguage,
+  statusLanguage,
+} from '../../state/language.state';
 
 @Component({
   selector: 'app-menue',
@@ -16,8 +20,6 @@ export class MenueComponent {
   setPosMenu(value: string) {
     this.setAktiv.setMenuAktiv(value);
   }
-
- 
 
   statusLanguage = statusLanguage;
   isGerman = isGerman;

@@ -12,11 +12,11 @@ main {
   color: $cremeWhite;
 }
 
-:host ::ng-deep app-logo .logo:first-of-type {
+:host ::ng-deep app-logo .logo img:first-child {
   transition: transform 0.3s ease;
 }
 
-:host ::ng-deep app-logo .logo:first-of-type:hover {
+:host ::ng-deep app-logo .logo img:first-child:hover {
   transform: scaleX(1.2);
 }
 
@@ -112,7 +112,7 @@ main {
   gap: 15px;
   width: 30px;
   height: 122px;
- 
+
   img {
     height: 30px;
     width: 30px;

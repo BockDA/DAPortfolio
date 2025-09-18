@@ -10,6 +10,7 @@
     "ROLE": "FRONTEND-ENTWICKLER",
     "I_AM": "Ich bin",
     "CTA": "Lassen Sie uns reden!"
+   
   },
   "WHYME": {
     "LOCAL1": "Ich bin ",
@@ -129,7 +130,7 @@
   },
   "CONTACT": {
     "HEADLINE": "Kontaktieren Sie mich",
-    "DESCRIPTION": "Ermutigen Sie Interessenten, mit Ihnen Kontakt aufzunehmen und zu beschreiben, für welche Rolle Sie sich interessieren. Zeigen Sie, dass Sie mit Ihrer Arbeit einen Mehrwert für deren Projekte schaffen. Beispiel: Melden Sie sich gerne bei Stellenangeboten oder Gelegenheiten wie: ...",
+    "DESCRIPTION": "Melden Sie sich gerne bei mir, wenn Sie ein Stellenangebot oder eine Gelegenheit haben, bei der ich mein Wissen als Elektronikermeister und Programmierer einbringen kann.Ich interessiere mich besonders für Rollen im Bereich IoT, Embedded Systems, Smart-Home-Technologien und moderne Webentwicklung (Angular, SCSS, Firebase).",
     "EMAIL": "cbock2011@gmail.com",
     "PHONE": "08029-997896",
     "FORMULAR_NAME": "Name",

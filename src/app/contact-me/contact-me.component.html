@@ -53,6 +53,8 @@
         @if(!message.valid && message.touched){
         }
 
+
+
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden">
         <div class="contac_PrivacyPolicy" [attr.aria-checked]="privacyCtrl.value"
             (click)="privacyCtrl.control.setValue(!privacyCtrl.value)">

@@ -49,9 +49,13 @@ main {
     width: 83px;
     height: 56px;
     transform: translate(-50%, -50%);
-    background: url("/assets/icons/menuBack.png") no-repeat center / contain;
+    background: url("/assets/icons/menuBack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     z-index: -1; /* Hintergrund hinter Text */
   }
+
 }
 
 :host ::ng-deep app-logo .logo {
@@ -84,8 +88,10 @@ main {
         width: 37px;
         height: 24px;
         transform: translate(-50%, -50%);
-        background: url("/assets/icons/backAktivLang.png") no-repeat center /
-          contain;
+        background: url("/assets/icons/backAktivLang.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
       }
     }
   }

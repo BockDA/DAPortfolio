@@ -1,7 +1,7 @@
 import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { statusLanguage } from '../state/language.state';
+import { statusLanguage } from './state/language.state';
 
 @Component({
   selector: 'app-root',
