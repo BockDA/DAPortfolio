@@ -14,8 +14,7 @@ export class AppComponent {
 
   constructor(public translate: TranslateService) {
     translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('de'); // Sprach wnn kein wert vorhanden
-
+    translate.setDefaultLang('de'); // Sprachewenn kein wert vorhanden
     effect(() => {
       this.translate.use(statusLanguage());
     });

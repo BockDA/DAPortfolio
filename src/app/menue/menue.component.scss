@@ -55,30 +55,24 @@ main {
     background-size: contain;
     z-index: -1; /* Hintergrund hinter Text */
   }
-
 }
-
 :host ::ng-deep app-logo .logo {
   cursor: pointer;
 }
-
 .language_Icon {
   display: flex;
   gap: 10px;
-
   button {
     border-style: none;
     border-width: 0;
     font-family: "Josefin";
     background-color: $primaryBlue;
     position: relative;
-
     &:hover {
       color: $cremeWhite;
       cursor: pointer;
       padding: 5px;
     }
-
     &.language_aktiv {
       &::before {
         content: "";

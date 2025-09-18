@@ -1,38 +1,38 @@
 {
   "NAV": {
-    "WHY_ME": "Über mich",
-    "SKILLS": "Fähigkeiten",
+    "WHY_ME": "About me",
+    "SKILLS": "Skills",
     "PORTFOLIO": "Portfolio",
-    "CONTACT": "Kontakt"
+    "CONTACT": "Contact"
   },
   "HERO": {
     "NAME": "Christian Bock",
-    "ROLE": "FRONTEND-ENTWICKLER",
-    "I_AM": "Ich bin",
-    "CTA": "Lassen Sie uns reden!"
+    "ROLE": "FRONTEND DEVELOPER",
+    "I_AM": "I am",
+    "CTA": "Let's talk!"
   },
   "WHYME": {
-    "LOCAL1": "Ich bin ",
-    "LOCAL2": "bei München ansässig..|",
-    "DESCRIPTION": "Warum programmieren Sie leidenschaftlich gern? Sie können einige wichtige Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamgeist angeben.Eine lösungsorientierte Denkweise ist immer von Vorteil."
+    "LOCAL1": "I am ",
+    "LOCAL2": "based near Munich..|",
+    "DESCRIPTION": "Why are you passionate about programming? You can mention some key qualities such as analytical thinking, creativity, perseverance, and teamwork. A solution-oriented mindset is always an advantage."
   },
   "MYSKILLS": {
-    "LEARNING": "Ich lerne derzeit",
-    "INFOTEXT": "Ich bin motiviert, meine Fähigkeiten stetig zu erweitern und innovative Lösungen umzusetzen. Dabei halte ich mich kontinuierlich über neue Technologien und aktuelle Trends auf dem Laufenden."
+    "LEARNING": "I am currently learning",
+    "INFOTEXT": "I am motivated to continuously expand my skills and implement innovative solutions. At the same time, I stay up to date with new technologies and current trends."
   },
   "PROJECTE": {
     "P1": {
       "Tab1": {
-        "DESCRIPTION1": "Über das Projekt",
-        "WORKPROCESS1": "Dauer: 2 Monate",
-        "CONTENT1": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag & Drop, weisen Sie Benutzer und Kategorien zu.",
-        "DESCRIPTION2": "Wie ich meine Arbeit organisiert habe",
-        "CONTENT2": "Mein Code ist in klar strukturierte Module zerlegt (UI, Services, Firebase-Anbindung), um Wiederverwendbarkeit zu sichern. Dateien, Variablen und Klassen sind konsistent und sprechend benannt. Die Dokumentation erfolgt direkt im Code über JS Doc-Kommentare zur besseren Verständlichkeit. Codequalität sichere ich durch Prettier und Versionsverwaltung über Git ",
-        "DESCRIPTION3": "Meine Gruppenarbeitserfahrung",
-        "CONTENT3": "Unser Team bestand aus 4 Personen, ich hatte bei dem Projekt die Aufgabe, die Task Komponenten zur erstellen, die Technologien waren natürlich HTML, CSS und JavaScript und da war das lesen uns speichern über Firbase die vorrangige Implementierung. Es war ein sehr gutes Team und haben gut harmoniert."
+        "DESCRIPTION1": "About the project",
+        "WORKPROCESS1": "Duration: 2 months",
+        "CONTENT1": "Task manager inspired by the Kanban system. Create and organize tasks via drag & drop, assign users and categories.",
+        "DESCRIPTION2": "How I organized my work",
+        "CONTENT2": "My code is divided into clearly structured modules (UI, services, Firebase integration) to ensure reusability. Files, variables, and classes are consistently and descriptively named. Documentation is done directly in the code using JS Doc comments for better understanding. I ensure code quality with Prettier and version control with Git.",
+        "DESCRIPTION3": "My teamwork experience",
+        "CONTENT3": "Our team consisted of 4 people. In this project, my task was to create the task components. The technologies were of course HTML, CSS, and JavaScript, with reading and storing data via Firebase being the main implementation. It was a very good team, and we worked together harmoniously."
       },
       "Tab2": {
-        "TECHNOLOGIES": "Technologien",
+        "TECHNOLOGIES": "Technologies",
         "IMGS": [
           "assets/icons/Icon_HTML.png",
           "assets/icons/Icon_Javascript.png",
@@ -44,16 +44,16 @@
     },
     "P2": {
       "Tab1": {
-        "DESCRIPTION1": "Über das Projekt",
-        "WORKPROCESS1": "Dauer: 3 Monate",
-        "CONTENT1": "Erlernen & Anwendung Objektorientierter Programmierung (OOP).",
-        "DESCRIPTION2": "Wie ich meine Arbeit organisiert habe",
-        "CONTENT2": "Mein Code ist in klare Module unterteilt (HTML, CSS, Canvas-Rendering, JS-Logik) für bessere Wartbarkeit, Dateien, Variablen, Funktionen und Klassen sind konsistent und sprechend benannt, Wichtige Funktionen sind mit JSDoc dokumentiert, komplexe Logik erhält kurze Kommentare,Git wird für Versionskontrolle und saubere Commit-Struktur genutzt.",
-        "DESCRIPTION3": "Wichtige Erkenntnisse",
-        "CONTENT3": "Die Arbeit an diesem Projekt hat mir Spaß gemacht, weil ich mein Wissen in HTML, CSS, Canvas und JavaScript vertiefen konnte.Besonders interessant war die Arbeit mit der Canvas-API für Zeichnungen, Animationen und interaktive Elemente."
+        "DESCRIPTION1": "About the project",
+        "WORKPROCESS1": "Duration: 3 months",
+        "CONTENT1": "Learning & applying object-oriented programming (OOP).",
+        "DESCRIPTION2": "How I organized my work",
+        "CONTENT2": "My code is divided into clear modules (HTML, CSS, Canvas rendering, JS logic) for better maintainability. Files, variables, functions, and classes are consistently and descriptively named. Important functions are documented with JSDoc, and complex logic gets short comments. Git is used for version control and clean commit structure.",
+        "DESCRIPTION3": "Key learnings",
+        "CONTENT3": "I enjoyed working on this project because I was able to deepen my knowledge in HTML, CSS, Canvas, and JavaScript. Working with the Canvas API for drawings, animations, and interactive elements was particularly interesting."
       },
       "Tab2": {
-        "TECHNOLOGIES": "Technologien",
+        "TECHNOLOGIES": "Technologies",
         "IMGS": [
           "assets/icons/Icon_HTML.png",
           "assets/icons/Icon_Javascript.png",
@@ -64,16 +64,16 @@
     },
     "P3": {
       "Tab1": {
-        "DESCRIPTION1": "Über das Projekt",
-        "WORKPROCESS1": "Dauer: 1 Woche",
-        "CONTENT1": "Mithilfe von JavaScript habe ich Daten aus einer Pokémon-API abgerufen und als JSON verarbeitet. Die Ergebnisse wurden anschließend dynamisch im Browser dargestellt.",
-        "DESCRIPTION2": "Wie bin ich vorgegangen",
-        "CONTENT2": "Zuerst habe ich die HTML-Struktur erstellt und das Layout mit CSS gestaltet. Anschließend habe ich mit JavaScript die Logik implementiert und Funktionen modular aufgebaut.Zum Schluss habe ich das Abrufen und Verarbeiten von Daten aus Web-APIs integriert, um dynamische Inhalte darzustellen.",
-        "DESCRIPTION3": "Wichtige Erkenntnisse",
-        "CONTENT3": "Die Arbeit an diesem Projekt hat mir Spaß gemacht, weil ich mein Wissen in HTML, CSS und JavaScript vertiefen konnte. Besonders interessant war das Abrufen und Verarbeiten von Daten aus Web-APIs."
+        "DESCRIPTION1": "About the project",
+        "WORKPROCESS1": "Duration: 1 week",
+        "CONTENT1": "With the help of JavaScript, I retrieved data from a Pokémon API and processed it as JSON. The results were then dynamically displayed in the browser.",
+        "DESCRIPTION2": "How I proceeded",
+        "CONTENT2": "First, I created the HTML structure and styled the layout with CSS. Then I implemented the logic with JavaScript and built functions modularly. Finally, I integrated fetching and processing data from web APIs to display dynamic content.",
+        "DESCRIPTION3": "Key learnings",
+        "CONTENT3": "I enjoyed working on this project because I was able to deepen my knowledge in HTML, CSS, and JavaScript. Retrieving and processing data from web APIs was particularly interesting."
       },
       "Tab2": {
-        "TECHNOLOGIES": "Technologien",
+        "TECHNOLOGIES": "Technologies",
         "IMGS": [
           "assets/icons/Icon_HTML.png",
           "assets/icons/Icon_Javascript.png",
@@ -84,16 +84,16 @@
     },
     "P4": {
       "Tab1": {
-        "DESCRIPTION1": "In Arbeit",
+        "DESCRIPTION1": "In progress",
         "WORKPROCESS1": "",
         "CONTENT1": "",
-        "DESCRIPTION2": "In Arbeit",
+        "DESCRIPTION2": "In progress",
         "CONTENT2": "",
-        "DESCRIPTION3": "In Arbeit",
+        "DESCRIPTION3": "In progress",
         "CONTENT3": ""
       },
       "Tab2": {
-        "TECHNOLOGIES": "Technologien",
+        "TECHNOLOGIES": "Technologies",
         "IMGS": [
           "assets/icons/Icon_HTML.png",
           "assets/icons/Icon_Javascript.png",
@@ -105,43 +105,43 @@
     }
   },
   "TEAMPLAYER": {
-    "HEADLINE": "Brauchen Sie einen Teamplayer? Hören Sie, was meine Kollegen über mich sagen",
+    "HEADLINE": "Do you need a team player? Hear what my colleagues say about me",
     "PLAYER": [
       {
         "TPLAYER_NAME": "Eric Braun",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Christian war im Team wirklich eine große Hilfe. Er ist sehr hilfsbereit, immer geduldig und absolut verlässlich. Besonders seine strukturierte Arbeitsweise hat uns oft weitergebracht. Einfach jemand, mit dem die Zusammenarbeit richtig angenehm und produktiv ist.\"",
-        "PROFILLINK": "Linkedin-Profil"
+        "DESCRIPTION": "\"Christian was really a great help to the team. He is very supportive, always patient, and absolutely reliable. His structured way of working has often helped us move forward. Simply someone with whom collaboration is really pleasant and productive.\"",
+        "PROFILLINK": "LinkedIn profile"
       },
       {
         "TPLAYER_NAME": "Anton Flynn",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Christian hat sich als äußerst kompetenter und engagierter Teamkollege erwiesen. Er denkt selbstständig mit, bringt eigene Ideen ein und arbeitet sehr zuverlässig. Besonders wertvoll war seine klare und offene Kommunikation, durch die unsere Zusammenarbeit effektiv und angenehm verlief. An den Gruppengesprächen hat er sich aktiv beteiligt und mit seinem sympathischen und humorvollen Auftreten für eine gute Stimmung im Team gesorgt.\"",
-        "PROFILLINK": "Linkedin-Profil"
+        "DESCRIPTION": "\"Christian proved to be an extremely competent and committed teammate. He thinks independently, contributes his own ideas, and works very reliably. Particularly valuable was his clear and open communication, which made our collaboration effective and enjoyable. He actively participated in group discussions and, with his friendly and humorous demeanor, created a great atmosphere in the team.\"",
+        "PROFILLINK": "LinkedIn profile"
       },
       {
         "TPLAYER_NAME": "Oli P.",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Ich hatte das Vergnügen, mit Christian an einem Webentwicklungsprojekt zu arbeiten. Er überzeugt durch technisches Wissen, klare Struktur und lösungsorientiertes Denken. Besonders seine kommunikative Art und Teamfähigkeit haben das Projekt effizient und erfolgreich gemacht. Sehr empfehlenswert!\"",
-        "PROFILLINK": "Linkedin-Profil"
+        "DESCRIPTION": "\"I had the pleasure of working with Christian on a web development project. He impressed with technical knowledge, clear structure, and solution-oriented thinking. Especially his communicative nature and teamwork skills made the project efficient and successful. Highly recommended!\"",
+        "PROFILLINK": "LinkedIn profile"
       }
     ]
   },
   "CONTACT": {
-    "HEADLINE": "Kontaktieren Sie mich",
-    "DESCRIPTION": "Melden Sie sich gerne bei mir, wenn Sie ein Stellenangebot oder eine Gelegenheit haben, bei der ich mein Wissen als Elektronikermeister und Programmierer einbringen kann.Ich interessiere mich besonders für Rollen im Bereich IoT, Embedded Systems, Smart-Home-Technologien und moderne Webentwicklung (Angular, SCSS, Firebase).",
+    "HEADLINE": "Contact me",
+    "DESCRIPTION": "Feel free to reach out if you have a job offer or an opportunity where I can contribute my knowledge as a master electrician and programmer. I am particularly interested in roles in IoT, embedded systems, smart home technologies, and modern web development (Angular, SCSS, Firebase).",
     "EMAIL": "cbock2011@gmail.com",
     "PHONE": "08029-997896",
     "FORMULAR_NAME": "Name",
     "FORMULAR_EMAIL": "E-Mail",
-    "FORMULAR_MESSAGE": "Mitteilung",
-    "PLACEHOLDER_NAME": "hier denn Namen eingeben..",
-    "PLACEHOLDER_EMAIL": "Mail Adresse eingeben..",
-    "PLACEHOLDER_MESSAGE": "Mitteilung schreiben..",
-    "PRIVACYPOLICY_NOTICE": "Ich habe die <a href='/Datenschutzerklärung' target='_blank'>Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
-    "SEND_BTN": "Senden"
+    "FORMULAR_MESSAGE": "Message",
+    "PLACEHOLDER_NAME": "enter name here..",
+    "PLACEHOLDER_EMAIL": "enter email address..",
+    "PLACEHOLDER_MESSAGE": "write a message..",
+    "PRIVACYPOLICY_NOTICE": "I have read the <a href='/Datenschutzerklärung' target='_blank'>privacy policy</a> and agree to the processing of my data as described.",
+    "SEND_BTN": "Send"
   },
   "FOTTER": {
-    "NOTICE": "Rechtliche Hinweise"
+    "NOTICE": "Legal notice"
   }
 }
