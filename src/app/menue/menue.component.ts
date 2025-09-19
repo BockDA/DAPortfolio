@@ -19,6 +19,7 @@ export class MenueComponent {
 
   setPosMenu(value: string) {
     this.setAktiv.setMenuAktiv(value);
+    
   }
 
   statusLanguage = statusLanguage;
