@@ -3,25 +3,44 @@
     <div>
       <app-logo [dark]="false"></app-logo>
     </div>
-
     <div class="menue_Entries">
       <a class="font_3" href="#why-me" (click)="setPosMenu('why-me')">
-        <p [class.active]="setAktiv.getMenuAktiv() ==='why-me'">{{'NAV.WHY_ME' |translate}}</p>
+        <p [class.active]="setAktiv.getMenuAktiv() === 'why-me'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'why-me' 
+                  ? 'url(assets/icons/backAktivLang.png)' 
+                  : 'none'">
+          {{"NAV.WHY_ME" | translate}}
+        </p>
       </a>
       <a class="font_3" href="#myskills" (click)="setPosMenu('myskills')">
-        <p [class.active]="setAktiv.getMenuAktiv() ==='myskills'">{{'NAV.SKILLS' | translate}}</p>
+        <p [class.active]="setAktiv.getMenuAktiv() === 'myskills'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'myskills' 
+                  ? 'url(assets/icons/backAktivLang.png)' 
+                  : 'none'">
+          {{"NAV.SKILLS" | translate}}
+        </p>
       </a>
       <a class="font_3" href="#myprojects" (click)="setPosMenu('myprojects')">
-        <p [class.active]="setAktiv.getMenuAktiv() === 'myprojects'">{{'NAV.PORTFOLIO' |translate}}</p>
+        <p [class.active]="setAktiv.getMenuAktiv() === 'myprojects'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'myprojects' 
+                  ? 'url(assets/icons/backAktivLang.png)' 
+                  : 'none'">
+          {{"NAV.PORTFOLIO" | translate}}
+        </p>
       </a>
       <a class="font_3" href="#contact" (click)="setPosMenu('contact')">
-        <p [class.active]="setAktiv.getMenuAktiv()==='contact'">{{'NAV.CONTACT' |translate}}</p>
+        <p [class.active]="setAktiv.getMenuAktiv() === 'contact'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'contact' 
+                            ? 'url(assets/icons/backAktivLang.png)' 
+                            : 'none'">
+          {{"NAV.CONTACT" | translate}}
+        </p>
       </a>
     </div>
-
+    
     <div class="language_Icon">
-      <button class="font_9" [class.language_aktiv]="isGerman()" (click)="setLanguage('de')">DE</button>
-      <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="setLanguage ('en')">EN</button>
+      <button class="font_9" [class.language_aktiv]="isGerman()" (click)="setLanguage('de')"
+        [style.backgroundImage]="isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">DE </button>
+
+
+      <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="setLanguage ('en')"
+        [style.backgroundImage]="!isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">EN</button>
     </div>
   </div>
 </main>

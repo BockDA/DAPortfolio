@@ -20,73 +20,57 @@ main {
   margin-left: 114px;
   margin-right: 114px;
 }
+
+:host ::ng-deep app-logo .logo {
+  cursor: pointer;
+}
+
 .menue_Entries {
   width: 677px;
   display: flex;
   justify-content: space-between;
   font-family: "Josefin";
-
   p {
     &:hover {
       color: $cremeWhite;
     }
+    padding: 15px 15px;
   }
 }
-
 .menue_Entries a {
   text-decoration: none;
   color: $mainColor;
-  position: relative;
-  text-decoration: none;
 }
 .active {
-  color: $cremeWhite;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 83px;
-    height: 56px;
-    transform: translate(-50%, -50%);
-    background-image: url("/assets/icons/menuBack.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    z-index: -1; /* Hintergrund hinter Text */
-  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
-:host ::ng-deep app-logo .logo {
-  cursor: pointer;
-}
+
+//-----------------------------------------------//
+
 .language_Icon {
   display: flex;
   gap: 10px;
+
   button {
     border-style: none;
     border-width: 0;
     font-family: "Josefin";
     background-color: $primaryBlue;
-    position: relative;
+    
     &:hover {
-      color: $cremeWhite;
       cursor: pointer;
-      padding: 5px;
+      color: $cremeWhite;
+        }
+    &.language_aktiv:hover {
+      cursor: pointer;
     }
-    &.language_aktiv {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 37px;
-        height: 24px;
-        transform: translate(-50%, -50%);
-        background-image: url("/assets/icons/backAktivLang.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-      }
+    &.backgroundImage {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
   }
 }
+
