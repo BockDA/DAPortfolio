@@ -1,5 +1,7 @@
-/*---------------------Display Flex ------------------------*/
+//imports
+@use "styles/variablen" as *;
 
+/*---------------------Display Flex ------------------------*/
 @mixin flex_Box($orientation, $gapPx) {
   display: flex;
   flex-direction: $orientation;
@@ -73,7 +75,6 @@
 /*---------------toole IMG---------------------------------------------*/
 
 @mixin icon_toggle() {
-  
   position: relative;
   width: 30px;
   height: 30px;
@@ -105,14 +106,22 @@
   }
 }
 
-/*
-  .img_start {
-      opacity: 0;
-      cursor: pointer;
-    }
-    .img_hover {
-      opacity: 1;
-      cursor: pointer;
-    }
+//Mobil
 
-  */
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
