@@ -58,19 +58,23 @@ main {
     border-width: 0;
     font-family: "Josefin";
     background-color: $primaryBlue;
-    
+    padding: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
     &:hover {
       cursor: pointer;
       color: $cremeWhite;
-        }
-    &.language_aktiv:hover {
-      cursor: pointer;
     }
-    &.backgroundImage {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+    &.language_aktiv {
+      color: $cremeWhite;
+      :hover {
+        cursor: pointer;
+      }
     }
+   
+
+    
   }
 }
-
