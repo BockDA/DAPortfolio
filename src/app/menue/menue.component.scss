@@ -1,5 +1,5 @@
 @use "styles/colors" as *;
-
+@use "styles/mixin/mixin" as *;
 main {
   position: sticky;
   top: 0;
@@ -72,5 +72,14 @@ main {
         cursor: pointer;
       }
     }
+  }
+}
+
+//---------------------Responsive--------------------------
+
+@include desktop {
+  .section_heroMenue {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }

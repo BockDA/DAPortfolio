@@ -61,3 +61,13 @@ main {
   width: 307px;
   height: auto;
 }
+
+//---------------------Responsive--------------------------
+
+@include desktop {
+  .myskills_innerSection {
+    justify-content: start;
+    width: auto;
+
+  }
+}

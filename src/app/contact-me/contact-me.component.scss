@@ -222,3 +222,12 @@ input[type="submit"]:not(:disabled) {
   transform: scale(1.05); // leichter „Pop“
   box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
 }
+
+//---------------------Responsive--------------------------
+
+@include desktop {
+  .contac_Introduction {
+    display: flex;
+    justify-content: center;
+  }
+}

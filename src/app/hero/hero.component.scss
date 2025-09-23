@@ -153,16 +153,15 @@ main {
   main {
     margin: 0;
   }
-
-  .hero_Personal {
-  }
   .hero_Name {
     p:first-of-type {
       font-size: 60px;
-      color: green;
     }
     p:last-of-type {
       font-size: 30px;
     }
+  }
+  .hero_media {
+    width: 80%;
   }
 }

@@ -3,7 +3,7 @@
 .player_Cards {
   @include flex_Box(row, 150px);
   font-family: "Josefin";
-   padding: 20px;
+  padding: 20px;
 }
 
 .players_Card_Contents {
@@ -30,3 +30,22 @@
   }
 }
 @include background_Animation();
+
+//---------------------Responsive--------------------------
+
+@include desktop {
+  .player_Cards {
+    gap: 110px;
+    font-family: "Josefin";
+    padding: 20px;
+  }
+
+  .player_Cards {
+    padding: 0;
+  }
+
+  .players_Card_Contents {
+    //background-color: greenyellow;
+    width: 150px;
+  }
+}
