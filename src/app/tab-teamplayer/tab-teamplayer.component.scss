@@ -26,7 +26,12 @@
     &::-webkit-scrollbar-thumb {
       background: $primaryBlue;
       border-radius: 6px;
+      cursor: pointer;
     }
+  }
+
+  .link_linedln {
+    z-index: 1;
   }
 }
 @include background_Animation();
@@ -47,5 +52,31 @@
   .players_Card_Contents {
     //background-color: greenyellow;
     width: 150px;
+  }
+}
+
+//---------------------TABLET--------------------------
+
+@include tablet {
+  .player_Cards {
+    gap: 30px !important;
+  }
+
+  .players_Card_Contents {
+    width: 60%;
+    height: auto;
+  }
+
+  .section {
+    position: relative;
+    width: 250px; // Kartengröße
+    height: 320px; // Kartengröße
+
+    .img_1,
+    .img_2 {
+      width: auto !important;
+      height: auto !important;
+      object-fit: cover;
+    }
   }
 }

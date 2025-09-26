@@ -83,3 +83,11 @@ main {
     margin-right: 50px;
   }
 }
+
+//---------------------TABLET--------------------------
+
+@include tablet {
+  .app_logo {
+    display: none;
+  }
+}

@@ -87,7 +87,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 710px;
+  //height: 710px;
   padding-top: 90px;
 
   .hero_Name {
@@ -172,11 +172,12 @@ main {
   main {
     display: flex;
     flex-direction: column;
+    //height: 600px;
   }
 
   .hero_Name {
     font-size: 48px;
-    background-color: yellow;
+    //background-color: yellow;
   }
 
   .app_Logo {
@@ -195,27 +196,42 @@ main {
 
   .hero_bg_section {
     position: absolute;
-    top: 100px;
-    left: 80px;
+    top: 170px;
+    left: 100px;
     width: 100%;
     height: auto;
   }
 
   .hero_bg_section img:first-child {
     position: absolute;
-    left: 50%; /* Mitte horizontal */
-    transform: translate(-50%, -50%) rotate(200deg);
-    width: 80%; /* skaliert wie dein zweites Bild */
-    height: auto; /* behält Seitenverhältnis */
-    max-width: 100%; /* nie breiter als Container */
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(205deg);
+    width: 50%;
   }
 
   .img_Hero {
     position: absolute;
-    //object-fit: cover;
-    clip-path: circle(55% at 38% 50%);
-    width: 60% !important;
+    clip-path: circle(56% at 52% 51%);
+    width: 50% !important;
     height: auto !important;
-    margin-top: 160px !important;
+    margin-top: 110px !important;
+  }
+
+  .section_img {
+    display: none;
+  }
+
+  .hero_Personal {
+    padding: 0;
+  }
+
+  .hero_media {
+    height: 0px;
+  }
+
+  .hero_Arrow {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
