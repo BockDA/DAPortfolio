@@ -133,3 +133,20 @@ main {
   }
 }
 
+//---------------------TABLET--------------------------
+
+@include tablet {
+  .tab_Project_Preview img {
+    width: 80% !important;
+    height: auto !important;
+  }
+
+  .points{
+    font-size: 22px;
+  }
+
+  .description{
+    font-size: 18px;
+  }
+
+}

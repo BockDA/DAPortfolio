@@ -3,37 +3,37 @@
     <div class="first_paragraph">
       <div class="first_paragraph_Section">
         <img src="assets/icons/circle_full.png">
-        <p class="font_7">
+        <p class="font_7 points">
           {{'PROJECTE.P'+activeTab+'.Tab1.DESCRIPTION1'|translate}}
         </p>
         <p class="font_8">{{'PROJECTE.P'+activeTab+'.Tab1.WORKPROCESS1'|translate}}</p>
       </div>
       <div class="first_paragraph_Text">
-        <p class="font_9">{{'PROJECTE.P'+activeTab+'.Tab1.CONTENT1'|translate}}</p>
+        <p class="font_9 description">{{'PROJECTE.P'+activeTab+'.Tab1.CONTENT1'|translate}}</p>
       </div>
     </div>
 
     <div class="first_paragraph">
       <div class="first_paragraph_Section">
         <img src="assets/icons/circle_full.png">
-        <p class="font_7">
+        <p class="font_7 points">
           {{'PROJECTE.P'+activeTab+'.Tab1.DESCRIPTION2'|translate}}
         </p>
       </div>
       <div class="first_paragraph_Text">
-        <p class="font_9">{{'PROJECTE.P'+activeTab+'.Tab1.CONTENT2'|translate}}</p>
+        <p class="font_9 description">{{'PROJECTE.P'+activeTab+'.Tab1.CONTENT2'|translate}}</p>
       </div>
     </div>
 
     <div class="first_paragraph">
       <div class="first_paragraph_Section">
         <img src="assets/icons/circle_full.png">
-        <p class="font_7">
+        <p class="font_7 points">
           {{'PROJECTE.P'+activeTab+'.Tab1.DESCRIPTION3'|translate}}
         </p>
       </div>
       <div class="first_paragraph_Text">
-        <p class="font_9">{{'PROJECTE.P'+activeTab+'.Tab1.CONTENT3'|translate}}</p>
+        <p class="font_9 description">{{'PROJECTE.P'+activeTab+'.Tab1.CONTENT3'|translate}}</p>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
       <img *ngFor="let img of('PROJECTE.P'+activeTab+'.Tab2.IMGS'|translate)" [src]="img">
     </div>
     <div class="tab_Project_Preview">
-      <img [src]="'PROJECTE.P'+activeTab+'.Tab2.SCREEN' |translate">
+      <img  [src]="'PROJECTE.P'+activeTab+'.Tab2.SCREEN' |translate">
     </div>
     <div class="tab_Buttons">
       <a class="font_9" href="">Live Test</a>

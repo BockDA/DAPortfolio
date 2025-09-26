@@ -59,8 +59,16 @@ main {
 //---------------------Responsive--------------------------
 
 @include desktop {
-  .myprojects_tabs_header {
+  .myprojects_tabs_header button {
     margin-left: 15px;
-    font-size: 16px;
+    font-size: 24px !important;
+  }
+}
+
+//---------------------TABLET--------------------------
+
+@include tablet {
+  .myprojects_tabs_header {
+    margin-left: 0px;
   }
 }

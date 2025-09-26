@@ -68,10 +68,24 @@ main {
   .myskills_innerSection {
     justify-content: start;
     width: auto;
-    margin-left:20px ;
-
+    margin-left: 20px;
   }
 }
 
+//---------------------TABLET--------------------------
 
+@include tablet {
+ 
 
+  .myskills_grid_container {
+    margin-right: 60px;
+  }
+
+  .myskills_innerSection {
+    width: 50%;
+  }
+
+  .background_Animation {
+    //width: 50%;
+  }
+}
