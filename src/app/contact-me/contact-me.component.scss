@@ -19,7 +19,6 @@ main {
   gap: 30px;
 }
 
-
 .contac_Headline {
   font-family: "Anta";
 }
@@ -71,7 +70,7 @@ main {
 .contac_Formular_Section {
   display: flex;
   flex-direction: column;
-  //width: 911px;
+  width: 911px;
   color: $primaryBlue;
 
   label {
