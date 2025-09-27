@@ -4,7 +4,7 @@
 main {
   display: flex;
   width: 100%;
-  height: auto;
+  //height: auto;
   padding-top: 120px;
 }
 
@@ -75,17 +75,19 @@ main {
 //---------------------TABLET--------------------------
 
 @include tablet {
- 
+  .font_5 {
+    font-size: 48px;
+  }
+
+  main {
+    padding-top: 100px;
+  }
 
   .myskills_grid_container {
     margin-right: 60px;
   }
 
   .myskills_innerSection {
-    width: 50%;
-  }
-
-  .background_Animation {
-    //width: 50%;
+    width: 30%;
   }
 }

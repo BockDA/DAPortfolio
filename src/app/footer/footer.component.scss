@@ -42,3 +42,15 @@ p .copy {
     @include icon_toggle();
   }
 }
+
+
+
+//---------------------TABLET--------------------------
+
+@include tablet {
+
+  main{
+      margin-top: 0px;
+  }
+ 
+  }

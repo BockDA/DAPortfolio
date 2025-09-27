@@ -16,12 +16,9 @@ main {
   display: flex;
   flex-direction: row;
   align-items: start;
+  gap: 30px;
 }
 
-.hero_ArrowUp {
-  position: absolute;
-  right: 230px;
-}
 
 .contac_Headline {
   font-family: "Anta";
@@ -229,6 +226,14 @@ input[type="submit"]:not(:disabled) {
 //---------------------TABLET--------------------------
 
 @include tablet {
+  .font_12 {
+    font-size: 48px;
+  }
+
+  main {
+    padding-bottom: 0px;
+  }
+
   .contac_Introduction {
     margin: 60px 20px 60px 20px !important;
     width: auto !important;
@@ -238,9 +243,8 @@ input[type="submit"]:not(:disabled) {
     width: 94% !important;
   }
 
-
   .hero_ArrowUp {
-  position: absolute;
-  right: 160px;
-}
+    position: absolute;
+    right: 160px;
+  }
 }

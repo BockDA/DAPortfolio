@@ -8,7 +8,7 @@ main {
   gap: 30px;
   color: $cremeWhite;
   background-color: $mainColor;
-  padding-top: 150px;
+ padding-top: 150px;
   margin-bottom: 60px;
 }
 
@@ -68,6 +68,12 @@ main {
 //---------------------TABLET--------------------------
 
 @include tablet {
+  main {
+    padding-top: 100px;
+  }
+  .font_5 {
+    font-size: 48px;
+  }
   .myprojects_tabs_header {
     margin-left: 0px;
   }

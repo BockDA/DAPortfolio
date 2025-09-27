@@ -87,7 +87,18 @@ main {
 //---------------------TABLET--------------------------
 
 @include tablet {
+  .font_3 {
+    font-size: 20px !important;
+  }
+
   .app_logo {
     display: none;
+  }
+  .menue_Entries {
+    width: 100%;
+    display: flex;
+    justify-content:start;
+  
+    padding: 0px 0px !important;
   }
 }

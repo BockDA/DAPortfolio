@@ -65,10 +65,23 @@ main {
 //---------------------Responsive--------------------------
 
 @include desktop {
-  
- .whyme_innerSection {
-   margin-left: 0px;
-   }
+  .font_5 {
+    font-size: 48px;
+  }
+
+  .whyme_innerSection {
+    margin-left: 0px;
+  }
 }
 
+//---------------------TABLET--------------------------
 
+@include tablet {
+  .font_5 {
+    font-size: 48px;
+  }
+.font_10{
+  font-size: 24px;
+}
+
+}

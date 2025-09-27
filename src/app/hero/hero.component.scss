@@ -172,13 +172,12 @@ main {
   main {
     display: flex;
     flex-direction: column;
-    //height: 600px;
-  }
+    gap:0px;
+    }
 
   .hero_Name {
     font-size: 48px;
-    //background-color: yellow;
-  }
+    }
 
   .app_Logo {
     position: absolute;
