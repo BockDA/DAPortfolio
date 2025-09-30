@@ -33,11 +33,11 @@ main {
   .img_Hero {
     grid-area: 1 / 1;
     z-index: 0;
-    //background-color: aqua;
     width: auto;
     height: 683px;
     margin-top: 30px;
     margin-left: 20px;
+    //background-color: aqua;
   }
 }
 
@@ -147,6 +147,10 @@ main {
   }
 }
 
+.menue_mobil {
+  display: none;
+}
+
 //---------------------Responsive--------------------------
 
 @include desktop {
@@ -172,12 +176,12 @@ main {
   main {
     display: flex;
     flex-direction: column;
-    gap:0px;
-    }
+    gap: 0px;
+  }
 
   .hero_Name {
     font-size: 48px;
-    }
+  }
 
   .app_Logo {
     position: absolute;
@@ -232,5 +236,62 @@ main {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+//---------------------MOBIL--------------------------
+
+@include mobile {
+  //burger-Menue
+
+  #menyAvPaa {
+    display: none;
+  }
+
+  #menyAvPaa:checked ~ .hero_section .img_Hero {
+    display: none;
+  }
+
+  :host ::ng-deep #menyAvPaa:checked ~ .hero_section app-menue .menue_Entries {
+    flex-direction: column;
+  }
+
+  #menyAvPaa:checked ~ .hero_section .menue_mobil {
+    display: flex;
+    position: absolute;
+    top: 360px;
+    left: 200px;
+  }
+
+  #burger {
+    position: absolute;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #burger > div {
+    height: 2px;
+    background-color: $cremeWhite;
+    transition: 0.5s;
+    z-index: 999;
+  }
+
+  // X Wird gezeichnet
+  #menyAvPaa:checked ~ .menue #burger > div {
+    background-color: $cremeWhite;
+  }
+  #menyAvPaa:checked ~ .menue #burger > div:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+  }
+  #menyAvPaa:checked ~ .menue #burger > div:nth-child(2) {
+    opacity: 0;
+  }
+  #menyAvPaa:checked ~ .menue #burger > div:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
   }
 }
