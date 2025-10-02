@@ -194,7 +194,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    pointer-events: none;
+    //pointer-events: none;
+  }
+
+  .hero_section.no-hover:hover .hero_bg_section .original {
+    opacity: 1 !important; /* bleibt sichtbar */
+  }
+  .hero_section.no-hover:hover .hero_bg_section .hover {
+    opacity: 0 !important; /* bleibt unsichtbar */
   }
 
   .hero_bg_section {
@@ -252,15 +259,23 @@ main {
     display: none;
   }
 
-  :host ::ng-deep #menyAvPaa:checked ~ .hero_section app-menue .menue_Entries {
-    flex-direction: column;
+  :host ::ng-deep #menyAvPaa:checked ~ .hero_section app-menue {
+    .section_heroMenue {
+      flex-direction: column;
+      gap: 20px;
+      background-color: none;
+    }
+    .menue_Entries {
+      flex-direction: column;
+    }
   }
 
   #menyAvPaa:checked ~ .hero_section .menue_mobil {
     display: flex;
     position: absolute;
-    top: 360px;
-    left: 200px;
+    top: 350px;
+    left: 240px;
+    z-index: 999;
   }
 
   #burger {
@@ -278,7 +293,6 @@ main {
     height: 2px;
     background-color: $cremeWhite;
     transition: 0.5s;
-    z-index: 999;
   }
 
   // X Wird gezeichnet
