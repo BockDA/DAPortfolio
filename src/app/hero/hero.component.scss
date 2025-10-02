@@ -6,9 +6,14 @@ main {
   align-items: center;
   justify-content: center;
   gap: 70px;
-  margin-left: 114px;
+  //margin-left: 114px;
   margin-top: 41px;
   color: $cremeWhite;
+  height: 100%;
+}
+
+#menyAvPaa {
+  display: none;
 }
 
 :host ::ng-deep app-logo .logo img:first-child {
@@ -87,7 +92,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  //height: 710px;
+  height: 710px;
   padding-top: 90px;
 
   .hero_Name {
@@ -176,7 +181,7 @@ main {
   main {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    //height: 100vh;
   }
 
   .hero_Name {
@@ -190,13 +195,6 @@ main {
     margin: 10px; /* Abstand vom Rand */
   }
 
-  .hero_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    //pointer-events: none;
-  }
-
   .hero_section.no-hover:hover .hero_bg_section .original {
     opacity: 1 !important; /* bleibt sichtbar */
   }
@@ -206,25 +204,30 @@ main {
 
   .hero_bg_section {
     position: absolute;
-    top: 170px;
-    left: 100px;
+    left: 20%;
     width: 100%;
     height: auto;
+    margin-top: 10px;
+
+    .original {
+      width: 50%;
+      height: auto;
+      transform: rotate(45deg);
+    }
   }
 
-  .hero_bg_section img:first-child {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(205deg);
-    width: 50%;
+  .hover {
+    display: none;
   }
 
   .img_Hero {
     position: absolute;
+    left: 25%;
     clip-path: circle(56% at 52% 51%);
     width: 50% !important;
     height: auto !important;
-    margin-top: 110px !important;
+    margin-top: 40px !important;
+    margin-left: 0px !important;
   }
 
   .section_img {
@@ -236,7 +239,8 @@ main {
   }
 
   .hero_media {
-    height: 0px;
+    display: none;
+    //height: 0px;
   }
 
   .hero_Arrow {
@@ -249,12 +253,6 @@ main {
 //---------------------MOBIL--------------------------
 
 @include mobile {
-  //burger-Menue
-
-  #menyAvPaa {
-    display: none;
-  }
-
   #menyAvPaa:checked ~ .hero_section .img_Hero {
     display: none;
   }
