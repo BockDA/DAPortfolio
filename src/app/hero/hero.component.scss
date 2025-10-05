@@ -181,7 +181,7 @@ main {
   main {
     display: flex;
     flex-direction: column;
-    //height: 100vh;
+    height: auto;
   }
 
   .hero_Name {
@@ -218,6 +218,7 @@ main {
 
   .hover {
     display: none;
+    height: 0px;
   }
 
   .img_Hero {
@@ -240,7 +241,7 @@ main {
 
   .hero_media {
     display: none;
-    //height: 0px;
+    height: 0px;
   }
 
   .hero_Arrow {
@@ -305,5 +306,17 @@ main {
   }
   #menyAvPaa:checked ~ .menue #burger > div:nth-child(3) {
     transform: translateY(-15px) rotate(-45deg);
+  }
+
+  main {
+    height: auto;
+  }
+
+  .hero_section {
+    height: auto !important;
+  }
+
+  .font_1 {
+    font-size: 48px;
   }
 }
