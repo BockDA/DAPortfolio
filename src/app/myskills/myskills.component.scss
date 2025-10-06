@@ -57,6 +57,10 @@ main {
   height: 54px;
 }
 
+.bgskills_mobil {
+  display: none;
+}
+
 .myskills_Infotext {
   width: 307px;
   height: auto;
@@ -95,14 +99,39 @@ main {
 //---------------------Mobil--------------------------
 
 @include mobile {
+  main {
+    height: 100%;
+  }
+
   .myskills_innerSection {
     flex-direction: column !important;
     width: 100%;
   }
-  .background_Animation {
-    display: none;
+
+  .section {
+    pointer-events: none;
+
+    .img_1 {
+      display: none;
+    }
   }
-  .myskills_Info_img {
-    display: flex !important;
+
+  .infotext_mobil {
+    color: $primaryBlue;
+    margin-bottom: 20px !important;
+  }
+
+  .mobil_block {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .myskills_Infotext {
+    margin-right: 40px !important;
+  }
+
+  .bgskills_mobil {
   }
 }
