@@ -13,6 +13,7 @@ main {
 .whyme_Section {
   font-family: "Josefin";
   width: 100%;
+  background-color: green;
 }
 
 .whyme_Titel {
@@ -80,8 +81,28 @@ main {
   .font_5 {
     font-size: 48px;
   }
-.font_10{
-  font-size: 24px;
+  .font_10 {
+    font-size: 24px;
+  }
 }
 
+@include mobile {
+  .font_5 {
+    font-size: 32px;
+  }
+}
+
+//---------------------MOBIL--------------------------
+
+@include mobile {
+  .whyme_Titel {
+    margin: 0;
+  }
+  .whyme_innerSection {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .whyme_Description a {
+    display: none;
+  }
 }

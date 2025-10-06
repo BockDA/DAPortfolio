@@ -8,7 +8,7 @@ main {
   gap: 30px;
   color: $cremeWhite;
   background-color: $mainColor;
- padding-top: 150px;
+  padding-top: 150px;
   margin-bottom: 60px;
 }
 
@@ -77,4 +77,12 @@ main {
   .myprojects_tabs_header {
     margin-left: 0px;
   }
+}
+
+//---------------------MOBIL--------------------------
+
+@include mobile {
+
+
+
 }

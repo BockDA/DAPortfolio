@@ -4,7 +4,7 @@
 main {
   display: flex;
   width: 100%;
-  //height: auto;
+  height: auto;
   padding-top: 120px;
 }
 
@@ -89,5 +89,20 @@ main {
 
   .myskills_innerSection {
     width: 30%;
+  }
+}
+
+//---------------------Mobil--------------------------
+
+@include mobile {
+  .myskills_innerSection {
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .background_Animation {
+    display: none;
+  }
+  .myskills_Info_img {
+    display: flex !important;
   }
 }
