@@ -2,6 +2,7 @@
 @use "styles/mixin/mixin" as *;
 main {
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +20,7 @@ main {
 }
 
 .myprojects_Titel {
-  color: $primaryBlue; // #89bcd9;
+  color: $primaryBlue;
   display: flex;
   justify-content: center;
 }
@@ -82,7 +83,19 @@ main {
 //---------------------MOBIL--------------------------
 
 @include mobile {
+  .font_5 {
+    font-size: 32px;
+  }
 
+  .myprojects_tabs_header {
+    padding-top: 20px;
+    button.font_7 {
+      font-size: 18px !important;
+    }
+  }
 
-
+  .myprojects_tabs_header button {
+    width: auto;
+    height: 60px;
+  }
 }
