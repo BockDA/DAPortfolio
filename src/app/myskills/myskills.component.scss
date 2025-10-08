@@ -4,7 +4,6 @@
 main {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding-top: 20px;
   height: 580px;
   //background-color:orange;
@@ -13,10 +12,6 @@ main {
 .myskills_Titel {
   color: $primaryBlue;
   @include flex_Box(column, 0px);
-
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
 }
 
 .myskills_Section {
@@ -51,7 +46,6 @@ main {
 
 @include background_Animation();
 .section_content_block {
-  //background-color: yellow;
   color: $cremeWhite;
 }
 
@@ -73,7 +67,7 @@ main {
 }
 
 .myskills_Infotext {
-  width: 307px;
+  width: 207px;
   height: auto;
 }
 
@@ -114,10 +108,11 @@ main {
     font-size: 32px;
   }
 
+  .font_8 {
+    font-size: 16px;
+  }
   main {
-    // width: 100%;
-
-    margin-top: 20px;
+    width: auto;
   }
 
   .myskills_grid_container {
@@ -129,7 +124,6 @@ main {
   .myskills_grid-item {
     img {
       width: 41px;
-      //height: 45px;
     }
     p {
       display: none;
@@ -137,9 +131,6 @@ main {
   }
   .myskills_innerSection {
     flex-direction: column !important;
-    width: 100%;
-    margin: 0;
-    padding: 0;
   }
 
   .section {
@@ -153,38 +144,20 @@ main {
     }
   }
 
-  .section_content {
-    position: static !important;
-    top: auto;
-    left: auto;
-  }
-
-  .section_content_block {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
   .infotext_mobil {
     color: $primaryBlue;
     margin-bottom: 20px !important;
   }
 
   .mobil_img {
-    display: flex;
     flex-direction: row-reverse;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .myskills_Infotext {
-    margin-right: 40px !important;
+    gap: 40px;
   }
 
   .bgskills_mobil {
     display: flex !important;
     position: absolute;
     top: 50px;
-    left: 330px;
+    left: 220px;
   }
 }
