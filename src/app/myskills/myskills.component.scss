@@ -16,6 +16,7 @@ main {
 
 .myskills_Section {
   font-family: "Josefin";
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,6 +130,12 @@ main {
       display: none;
     }
   }
+
+  .myskills_Section {
+    background-color: yellowgreen;
+    width: 500px;
+  }
+
   .myskills_innerSection {
     flex-direction: column !important;
   }
@@ -142,6 +149,10 @@ main {
     .img_2 {
       display: none;
     }
+  }
+
+  .section_contents {
+    background-color: yellow;
   }
 
   .infotext_mobil {

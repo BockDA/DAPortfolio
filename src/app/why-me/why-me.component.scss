@@ -6,8 +6,6 @@ main {
   color: $cremeWhite;
   width: 100%;
   height: auto;
-  //padding-bottom: 60px;
-  //background-color: yellow;
 }
 
 .whyme_Section {
@@ -109,6 +107,7 @@ main {
     flex-direction: column;
     margin-top: 30px;
     margin-left: 0;
+    pointer-events: none;
   }
 
   .whyme_locale {
