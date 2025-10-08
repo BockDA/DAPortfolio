@@ -95,13 +95,31 @@ main {
 //---------------------MOBIL--------------------------
 
 @include mobile {
+  .font_10 {
+    font-size: 16px;
+  }
+  .font_8 {
+    font-size: 16px;
+  }
+
   .whyme_Titel {
     margin: 0;
   }
   .whyme_innerSection {
     flex-direction: column;
     margin-top: 30px;
+    margin-left: 0;
   }
+
+  .whyme_locale {
+    margin: 0;
+
+    img {
+      width: 32px;
+      height: 40px;
+    }
+  }
+
   .whyme_Description a {
     display: none;
   }
