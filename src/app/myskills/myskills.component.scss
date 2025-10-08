@@ -3,25 +3,31 @@
 
 main {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: auto;
-  padding-top: 120px;
-}
-
-.myskills_Section {
-  font-family: "Josefin";
-  width: 100%;
-}
-
-.myskills_innerSection {
-  @include flex_Box(row, 150px);
-  margin-top: 70px;
+  padding-top: 20px;
+  height: 580px;
+  //background-color:orange;
 }
 
 .myskills_Titel {
   color: $primaryBlue;
+  @include flex_Box(column, 0px);
+
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+}
+
+.myskills_Section {
+  font-family: "Josefin";
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.myskills_innerSection {
+  @include flex_Box(row, 150px);
 }
 
 .myskills_grid_container {
@@ -89,7 +95,7 @@ main {
   }
 
   main {
-    padding-top: 100px;
+    margin-top: 100px;
   }
 
   .myskills_grid_container {
@@ -109,9 +115,9 @@ main {
   }
 
   main {
-    width: 100%;
-    height: 100%;
-    padding: 30px;
+    // width: 100%;
+
+    margin-top: 20px;
   }
 
   .myskills_grid_container {
@@ -123,7 +129,7 @@ main {
   .myskills_grid-item {
     img {
       width: 41px;
-      height: 45px;
+      //height: 45px;
     }
     p {
       display: none;
