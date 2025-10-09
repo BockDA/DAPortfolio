@@ -39,7 +39,8 @@
           "assets/icons/Icon_CSS.png",
           "assets/icons/Icon_Firebase.png"
         ],
-        "SCREEN": "assets/screenshots/joinDA.png"
+        "SCREEN": "assets/screenshots/joinDA.png",
+        "MOBILTECHNO": " : HTML, JavaScript, CSS, Firebase"
       }
     },
     "P2": {
@@ -59,7 +60,8 @@
           "assets/icons/Icon_Javascript.png",
           "assets/icons/Icon_Git.png"
         ],
-        "SCREEN": "assets/screenshots/elpolloloco.png"
+        "SCREEN": "assets/screenshots/elpolloloco.png",
+        "MOBILTECHNO": " : HTML, JavaScript, Git"
       }
     },
     "P3": {
@@ -79,7 +81,8 @@
           "assets/icons/Icon_Javascript.png",
           "assets/icons/Icon_Api.png"
         ],
-        "SCREEN": "assets/screenshots/pokemonDa.png"
+        "SCREEN": "assets/screenshots/pokemonDa.png",
+        "MOBILTECHNO": " : HTML, JavaScript, Api"
       }
     },
     "P4": {
@@ -100,7 +103,8 @@
           "assets/icons/Icon_Git.png",
           "assets/icons/Icon_Api.png"
         ],
-        "SCREEN": "assets/screenshots/DABubbleinWork.png"
+        "SCREEN": "assets/screenshots/DABubbleinWork.png",
+        "MOBILTECHNO": " : HTML, JavaScript, Git, Api"
       }
     }
   },

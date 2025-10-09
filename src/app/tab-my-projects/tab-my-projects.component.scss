@@ -42,6 +42,10 @@ main {
   padding-bottom: 20px;
   background-color: green;
 
+  .mobil_tech {
+    display: none;
+  }
+
   .tab_Technologies {
     display: flex;
     justify-content: center;
@@ -180,10 +184,24 @@ main {
     align-items: flex-start;
   }
 
-  .tab_Technologies {
-    //display: none !important;
+  .mobil_tech {
+    display: flex !important;
   }
+
   .tab_Icons {
     display: none !important;
+  }
+
+  main {
+    position: relative;
+    margin-bottom: 90px;
+  }
+
+  .tab_Buttons {
+    //display: none !important;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%); /* mittig unten */
   }
 }
