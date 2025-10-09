@@ -43,12 +43,13 @@
   <div class="tab_secondSection">
     <div class="tab_Technologies font_9">
       <p>{{'PROJECTE.P'+activeTab+'.Tab2.TECHNOLOGIES'|translate}}</p>
+      <p class="mobil_techno">{{'PROJECTE.P'+activeTab+'.Tab2.MOBILTECHNO'|translate}}</p>
     </div>
     <div class="tab_Icons">
       <img *ngFor="let img of('PROJECTE.P'+activeTab+'.Tab2.IMGS'|translate)" [src]="img">
     </div>
     <div class="tab_Project_Preview">
-      <img  [src]="'PROJECTE.P'+activeTab+'.Tab2.SCREEN' |translate">
+      <img [src]="'PROJECTE.P'+activeTab+'.Tab2.SCREEN' |translate">
     </div>
     <div class="tab_Buttons">
       <a class="font_9" href="">Live Test</a>

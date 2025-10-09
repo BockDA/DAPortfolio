@@ -10,9 +10,6 @@ main {
 }
 
 .tab_firstSection {
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
   margin-left: 130px;
   padding-top: 40px;
   width: 50%;
@@ -43,7 +40,7 @@ main {
   padding-top: 40px;
   width: 50%;
   padding-bottom: 20px;
-  //  background-color: green;
+  background-color: green;
 
   .tab_Technologies {
     display: flex;
@@ -148,5 +145,45 @@ main {
 
   .description {
     font-size: 18px;
+  }
+}
+
+//---------------------MOBIL--------------------------
+
+@include mobile {
+  .font_9 {
+    font-size: 16px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .tab_firstSection {
+    width: 100%;
+  }
+
+  .tab_secondSection {
+    width: 100%;
+  }
+
+  .first_paragraph_Section {
+    margin-left: 15px;
+  }
+
+  .first_paragraph_Text {
+    margin-left: 15px !important;
+    margin-right: 30px;
+  }
+
+  .first_paragraph {
+    align-items: flex-start;
+  }
+
+  .tab_Technologies {
+    //display: none !important;
+  }
+  .tab_Icons {
+    display: none !important;
   }
 }
