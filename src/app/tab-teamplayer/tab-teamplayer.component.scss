@@ -37,16 +37,12 @@
 @include background_Animation();
 
 //---------------------Responsive--------------------------
+//....................Desktop..........................
 
 @include desktop {
   .player_Cards {
-    gap: 110px;
     font-family: "Josefin";
     padding: 20px;
-  }
-
-  .player_Cards {
-    padding: 0;
   }
 
   .players_Card_Contents {
@@ -58,10 +54,6 @@
 //---------------------TABLET--------------------------
 
 @include tablet {
-  .player_Cards {
-    gap: 30px !important;
-  }
-
   .players_Card_Contents {
     width: 60%;
     height: auto;
@@ -88,23 +80,19 @@
     display: none !important;
   }
 
+  .img_1 {
+     //display: none;
+  }
+
+  .section {
+    height: 400px;
+  }
+
   .player_Cards {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start !important;
-    gap: 30px;
-    overflow-x: auto !important;
-    scroll-snap-type: x mandatory;
-    padding: 30px;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .background_Animation {
-    width: 100%;
-    cursor: pointer;
-    gap: 100px;
-    flex: 0 0 400px; // jede Card bekommt eine feste Breite
-    scroll-snap-align: start; // beim Scrollen einrasten
-    position: relative;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 }

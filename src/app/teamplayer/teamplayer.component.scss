@@ -7,7 +7,7 @@ main {
   align-items: center;
   font-family: "Josefin";
   color: $primaryBlue; // #f8f5ec;
-  width: 100%;
+  //width: 100%;
   height: auto;
   padding-bottom: 60px;
   //background-color: blue;
@@ -42,6 +42,12 @@ main {
 //-------------------Mobil-----------------------------------
 
 @include mobile {
+  main {
+    display: block;
+    align-items: flex-start;
+    
+  }
+
   .tPlayer_Headline {
     flex-direction: column;
     gap: 10px;
@@ -55,5 +61,8 @@ main {
       color: white;
     }
   }
-  
+
+  .tPlayer_Section {
+    // background-color: green;
+  }
 }
