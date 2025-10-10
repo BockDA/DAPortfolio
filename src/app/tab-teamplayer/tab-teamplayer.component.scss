@@ -80,3 +80,31 @@
     }
   }
 }
+
+//-------------------Mobil-----------------------------------
+
+@include mobile {
+  .img_2 {
+    display: none !important;
+  }
+
+  .player_Cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start !important;
+    gap: 30px;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    padding: 30px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .background_Animation {
+    width: 100%;
+    cursor: pointer;
+    gap: 100px;
+    flex: 0 0 400px; // jede Card bekommt eine feste Breite
+    scroll-snap-align: start; // beim Scrollen einrasten
+    position: relative;
+  }
+}

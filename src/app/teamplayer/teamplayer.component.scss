@@ -20,13 +20,11 @@ main {
 }
 
 .tPlayer_Section {
-  display: grid;
+  //display: grid;
 }
 
 .tPlayer_Card {
-  width: 100%;
-  //display: flex;
-  //flex-direction: row;
+  width: auto; //100%;
 }
 
 //---------------------Responsive--------------------------
@@ -57,4 +55,5 @@ main {
       color: white;
     }
   }
+  
 }
