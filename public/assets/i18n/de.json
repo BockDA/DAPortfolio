@@ -110,7 +110,8 @@
     }
   },
   "TEAMPLAYER": {
-    "HEADLINE": "Brauchen Sie einen Teamplayer? Hören Sie, was meine Kollegen über mich sagen",
+    "HEADLINE1":"Brauchen Sie einen Teamplayer?",
+    "HEADLINE2":"Hören Sie, was meine Kollegen über mich sagen",
     "PLAYER": [
       {
         "TPLAYER_NAME": "Eric Braun",

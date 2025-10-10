@@ -109,7 +109,8 @@
     }
   },
   "TEAMPLAYER": {
-    "HEADLINE": "Do you need a team player? Hear what my colleagues say about me",
+    "HEADLINE1":"Do you need a team player?",
+    "HEADLINE2":"Hear what my colleagues say about me",
     "PLAYER": [
       {
         "TPLAYER_NAME": "Eric Braun",

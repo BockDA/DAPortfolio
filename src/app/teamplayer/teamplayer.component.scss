@@ -14,6 +14,7 @@ main {
 }
 
 .tPlayer_Headline {
+  display: flex;
   margin-top: 40px;
   margin-bottom: 60px;
 }
@@ -37,5 +38,23 @@ main {
 
   .tPlayer_Headline {
     text-align: center;
+  }
+}
+
+//-------------------Mobil-----------------------------------
+
+@include mobile {
+  .tPlayer_Headline {
+    flex-direction: column;
+    gap: 10px;
+
+    p:first-child {
+      font-size: 32px;
+      color: $primaryBlue;
+    }
+    p:last-child {
+      font-size: 18px;
+      color: white;
+    }
   }
 }
