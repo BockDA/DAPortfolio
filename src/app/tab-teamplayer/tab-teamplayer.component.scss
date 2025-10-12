@@ -36,6 +36,10 @@
 }
 @include background_Animation();
 
+.img_3 {
+  display: none;
+}
+
 //---------------------Responsive--------------------------
 //....................Desktop..........................
 
@@ -81,9 +85,14 @@
   }
 
   .img_1 {
-    //display: none;
+    display: none;
   }
 
+  .img_3 {
+    display: flex;
+    width: 330px;
+    height: 450px;
+  }
   .section {
     height: 400px;
   }
@@ -92,9 +101,19 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    gap: 100px;
     overflow-x: auto;
     overflow-y: hidden;
     padding-left: 80px;
     padding-right: 80px;
+    &::-webkit-scrollbar {
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 20px;
+      background: $primaryBlue;
+      border-radius: 6px;
+      cursor: pointer;
+    }
   }
 }
