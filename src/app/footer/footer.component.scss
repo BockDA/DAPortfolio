@@ -5,7 +5,7 @@ main {
   width: 100%;
   background-color: $primaryBlue;
   position: relative;
-  }
+}
 
 .footer_section {
   font-family: "Josefin";
@@ -21,6 +21,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer_sec_left a {
+  text-decoration: none;
+  color: $cremeWhite;
+  
 }
 
 .footer_sec_right {
