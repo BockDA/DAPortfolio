@@ -2,7 +2,7 @@
 @use "styles/mixin/mixin" as *;
 main {
   position: sticky;
-  top: 0;
+  top: 0px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -105,7 +105,7 @@ main {
   //---------------------MOBIL--------------------------
   @include mobile {
     main {
-      position: relative;
+      //position: sticky; // relative
       top: 50px;
     }
   }
