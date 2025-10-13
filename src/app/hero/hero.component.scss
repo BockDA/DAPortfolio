@@ -7,11 +7,11 @@ main {
   align-items: center;
   justify-content: center;
   gap: 70px;
-  //margin-left: 114px;
-  margin-top: 41px;
-  color: $cremeWhite;
-  height: 100vh;
-  background-color: green;
+   color: $cremeWhite;
+ }
+
+.img_backround_mobil {
+  display: none;
 }
 
 #menyAvPaa {
@@ -30,21 +30,27 @@ main {
   display: grid;
   width: 100%;
   height: 515px;
-  //background-color: orchid;
-  .img_Background {
+    .img_Background {
     grid-area: 1 / 1;
-    margin-top: 66px;
+    margin-top: 0px;
     rotate: -45deg;
+  }
+
+  .hero_picture {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    top: 0px;
+    left: 50px;
   }
 
   .img_Hero {
     grid-area: 1 / 1;
     z-index: 0;
     width: auto;
-    height: 683px;
-    margin-top: 30px;
-    margin-left: 20px;
-    //background-color: aqua;
+    height: 500px;
+    margin-left: 40px;
   }
 }
 
@@ -203,19 +209,6 @@ main {
     transform: rotate(45deg);
   }
 
-  .img_Hero {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30vw !important; // feste Breite
-    max-width: 300px;
-    min-width: 250px;
-    height: auto !important;
-    clip-path: circle(56% at 52% 51%);
-    margin-top: 40px !important;
-    margin-left: 0 !important;
-  }
-
   .hero_Personal {
     padding-top: 0;
     margin-top: 0;
@@ -245,9 +238,41 @@ main {
 
   .app_Logo {
     margin-left: 0;
-    position: fixed !important;
+    position: absolute !important;
     top: 15px;
     left: 22px !important;
+  }
+
+  .hero_bg_section img {
+    display: none !important;
+  }
+
+  .hero_picture {
+    left: 0px !important;
+    top: 40px !important;
+  }
+
+  .img_backround_mobil {
+    display: block;
+    position: absolute;
+    left: 50%; // 260px;
+    top: 0px;
+    transform: translateX(-50%) rotate(0deg);
+    max-width: 390px;
+    min-width: 250px;
+    height: auto;
+  }
+
+  .img_Hero {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw !important; // feste Breite
+    max-width: 390px;
+    min-width: 250px;
+    height: auto !important;
+    clip-path: circle(56% at 52% 51%);
+    margin-left: 0px !important;
   }
 }
 
