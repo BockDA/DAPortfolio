@@ -5,21 +5,18 @@ main {
   font-family: "Anta";
   color: $cremeWhite;
   width: 100%;
-  height: auto;
 }
 
 .whyme_Section {
   font-family: "Josefin";
   width: 100%;
-  background-color: green;
 }
 
 .whyme_Titel {
-  color: $primaryBlue; // #89bcd9;
+  color: $primaryBlue;
   display: flex;
   justify-content: center;
   margin-top: 115px;
-  //  background-color: red;
 }
 
 .whyme_innerSection {
@@ -30,7 +27,6 @@ main {
   justify-content: center;
   gap: -40px;
   margin-top: 40px;
-  //background-color: aqua;
 }
 
 .whyme_Description {
@@ -40,7 +36,6 @@ main {
   gap: 30px;
   width: 379px;
   margin-top: 30px;
-  // height: 176px;
   :hover {
     cursor: pointer;
     background-color: $lightGrey;
@@ -52,7 +47,6 @@ main {
   display: flex;
   gap: 30px;
   width: 45%;
-  //background-color: yellow;
 }
 
 .font_10 {

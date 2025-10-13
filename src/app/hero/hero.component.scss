@@ -7,8 +7,8 @@ main {
   align-items: center;
   justify-content: center;
   gap: 70px;
-   color: $cremeWhite;
- }
+  color: $cremeWhite;
+}
 
 .img_backround_mobil {
   display: none;
@@ -30,7 +30,7 @@ main {
   display: grid;
   width: 100%;
   height: 515px;
-    .img_Background {
+  .img_Background {
     grid-area: 1 / 1;
     margin-top: 0px;
     rotate: -45deg;

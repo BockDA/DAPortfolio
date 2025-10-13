@@ -6,12 +6,10 @@ main {
   flex-direction: column;
   align-items: center;
   font-family: "Josefin";
-  color: $primaryBlue; // #f8f5ec;
-  //width: 100%;
+  color: $primaryBlue; 
   height: auto;
   padding-bottom: 60px;
-  background-color: blue;
-}
+ }
 
 .tPlayer_Headline {
   display: flex;
@@ -19,22 +17,14 @@ main {
   margin-bottom: 60px;
 }
 
-.tPlayer_Section {
-  //display: grid;
-}
-
 .tPlayer_Card {
-  width: auto; //100%;
+  width: auto; 
 }
 
 //---------------------Responsive--------------------------
 
 @include desktop {
-  main {
-    //background-color: red;
-  }
-
-  .tPlayer_Headline {
+    .tPlayer_Headline {
     text-align: center;
   }
 }

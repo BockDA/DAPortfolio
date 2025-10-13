@@ -4,8 +4,6 @@
   @include flex_Box(row, 150px);
   font-family: "Josefin";
   padding: 20px;
-  background-color: yellow;
-  //width: 100%;
 }
 
 .players_Card_Contents {
@@ -37,7 +35,6 @@
   }
 }
 @include background_Animation();
-
 .img_3 {
   display: none;
 }
@@ -52,7 +49,6 @@
   }
 
   .players_Card_Contents {
-    //background-color: greenyellow;
     width: 150px;
   }
 }
@@ -67,8 +63,8 @@
 
   .section {
     position: relative;
-    width: 250px; // Kartengröße
-    height: 320px; // Kartengröße
+    width: 250px; 
+    height: 320px;
 
     .img_1,
     .img_2 {

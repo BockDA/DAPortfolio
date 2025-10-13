@@ -4,14 +4,14 @@
 main {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
   width: 100%;
-  height: 580px;
+  margin-bottom: 50px;
 }
 
 .myskills_Titel {
   color: $primaryBlue;
   @include flex_Box(column, 0px);
+  margin-top: 30px;
 }
 
 .myskills_Section {
@@ -19,6 +19,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 234px;
+  margin: 0px;
 }
 
 .myskills_grid_container {
@@ -45,6 +46,12 @@ main {
   gap: 20px;
 }
 
+.section {
+  margin-top: 100px;
+  height: 200px;
+  width: auto;
+}
+
 .section_contents {
   width: 100%;
 }
@@ -69,7 +76,6 @@ main {
 
 .myskills_Infotext {
   width: 207px;
-  height: auto;
 }
 
 //---------------------Responsive--------------------------
@@ -98,6 +104,12 @@ main {
 //---------------------Mobil--------------------------
 
 @include mobile {
+  main {
+    padding: 0;
+    margin: 0;
+    height: 620px;
+  }
+
   .font_5 {
     font-size: 32px;
   }
@@ -128,6 +140,7 @@ main {
   }
 
   .section {
+    margin-top: 0px !important;
     pointer-events: none;
     .img_1 {
       display: none;

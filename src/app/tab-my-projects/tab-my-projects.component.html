@@ -53,8 +53,10 @@
       <img [src]="'PROJECTE.P'+activeTab+'.Tab2.SCREEN' |translate">
     </div>
     <div class="tab_Buttons">
-      <a class="font_9" href="">Live Test</a>
-      <a class="font_9" href="">GitHub</a>
+      <a class="font_9" [href]="('PROJECTE.P' + activeTab + '.Tab2.LINKPROJECT') | translate" target="_blank">Live
+        Test</a>
+      <a class="font_9" [href]="('PROJECTE.P' + activeTab + '.Tab2.LINKGIT') | translate" target="_blank">GitHub</a>
+
     </div>
   </div>
 </main>

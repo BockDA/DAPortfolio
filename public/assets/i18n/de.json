@@ -10,7 +10,6 @@
     "ROLE": "FRONTEND-ENTWICKLER",
     "I_AM": "Ich bin",
     "CTA": "Lassen Sie uns reden!"
-   
   },
   "WHYME": {
     "LOCAL1": "Ich bin ",
@@ -41,7 +40,9 @@
           "assets/icons/Icon_Firebase.png"
         ],
         "SCREEN": "assets/screenshots/joinDA.png",
-        "MOBILTECHNO": " : HTML, JavaScript, CSS, Firebase"
+        "MOBILTECHNO": " : HTML, JavaScript, CSS, Firebase",
+        "LINKPROJECT": "https://www.join-431.developerakademie.net/Join-App-25-04/index.html",
+        "LINKGIT": "https://github.com/BockDA/DA-Join.git"
       }
     },
     "P2": {
@@ -62,7 +63,9 @@
           "assets/icons/Icon_Git.png"
         ],
         "SCREEN": "assets/screenshots/elpolloloco.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git,"
+        "MOBILTECHNO": " : HTML, JavaScript, Git,",
+        "LINKPROJECT": "https://www.christian-bock.developerakademie.net/Projekte/ElPolloLoco/index.html",
+        "LINKGIT": "https://github.com/BockDA/DA_ElPolloLoco.git"
       }
     },
     "P3": {
@@ -83,7 +86,9 @@
           "assets/icons/Icon_Api.png"
         ],
         "SCREEN": "assets/screenshots/pokemonDa.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Api"
+        "MOBILTECHNO": " : HTML, JavaScript, Api",
+        "LINKPROJECT": "https://christian-bock.developerakademie.net/Projekte/Pokedex/index.html",
+        "LINKGIT": "https://github.com/BockDA/DA-Pokedex.git"
       }
     },
     "P4": {
@@ -105,13 +110,15 @@
           "assets/icons/Icon_Api.png"
         ],
         "SCREEN": "assets/screenshots/DABubbleinWork.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git, Api"
+        "MOBILTECHNO": " : HTML, JavaScript, Git, Api",
+        "LINKPROJECT": "",
+        "LINKGIT": ""
       }
     }
   },
   "TEAMPLAYER": {
-    "HEADLINE1":"Brauchen Sie einen Teamplayer?",
-    "HEADLINE2":"Hören Sie, was meine Kollegen über mich sagen",
+    "HEADLINE1": "Brauchen Sie einen Teamplayer?",
+    "HEADLINE2": "Hören Sie, was meine Kollegen über mich sagen",
     "PLAYER": [
       {
         "TPLAYER_NAME": "Eric Braun",
@@ -147,7 +154,7 @@
     "PRIVACYPOLICY_NOTICE": "Ich habe die <a href='/Datenschutzerklärung' target='_blank'>Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
     "SEND_BTN": "Senden"
   },
-  "FOTTER":{
-    "NOTICE":"Rechtliche Hinweise"
+  "FOTTER": {
+    "NOTICE": "Rechtliche Hinweise"
   }
 }

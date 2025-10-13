@@ -1,6 +1,6 @@
 {
   "NAV": {
-    "WHY_ME": "About me",
+    "WHY_ME": "About Me",
     "SKILLS": "Skills",
     "PORTFOLIO": "Portfolio",
     "CONTACT": "Contact"
@@ -13,12 +13,12 @@
   },
   "WHYME": {
     "LOCAL1": "I am ",
-    "LOCAL2": "based near Munich..|",
-    "DESCRIPTION": "Why are you passionate about programming? You can mention some key qualities such as analytical thinking, creativity, perseverance, and teamwork. A solution-oriented mindset is always an advantage."
+    "LOCAL2": "based near Munich.",
+    "DESCRIPTION": "Why are you passionate about programming? You can mention some key qualities such as analytical thinking, creativity, perseverance, and team spirit. A solution-oriented mindset is always an advantage."
   },
   "MYSKILLS": {
     "LEARNING": "I am currently learning",
-    "INFOTEXT": "I am motivated to continuously expand my skills and implement innovative solutions. At the same time, I stay up to date with new technologies and current trends."
+    "INFOTEXT": "I am motivated to continuously expand my skills and implement innovative solutions. I keep myself up to date with new technologies and current trends."
   },
   "PROJECTE": {
     "P1": {
@@ -27,9 +27,9 @@
         "WORKPROCESS1": "Duration: 2 months",
         "CONTENT1": "Task manager inspired by the Kanban system. Create and organize tasks via drag & drop, assign users and categories.",
         "DESCRIPTION2": "How I organized my work",
-        "CONTENT2": "My code is divided into clearly structured modules (UI, services, Firebase integration) to ensure reusability. Files, variables, and classes are consistently and descriptively named. Documentation is done directly in the code using JS Doc comments for better understanding. I ensure code quality with Prettier and version control with Git.",
-        "DESCRIPTION3": "My teamwork experience",
-        "CONTENT3": "Our team consisted of 4 people. In this project, my task was to create the task components. The technologies were of course HTML, CSS, and JavaScript, with reading and storing data via Firebase being the main implementation. It was a very good team, and we worked together harmoniously."
+        "CONTENT2": "My code is divided into clearly structured modules (UI, services, Firebase integration) to ensure reusability. Files, variables and classes are named consistently and descriptively. Documentation is done directly in the code using JS Doc comments for better understanding. Code quality is ensured through Prettier and version control via Git.",
+        "DESCRIPTION3": "My experience with teamwork",
+        "CONTENT3": "Our team consisted of 4 people. My task in this project was to create the task components. The technologies used were, of course, HTML, CSS and JavaScript, and reading and saving data via Firebase was the main implementation. It was a very good team and we worked together smoothly."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologies",
@@ -40,18 +40,20 @@
           "assets/icons/Icon_Firebase.png"
         ],
         "SCREEN": "assets/screenshots/joinDA.png",
-        "MOBILTECHNO": " : HTML, JavaScript, CSS, Firebase"
+        "MOBILTECHNO": " : HTML, JavaScript, CSS, Firebase",
+        "LINKPROJECT": "https://www.join-431.developerakademie.net/Join-App-25-04/index.html",
+        "LINKGIT": "https://github.com/BockDA/DA-Join.git"
       }
     },
     "P2": {
       "Tab1": {
         "DESCRIPTION1": "About the project",
         "WORKPROCESS1": "Duration: 3 months",
-        "CONTENT1": "Learning & applying object-oriented programming (OOP).",
+        "CONTENT1": "Learning & applying Object-Oriented Programming (OOP).",
         "DESCRIPTION2": "How I organized my work",
-        "CONTENT2": "My code is divided into clear modules (HTML, CSS, Canvas rendering, JS logic) for better maintainability. Files, variables, functions, and classes are consistently and descriptively named. Important functions are documented with JSDoc, and complex logic gets short comments. Git is used for version control and clean commit structure.",
+        "CONTENT2": "My code is divided into clear modules (HTML, CSS, Canvas rendering, JS logic) for better maintainability. Files, variables, functions and classes are named consistently and descriptively. Important functions are documented with JSDoc. Complex logic gets short comments. Git is used for version control and clean commit structure.",
         "DESCRIPTION3": "Key learnings",
-        "CONTENT3": "I enjoyed working on this project because I was able to deepen my knowledge in HTML, CSS, Canvas, and JavaScript. Working with the Canvas API for drawings, animations, and interactive elements was particularly interesting."
+        "CONTENT3": "I really enjoyed working on this project because I was able to deepen my knowledge in HTML, CSS, Canvas, and JavaScript. Working with the Canvas API for drawings, animations, and interactive elements was particularly interesting."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologies",
@@ -61,18 +63,20 @@
           "assets/icons/Icon_Git.png"
         ],
         "SCREEN": "assets/screenshots/elpolloloco.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git"
+        "MOBILTECHNO": " : HTML, JavaScript, Git",
+        "LINKPROJECT": "https://www.christian-bock.developerakademie.net/Projekte/ElPolloLoco/index.html",
+        "LINKGIT": "https://github.com/BockDA/DA_ElPolloLoco.git"
       }
     },
     "P3": {
       "Tab1": {
         "DESCRIPTION1": "About the project",
         "WORKPROCESS1": "Duration: 1 week",
-        "CONTENT1": "With the help of JavaScript, I retrieved data from a Pokémon API and processed it as JSON. The results were then dynamically displayed in the browser.",
-        "DESCRIPTION2": "How I proceeded",
-        "CONTENT2": "First, I created the HTML structure and styled the layout with CSS. Then I implemented the logic with JavaScript and built functions modularly. Finally, I integrated fetching and processing data from web APIs to display dynamic content.",
+        "CONTENT1": "Using JavaScript, I fetched data from a Pokémon API and processed it as JSON. The results were then displayed dynamically in the browser.",
+        "DESCRIPTION2": "My approach",
+        "CONTENT2": "First, I created the HTML structure and styled the layout with CSS. Then, I implemented the logic using JavaScript and built the functions in a modular way. Finally, I integrated fetching and processing of data from web APIs to display dynamic content.",
         "DESCRIPTION3": "Key learnings",
-        "CONTENT3": "I enjoyed working on this project because I was able to deepen my knowledge in HTML, CSS, and JavaScript. Retrieving and processing data from web APIs was particularly interesting."
+        "CONTENT3": "I really enjoyed working on this project because I was able to deepen my knowledge of HTML, CSS, and JavaScript. Fetching and processing data from web APIs was particularly interesting."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologies",
@@ -82,7 +86,9 @@
           "assets/icons/Icon_Api.png"
         ],
         "SCREEN": "assets/screenshots/pokemonDa.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Api"
+        "MOBILTECHNO": " : HTML, JavaScript, API",
+        "LINKPROJECT": "https://christian-bock.developerakademie.net/Projekte/Pokedex/index.html",
+        "LINKGIT": "https://github.com/BockDA/DA-Pokedex.git"
       }
     },
     "P4": {
@@ -104,49 +110,51 @@
           "assets/icons/Icon_Api.png"
         ],
         "SCREEN": "assets/screenshots/DABubbleinWork.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git, Api"
+        "MOBILTECHNO": " : HTML, JavaScript, Git, API",
+        "LINKPROJECT": "",
+        "LINKGIT": ""
       }
     }
   },
   "TEAMPLAYER": {
-    "HEADLINE1":"Do you need a team player?",
-    "HEADLINE2":"Hear what my colleagues say about me",
+    "HEADLINE1": "Looking for a team player?",
+    "HEADLINE2": "Here’s what my colleagues say about me",
     "PLAYER": [
       {
         "TPLAYER_NAME": "Eric Braun",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Christian was really a great help to the team. He is very supportive, always patient, and absolutely reliable. His structured way of working has often helped us move forward. Simply someone with whom collaboration is really pleasant and productive.\"",
+        "DESCRIPTION": "\"Christian was a great help in the team. He is very supportive, always patient, and absolutely reliable. His structured way of working often helped us move forward. Simply someone who makes collaboration pleasant and productive.\"",
         "PROFILLINK": "LinkedIn profile"
       },
       {
         "TPLAYER_NAME": "Anton Flynn",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Christian proved to be an extremely competent and committed teammate. He thinks independently, contributes his own ideas, and works very reliably. Particularly valuable was his clear and open communication, which made our collaboration effective and enjoyable. He actively participated in group discussions and, with his friendly and humorous demeanor, created a great atmosphere in the team.\"",
+        "DESCRIPTION": "\"Christian has proven to be an extremely competent and committed team member. He thinks independently, brings in his own ideas, and works very reliably. His clear and open communication was particularly valuable, making our collaboration effective and enjoyable. He actively participated in group discussions and contributed to a great team atmosphere with his friendly and humorous personality.\"",
         "PROFILLINK": "LinkedIn profile"
       },
       {
         "TPLAYER_NAME": "Oli P.",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"I had the pleasure of working with Christian on a web development project. He impressed with technical knowledge, clear structure, and solution-oriented thinking. Especially his communicative nature and teamwork skills made the project efficient and successful. Highly recommended!\"",
+        "DESCRIPTION": "\"I had the pleasure of working with Christian on a web development project. He impressed with his technical knowledge, clear structure, and solution-oriented mindset. His communication skills and team spirit made the project efficient and successful. Highly recommended!\"",
         "PROFILLINK": "LinkedIn profile"
       }
     ]
   },
   "CONTACT": {
-    "HEADLINE": "Contact me",
-    "DESCRIPTION": "Feel free to reach out if you have a job offer or an opportunity where I can contribute my knowledge as a master electrician and programmer. I am particularly interested in roles in IoT, embedded systems, smart home technologies, and modern web development (Angular, SCSS, Firebase).",
+    "HEADLINE": "Contact Me",
+    "DESCRIPTION": "Feel free to contact me if you have a job offer or an opportunity where I can contribute my expertise as a master electrician and programmer. I am particularly interested in roles in IoT, embedded systems, smart home technologies, and modern web development (Angular, SCSS, Firebase).",
     "EMAIL": "cbock2011@gmail.com",
     "PHONE": "08029-997896",
     "FORMULAR_NAME": "Name",
-    "FORMULAR_EMAIL": "E-Mail",
+    "FORMULAR_EMAIL": "Email",
     "FORMULAR_MESSAGE": "Message",
-    "PLACEHOLDER_NAME": "enter name here..",
-    "PLACEHOLDER_EMAIL": "enter email address..",
-    "PLACEHOLDER_MESSAGE": "write a message..",
+    "PLACEHOLDER_NAME": "Enter your name...",
+    "PLACEHOLDER_EMAIL": "Enter your email address...",
+    "PLACEHOLDER_MESSAGE": "Write your message...",
     "PRIVACYPOLICY_NOTICE": "I have read the <a href='/Datenschutzerklärung' target='_blank'>privacy policy</a> and agree to the processing of my data as described.",
     "SEND_BTN": "Send"
   },
   "FOTTER": {
-    "NOTICE": "Legal notice"
+    "NOTICE": "Legal Notice"
   }
 }
