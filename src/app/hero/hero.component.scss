@@ -191,16 +191,14 @@ main {
     margin: 0;
   }
 
-  
-
   .hero_bg_section > img.original {
     position: absolute;
     left: 32%; // 260px;
     top: -40px;
     transform: translateX(-50%);
     width: 40vw !important;
-    max-width: 300px;
-    min-width: 180px;
+    max-width: 390px;
+    min-width: 250px;
     height: auto;
     transform: rotate(45deg);
   }
@@ -211,7 +209,7 @@ main {
     transform: translateX(-50%);
     width: 30vw !important; // feste Breite
     max-width: 300px;
-    min-width: 150px;
+    min-width: 250px;
     height: auto !important;
     clip-path: circle(56% at 52% 51%);
     margin-top: 40px !important;
@@ -223,9 +221,8 @@ main {
     margin-top: 0;
   }
 
-  .hero_media {
+  .section {
     display: none;
-    height: 0px;
   }
 
   .hero_Arrow {
@@ -247,10 +244,10 @@ main {
   }
 
   .app_Logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    margin: 10px; // Abstand vom Rand
+    margin-left: 0;
+    position: fixed !important;
+    top: 15px;
+    left: 22px !important;
   }
 }
 
@@ -323,10 +320,22 @@ main {
   }
 
   main {
-      height: 650px;
+    height: 800px;
   }
 
+  //.hero_bg_section > img.original {
+  //  left: 30% !important;
+  // }
+
   .hero_bg_section > img.original {
-    left: 25% !important;
+    left: 10%; // 260px;
+    max-width: 300px;
+    min-width: 320px;
+    height: 420px;
+  }
+
+  .img_Hero {
+    max-width: 300px;
+    min-width: 300px;
   }
 }
