@@ -28,8 +28,8 @@ main {
 
 .hero_section {
   display: grid;
-  width: auto;
-  height: 710px;
+  width: 100%;
+  height: 515px;
   //background-color: orchid;
   .img_Background {
     grid-area: 1 / 1;
@@ -182,42 +182,36 @@ main {
 @include tablet {
   main {
     flex-direction: column;
+    height: 800px;
   }
 
   .hero_Name {
     font-size: 48px;
+    padding: 0;
+    margin: 0;
   }
 
-  .hero_section {
-    // position: relative !important;
-    width: 100%;
-
-    background-color: orange;
-  }
-
-  .hero_bg_section {
-    height: 200px;
-    width: 100%;
-    background-color: yellow;
-  }
+  
 
   .hero_bg_section > img.original {
-    border-style: solid;
     position: absolute;
     left: 32%; // 260px;
-    top:-40px;
+    top: -40px;
     transform: translateX(-50%);
-    width: 400px;
+    width: 40vw !important;
+    max-width: 300px;
+    min-width: 180px;
     height: auto;
     transform: rotate(45deg);
   }
 
   .img_Hero {
-    border-style: solid;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px !important; // feste Breite
+    width: 30vw !important; // feste Breite
+    max-width: 300px;
+    min-width: 150px;
     height: auto !important;
     clip-path: circle(56% at 52% 51%);
     margin-top: 40px !important;
@@ -225,7 +219,8 @@ main {
   }
 
   .hero_Personal {
-    padding: 0;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .hero_media {
@@ -328,29 +323,10 @@ main {
   }
 
   main {
-    margin: 0px;
-    height: 760px;
+      height: 650px;
   }
 
-  .hero_section .img_Hero {
-    width: 100px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 250px !important; // etwas kleiner für sehr kleine Screens
-    height: auto !important;
-    z-index: 0;
-  }
-
-  .hero_bg_section {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    .original {
-      width: 300px !important; // etwas kleiner auf sehr kleinen Bildschirmen
-      height: auto !important;
-      transform: rotate(45deg);
-    }
+  .hero_bg_section > img.original {
+    left: 25% !important;
   }
 }

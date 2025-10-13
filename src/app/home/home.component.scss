@@ -1,13 +1,9 @@
 @use "styles/mixin/mixin" as *;
 
-
 //---------------------MOBIL--------------------------
 
-
-
-
 @include mobile {
-    .app_menu {
+  .app_menu {
     display: none;
   }
 }
