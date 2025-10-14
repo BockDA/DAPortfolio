@@ -2,16 +2,22 @@
     <app-menue></app-menue>
 
     <section>
-        <p class="legal_notice_header font_1">{{'Test' | translate}}</p>
+        <p class="legal_notice_header font_1">{{'LEGALNOTICE.HEADER' | translate}}</p>
         <div class="imprint">
             <ul>
-                <li>{{'Name' | translate}}</li>
-                <li>{{'strasse' | translate}}</li>
-                <li>{{'ort' | translate}}</li>
+                <li>{{'LEGALNOTICE.NAME' | translate}}</li>
+                <li>{{'LEGALNOTICE.STREET' | translate}}</li>
+                <li>{{'LEGALNOTICE.TOWN' | translate}}</li>
             </ul>
         </div>
+        <div class="section_Email">
+            <p>{{''|translate}}</p>
+            <p>Email: {{'LEGALNOTICE.EMAIL' |translate}}</p>
+        </div>
+
         <div class="section_1">
-            <p>Email: {{'' |translate}}</p>
+            <p [innerHTML]="'LEGALNOTICE.SECTION_1.TEXT_1' | translate"></p>
+            <p>{{'LEGALNOTICE.SECTION_1.TEXT_2'|translate}}</p>
         </div>
 
         <div class="section_2">
