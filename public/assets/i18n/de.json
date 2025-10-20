@@ -9,27 +9,27 @@
     "NAME": "Christian Bock",
     "ROLE": "FRONTEND-ENTWICKLER",
     "I_AM": "Ich bin",
-    "CTA": "Lassen Sie uns reden!"
+    "CTA": "Lass uns reden!"
   },
   "WHYME": {
     "LOCAL1": "Ich bin ",
-    "LOCAL2": "bei München ansässig..|",
-    "DESCRIPTION": "Warum programmieren Sie leidenschaftlich gern? Sie können einige wichtige Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamgeist angeben.Eine lösungsorientierte Denkweise ist immer von Vorteil."
+    "LOCAL2": "in der Nähe von München ansässig.",
+    "DESCRIPTION": "Warum begeisterst du dich für Programmierung? Du kannst hier wichtige Eigenschaften erwähnen – etwa analytisches Denken, Kreativität, Ausdauer und Teamgeist. Eine lösungsorientierte Denkweise ist dabei immer von Vorteil."
   },
   "MYSKILLS": {
     "LEARNING": "Ich lerne derzeit",
-    "INFOTEXT": "Ich bin motiviert, meine Fähigkeiten stetig zu erweitern und innovative Lösungen umzusetzen. Dabei halte ich mich kontinuierlich über neue Technologien und aktuelle Trends auf dem Laufenden."
+    "INFOTEXT": "Ich bin motiviert, meine Fähigkeiten stetig zu erweitern und innovative Lösungen umzusetzen. Dabei halte ich mich über neue Technologien und aktuelle Trends auf dem Laufenden."
   },
   "PROJECTE": {
     "P1": {
       "Tab1": {
         "DESCRIPTION1": "Über das Projekt",
         "WORKPROCESS1": "Dauer: 2 Monate",
-        "CONTENT1": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag & Drop, weisen Sie Benutzer und Kategorien zu.",
+        "CONTENT1": "Task-Manager, inspiriert vom Kanban-System. Aufgaben per Drag & Drop erstellen und organisieren, Benutzer und Kategorien zuweisen.",
         "DESCRIPTION2": "Wie ich meine Arbeit organisiert habe",
-        "CONTENT2": "Mein Code ist in klar strukturierte Module zerlegt (UI, Services, Firebase-Anbindung), um Wiederverwendbarkeit zu sichern. Dateien, Variablen und Klassen sind konsistent und sprechend benannt. Die Dokumentation erfolgt direkt im Code über JS Doc-Kommentare zur besseren Verständlichkeit. Codequalität sichere ich durch Prettier und Versionsverwaltung über Git ",
-        "DESCRIPTION3": "Meine Gruppenarbeitserfahrung",
-        "CONTENT3": "Unser Team bestand aus 4 Personen, ich hatte bei dem Projekt die Aufgabe, die Task Komponenten zur erstellen, die Technologien waren natürlich HTML, CSS und JavaScript und da war das lesen uns speichern über Firbase die vorrangige Implementierung. Es war ein sehr gutes Team und haben gut harmoniert."
+        "CONTENT2": "Mein Code ist in klar strukturierte Module unterteilt (UI, Services, Firebase-Integration), um Wiederverwendbarkeit zu gewährleisten. Dateien, Variablen und Klassen sind einheitlich und aussagekräftig benannt. Die Dokumentation erfolgt direkt im Code über JSDoc-Kommentare. Codequalität wird durch Prettier und Versionskontrolle über Git sichergestellt.",
+        "DESCRIPTION3": "Meine Erfahrung mit Teamarbeit",
+        "CONTENT3": "Unser Team bestand aus 4 Personen. Meine Aufgabe in diesem Projekt war die Erstellung der Task-Komponenten. Eingesetzte Technologien waren HTML, CSS und JavaScript; das Lesen und Speichern der Daten über Firebase war der zentrale Bestandteil. Es war ein großartiges Team und die Zusammenarbeit verlief reibungslos."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologien",
@@ -49,11 +49,11 @@
       "Tab1": {
         "DESCRIPTION1": "Über das Projekt",
         "WORKPROCESS1": "Dauer: 3 Monate",
-        "CONTENT1": "Erlernen & Anwendung Objektorientierter Programmierung (OOP).",
+        "CONTENT1": "Erlernen und Anwenden objektorientierter Programmierung (OOP).",
         "DESCRIPTION2": "Wie ich meine Arbeit organisiert habe",
-        "CONTENT2": "Mein Code ist in klare Module unterteilt (HTML, CSS, Canvas-Rendering, JS-Logik) für bessere Wartbarkeit, Dateien, Variablen, Funktionen und Klassen sind konsistent und sprechend benannt, Wichtige Funktionen sind mit JSDoc dokumentiert, komplexe Logik erhält kurze Kommentare,Git wird für Versionskontrolle und saubere Commit-Struktur genutzt.",
-        "DESCRIPTION3": "Wichtige Erkenntnisse",
-        "CONTENT3": "Die Arbeit an diesem Projekt hat mir Spaß gemacht, weil ich mein Wissen in HTML, CSS, Canvas und JavaScript vertiefen konnte.Besonders interessant war die Arbeit mit der Canvas-API für Zeichnungen, Animationen und interaktive Elemente."
+        "CONTENT2": "Mein Code ist in klare Module unterteilt (HTML, CSS, Canvas-Rendering, JS-Logik) für bessere Wartbarkeit. Dateien, Variablen, Funktionen und Klassen sind konsistent und verständlich benannt. Wichtige Funktionen sind mit JSDoc dokumentiert. Komplexe Logik ist mit kurzen Kommentaren versehen. Git wird für Versionskontrolle und saubere Commit-Struktur verwendet.",
+        "DESCRIPTION3": "Zentrale Erkenntnisse",
+        "CONTENT3": "Ich habe sehr gerne an diesem Projekt gearbeitet, da ich mein Wissen in HTML, CSS, Canvas und JavaScript vertiefen konnte. Die Arbeit mit der Canvas-API für Zeichnungen, Animationen und interaktive Elemente war besonders spannend."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologien",
@@ -63,7 +63,7 @@
           "assets/icons/Icon_Git.png"
         ],
         "SCREEN": "assets/screenshots/elpolloloco.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git,",
+        "MOBILTECHNO": " : HTML, JavaScript, Git",
         "LINKPROJECT": "https://www.christian-bock.developerakademie.net/Projekte/ElPolloLoco/index.html",
         "LINKGIT": "https://github.com/BockDA/DA_ElPolloLoco.git"
       }
@@ -72,11 +72,11 @@
       "Tab1": {
         "DESCRIPTION1": "Über das Projekt",
         "WORKPROCESS1": "Dauer: 1 Woche",
-        "CONTENT1": "Mithilfe von JavaScript habe ich Daten aus einer Pokémon-API abgerufen und als JSON verarbeitet. Die Ergebnisse wurden anschließend dynamisch im Browser dargestellt.",
-        "DESCRIPTION2": "Wie bin ich vorgegangen",
-        "CONTENT2": "Zuerst habe ich die HTML-Struktur erstellt und das Layout mit CSS gestaltet. Anschließend habe ich mit JavaScript die Logik implementiert und Funktionen modular aufgebaut.Zum Schluss habe ich das Abrufen und Verarbeiten von Daten aus Web-APIs integriert, um dynamische Inhalte darzustellen.",
-        "DESCRIPTION3": "Wichtige Erkenntnisse",
-        "CONTENT3": "Die Arbeit an diesem Projekt hat mir Spaß gemacht, weil ich mein Wissen in HTML, CSS und JavaScript vertiefen konnte. Besonders interessant war das Abrufen und Verarbeiten von Daten aus Web-APIs."
+        "CONTENT1": "Mit JavaScript habe ich Daten aus einer Pokémon-API abgerufen und als JSON verarbeitet. Die Ergebnisse wurden anschließend dynamisch im Browser angezeigt.",
+        "DESCRIPTION2": "Mein Vorgehen",
+        "CONTENT2": "Zuerst habe ich die HTML-Struktur erstellt und das Layout mit CSS gestaltet. Anschließend habe ich die Logik mit JavaScript modular aufgebaut. Zum Schluss erfolgte das Abrufen und Verarbeiten der Web-API-Daten zur Anzeige dynamischer Inhalte.",
+        "DESCRIPTION3": "Zentrale Erkenntnisse",
+        "CONTENT3": "Ich habe dieses Projekt sehr genossen, da ich mein Wissen in HTML, CSS und JavaScript vertiefen konnte. Besonders interessant war das Abrufen und Verarbeiten von Daten aus Web-APIs."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologien",
@@ -86,7 +86,7 @@
           "assets/icons/Icon_Api.png"
         ],
         "SCREEN": "assets/screenshots/pokemonDa.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Api",
+        "MOBILTECHNO": " : HTML, JavaScript, API",
         "LINKPROJECT": "https://christian-bock.developerakademie.net/Projekte/Pokedex/index.html",
         "LINKGIT": "https://github.com/BockDA/DA-Pokedex.git"
       }
@@ -110,73 +110,93 @@
           "assets/icons/Icon_Api.png"
         ],
         "SCREEN": "assets/screenshots/DABubbleinWork.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git, Api",
+        "MOBILTECHNO": " : HTML, JavaScript, Git, API",
         "LINKPROJECT": "",
         "LINKGIT": ""
       }
     }
   },
   "TEAMPLAYER": {
-    "HEADLINE1": "Brauchen Sie einen Teamplayer?",
-    "HEADLINE2": "Hören Sie, was meine Kollegen über mich sagen",
+    "HEADLINE1": "Sie suchen einen Teamplayer?",
+    "HEADLINE2": "Das sagen meine Kollegen über mich",
     "PLAYER": [
       {
         "TPLAYER_NAME": "Eric Braun",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Christian war im Team wirklich eine große Hilfe. Er ist sehr hilfsbereit, immer geduldig und absolut verlässlich. Besonders seine strukturierte Arbeitsweise hat uns oft weitergebracht. Einfach jemand, mit dem die Zusammenarbeit richtig angenehm und produktiv ist.\"",
-        "PROFILLINK": "Linkedin-Profil"
+        "DESCRIPTION": "\"Christian war eine große Unterstützung im Team. Er ist sehr hilfsbereit, stets geduldig und absolut zuverlässig. Seine strukturierte Arbeitsweise hat uns oft weitergebracht – einfach jemand, mit dem Zusammenarbeit angenehm und produktiv ist.\"",
+        "PROFILLINK": "LinkedIn-Profil"
       },
       {
         "TPLAYER_NAME": "Anton Flynn",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Christian hat sich als äußerst kompetenter und engagierter Teamkollege erwiesen. Er denkt selbstständig mit, bringt eigene Ideen ein und arbeitet sehr zuverlässig. Besonders wertvoll war seine klare und offene Kommunikation, durch die unsere Zusammenarbeit effektiv und angenehm verlief. An den Gruppengesprächen hat er sich aktiv beteiligt und mit seinem sympathischen und humorvollen Auftreten für eine gute Stimmung im Team gesorgt.\"",
-        "PROFILLINK": "Linkedin-Profil"
+        "DESCRIPTION": "\"Christian hat sich als äußerst kompetentes und engagiertes Teammitglied erwiesen. Er denkt selbstständig, bringt eigene Ideen ein und arbeitet sehr zuverlässig. Besonders wertvoll war seine klare und offene Kommunikation, die unsere Zusammenarbeit effektiv und angenehm gemacht hat. Durch seine freundliche und humorvolle Art hat er maßgeblich zu einer positiven Teamatmosphäre beigetragen.\"",
+        "PROFILLINK": "LinkedIn-Profil"
       },
       {
         "TPLAYER_NAME": "Oli P.",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Ich hatte das Vergnügen, mit Christian an einem Webentwicklungsprojekt zu arbeiten. Er überzeugt durch technisches Wissen, klare Struktur und lösungsorientiertes Denken. Besonders seine kommunikative Art und Teamfähigkeit haben das Projekt effizient und erfolgreich gemacht. Sehr empfehlenswert!\"",
-        "PROFILLINK": "Linkedin-Profil"
+        "DESCRIPTION": "\"Ich hatte das Vergnügen, mit Christian an einem Webentwicklungsprojekt zu arbeiten. Er überzeugte durch technisches Wissen, klare Struktur und lösungsorientiertes Denken. Seine Kommunikationsfähigkeit und sein Teamgeist machten das Projekt effizient und erfolgreich. Sehr zu empfehlen!\"",
+        "PROFILLINK": "LinkedIn-Profil"
       }
     ]
   },
   "CONTACT": {
-    "HEADLINE": "Kontaktieren Sie mich",
-    "DESCRIPTION": "Melden Sie sich gerne bei mir, wenn Sie ein Stellenangebot oder eine Gelegenheit haben, bei der ich mein Wissen als Elektronikermeister und Programmierer einbringen kann.Ich interessiere mich besonders für Rollen im Bereich IoT, Embedded Systems, Smart-Home-Technologien und moderne Webentwicklung (Angular, SCSS, Firebase).",
+    "HEADLINE": "Kontaktiere mich",
+    "DESCRIPTION": "Gerne können Sie mich kontaktieren, wenn Sie ein Jobangebot oder eine Gelegenheit haben, bei der ich meine Expertise als Elektromeister und Programmierer einbringen kann. Besonders interessiere ich mich für Bereiche wie IoT, Embedded Systems, Smart-Home-Technologien und moderne Webentwicklung (Angular, SCSS, Firebase).",
     "EMAIL": "cbock2011@gmail.com",
     "PHONE": "08029-997896",
     "FORMULAR_NAME": "Name",
     "FORMULAR_EMAIL": "E-Mail",
-    "FORMULAR_MESSAGE": "Mitteilung",
-    "PLACEHOLDER_NAME": "hier denn Namen eingeben..",
-    "PLACEHOLDER_EMAIL": "Mail Adresse eingeben..",
-    "PLACEHOLDER_MESSAGE": "Mitteilung schreiben..",
-    "PRIVACYPOLICY_NOTICE": "Ich habe die <a href='/Datenschutzerklärung' target='_blank'>Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
+    "FORMULAR_MESSAGE": "Nachricht",
+    "PLACEHOLDER_NAME": "Geben Sie Ihren Namen ein...",
+    "PLACEHOLDER_EMAIL": "Geben Sie Ihre E-Mail-Adresse ein...",
+    "PLACEHOLDER_MESSAGE": "Schreiben Sie Ihre Nachricht...",
+    "PRIVACYPOLICY_NOTICE": "Ich habe die <a href='/Datenschutzerklärung' target='_blank'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten gemäß der Beschreibung zu.",
     "SEND_BTN": "Senden"
   },
   "FOTTER": {
     "NOTICE": "Rechtliche Hinweise"
   },
   "LEGALNOTICE": {
-    "HEADER": "Legal Notice",
+    "TITLE": "Inhalt",
+    "HEADER": "Impressum",
     "NAME": "Christian Bock",
     "STREET": "Felserweg 4a",
     "TOWN": "83708 Kreuth",
     "EMAIL": "cbock2011@gmail.com",
     "SECTIONS": [
       {
-        "TEXT1": "<span class='col'>Exploring the Board</span>",
-        "TEXT2": "Email: cbock2011@gmail.com",
-        "TEXT3": "<span class='abs'>Test35</span>"
+        "TEXT1": "<span class='col bold'>Erforschung der Plattform</span>",
+        "TEXT2": "E-Mail: cbock2011@gmail.com",
+        "TEXT3": ""
       },
       {
-        "TEXT1": "Text 1 <span class='col'>aus</span> Section 1",
-        "TEXT2": "Text 2 aus Section 2"
+        "TEXT1": "<span class='col bold'>Akzeptanz der Bedingungen</span>",
+        "TEXT2": "Durch den Zugriff auf und die Nutzung von <span class='col'>Portfolio</span> (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien oder Änderungen an, die wir Ihnen von Zeit zu Zeit vorlegen. Wir, die aufgeführten Studierenden, behalten uns das Recht vor, diese Bedingungen jederzeit ohne vorherige Ankündigung zu ändern."
       },
       {
-        "TEXT1": "Text 1 aus Section 3",
-        "TEXT2": "Text 2 aus Section 3"
+        "TEXT1": "<span class='col bold'>Geltungsbereich und Eigentum am Produkt</span>",
+        "TEXT2": "<span class='col'>Portfolio</span> wurde im Rahmen eines Gruppenprojekts im Webentwicklungs-Bootcamp der <span class='col'>Developer Akademie GmbH</span> entwickelt. Es dient ausschließlich Bildungszwecken und ist nicht für umfangreiche persönliche oder kommerzielle Nutzung vorgesehen. Daher können wir keine gleichbleibende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualitätsmerkmale des Produkts garantieren.",
+        "TEXT3": "Das Design von <span class='col'>Portfolio</span> ist Eigentum der <span class='col'>Developer Akademie GmbH</span>. Eine unbefugte Nutzung, Vervielfältigung, Modifikation, Verbreitung oder Reproduktion des Designs ist strengstens untersagt."
+      },
+      {
+        "TEXT1": "<span class='col bold'>Urheberrechte</span>",
+        "TEXT2": "Abgesehen vom Design, das der <span class='col'>Developer Akademie GmbH</span> gehört, behalten wir, die aufgeführten Studierenden, alle Eigentumsrechte an <span class='col'>Portfolio</span>, einschließlich aller urheberrechtlich geschützten Materialien, Marken und sonstigen Schutzrechte."
+      },
+      {
+        "TEXT1": "<span class='col bold'>Verwendung des Produkts</span>",
+        "TEXT2": "<span class='col'>Portfolio</span> darf nur für rechtmäßige Zwecke und in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung von <span class='col'>Portfolio</span> für illegale Aktivitäten oder zur Belästigung, Bedrohung oder Schädigung anderer Personen ist strengstens untersagt. Sie allein sind für Ihre Interaktionen mit anderen Nutzern von <span class='col'>Portfolio</span> verantwortlich."
+      },
+      {
+        "TEXT1": "<span class='col bold'>Haftungsausschluss</span>",
+        "TEXT2": "<span class='col'>Portfolio</span> wird \"wie besehen\" ohne jegliche ausdrückliche oder stillschweigende Garantie bereitgestellt, einschließlich, aber nicht beschränkt auf stillschweigende Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten. In keinem Fall haften wir, die aufgeführten Studierenden oder die <span class='col'>Developer Akademie</span>, für direkte, indirekte, zufällige, besondere, Folge- oder exemplarische Schäden – einschließlich, aber nicht beschränkt auf entgangenen Gewinn, Verlust von Daten oder ideelle Werte –, selbst wenn auf die Möglichkeit solcher Schäden hingewiesen wurde."
+      },
+      {
+        "TEXT1": "<span class='col bold'>Freistellung</span>",
+        "TEXT2": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die <span class='col'>Developer Akademie</span> sowie unsere Partner, Geschäftsführer, Mitarbeiter und Beauftragten von allen Ansprüchen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltsgebühren) freizustellen, die aus Ihrer Nutzung von <span class='col'>Portfolio</span> oder einem Verstoß gegen dieses Impressum entstehen.",
+        "TEXT3": "Für Fragen oder Mitteilungen kontaktieren Sie uns bitte unter cbock2011@gmail.com."
       }
-    ]
+    ],
+    "DATE": "Datum: 10. Oktober 2025"
   }
 }

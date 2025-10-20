@@ -1,4 +1,7 @@
 
+
+@use "styles/colors" as *;
+@use "styles/mixin/mixin" as *;
 main {
   position: relative;
   width: auto;
