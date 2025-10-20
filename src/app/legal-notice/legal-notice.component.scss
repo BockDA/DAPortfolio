@@ -8,6 +8,15 @@ section {
   margin-left: 40px;
 }
 
-//host ::ng-deep .col {
-// color: green;
-//}
+:host ::ng-deep .col {
+  color: green;
+}
+
+.sec {
+  margin-top: 20px;
+}
+
+:host ::ng-deep .abs {
+  background-color: red;
+
+}

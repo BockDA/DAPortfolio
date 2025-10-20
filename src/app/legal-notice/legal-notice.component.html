@@ -15,38 +15,14 @@
             <p>Email: {{'LEGALNOTICE.EMAIL' |translate}}</p>
         </div>
 
-        <div class="section_1">
-            <p [innerHTML]="'LEGALNOTICE.SECTION_1.TEXT_1' | translate"></p>
-            <p>{{'LEGALNOTICE.SECTION_1.TEXT_2'|translate}}</p>
+        <div *ngFor="let s of ('LEGALNOTICE.SECTIONS' | translate)">
+            <div class="sec">
+                <p [innerHTML]="s.TEXT1"></p>
+                <p [innerHTML]="s.TEXT2"></p>
+                <br>
+                <p [innerHTML]="s.TEXT3"></p>
+            </div>
         </div>
-
-        <div class="section_2">
-            <p>{{'e' |translate}}</p>
-            <p>{{'e' |translate}}</p>
-        </div>
-
-        <div class="section_3">
-            <p>{{'e' |translate}}</p>
-            <p>{{'e' |translate}}</p>
-        </div>
-        <div class="section_4">
-            <p>{{'e' |translate}}</p>
-            <p>{{'e' |translate}}</p>
-        </div>
-        <div class="section_5">
-            <p>{{'' |translate}}</p>
-            <p>{{'' |translate}}</p>
-        </div>
-        <div class="section_6">
-            <p>{{'' |translate}}</p>
-            <p>{{'' |translate}}</p>
-        </div>
-        <div class="section_7">
-            <p>{{'' |translate}}</p>
-            <p>{{'' |translate}}</p>
-        </div>
-
 
     </section>
-
 </main>

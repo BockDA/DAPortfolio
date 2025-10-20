@@ -163,20 +163,33 @@
     "STREET": "Felserweg 4a",
     "TOWN": "83708 Kreuth",
     "EMAIL": "cbock2011@gmail.com",
-    "SECTIONS": [
-      {
-        "TEXT1": "Text 1 <span class='col'>aus</span> Section 1",
-        "TEXT2": "Text 2 aus Section 1 jksdhfkjdsh  <span class=' col'> fjkhsdfkjsh jkshfdkjs </span>",
-        "TEXT3": "<span class='abs'>Test35</span>"
-      },
-      {
-        "TEXT1": "Text 1 aus Section 2",
-        "TEXT2": "Text 2 aus Section 2"
-      },
-      {
-        "TEXT1": "Text 1 aus Section 3",
-        "TEXT2": "Text 2 aus Section 3"
-      }
-    ]
+    "SECTION_1": {
+      "TEXT_1": "Acceptance <span class='txt_color'>of</span> terms",
+      "TEXT_2": "By accessing and using Portfolio (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice."
+    },
+    "SECTION_2": {
+      "TEXT_1": "Scope and ownership of the product",
+      "TEXT_2": "Portfolio has been developed as part of a student group project in a web development bootcamp at the Developer Akademie GmbH. It has an educational purpose and is not intended for extensive personal & business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product."
+    },
+    "SECTION_3": {
+      "TEXT_1": "",
+      "TEXT_2": ""
+    },
+    "SECTION_4": {
+      "TEXT_1": "",
+      "TEXT_2": ""
+    },
+    "SECTION_5": {
+      "TEXT_1": "",
+      "TEXT_2": ""
+    },
+    "SECTION_6": {
+      "TEXT_1": "",
+      "TEXT_2": ""
+    },
+    "SECTION_7": {
+      "TEXT_1": "",
+      "TEXT_2": ""
+    }
   }
 }
