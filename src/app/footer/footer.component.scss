@@ -79,6 +79,7 @@ p .copy {
     position: absolute;
     top: 180px;
     flex-direction: row;
+    color:$cremeWhite;
   }
 
   .copy {
@@ -95,9 +96,11 @@ p .copy {
     justify-content: center;
     margin-top: 20px;
   }
+
+
   .section {
     gap: 30px;
-    color: white;
+    color: $cremeWhite;
   }
 
   .img_start {
@@ -107,4 +110,5 @@ p .copy {
   .img_hover {
     opacity: 1 !important;
   }
+  
 }
