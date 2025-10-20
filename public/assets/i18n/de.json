@@ -151,7 +151,7 @@
     "PLACEHOLDER_NAME": "Geben Sie Ihren Namen ein...",
     "PLACEHOLDER_EMAIL": "Geben Sie Ihre E-Mail-Adresse ein...",
     "PLACEHOLDER_MESSAGE": "Schreiben Sie Ihre Nachricht...",
-    "PRIVACYPOLICY_NOTICE": "Ich habe die <a href='/Datenschutzerklärung' target='_blank'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten gemäß der Beschreibung zu.",
+    "PRIVACYPOLICY_NOTICE": "Ich habe die <a href='/legalNotice' target='_blank'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten gemäß der Beschreibung zu.",
     "SEND_BTN": "Senden"
   },
   "FOTTER": {
