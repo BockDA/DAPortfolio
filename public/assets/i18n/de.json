@@ -165,12 +165,12 @@
     "EMAIL": "cbock2011@gmail.com",
     "SECTIONS": [
       {
-        "TEXT1": "Text 1 <span class='col'>aus</span> Section 1",
-        "TEXT2": "Text 2 aus Section 1 jksdhfkjdsh  <span class=' col'> fjkhsdfkjsh jkshfdkjs </span>",
+        "TEXT1": "<span class='col'>Exploring the Board</span>",
+        "TEXT2": "Email: cbock2011@gmail.com",
         "TEXT3": "<span class='abs'>Test35</span>"
       },
       {
-        "TEXT1": "Text 1 aus Section 2",
+        "TEXT1": "Text 1 <span class='col'>aus</span> Section 1",
         "TEXT2": "Text 2 aus Section 2"
       },
       {

@@ -4,16 +4,14 @@
     <section>
         <p class="legal_notice_header font_1">{{'LEGALNOTICE.HEADER' | translate}}</p>
         <div class="imprint">
-            <ul>
+            <p class="col sec font_14">Imprint</p>
+            <ul class="legal_notice_list">
                 <li>{{'LEGALNOTICE.NAME' | translate}}</li>
                 <li>{{'LEGALNOTICE.STREET' | translate}}</li>
                 <li>{{'LEGALNOTICE.TOWN' | translate}}</li>
             </ul>
         </div>
-        <div class="section_Email">
-            <p>{{''|translate}}</p>
-            <p>Email: {{'LEGALNOTICE.EMAIL' |translate}}</p>
-        </div>
+
 
         <div *ngFor="let s of ('LEGALNOTICE.SECTIONS' | translate)">
             <div class="sec">
@@ -23,6 +21,7 @@
                 <p [innerHTML]="s.TEXT3"></p>
             </div>
         </div>
-
+        <br>
+        <p>{{'LEGALNOTICE.DATE' | translate}}</p>
     </section>
 </main>
