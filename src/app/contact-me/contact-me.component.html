@@ -52,6 +52,7 @@
         <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
             placeholder="{{'CONTACT.PLACEHOLDER_MESSAGE' | translate}}" required autocomplete="off"></textarea>
         @if(!message.valid && message.touched){
+            
         }
 
 
