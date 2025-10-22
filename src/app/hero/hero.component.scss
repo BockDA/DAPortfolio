@@ -1,7 +1,6 @@
-
-
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
+
 main {
   position: relative;
   width: auto;
@@ -74,37 +73,32 @@ main {
 
 .hero_bg_section > img {
   position: absolute;
-  //top: 0;
-  //left: 0;
-  //object-fit: contain;
   transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 .hero_bg_section .original {
   opacity: 1;
-  //filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
+
 .hero_bg_section .hover {
   opacity: 0;
-  //filter: drop-shadow(0 4x 4px rgba(0, 0, 0, 0.4));
   transform: scale(1);
 }
+
 .hero_bg_section:hover .original {
   opacity: 0;
 }
+
 .hero_bg_section:hover .hover {
   opacity: 1;
-  //transform: scale(1);
-}
+  }
 
 .hero_Personal {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  // height: 710px;
   padding-top: 90px;
-
   .hero_Name {
     padding-top: 20px;
     p:first-of-type {
@@ -132,7 +126,6 @@ main {
   gap: 15px;
   width: 30px;
   height: 122px;
-
   img {
     height: 30px;
     width: 30px;
@@ -228,10 +221,11 @@ main {
   }
 
   .hero_section.no-hover:hover .hero_bg_section .original {
-    opacity: 1 !important; // bleibt sichtbar
+    opacity: 1 !important; 
   }
+
   .hero_section.no-hover:hover .hero_bg_section .hover {
-    opacity: 0 !important; // bleibt unsichtbar
+    opacity: 0 !important; 
   }
 
   .hover {
@@ -258,7 +252,7 @@ main {
   .img_backround_mobil {
     display: block;
     position: absolute;
-    left: 50%; // 260px;
+    left: 50%;
     top: 0px;
     transform: translateX(-50%) rotate(0deg);
     max-width: 390px;
@@ -270,7 +264,7 @@ main {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 30vw !important; // feste Breite
+    width: 30vw !important;
     max-width: 390px;
     min-width: 250px;
     height: auto !important;
@@ -302,7 +296,6 @@ main {
     top: 200px;
     left: 50%;
     transform: translate(-50%);
-
     z-index: 999;
   }
 
@@ -317,27 +310,28 @@ main {
     justify-content: space-between;
     flex-direction: column;
   }
+
   #burger > div {
     height: 2px;
     background-color: $cremeWhite;
     transition: 0.5s;
   }
 
-  // X Wird gezeichnet
   #menyAvPaa:checked ~ .menue #burger > div {
     background-color: $cremeWhite;
   }
+
   #menyAvPaa:checked ~ .menue #burger > div:nth-child(1) {
     transform: translateY(15px) rotate(45deg);
   }
+
   #menyAvPaa:checked ~ .menue #burger > div:nth-child(2) {
     opacity: 0;
   }
+
   #menyAvPaa:checked ~ .menue #burger > div:nth-child(3) {
     transform: translateY(-15px) rotate(-45deg);
   }
-
-  //Webseite
 
   .font_1 {
     font-size: 48px !important;
@@ -351,12 +345,8 @@ main {
     height: 800px;
   }
 
-  //.hero_bg_section > img.original {
-  //  left: 30% !important;
-  // }
-
   .hero_bg_section > img.original {
-    left: 10%; // 260px;
+    left: 10%; 
     max-width: 300px;
     min-width: 320px;
     height: 420px;

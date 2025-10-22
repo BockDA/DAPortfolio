@@ -151,7 +151,7 @@
     "PLACEHOLDER_NAME": "Enter your name...",
     "PLACEHOLDER_EMAIL": "Enter your email address...",
     "PLACEHOLDER_MESSAGE": "Write your message...",
-    "PRIVACYPOLICY_NOTICE": "I have read the <a href='/legalNotice' target='_blank'>privacy policy</a> and agree to the processing of my data as described.",
+    "PRIVACYPOLICY_NOTICE": "I have read the <a href='/legalNotice'>privacy policy</a> and agree to the processing of my data as described.",
     "SEND_BTN": "Send"
   },
   "FOTTER": {
@@ -172,7 +172,8 @@
       },
       {
         "TEXT1": "<span class='col bold'>Acceptance of terms</span>",
-        "TEXT2": "Acceptance of terms By accessing and using <span class='col'>Portfolio</span> (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice."
+        "TEXT2": "Acceptance of terms By accessing and using <span class='col'>Portfolio</span> (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.",
+        "TEXT3": ""
       },
       {
         "TEXT1": "<span class='col bold'>Scope and ownership of the product</span>",
@@ -181,15 +182,18 @@
       },
       {
         "TEXT1": "<span class='col bold'>Proprietary rights</span>",
-        "TEXT2": "Aside from the design owned by <span class='col'>Developer Akademie GmbH,</span> we, the listed students, retain all proprietary rights in <span class='col'>Portfolio</span>, including any associated copyrighted material, trademarks, and other proprietary information"
+        "TEXT2": "Aside from the design owned by <span class='col'>Developer Akademie GmbH,</span> we, the listed students, retain all proprietary rights in <span class='col'>Portfolio</span>, including any associated copyrighted material, trademarks, and other proprietary information",
+        "TEXT3": ""
       },
       {
         "TEXT1": "<span class='col bold'>Use of the product</span>",
-        "TEXT2": "<span class='col'>Portfolio</span> is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of <span class='col'>Portfolio for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of <span class='col'>Portfolio</span>."
+        "TEXT2": "<span class='col'>Portfolio</span> is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of <span class='col'>Portfolio for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of <span class='col'>Portfolio</span>.",
+        "TEXT3": ""
       },
       {
         "TEXT1": "<span class='col bold'>Disclaimer of warranties and limitation of liability</span>",
-        "TEXT2": "<span class='col'>Portfolio</span> is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the <span class='col'>Developer Akademie</span>, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of <span class='col'>Portfolio</span>."
+        "TEXT2": "<span class='col'>Portfolio</span> is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the <span class='col'>Developer Akademie</span>, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of <span class='col'>Portfolio</span>.",
+        "TEXT3": ""
       },
       {
         "TEXT1": "<span class='col bold'>Indemnity</span>",
@@ -198,5 +202,6 @@
       }
     ],
     "DATE": "Date: October 10, 2025"
-  }
+  },
+  "LEGALNOTICE.NOSECTIONS": "No legal sections available."
 }

@@ -172,7 +172,8 @@
       },
       {
         "TEXT1": "<span class='col bold'>Akzeptanz der Bedingungen</span>",
-        "TEXT2": "Durch den Zugriff auf und die Nutzung von <span class='col'>Portfolio</span> (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien oder Änderungen an, die wir Ihnen von Zeit zu Zeit vorlegen. Wir, die aufgeführten Studierenden, behalten uns das Recht vor, diese Bedingungen jederzeit ohne vorherige Ankündigung zu ändern."
+        "TEXT2": "Durch den Zugriff auf und die Nutzung von <span class='col'>Portfolio</span> (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien oder Änderungen an, die wir Ihnen von Zeit zu Zeit vorlegen. Wir, die aufgeführten Studierenden, behalten uns das Recht vor, diese Bedingungen jederzeit ohne vorherige Ankündigung zu ändern.",
+        "TEXT3": ""
       },
       {
         "TEXT1": "<span class='col bold'>Geltungsbereich und Eigentum am Produkt</span>",
@@ -181,15 +182,18 @@
       },
       {
         "TEXT1": "<span class='col bold'>Urheberrechte</span>",
-        "TEXT2": "Abgesehen vom Design, das der <span class='col'>Developer Akademie GmbH</span> gehört, behalten wir, die aufgeführten Studierenden, alle Eigentumsrechte an <span class='col'>Portfolio</span>, einschließlich aller urheberrechtlich geschützten Materialien, Marken und sonstigen Schutzrechte."
+        "TEXT2": "Abgesehen vom Design, das der <span class='col'>Developer Akademie GmbH</span> gehört, behalten wir, die aufgeführten Studierenden, alle Eigentumsrechte an <span class='col'>Portfolio</span>, einschließlich aller urheberrechtlich geschützten Materialien, Marken und sonstigen Schutzrechte.",
+        "TEXT3": ""
       },
       {
         "TEXT1": "<span class='col bold'>Verwendung des Produkts</span>",
-        "TEXT2": "<span class='col'>Portfolio</span> darf nur für rechtmäßige Zwecke und in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung von <span class='col'>Portfolio</span> für illegale Aktivitäten oder zur Belästigung, Bedrohung oder Schädigung anderer Personen ist strengstens untersagt. Sie allein sind für Ihre Interaktionen mit anderen Nutzern von <span class='col'>Portfolio</span> verantwortlich."
+        "TEXT2": "<span class='col'>Portfolio</span> darf nur für rechtmäßige Zwecke und in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung von <span class='col'>Portfolio</span> für illegale Aktivitäten oder zur Belästigung, Bedrohung oder Schädigung anderer Personen ist strengstens untersagt. Sie allein sind für Ihre Interaktionen mit anderen Nutzern von <span class='col'>Portfolio</span> verantwortlich.",
+        "TEXT3": ""
       },
       {
         "TEXT1": "<span class='col bold'>Haftungsausschluss</span>",
-        "TEXT2": "<span class='col'>Portfolio</span> wird \"wie besehen\" ohne jegliche ausdrückliche oder stillschweigende Garantie bereitgestellt, einschließlich, aber nicht beschränkt auf stillschweigende Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten. In keinem Fall haften wir, die aufgeführten Studierenden oder die <span class='col'>Developer Akademie</span>, für direkte, indirekte, zufällige, besondere, Folge- oder exemplarische Schäden – einschließlich, aber nicht beschränkt auf entgangenen Gewinn, Verlust von Daten oder ideelle Werte –, selbst wenn auf die Möglichkeit solcher Schäden hingewiesen wurde."
+        "TEXT2": "<span class='col'>Portfolio</span> wird \"wie besehen\" ohne jegliche ausdrückliche oder stillschweigende Garantie bereitgestellt, einschließlich, aber nicht beschränkt auf stillschweigende Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten. In keinem Fall haften wir, die aufgeführten Studierenden oder die <span class='col'>Developer Akademie</span>, für direkte, indirekte, zufällige, besondere, Folge- oder exemplarische Schäden – einschließlich, aber nicht beschränkt auf entgangenen Gewinn, Verlust von Daten oder ideelle Werte –, selbst wenn auf die Möglichkeit solcher Schäden hingewiesen wurde.",
+        "TEXT3": ""
       },
       {
         "TEXT1": "<span class='col bold'>Freistellung</span>",
@@ -198,5 +202,6 @@
       }
     ],
     "DATE": "Datum: 10. Oktober 2025"
-  }
+  },
+  "LEGALNOTICE.NOSECTIONS": "Keine Einträge im Impressum vorhanden."
 }

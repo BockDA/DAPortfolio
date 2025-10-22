@@ -33,7 +33,6 @@
 
 
     <form class="contac_Formular_Section font_13" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-
         <div class="contac_Field_Sec1 ">
             <div class="contact_Field">
                 <label for="name">{{'CONTACT.FORMULAR_NAME'|translate}}</label>
@@ -52,6 +51,7 @@
         <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
             placeholder="{{'CONTACT.PLACEHOLDER_MESSAGE' | translate}}" required autocomplete="off"></textarea>
         @if(!message.valid && message.touched){
+            <span></span>
             
         }
 
