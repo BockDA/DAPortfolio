@@ -51,12 +51,12 @@
         <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
             placeholder="{{'CONTACT.PLACEHOLDER_MESSAGE' | translate}}" required autocomplete="off"></textarea>
         @if(!message.valid && message.touched){
-            <span></span>
-            
+        <span></span>
+
         }
 
 
-
+        
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden">
         <div class="contac_PrivacyPolicy" [attr.aria-checked]="privacyCtrl.value"
             (click)="privacyCtrl.control.setValue(!privacyCtrl.value)">
@@ -64,7 +64,8 @@
                 ? 'assets/icons/policy_check_box_checked.png'
                 : 'assets/icons/policy_check_box.png'">
             <p class="font_15" [innerHTML]="'CONTACT.PRIVACYPOLICY_NOTICE'|translate"></p>
-        </div>
+       </div>
+
 
         <div class="section_submit">
             <input [class.disabled]="!contactForm.valid" type="submit" value="{{'CONTACT.SEND_BTN'|translate}}">

@@ -12,10 +12,12 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
-//contactForm: NgForm;
- 
+
   
-  constructor(public setAktiv: MyFunctionsService) { }
+  //contactForm: NgForm;
+
+
+  constructor(public setAktiv: MyFunctionsService) {}
 
   contactData = {
     name: '',
