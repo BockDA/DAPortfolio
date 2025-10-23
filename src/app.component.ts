@@ -1,4 +1,5 @@
 
+/*
 import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
@@ -24,4 +25,18 @@ export class AppComponent {
     });
   }
 }
+*/
 
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { MenueComponent } from './app/menue/menue.component';
+import { FooterComponent } from './app/footer/footer.component';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, MenueComponent, FooterComponent],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+})
+export class AppComponent {}

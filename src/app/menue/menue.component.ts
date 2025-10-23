@@ -1,46 +1,5 @@
 
 /*
-import { Component, computed, signal } from '@angular/core';
-import { LogoComponent } from '../logo/logo.component';
-import { TranslateModule } from '@ngx-translate/core';
-import { MyFunctionsService } from '../../services/my-functions.service';
-import {
-  isGerman,
-  setLanguage,
-  statusLanguage,
-} from '../../state/language.state';
-
-@Component({
-  selector: 'app-menue',
-  standalone: true,
-  imports: [LogoComponent, TranslateModule],
-  templateUrl: './menue.component.html',
-  styleUrl: './menue.component.scss',
-})
-export class MenueComponent {
-  constructor(public setAktiv: MyFunctionsService) {}
-
-  
-  setPosMenu(value: string) {
-    this.setAktiv.setMenuAktiv(value);
-    console.log("Wechsel");
-    const element = document.getElementById(value);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  }
-
-  statusLanguage = statusLanguage;
-  isGerman = isGerman;
-  setLanguage = setLanguage;
-}
-
-
-
-*/
-
-
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MyFunctionsService } from '../../services/my-functions.service';
@@ -83,6 +42,65 @@ export class MenueComponent {
   statusLanguage = statusLanguage;
   isGerman = isGerman;
   setLanguage = setLanguage;
+}
+ */
+import { Component, computed, effect } from '@angular/core';
+import { Router } from '@angular/router';
+import { MyFunctionsService } from '../../services/my-functions.service';
+import {
+  isGerman,
+  setLanguage,
+  statusLanguage,
+} from '../../state/language.state';
+import { LogoComponent } from '../logo/logo.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+
+@Component({
+  selector: 'app-menue',
+  standalone: true,
+  templateUrl: './menue.component.html',
+  styleUrls: ['./menue.component.scss'],
+  imports: [LogoComponent, TranslateModule],
+})
+export class MenueComponent {
+  statusLanguage = statusLanguage;
+  isGerman = isGerman;
+  setLanguage = setLanguage;
+
+  constructor(
+    private router: Router,
+    public setAktiv: MyFunctionsService,
+    private translate: TranslateService
+  ) {
+    // 🧩 Reagiere auf Sprachänderungen aus deinem globalen Signal
+    effect(() => {
+      const lang = this.isGerman() ? 'de' : 'en';
+      this.translate.use(lang);
+    });
+  }
+
+  async setPosMenu(sectionId: string) {
+    this.setAktiv.setMenuAktiv(sectionId);
+
+    // 👉 Navigation zur Startseite mit Fragment (funktioniert mit InMemoryScrolling)
+    await this.router.navigate(['/'], { fragment: sectionId });
+
+    // 🧩 Fallback für Browser, die das Fragment-Scrollen ignorieren
+    setTimeout(() => {
+      document
+        .getElementById(sectionId)
+        ?.scrollIntoView({ behavior: 'smooth' });
+    }, 300);
+
+    console.log('Navigiert zu Abschnitt:', sectionId);
+  }
+
+  // 🧩 Sprachumschaltung
+  toggleLanguage() {
+    const newLang = this.isGerman() ? 'en' : 'de';
+    this.setLanguage(newLang);
+    this.translate.use(newLang);
+  }
 }
 
 
