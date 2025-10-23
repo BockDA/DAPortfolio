@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MenueComponent } from '../menue/menue.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { CommonModule, NgFor, NgIf } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
 
 @Component({
@@ -11,7 +11,6 @@ import { FooterComponent } from '../footer/footer.component';
     TranslateModule,
     CommonModule,
     NgFor,
-    NgIf,
     FooterComponent,
   ],
   templateUrl: './legal-notice.component.html',
