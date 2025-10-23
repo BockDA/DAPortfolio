@@ -13,5 +13,14 @@ import { MenueComponent } from "../menue/menue.component";
   
   
 export class HeroComponent {
-  constructor(public setAktiv: MyFunctionsService) {}
+  constructor(public setAktiv: MyFunctionsService) { }
+
+
+  setPosMenu(value: string) {
+    this.setAktiv.setMenuAktiv(value);
+    const element = document.getElementById(value);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

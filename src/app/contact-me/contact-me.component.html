@@ -5,7 +5,7 @@
         </div>
 
         <div class="hero_ArrowUp">
-            <a href="#" (click)="setAktiv.setMenuAktiv('')"><img src="assets/icons/ArrowUp.png" /></a>
+            <a (click)="setPosMenu('hero')"><img src="assets/icons/ArrowUp.png" /></a>
         </div>
     </div>
     <div class="contac_Introduction">
@@ -56,7 +56,7 @@
         }
 
 
-        
+
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden">
         <div class="contac_PrivacyPolicy" [attr.aria-checked]="privacyCtrl.value"
             (click)="privacyCtrl.control.setValue(!privacyCtrl.value)">
@@ -64,7 +64,7 @@
                 ? 'assets/icons/policy_check_box_checked.png'
                 : 'assets/icons/policy_check_box.png'">
             <p class="font_15" [innerHTML]="'CONTACT.PRIVACYPOLICY_NOTICE'|translate"></p>
-       </div>
+        </div>
 
 
         <div class="section_submit">

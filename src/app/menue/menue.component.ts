@@ -19,7 +19,12 @@ export class MenueComponent {
 
   setPosMenu(value: string) {
     this.setAktiv.setMenuAktiv(value);
-    
+    console.log("Wechsel");
+    const element = document.getElementById(value);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+
   }
 
   statusLanguage = statusLanguage;

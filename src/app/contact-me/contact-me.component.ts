@@ -12,10 +12,7 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
-
-  
   //contactForm: NgForm;
-
 
   constructor(public setAktiv: MyFunctionsService) {}
 
@@ -28,6 +25,14 @@ export class ContactMeComponent {
   onSubmit(ngForm: NgForm) {
     if (ngForm.valid && ngForm.submitted) {
       console.log(this.contactData);
+    }
+  }
+
+  setPosMenu(value: string) {
+    this.setAktiv.setMenuAktiv(value);
+    const element = document.getElementById(value);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   }
 }
