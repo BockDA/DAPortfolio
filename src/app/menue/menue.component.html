@@ -11,14 +11,14 @@
           {{"NAV.WHY_ME" | translate}}
         </p>
       </a>
-      <a class="font_3"  (click)="setPosMenu('myskills')">
+      <a class="font_3" (click)="setPosMenu('myskills')">
         <p [class.active]="setAktiv.getMenuAktiv() === 'myskills'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'myskills' 
                   ? 'url(assets/icons/backAktivLang.png)' 
                   : 'none'">
           {{"NAV.SKILLS" | translate}}
         </p>
       </a>
-      <a class="font_3"  (click)="setPosMenu('myprojects')">
+      <a class="font_3" (click)="setPosMenu('myprojects')">
         <p [class.active]="setAktiv.getMenuAktiv() === 'myprojects'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'myprojects' 
                   ? 'url(assets/icons/backAktivLang.png)' 
                   : 'none'">
@@ -33,12 +33,15 @@
         </p>
       </a>
     </div>
+
+    
     <div class="language_Icon">
       <button class="font_9" [class.language_aktiv]="isGerman()" (click)="setLanguage('de')"
         [style.backgroundImage]="isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">DE </button>
 
-      <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="setLanguage ('en')"
+      <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="setLanguage('en')"
         [style.backgroundImage]="!isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">EN</button>
     </div>
+    
   </div>
 </main>

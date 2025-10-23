@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
 import { TranslateModule } from '@ngx-translate/core';
+ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
-  imports: [LogoComponent,TranslateModule],
+  standalone: true,
+  imports: [LogoComponent,TranslateModule,RouterLink],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrls: ['./footer.component.scss']
 })
+  
 export class FooterComponent {
 
 }

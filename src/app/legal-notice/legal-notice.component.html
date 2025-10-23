@@ -12,7 +12,7 @@
             </ul>
         </div>
 
-
+<!--
         <div *ngFor="let s of ('LEGALNOTICE.SECTIONS' | translate)">
               <div class="sec">
                 <p [innerHTML]="s.TEXT1"></p>
@@ -21,6 +21,15 @@
                 <p [innerHTML]="s.TEXT3"></p>
             </div>
         </div>
+-->
+<div *ngFor="let s of sections">
+    <div class="sec">
+        <p [innerHTML]="s.TEXT1"></p>
+        <p [innerHTML]="s.TEXT2"></p>
+        <br>
+        <p [innerHTML]="s.TEXT3"></p>
+    </div>
+</div>
         <br>
         <p>{{'LEGALNOTICE.DATE' | translate}}</p>
     </section>

@@ -4,10 +4,12 @@ import { TranslateModule } from '@ngx-translate/core';
 import { MenueComponent } from '../menue/menue.component';
 import { HeroComponent } from '../hero/hero.component';
 import { MyFunctionsService } from '../../services/my-functions.service';
+ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-me',
-  imports: [TranslateModule, FormsModule],
+  standalone: true,
+  imports: [TranslateModule, FormsModule,RouterLink],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss',
 })
