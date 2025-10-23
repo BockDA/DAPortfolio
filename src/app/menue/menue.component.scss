@@ -30,17 +30,16 @@ main {
   display: flex;
   justify-content: space-between;
   font-family: "Josefin";
+
   p {
     &:hover {
       color: $cremeWhite;
+      cursor: pointer;
     }
     padding: 15px 15px;
   }
 }
-.menue_Entries a {
-  text-decoration: none;
-  color: $mainColor;
-}
+
 .active {
   background-repeat: no-repeat;
   background-position: center;
