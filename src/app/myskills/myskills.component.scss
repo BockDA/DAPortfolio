@@ -5,13 +5,14 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-top: 100px;
   margin-bottom: 50px;
+
 }
 
 .myskills_Titel {
   color: $primaryBlue;
   @include flex_Box(column, 0px);
-  margin-top: 30px;
 }
 
 .myskills_Section {
@@ -106,6 +107,7 @@ main {
 @include mobile {
   main {
     padding: 0;
+    padding-top: 30px;
     margin: 0;
     height: 620px;
   }

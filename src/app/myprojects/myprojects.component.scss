@@ -7,7 +7,8 @@ main {
   justify-content: center;
   gap: 30px;
   color: $cremeWhite;
-  padding-top: 20px;
+  padding-top: 120px;
+
   }
 
 .myprojects_Section {
@@ -64,6 +65,10 @@ main {
 //---------------------TABLET--------------------------
 
 @include tablet {
+  main{
+   padding-top: 30px;
+
+}
   .font_5 {
     font-size: 48px;
   }
@@ -75,6 +80,8 @@ main {
 //---------------------MOBIL--------------------------
 
 @include mobile {
+
+
   .font_5 {
     font-size: 32px;
   }

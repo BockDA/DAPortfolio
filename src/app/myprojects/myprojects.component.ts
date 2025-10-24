@@ -4,15 +4,16 @@ import { TabMyProjectsComponent } from '../tab-my-projects/tab-my-projects.compo
 
 @Component({
   selector: 'app-myprojects',
+  standalone: true,
   imports: [TranslateModule, TabMyProjectsComponent],
   templateUrl: './myprojects.component.html',
-  styleUrl: './myprojects.component.scss',
+  styleUrls: ['./myprojects.component.scss'],
 })
 export class MyprojectsComponent {
   public activeTab = 1;
 
   selectTab(tabNumber: number) {
     this.activeTab = tabNumber;
-    console.log("Tab");
-   }
+    console.log('Tab');
+  }
 }
