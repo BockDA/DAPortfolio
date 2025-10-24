@@ -37,7 +37,6 @@ main {
   gap: 100px;
   color: white;
   margin-bottom: 150px;
-  //background-color: aqua;
 }
 
 .contac_Description p {
@@ -55,7 +54,6 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
-
   .section_img {
     @include icon_toggle();
   }
@@ -78,7 +76,6 @@ main {
   flex-direction: column;
   width: 911px;
   color: $primaryBlue;
-
   label {
     padding-bottom: 5px;
     margin-left: 20px;
@@ -91,13 +88,11 @@ main {
   display: flex;
   gap: 10px;
   margin-bottom: 21px;
-
   div {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-
   input {
     height: 60px;
   }
@@ -163,8 +158,6 @@ textarea {
     margin: 0;
     color: $cremeWhite;
   }
-
-  /* Link im Translate-HTML stylen (wegen innerHTML mit ::ng-deep) */
   p ::ng-deep a {
     text-decoration: none;
     color: $primaryBlue;
@@ -184,8 +177,6 @@ textarea {
   color: #d32f2f;
   font-size: 0.9rem;
 }
-
-//Button Submit
 
 .section_submit {
   width: 100%;
@@ -207,17 +198,16 @@ input[type="submit"] {
 }
 
 input[type="submit"].disabled {
-  pointer-events: none; // Klicks verhindern
-  opacity: 0.6; // ausgegraut darstellen
-  cursor: not-allowed; // Mauszeiger sperren
+  pointer-events: none; 
+  opacity: 0.6; 
+  cursor: not-allowed; 
 }
 
-/* Aktiviert (wird animiert sichtbar) */
 input[type="submit"]:not(:disabled) {
   background-color: $mainColor;
   border-color: $primaryBlue;
   color: white;
-  transform: scale(1.05); // leichter „Pop“
+  transform: scale(1.05); 
   box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
 }
 
@@ -275,7 +265,7 @@ input[type="submit"]:not(:disabled) {
   .hero_ArrowUp {
     bottom: -80px;
     left: 50%;
-    transform: translateX(-50%); /* mittig unten */
+    transform: translateX(-50%);
   }
 
   .contac_Introduction {

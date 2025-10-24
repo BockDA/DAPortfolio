@@ -47,10 +47,10 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideRouter(
-      routes,
-      withInMemoryScrolling({ anchorScrolling: 'enabled' })
+    provideRouter(routes,
+      withInMemoryScrolling({anchorScrolling: 'enabled' })
     ),
+     
     importProvidersFrom(
       HttpClientModule,
       TranslateModule.forRoot({

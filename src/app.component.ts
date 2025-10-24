@@ -29,13 +29,11 @@ export class AppComponent {
 
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MenueComponent } from './app/menue/menue.component';
-import { FooterComponent } from './app/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenueComponent, FooterComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

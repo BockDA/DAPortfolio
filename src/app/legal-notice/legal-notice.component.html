@@ -1,46 +1,9 @@
-<!--
-<main>
-    <app-menue></app-menue>
-
-    <section>
-        <p class="legal_notice_header font_1">{{'LEGALNOTICE.HEADER' | translate}}</p>
-        <div class="imprint">
-            <p class="col sec font_14">{{'LEGALNOTICE.TITLE' | translate}}</p>
-            <ul class="legal_notice_list">
-                <li>{{'LEGALNOTICE.NAME' | translate}}</li>
-                <li>{{'LEGALNOTICE.STREET' | translate}}</li>
-                <li>{{'LEGALNOTICE.TOWN' | translate}}</li>
-            </ul>
-        </div>
-
-
-<div *ngFor="let s of sections">
-    <div class="sec">
-        <p [innerHTML]="s.TEXT1"></p>
-        <p [innerHTML]="s.TEXT2"></p>
-        <br>
-        <p [innerHTML]="s.TEXT3"></p>
-    </div>
-</div>
-        <br>
-        <p>{{'LEGALNOTICE.DATE' | translate}}</p>
-    </section>
-
-    <app-footer></app-footer>
-</main>
--->
-
 <main class="legal-notice-page">
-    <!-- Menü oben -->
     <app-menue></app-menue>
-
-    <!-- Hauptinhalt -->
     <section class="legal-notice-content">
         <h1 class="legal_notice_header font_1">
             {{ 'LEGALNOTICE.HEADER' | translate }}
         </h1>
-
-        <!-- Impressum / Grunddaten -->
         <div class="imprint">
             <p class="col sec font_14">
                 {{ 'LEGALNOTICE.TITLE' | translate }}
@@ -51,8 +14,6 @@
                 <li>{{ 'LEGALNOTICE.TOWN' | translate }}</li>
             </ul>
         </div>
-
-        <!-- Dynamische Sektionen (aus JSON) -->
         <div *ngIf="sections.length; else loading">
             <div *ngFor="let s of sections" class="sec">
                 <p [innerHTML]="s.TEXT1"></p>
@@ -61,19 +22,12 @@
                 <br />
             </div>
         </div>
-
-        <!-- Ladezustand -->
         <ng-template #loading>
             <p class="font_13">{{ 'LEGALNOTICE.LOADING' | translate }}</p>
         </ng-template>
-
-        <!-- Datum unten -->
         <p class="legal_notice_date">
             {{ 'LEGALNOTICE.DATE' | translate }}
         </p>
     </section>
-
-    <!-- Footer unten -->
     <app-footer></app-footer>
 </main>
-

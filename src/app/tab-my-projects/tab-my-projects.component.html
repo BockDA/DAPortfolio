@@ -38,13 +38,11 @@
     </div>
   </div>
 
-  <!--  22   TAB TAB TAB 22    -->
 
   <div class="tab_secondSection">
     <div class="tab_Technologies font_9">
       <p>{{'PROJECTE.P'+activeTab+'.Tab2.TECHNOLOGIES'|translate}}</p>
       <p class="mobil_tech">{{'PROJECTE.P'+activeTab+'.Tab2.MOBILTECHNO'|translate}}</p>
-
     </div>
     <div class="tab_Icons">
       <img *ngFor="let img of('PROJECTE.P'+activeTab+'.Tab2.IMGS'|translate)" [src]="img">
@@ -56,7 +54,6 @@
       <a class="font_9" [href]="('PROJECTE.P' + activeTab + '.Tab2.LINKPROJECT') | translate" target="_blank">Live
         Test</a>
       <a class="font_9" [href]="('PROJECTE.P' + activeTab + '.Tab2.LINKGIT') | translate" target="_blank">GitHub</a>
-
     </div>
   </div>
 </main>

@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Wenn die angeforderte Datei oder der Ordner existiert, nichts umleiten
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Alles andere an index.html weiterleiten
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Fallback, falls mod_rewrite deaktiviert ist
+ErrorDocument 404 /index.html

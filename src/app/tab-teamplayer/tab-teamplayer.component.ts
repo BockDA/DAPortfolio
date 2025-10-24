@@ -7,6 +7,4 @@ import { NgFor } from '@angular/common';
   templateUrl: './tab-teamplayer.component.html',
   styleUrl: './tab-teamplayer.component.scss'
 })
-export class TabTeamplayerComponent {
-
-}
+export class TabTeamplayerComponent {}

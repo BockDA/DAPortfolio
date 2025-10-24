@@ -1,82 +1,73 @@
 <main>
     <div class="contact_Headline_Container">
         <div class="contac_Headline">
-            <p class="font_12">{{'CONTACT.HEADLINE' |translate}}</p>
+            <p class="font_12">{{ "CONTACT.HEADLINE" | translate }}</p>
         </div>
-
         <div class="hero_ArrowUp">
             <a (click)="setPosMenu('hero')"><img src="assets/icons/ArrowUp.png" /></a>
         </div>
     </div>
     <div class="contac_Introduction">
-
         <div class="contac_Description">
-            <p class="font_8">{{'CONTACT.DESCRIPTION' |translate}}</p>
+            <p class="font_8">{{ "CONTACT.DESCRIPTION" | translate }}</p>
         </div>
         <div class="contac_Section">
             <div class="section">
                 <div class="section_img">
-                    <img class="img_start" src="assets/icons/email.png">
-                    <img class="img_hover" src="assets/icons/email_hover.png">
+                    <img class="img_start" src="assets/icons/email.png" />
+                    <img class="img_hover" src="assets/icons/email_hover.png" />
                 </div>
-                <p class="font_13">{{"CONTACT.EMAIL" |translate}}</p>
+                <p class="font_13">{{ "CONTACT.EMAIL" | translate }}</p>
             </div>
             <div class="section">
                 <div class="section_img">
-                    <img class="img_start" src="assets/icons/phone.png">
-                    <img class="img_hover" src="assets/icons/phone_hover.png">
+                    <img class="img_start" src="assets/icons/phone.png" />
+                    <img class="img_hover" src="assets/icons/phone_hover.png" />
                 </div>
-                <p class="font_13">{{"CONTACT.PHONE" |translate}}</p>
+                <p class="font_13">{{ "CONTACT.PHONE" | translate }}</p>
             </div>
         </div>
     </div>
 
-
     <form class="contac_Formular_Section font_13" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <div class="contac_Field_Sec1 ">
+        <div class="contac_Field_Sec1">
             <div class="contact_Field">
-                <label for="name">{{'CONTACT.FORMULAR_NAME'|translate}}</label>
+                <label for="name">{{ "CONTACT.FORMULAR_NAME" | translate }}</label>
                 <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                    placeholder="{{'CONTACT.PLACEHOLDER_NAME'|translate}}" required autocomplete="off">
+                    placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}" required autocomplete="off" />
             </div>
             <div>
-                <label for="email">{{'CONTACT.FORMULAR_EMAIL' |translate}}</label>
+                <label for="email">{{ "CONTACT.FORMULAR_EMAIL" | translate }}</label>
                 <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="{{'CONTACT.PLACEHOLDER_EMAIL' | translate}}" required autocomplete="off"
-                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}" required autocomplete="off"
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
             </div>
         </div>
-
-        <label for="message">{{'CONTACT.FORMULAR_MESSAGE'|translate}}</label>
+        <label for="message">{{ "CONTACT.FORMULAR_MESSAGE" | translate }}</label>
         <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
-            placeholder="{{'CONTACT.PLACEHOLDER_MESSAGE' | translate}}" required autocomplete="off"></textarea>
+            placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required autocomplete="off"></textarea>
         @if(!message.valid && message.touched){
         <span></span>
-
         }
-
-
-
-        <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden">
+        <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden" />
         <div class="contac_PrivacyPolicy" [attr.aria-checked]="privacyCtrl.value"
             (click)="privacyCtrl.control.setValue(!privacyCtrl.value)">
-            <img [src]="privacyCtrl.value
-                ? 'assets/icons/policy_check_box_checked.png'
-                : 'assets/icons/policy_check_box.png'">
+            <img [src]="
+          privacyCtrl.value
+            ? 'assets/icons/policy_check_box_checked.png'
+            : 'assets/icons/policy_check_box.png'
+        " />
             <p class="font_15">
-                {{ 'CONTACT.PRIVACYPOLICY_NOTICE1' | translate }}
-                <a routerLink="/legalNotice">{{ 'CONTACT.PRIVACYPOLICY_NOTICE2' | translate }}</a>
-                {{ 'CONTACT.PRIVACYPOLICY_NOTICE3' | translate }}
+                {{ "CONTACT.PRIVACYPOLICY_NOTICE1" | translate }}
+                <a routerLink="/legalNotice">{{
+                    "CONTACT.PRIVACYPOLICY_NOTICE2" | translate
+                    }}</a>
+                {{ "CONTACT.PRIVACYPOLICY_NOTICE3" | translate }}
             </p>
-
-
         </div>
-
-
         <div class="section_submit">
-            <input [class.disabled]="!contactForm.valid" type="submit" value="{{'CONTACT.SEND_BTN'|translate}}">
+            <input [class.disabled]="!contactForm.valid" type="submit" value="{{ 'CONTACT.SEND_BTN' | translate }}" />
         </div>
     </form>
     <div class="contac_BTN"></div>
-
 </main>

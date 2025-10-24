@@ -91,12 +91,10 @@ main {
     font-size: 48px;
   }
   .myskills_Section {
-    // background-color: yellowgreen;
     display: flex;
     justify-content: start;
     gap: 260px;
-    // margin-left: 60px;
-  }
+      }
   .myskills_grid_container {
     gap: 10px;
   }
@@ -136,8 +134,7 @@ main {
 
   .myskills_Section {
     flex-direction: column !important;
-    //background-color: yellowgreen;
-    height: 300px;
+     height: 300px;
     gap: 140px;
   }
 

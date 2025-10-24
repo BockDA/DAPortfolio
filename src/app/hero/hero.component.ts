@@ -11,10 +11,8 @@ import { MenueComponent } from "../menue/menue.component";
   styleUrl: './hero.component.scss',
 })
   
-  
 export class HeroComponent {
   constructor(public setAktiv: MyFunctionsService) { }
-
 
   setPosMenu(value: string) {
     this.setAktiv.setMenuAktiv(value);
