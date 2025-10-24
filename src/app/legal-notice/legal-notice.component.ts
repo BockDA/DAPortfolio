@@ -44,7 +44,7 @@ export class LegalNoticeComponent implements OnInit {
    
 }
 */
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { MenueComponent } from '../menue/menue.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule, NgFor } from '@angular/common';
@@ -65,7 +65,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './legal-notice.component.html',
   styleUrls: ['./legal-notice.component.scss'],
 })
-export class LegalNoticeComponent implements OnInit, OnDestroy {
+export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
   sections: { TEXT1: SafeHtml; TEXT2: SafeHtml; TEXT3: SafeHtml }[] = [];
   private langSub?: Subscription;
 
@@ -100,5 +100,12 @@ export class LegalNoticeComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.langSub?.unsubscribe();
+  }
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      const offset = 0; // Höhe deiner Menüleiste in Pixel (z. B. 100px)
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }, 200); // kurzer Delay, damit DOM vollständig gerendert ist
   }
 }
