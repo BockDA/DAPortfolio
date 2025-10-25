@@ -2,13 +2,13 @@
 @use "/styles/mixin/mixin" as *;
 main {
   position: sticky;
-  top: 0px;
+  bottom: 0;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 104px;
   background-color: $primaryBlue;
-  z-index: 10;
+ 
 }
 
 .section_heroMenue {
@@ -19,11 +19,33 @@ main {
   justify-content: space-between;
   margin-left: 114px;
   margin-right: 114px;
+  z-index: 9999;
+
 }
 
 :host ::ng-deep app-logo .logo {
   cursor: pointer;
 }
+
+
+/* 🟤 Startzustand – unten fixiert */
+:host(.menu-bottom) {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* 🟤 Nach Scroll – oben sticky */
+:host(.menu-top) {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
 
 .menue_Entries {
   width: 677px;

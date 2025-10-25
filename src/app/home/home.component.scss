@@ -1,10 +1,15 @@
 @use "styles/mixin/mixin" as *;
 
 //---------------------MOBIL--------------------------
+main{
+  min-width: 320px;
+  max-width: 1920px;
+  //background-color: yellow;
 
-main {
-  width: 100%;
 }
+
+
+
 
 @include mobile {
   .app_menu {

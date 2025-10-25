@@ -4,14 +4,13 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  user-select: none; // ❌ kein Markieren möglich
-  -webkit-user-select: none; // Safari
+  user-select: none;
+  -webkit-user-select: none; 
   -moz-user-select: none;
+  
 }
 
 body {
-  min-width: 320px;
-  width: 100%; //1980px;
   background-color: $mainColor;
   display: flex;
   flex-direction: column;

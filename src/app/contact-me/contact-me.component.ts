@@ -15,7 +15,7 @@ import { MyFunctionsService } from '../../services/my-functions.service';
 export class ContactMeComponent {
   constructor(
     public setAktiv: MyFunctionsService,
-    private http: HttpClient // ✅ HttpClient hier korrekt injiziert
+    private http: HttpClient 
   ) {}
 
   contactData = {
