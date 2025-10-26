@@ -9,6 +9,7 @@ main {
   color: $primaryBlue; 
   height: auto;
   padding-bottom: 60px;
+  
  }
 
 .tPlayer_Headline {
@@ -20,6 +21,13 @@ main {
 .tPlayer_Card {
   width: auto; 
 }
+
+
+* {
+  outline: 1px solid red;
+}
+
+
 
 //---------------------Responsive--------------------------
 

@@ -41,7 +41,7 @@ export class MenueComponent {
         ?.scrollIntoView({ behavior: 'smooth' });
     }, 300);
 
-    console.log('Navigiert zu Abschnitt:', sectionId);
+  
   }
 
   toggleLanguage() {

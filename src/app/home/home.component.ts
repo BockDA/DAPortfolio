@@ -32,7 +32,7 @@ home = HomeComponent;
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollY = window.scrollY || 0;
-    this.menuFixedTop = scrollY > window.innerHeight * 0.0; 
+    this.menuFixedTop = scrollY > window.innerHeight * 0; 
       }
   
   

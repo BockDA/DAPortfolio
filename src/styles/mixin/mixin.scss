@@ -106,7 +106,7 @@
   }
 }
 
-//Mobil
+//Responsive
 
 @mixin mobile {
   @media (max-width: #{$breakpoint-mobile}) {
