@@ -211,6 +211,14 @@ input[type="submit"]:not(:disabled) {
   box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
 }
 
+
+
+
+* {
+  outline: 1px solid red;
+}
+
+
 //---------------------Responsive--------------------------
 
 @include desktop {

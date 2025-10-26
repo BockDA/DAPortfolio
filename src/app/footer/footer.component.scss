@@ -14,7 +14,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 60px 112px 70px 112px;
+ margin: 60px 112px 70px 112px;
 }
 
 .footer_sec_left {
@@ -46,6 +46,12 @@ p .copy {
   .section_img {
     @include icon_toggle();
   }
+}
+
+
+
+* {
+  outline: 1px solid red;
 }
 
 //---------------------TABLET--------------------------

@@ -52,6 +52,13 @@ main {
   width: 100%;
  }
 
+
+
+* {
+  outline: 1px solid red;
+}
+
+
 //---------------------Responsive--------------------------
 
 @include desktop {

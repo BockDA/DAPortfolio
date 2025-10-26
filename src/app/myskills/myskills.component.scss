@@ -18,8 +18,8 @@ main {
   font-family: "Josefin";
   display: flex;
   justify-content: center;
-  gap: 234px;
-  margin: 0px;
+  //gap: 234px;
+ 
 }
 
 .myskills_grid_container {
@@ -28,15 +28,31 @@ main {
   grid-template-rows: repeat(3, auto);
   gap: 40px;
   margin-top: 90px;
+ width: 50%;
+ background-color: red;
+  
 }
 
 .myskills_grid-item {
-  @include flex_Box(column, 15px);
+  //@include flex_Box(column, 15px);
   text-align: center;
   font-family: "Josefin";
   color: $primaryBlue;
   border-radius: 8px;
+
+
 }
+
+.background_Animation{
+  width: 50%;
+  background-color: yellow;
+}
+
+
+* {
+  outline: 1px solid red;
+}
+
 
 //--------------------rechts Seite ---------------------------------//
 
@@ -78,6 +94,9 @@ main {
   width: 207px;
 }
 
+
+
+
 //---------------------Responsive--------------------------
 
 @include desktop {
@@ -90,9 +109,9 @@ main {
     font-size: 48px;
   }
   .myskills_Section {
-    display: flex;
-    justify-content: start;
-    gap: 260px;
+  //  display: flex;
+  //  justify-content: start;
+    //gap: 220px;
       }
   .myskills_grid_container {
     gap: 10px;
@@ -121,7 +140,7 @@ main {
     gap: 30px;
     margin-top: 40px;
   }
-
+  
   .myskills_grid-item {
     img {
       width: 41px;
@@ -131,14 +150,16 @@ main {
     }
   }
 
-  .myskills_Section {
-    flex-direction: column !important;
-     height: 300px;
-    gap: 140px;
-  }
+.myskills_Section {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    //height: 300px;
+    
+  }  
 
   .section {
-    margin-top: 0px !important;
+    margin-top: 0px; //!important;
     pointer-events: none;
     .img_1 {
       display: none;

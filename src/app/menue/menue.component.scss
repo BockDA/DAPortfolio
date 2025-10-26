@@ -25,11 +25,13 @@ main {
 
 :host{
  z-index: 10;  
+ 
 
 }
 
 :host ::ng-deep app-logo .logo {
   cursor: pointer;
+
   }
 
 
@@ -38,7 +40,7 @@ main {
   position: fixed;
   bottom: 0;
   width: 100%;
-  }
+   }
 
 /* 🟤 Nach Scroll – oben sticky */
 :host(.menu-top) {
@@ -46,10 +48,7 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-
 }
-
-
 
 .menue_Entries {
   width: 677px;
@@ -98,6 +97,13 @@ main {
       }
     }
   }
+}
+
+
+
+
+* {
+  outline: 1px solid red;
 }
 
 //---------------------Responsive--------------------------

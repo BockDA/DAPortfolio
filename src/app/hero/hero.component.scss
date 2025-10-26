@@ -163,6 +163,11 @@ main {
 }
 
 
+* {
+  outline: 1px solid red;
+}
+
+
 //---------------------Desktop--------------------------
 
 @include desktop {

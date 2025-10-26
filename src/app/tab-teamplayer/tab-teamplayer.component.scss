@@ -4,6 +4,10 @@
   @include flex_Box(row, 150px);
   font-family: "Josefin";
   padding: 20px;
+
+  width: 100%;
+
+ background-color: royalblue;
 }
 
 .players_Card_Contents {
@@ -28,15 +32,26 @@
       border-radius: 6px;
       cursor: pointer;
     }
+
   }
 
   .link_linedln {
     z-index: 1;
   }
+
+
 }
+
+
 @include background_Animation();
 .img_3 {
   display: none;
+}
+
+
+
+* {
+  outline: 1px solid yellow;
 }
 
 //---------------------Responsive--------------------------
@@ -47,10 +62,12 @@
   .player_Cards {
     font-family: "Josefin";
     padding: 20px;
+     
   }
 
   .players_Card_Contents {
     width: 150px;
+     max-width:200px;
   }
 }
 
@@ -74,6 +91,32 @@
       object-fit: cover;
     }
   }
+
+
+
+  .player_Cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 80px;
+    padding-right: 80px;
+    &::-webkit-scrollbar {
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 20px;
+      background: $primaryBlue;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+
+
+
+
 }
 
 //-------------------Mobil-----------------------------------

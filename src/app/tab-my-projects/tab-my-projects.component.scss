@@ -105,6 +105,14 @@ main {
   }
 }
 
+
+
+* {
+  outline: 1px solid red;
+}
+
+
+
 //---------------------Responsive--------------------------
 
 @include desktop {
