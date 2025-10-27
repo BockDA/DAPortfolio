@@ -1,0 +1,15 @@
+<main>
+    <!-- Header / Menü -->
+    
+
+    <!--<app-menue class="app_menu" [class.menu-top]="menuFixedTop" [class.menu-bottom]="!menuFixedTop"></app-menue>-->
+    <!--<app-menue class="app_menu" [class.is-visible]="showMenu"></app-menue>-->
+<app-menue menuRef class="app_menu"></app-menue>
+
+    <!-- Seiteninhalt (hier wird die Route geladen) -->
+    <router-outlet></router-outlet>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+</main>
+

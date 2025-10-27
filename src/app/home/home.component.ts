@@ -27,13 +27,14 @@ export class HomeComponent  {
   
 home = HomeComponent;
   
- menuFixedTop = false;
+ //menuFixedTop = false;
 
+  /*
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollY = window.scrollY || 0;
     this.menuFixedTop = scrollY > window.innerHeight * 0; 
       }
-  
+  */
   
 }
