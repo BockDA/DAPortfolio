@@ -9,9 +9,10 @@ main {
 }
 
 .tab_firstSection {
-  margin-left: 130px;
+  padding-left: 130px;
+
   padding-top: 40px;
-  width: 50%;
+  width: 100%;
 
   .first_paragraph {
     display: flex;
@@ -107,17 +108,12 @@ main {
 
 
 
-* {
-  outline: 1px solid red;
-}
-
-
 
 //---------------------Responsive--------------------------
 
 @include desktop {
   .tab_firstSection {
-    margin-left: 15px;
+    padding-left: 15px;
     width: 50%;
     .first_paragraph {
       display: flex;
@@ -162,10 +158,18 @@ main {
 
   main {
     flex-direction: column-reverse;
+   
   }
+  
 
   .tab_firstSection {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
     width: 100%;
+    margin: 0 !important;
+    padding-left:0px;
+    
   }
 
   .tab_secondSection {
@@ -173,16 +177,20 @@ main {
   }
 
   .first_paragraph_Section {
-    margin-left: 15px;
+    padding-left: 15px;
   }
 
   .first_paragraph_Text {
-    margin-left: 15px !important;
-    margin-right: 30px;
+    padding-left: 15px !important;
+    padding-right: 30px;
   }
 
   .first_paragraph {
     align-items: flex-start;
+    /*
+      TODO: 
+    */
+    width: 80%;
   }
 
   .mobil_tech {

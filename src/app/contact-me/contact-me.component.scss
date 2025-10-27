@@ -6,7 +6,7 @@ main {
   align-items: center;
   font-family: "Josefin";
   color: $primaryBlue;
-  position: relative;
+  //position: relative;
   width: 100%;
   padding-bottom: 60px;
   padding-top: 120px;
@@ -212,13 +212,6 @@ input[type="submit"]:not(:disabled) {
 }
 
 
-
-
-* {
-  outline: 1px solid red;
-}
-
-
 //---------------------Responsive--------------------------
 
 @include desktop {
@@ -256,6 +249,7 @@ input[type="submit"]:not(:disabled) {
     padding-top: 0;
     padding-left: 0;
     margin-bottom: 100px;
+
   }
 
   .font_12 {
@@ -271,9 +265,10 @@ input[type="submit"]:not(:disabled) {
   }
 
   .hero_ArrowUp {
-    bottom: -80px;
-    left: 50%;
-    transform: translateX(-50%);
+    //bottom: 200px;
+    position: relative;
+    top: 0;
+    left:0;
   }
 
   .contac_Introduction {

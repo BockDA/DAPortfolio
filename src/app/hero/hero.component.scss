@@ -18,7 +18,7 @@ main {
 }
 
 #menyAvPaa {
-  display: none;
+  display: flex;
 }
 
 :host ::ng-deep app-logo .logo img:first-child {
@@ -163,9 +163,6 @@ main {
 }
 
 
-* {
-  outline: 1px solid red;
-}
 
 
 //---------------------Desktop--------------------------
@@ -287,6 +284,7 @@ main {
   #menyAvPaa:checked ~ .hero_section .img_Hero {
     display: none;
   }
+
   :host ::ng-deep #menyAvPaa:checked ~ .hero_section app-menue {
     .section_heroMenue {
       flex-direction: column;
@@ -304,7 +302,7 @@ main {
     top: 200px;
     left: 50%;
     transform: translate(-50%);
-    z-index: 999;
+    z-index: 10000;
   }
 
   #burger {
