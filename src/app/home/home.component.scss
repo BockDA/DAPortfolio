@@ -1,15 +1,11 @@
 @use "styles/mixin/mixin" as *;
 @use "styles/colors" as *;
 
-
 main{
   min-width: 320px;
   max-width: 1920px;
   background-color: $mainColor;
 }
-
-
-
 
 //---------------------MOBIL--------------------------
 

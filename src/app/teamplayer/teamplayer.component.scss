@@ -10,9 +10,7 @@ main {
   color: $primaryBlue; 
   height: auto;
   width: 100%;
-  padding-bottom: 60px;
-  background-color: rosybrown;
-  
+  padding-bottom: 60px;  
  }
 
 .tPlayer_Headline {
@@ -23,16 +21,7 @@ main {
 
 .tPlayer_Section {
   width: auto; 
-  background-color: green;
-}
-
-
-
-
-* {
-  outline: 1px solid red;
-}
-
+  }
 
 
 //---------------------Responsive--------------------------
@@ -45,26 +34,18 @@ main {
 }
 
 
-@include tablet{
-   .tPlayer_Headline {
-   // flex-direction: column;
-}}
-
-
 //-------------------Mobil-----------------------------------
 
-@include mobile {
+@include tablet {
   main {
     display: block;
     align-items: flex-start;
   }
 
   .tPlayer_Headline {
-   
-    gap: 10px;
-
+       gap: 10px;
     p:first-child {
-      font-size: 32px;
+      font-size: 24px;
       color: $primaryBlue;
     }
     p:last-child {

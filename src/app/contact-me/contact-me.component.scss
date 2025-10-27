@@ -1,12 +1,13 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Josefin";
   color: $primaryBlue;
-  //position: relative;
+  position: relative;
   width: 100%;
   padding-bottom: 60px;
   padding-top: 120px;
@@ -25,8 +26,11 @@ main {
 
 .hero_ArrowUp {
   position: absolute;
-  right: 160px;
+  top: 100px;
+  left: 80%; // in der Mitte
+  transform: translateX(-50%);
   cursor: pointer;
+
 }
 
 .contac_Introduction {
@@ -54,6 +58,7 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+
   .section_img {
     @include icon_toggle();
   }
@@ -61,10 +66,12 @@ main {
 
 .section:hover {
   color: $primaryBlue;
+
   .section_img {
     .img_start {
       opacity: 0;
     }
+
     .img_hover {
       opacity: 1;
     }
@@ -76,6 +83,7 @@ main {
   flex-direction: column;
   width: 911px;
   color: $primaryBlue;
+
   label {
     padding-bottom: 5px;
     margin-left: 20px;
@@ -88,11 +96,13 @@ main {
   display: flex;
   gap: 10px;
   margin-bottom: 21px;
+
   div {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   input {
     height: 60px;
   }
@@ -112,6 +122,7 @@ textarea {
   outline: none;
   font-size: 16px;
   font-family: "Josefin";
+
   &:focus {
     background-color: $inputColor;
     border-color: $primaryBlue;
@@ -149,15 +160,18 @@ textarea {
     outline: 2px solid rgba(0, 0, 0, 0.2);
     outline-offset: 2px;
   }
+
   img {
     width: 20px;
     height: 20px;
     display: block;
   }
+
   p {
     margin: 0;
     color: $cremeWhite;
   }
+
   p ::ng-deep a {
     text-decoration: none;
     color: $primaryBlue;
@@ -198,16 +212,16 @@ input[type="submit"] {
 }
 
 input[type="submit"].disabled {
-  pointer-events: none; 
-  opacity: 0.6; 
-  cursor: not-allowed; 
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 input[type="submit"]:not(:disabled) {
   background-color: $mainColor;
   border-color: $primaryBlue;
   color: white;
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
 }
 
@@ -235,6 +249,7 @@ input[type="submit"]:not(:disabled) {
   .contac_Introduction {
     margin: 60px 20px 60px 20px !important;
     width: auto !important;
+    padding-left: 20px;
   }
 
   .contac_Formular_Section {
@@ -249,6 +264,7 @@ input[type="submit"]:not(:disabled) {
     padding-top: 0;
     padding-left: 0;
     margin-bottom: 100px;
+    position: static;
 
   }
 
@@ -268,7 +284,7 @@ input[type="submit"]:not(:disabled) {
     //bottom: 200px;
     position: relative;
     top: 0;
-    left:0;
+    left: 0;
   }
 
   .contac_Introduction {

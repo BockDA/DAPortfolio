@@ -7,16 +7,15 @@
   user-select: none;
   -webkit-user-select: none; 
   -moz-user-select: none;
-  
+ }
+
+//Hilfrahmen für Entwicklung
+* {
+  outline: 1px solid red;
 }
 
-
-
-
-
-
 body {
-   display: flex;
+  display: flex;
   flex-direction: column;
   margin: 0;
   overflow-x: hidden;
@@ -29,43 +28,43 @@ body {
 //Schriftarten
 
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: "Josefin";
   font-style: normal;
   font-weight: 200;
-  src: url("assets/fonts/josefin-sans-v33-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/josefin-sans-v33-latin-200.woff2") format("woff2"); 
 }
-/* josefin-sans-300 - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: "Josefin";
   font-style: normal;
   font-weight: 300;
-  src: url("assets/fonts/josefin-sans-v33-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/josefin-sans-v33-latin-300.woff2") format("woff2"); 
 }
-/* josefin-sans-regular - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: "Josefin";
   font-style: normal;
   font-weight: 400;
-  src: url("assets/fonts/josefin-sans-v33-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/josefin-sans-v33-latin-regular.woff2") format("woff2");
 }
-/* josefin-sans-500 - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: "Josefin";
   font-style: normal;
   font-weight: 500;
-  src: url("assets/fonts/josefin-sans-v33-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/josefin-sans-v33-latin-500.woff2") format("woff2"); 
 }
-/* josefin-sans-700 - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Josefin";
   font-style: normal;
   font-weight: 700;
-  src: url("assets/fonts/josefin-sans-v33-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/josefin-sans-v33-latin-700.woff2") format("woff2"); 
 }
 
 @font-face {

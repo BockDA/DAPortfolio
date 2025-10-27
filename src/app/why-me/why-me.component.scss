@@ -10,6 +10,7 @@ main {
 .whyme_Section {
   font-family: "Josefin";
   width: 100%;
+  height: auto;
 }
 
 .whyme_Titel {
@@ -34,7 +35,7 @@ main {
   flex-direction: column;
   align-items: end;
   gap: 30px;
-  width: 379px;
+  width: 380px;
   margin-top: 30px;
   :hover {
     cursor: pointer;
@@ -53,12 +54,6 @@ main {
   .color {
     color: $primaryBlue;
   }
-}
-
-
-
-* {
-  outline: 1px solid red;
 }
 
 
@@ -123,4 +118,15 @@ main {
   .whyme_Description a {
     display: none;
   }
+
+.whyme_Description{
+  max-width: 300px;
+  padding: 0 5px 0 5px;
+
+}
+
+  .whyme_Text{
+//height: 200px;
+}
+
 }

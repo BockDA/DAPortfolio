@@ -7,7 +7,7 @@ main {
   width: 100%;
   padding-top: 100px;
   margin-bottom: 50px;
- }
+}
 
 .myskills_Titel {
   color: $primaryBlue;
@@ -19,7 +19,7 @@ main {
   display: flex;
   justify-content: center;
   //gap: 234px;
- 
+
 }
 
 .myskills_grid_container {
@@ -28,9 +28,7 @@ main {
   grid-template-rows: repeat(3, auto);
   gap: 40px;
   margin-top: 90px;
- width: 50%;
- background-color: red;
-  
+  width: 50%;
 }
 
 .myskills_grid-item {
@@ -39,24 +37,17 @@ main {
   font-family: "Josefin";
   color: $primaryBlue;
   border-radius: 8px;
-
-
 }
 
-.background_Animation{
+.background_Animation {
   width: 50%;
-  background-color: yellow;
-}
-
-
-* {
-  outline: 1px solid red;
 }
 
 
 //--------------------rechts Seite ---------------------------------//
 
 @include background_Animation();
+
 .section_content_block {
   color: $cremeWhite;
   gap: 20px;
@@ -95,8 +86,7 @@ main {
 
 //---------------------Responsive--------------------------
 
-@include desktop {
-}
+@include desktop {}
 
 //---------------------TABLET--------------------------
 
@@ -104,7 +94,8 @@ main {
   .font_5 {
     font-size: 48px;
   }
-   .myskills_grid_container {
+
+  .myskills_grid_container {
     gap: 10px;
   }
 }
@@ -122,50 +113,54 @@ main {
   .font_5 {
     font-size: 32px;
   }
+
   .font_8 {
     font-size: 16px;
   }
 
-.myskills_Section{
-  gap:30px;
-}
+  .myskills_Section {
+    gap: 30px;
+  }
 
   .myskills_grid_container {
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
   }
-  
+
   .myskills_grid-item {
     img {
       width: 41px;
     }
+
     p {
       display: none;
     }
   }
 
-.myskills_Section {
+  .myskills_Section {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-  }  
+  }
 
   .section {
-    margin-top: 0px; //!important;
+    margin-top: 0px;
     pointer-events: none;
 
-   .img_1 {
+    .img_1 {
       display: none;
     }
+
     .img_2 {
       display: none;
     }
   }
-.mobil_img{
-  flex-direction: column !important;
-  gap:20px !important;
-}
+
+  .mobil_img {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
 
 
   .infotext_mobil {
@@ -189,5 +184,5 @@ main {
     text-align: left !important;
   }
 
- 
+
 }

@@ -1,5 +1,6 @@
 @use "/styles/colors" as *;
 @use "/styles/mixin/mixin" as *;
+
 main {
   position: sticky;
   bottom: 0;
@@ -23,16 +24,16 @@ main {
 
 }
 
-:host{
- z-index: 10;  
- 
+:host {
+  z-index: 10;
+
 
 }
 
 :host ::ng-deep app-logo .logo {
   cursor: pointer;
 
-  }
+}
 
 
 /* 🟤 Startzustand – unten fixiert */
@@ -40,7 +41,7 @@ main {
   position: fixed;
   bottom: 0;
   width: 100%;
-   }
+}
 
 /* 🟤 Nach Scroll – oben sticky */
 :host(.menu-top) {
@@ -61,6 +62,7 @@ main {
       color: $cremeWhite;
       cursor: pointer;
     }
+
     padding: 15px 15px;
   }
 }
@@ -76,6 +78,7 @@ main {
 .language_Icon {
   display: flex;
   gap: 10px;
+
   button {
     border-style: none;
     border-width: 0;
@@ -90,8 +93,10 @@ main {
       cursor: pointer;
       color: $cremeWhite;
     }
+
     &.language_aktiv {
       color: $cremeWhite;
+
       :hover {
         cursor: pointer;
       }
@@ -101,10 +106,6 @@ main {
 
 
 
-
-* {
-  outline: 1px solid red;
-}
 
 //---------------------Responsive--------------------------
 
@@ -118,16 +119,17 @@ main {
 //---------------------TABLET--------------------------
 
 @include tablet {
-:host{
-top:740px;
-    
-}
+  :host {
+    top: 740px;
+
+  }
 
 
 
   .font_3 {
     font-size: 20px !important;
   }
+
   .app_logo {
     display: none;
   }
@@ -143,7 +145,11 @@ top:740px;
   //---------------------MOBIL--------------------------
   @include mobile {
     main {
-      top: 50px;
-        }
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0 auto;
+    }
   }
 }
