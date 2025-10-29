@@ -4,11 +4,13 @@ import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { MyFunctionsService } from '../../services/my-functions.service';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [TranslateModule, FormsModule, RouterLink],
+  imports: [TranslateModule, FormsModule, RouterLink,CommonModule],
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss'],
 })
@@ -25,6 +27,10 @@ export class ContactMeComponent {
   };
 
   mailTest = false;
+  mailSend = false;
+  mailError=false
+
+
   post = {
     endPoint: 'https://portfolio.elektro-bock.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -58,13 +64,34 @@ export class ContactMeComponent {
             ngForm.resetForm();
           },
           error: (error: any) => {
+            
             console.error('Fehler beim Senden:', error);
+        
           },
+       
           complete: () => console.info('Mailversand abgeschlossen'),
         });
+      
+      this.emailOK();
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log('Testmodus aktiv — keine echte Mail wird gesendet.');
+        this.emailOK();
       ngForm.resetForm();
+    
     }
   }
+
+  private emailOK() {
+    this.mailSend = true;
+    setTimeout(() => (this.mailSend = false), 5000);
+
+   }
+  
+  private emailError() {
+    this.mailError = true;
+    setTimeout(() => (this.mailError = false), 5000);
+    
+  }
+
+
 }

@@ -3,7 +3,7 @@
         <div class="contac_Headline">
             <p class="font_12">{{ "CONTACT.HEADLINE" | translate }}</p>
         </div>
-       
+
     </div>
     <div class="contac_Introduction">
         <div class="contac_Description">
@@ -71,4 +71,20 @@
     <div class="hero_ArrowUp">
         <a (click)="setPosMenu('hero')"><img src="assets/icons/ArrowUp.png" /></a>
     </div>
+
+    <!--
+    <div class="toast success">
+        <p style="font-size: 30px; color:white">Tewst</p>
+    </div>
+    -->
+    <div *ngIf="mailSend" class="toast success">
+        <p>E-mail würde erfolgreich Versand</p>
+    </div>
+    
+    <div *ngIf="mailError" class="toast error">
+        <p>Fehler beim senden der E-Mail</p>
+    </div>
 </main>
+
+
+

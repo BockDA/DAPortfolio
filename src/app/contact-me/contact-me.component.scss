@@ -226,6 +226,62 @@ input[type="submit"]:not(:disabled) {
 }
 
 
+.toast {
+  position: fixed;
+  bottom: 125px;
+  right: 25px;
+  min-width: 240px;
+  padding: 14px 22px;
+  border-radius: 18px;
+  color: $cremeWhite;
+  font-family: 'Josefin Sans', 'Inter', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInOut 3s ease forwards;
+  z-index: 10000;
+  backdrop-filter: blur(8px);
+
+
+  &.success {
+    background: linear-gradient(135deg, lighten($primaryBlue, 8%), $primaryBlue);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  &.error {
+    background: linear-gradient(135deg, #e63946, darken(#e63946, 10%));
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  85% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+
+
+}
+
+
 //---------------------Responsive--------------------------
 
 @include desktop {
