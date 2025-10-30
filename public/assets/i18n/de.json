@@ -152,9 +152,14 @@
     "PLACEHOLDER_EMAIL": "Geben Sie Ihre E-Mail-Adresse ein...",
     "PLACEHOLDER_MESSAGE": "Schreiben Sie Ihre Nachricht...",
     "PRIVACYPOLICY_NOTICE1": "Ich habe die ",
-    "PRIVACYPOLICY_NOTICE2":" Datenschutzerklärung ",
-    "PRIVACYPOLICY_NOTICE3":"gelesen und stimme der Verarbeitung meiner Daten gemäß der Beschreibung zu.",
-    "SEND_BTN": "Senden"
+    "PRIVACYPOLICY_NOTICE2": " Datenschutzerklärung ",
+    "PRIVACYPOLICY_NOTICE3": "gelesen und stimme der Verarbeitung meiner Daten gemäß der Beschreibung zu.",
+    "SEND_BTN": "Senden",
+    "INPUTEEROR": "Eingabefehler ",
+    "TOAST": {
+      "OK": "E-mail würde erfolgreich Versand",
+      "ERROR": "Fehler beim senden der E-Mail"
+    }
   },
   "FOTTER": {
     "NOTICE": "Rechtliche Hinweise"

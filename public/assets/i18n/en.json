@@ -154,7 +154,12 @@
     "PRIVACYPOLICY_NOTICE1": "I have read the ",
     "PRIVACYPOLICY_NOTICE2": " privacy policy ",
     "PRIVACYPOLICY_NOTICE3": "and agree to the processing of my data as described.",
-    "SEND_BTN": "Send"
+    "SEND_BTN": "Send",
+    "INPUTEEROR": "Input error",
+    "TOAST": {
+      "OK": "Email was successfully sent",
+      "ERROR": "Error sending email"
+    }
   },
   "FOTTER": {
     "NOTICE": "Legal Notice"

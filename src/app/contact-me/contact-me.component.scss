@@ -186,12 +186,6 @@ textarea {
   cursor: not-allowed;
 }
 
-.error {
-  margin-top: 6px;
-  color: #d32f2f;
-  font-size: 0.9rem;
-}
-
 .section_submit {
   width: 100%;
   display: flex;
@@ -225,62 +219,41 @@ input[type="submit"]:not(:disabled) {
   box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
 }
 
+.input_Error {
+  min-height: 10px;
+  align-items: center;
+  margin-top: 10px;
+  color: $errorRed;
+  font-size: 16px;
+}
 
 .toast {
   position: fixed;
-  bottom: 125px;
-  right: 25px;
-  min-width: 240px;
+  bottom: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 230px;
   padding: 14px 22px;
-  border-radius: 18px;
+  border-radius: 16px;
   color: $cremeWhite;
-  font-family: 'Josefin Sans', 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.3px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInOut 3s ease forwards;
-  z-index: 10000;
-  backdrop-filter: blur(8px);
-
+  box-shadow: $mainColor;
+  transition: opacity 0.6s ease-in-out;
+  opacity: 1;
 
   &.success {
-    background: linear-gradient(135deg, lighten($primaryBlue, 8%), $primaryBlue);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: $primaryBlue;
+    border-color: $primaryBlue;
+    border: 1px solid $lightGrey;
   }
 
   &.error {
-    background: linear-gradient(135deg, #e63946, darken(#e63946, 10%));
-    border: 1px solid rgba(255, 255, 255, 0.15);
-  }
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  10% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  85% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(20px);
+    border-color: $primaryBlue;
+    background: $errorRed;
+    border: 1px solid $lightGrey;
   }
 }
-
-
-
-}
-
 
 //---------------------Responsive--------------------------
 
@@ -321,7 +294,6 @@ input[type="submit"]:not(:disabled) {
     padding-left: 0;
     margin-bottom: 100px;
     position: static;
-
   }
 
   .font_12 {
@@ -357,4 +329,8 @@ input[type="submit"]:not(:disabled) {
     display: flex;
     flex-direction: column;
   }
+
+
+  
+
 }

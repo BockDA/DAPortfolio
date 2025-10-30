@@ -44,9 +44,12 @@
         <label for="message">{{ "CONTACT.FORMULAR_MESSAGE" | translate }}</label>
         <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
             placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required autocomplete="off"></textarea>
-        @if(!message.valid && message.touched){
-        <span></span>
-        }
+
+        <span class="input_Error" [style.visibility]="!message.valid && message.touched ? 'visible' : 'hidden'">
+            {{ 'CONTACT.INPUTEEROR' | translate }}
+        </span>
+
+
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden" />
         <div class="contac_PrivacyPolicy" [attr.aria-checked]="privacyCtrl.value"
             (click)="privacyCtrl.control.setValue(!privacyCtrl.value)">
@@ -66,25 +69,19 @@
         <div class="section_submit">
             <input [class.disabled]="!contactForm.valid" type="submit" value="{{ 'CONTACT.SEND_BTN' | translate }}" />
         </div>
+
     </form>
     <div class="contac_BTN"></div>
     <div class="hero_ArrowUp">
         <a (click)="setPosMenu('hero')"><img src="assets/icons/ArrowUp.png" /></a>
     </div>
 
-    <!--
-    <div class="toast success">
-        <p style="font-size: 30px; color:white">Tewst</p>
-    </div>
-    -->
     <div *ngIf="mailSend" class="toast success">
-        <p>E-mail würde erfolgreich Versand</p>
+        <p>{{"CONTACT.TOAST.OK" | translate}}</p>
     </div>
-    
+
     <div *ngIf="mailError" class="toast error">
-        <p>Fehler beim senden der E-Mail</p>
+        <p>{{"CONTACT.TOAST.ERROR" | translate}} </p>
     </div>
+
 </main>
-
-
-

@@ -62,17 +62,17 @@ export class ContactMeComponent {
           next: (response: any) => {
             console.log('Antwort vom Server:', response);
             ngForm.resetForm();
+            this.emailOK();
           },
           error: (error: any) => {
-            
             console.error('Fehler beim Senden:', error);
-        
+            this.emailError();
           },
-       
           complete: () => console.info('Mailversand abgeschlossen'),
+           
         });
       
-      this.emailOK();
+  
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log('Testmodus aktiv — keine echte Mail wird gesendet.');
         this.emailOK();
@@ -83,14 +83,12 @@ export class ContactMeComponent {
 
   private emailOK() {
     this.mailSend = true;
-    setTimeout(() => (this.mailSend = false), 5000);
-
+    setTimeout(() => (this.mailSend = false), 2000);
    }
   
   private emailError() {
     this.mailError = true;
-    setTimeout(() => (this.mailError = false), 5000);
-    
+    setTimeout(() => (this.mailError = false), 2000);
   }
 
 
