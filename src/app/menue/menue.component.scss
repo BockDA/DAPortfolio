@@ -35,15 +35,12 @@ main {
 
 }
 
-
-/* 🟤 Startzustand – unten fixiert */
 :host(.menu-bottom) {
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 
-/* 🟤 Nach Scroll – oben sticky */
 :host(.menu-top) {
   position: sticky;
   top: 0;
@@ -72,8 +69,6 @@ main {
   background-position: center;
   background-size: contain;
 }
-
-//-----------------------------------------------//
 
 .language_Icon {
   display: flex;
@@ -121,10 +116,7 @@ main {
 @include tablet {
   :host {
     top: 740px;
-
   }
-
-
 
   .font_3 {
     font-size: 20px !important;
@@ -138,18 +130,22 @@ main {
     width: 100%;
     display: flex;
     justify-content: start;
-
     padding: 0px 0px !important;
   }
 
   //---------------------MOBIL--------------------------
   @include mobile {
     main {
+      //background-color: yellow;
       position: fixed;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
       margin: 0 auto;
     }
+  
+
+
+
   }
 }

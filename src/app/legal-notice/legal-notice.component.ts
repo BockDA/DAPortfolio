@@ -5,6 +5,7 @@ import { CommonModule, NgFor } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-legal-notice',
@@ -15,7 +16,8 @@ import { Subscription } from 'rxjs';
     CommonModule,
     NgFor,
     FooterComponent,
-  ],
+    RouterLink
+],
   templateUrl: './legal-notice.component.html',
   styleUrls: ['./legal-notice.component.scss'],
 })

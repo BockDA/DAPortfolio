@@ -1,19 +1,23 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-
-
 main {
   min-width: 320px;
   max-width: 1920px;
-  height: 100vh;
+  height: 100%;
   background-color: $mainColor;
   color: $cremeWhite;
 
 }
 
+.mobi-back {
+  display: none;
+}
+
 section {
-  margin-left: 40px;
+
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 80px;
 }
 
@@ -41,5 +45,45 @@ section {
 }
 
 
+//---------------------MOBIL--------------------------
+@include mobile {
 
+  main {
+    margin-top: 104px;
+  }
 
+  .legal-notice-content {
+    padding-top: 20px;
+  }
+
+    .legal_notice_header{
+      padding-top: 20px;
+    }
+  .mobi-back {
+    display: inline;
+    cursor: pointer;
+  }
+
+  .font_1 {
+    font-size: 32px;
+  }
+
+  ::ng-deep app-menue {
+    .menue_Entries {
+      display: none !important;
+    }
+
+    .language_Icon {
+      display: none !important;
+    }
+
+    .app_logo {
+      display: block !important;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+
+    }
+  }
+
+}
