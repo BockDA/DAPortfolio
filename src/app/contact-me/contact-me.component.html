@@ -45,9 +45,7 @@
         <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
             placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required autocomplete="off"></textarea>
 
-        <span class="input_Error" [style.visibility]="!message.valid && message.touched ? 'visible' : 'hidden'">
-            {{ 'CONTACT.INPUTEEROR' | translate }}
-        </span>
+       
 
 
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden" />

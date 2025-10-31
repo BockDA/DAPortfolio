@@ -27,7 +27,7 @@ main {
 .hero_ArrowUp {
   position: absolute;
   top: 100px;
-  left: 80%; 
+  left: 80%;
   transform: translateX(-50%);
   cursor: pointer;
 }
@@ -57,6 +57,7 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+
   .section_img {
     @include icon_toggle();
   }
@@ -64,10 +65,12 @@ main {
 
 .section:hover {
   color: $primaryBlue;
+
   .section_img {
     .img_start {
       opacity: 0;
     }
+
     .img_hover {
       opacity: 1;
     }
@@ -79,6 +82,7 @@ main {
   flex-direction: column;
   width: 911px;
   color: $primaryBlue;
+
   label {
     padding-bottom: 5px;
     margin-left: 20px;
@@ -91,11 +95,13 @@ main {
   display: flex;
   gap: 10px;
   margin-bottom: 21px;
+
   div {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   input {
     height: 60px;
   }
@@ -115,6 +121,7 @@ textarea {
   outline: none;
   font-size: 16px;
   font-family: "Josefin";
+
   &:focus {
     background-color: $inputColor;
     border-color: $primaryBlue;
@@ -211,13 +218,11 @@ input[type="submit"]:not(:disabled) {
   box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
 }
 
-.input_Error {
-  min-height: 10px;
-  align-items: center;
-  margin-top: 10px;
-  color: $errorRed;
-  font-size: 16px;
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 2px solid $errorRed;
 }
+
 
 .toast {
   position: fixed;
