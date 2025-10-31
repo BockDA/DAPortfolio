@@ -10,9 +10,9 @@
  }
 
 //Hilfrahmen für Entwicklung
-* {
-  outline: 1px solid red;
-}
+//* {
+//  outline: 1px solid red;
+//}
 
 body {
   display: flex;
@@ -22,11 +22,9 @@ body {
   font-weight: 200;
   font-style: normal;
   font-family: "Anta";
-  background-color: yellow;
 }
 
 //Schriftarten
-
 @font-face {
   font-display: swap; 
   font-family: "Josefin";

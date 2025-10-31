@@ -4,10 +4,7 @@
   @include flex_Box(row, 150px);
   font-family: "Josefin";
   padding: 20px;
-
   width: 100%;
-
- background-color: royalblue;
 }
 
 .players_Card_Contents {
@@ -42,17 +39,11 @@
 
 }
 
-
 @include background_Animation();
 .img_3 {
   display: none;
 }
 
-
-
-* {
-  outline: 1px solid yellow;
-}
 
 //---------------------Responsive--------------------------
 
@@ -91,8 +82,6 @@
       object-fit: cover;
     }
   }
-
-
 
   .player_Cards {
     display: flex;

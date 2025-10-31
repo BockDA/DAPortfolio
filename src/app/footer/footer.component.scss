@@ -9,7 +9,6 @@ main {
   position: relative;
 }
 
-
 .footer_sec_center a {
   text-decoration: none;
   color: $mainColor;
@@ -34,12 +33,10 @@ main {
 .footer_sec_left a {
   text-decoration: none;
   color: $cremeWhite;
-
 }
 
 .footer_sec_right {
   display: flex;
-
 }
 
 p .copy {
@@ -51,7 +48,6 @@ p .copy {
   display: flex;
   align-items: center;
   gap: 10px;
-
   .section_img {
     @include icon_toggle();
   }
@@ -99,7 +95,6 @@ p .copy {
 
   .footer_sec_center {
     margin-top: 20px;
-
   }
 
   .footer_sec_right {
@@ -122,5 +117,4 @@ p .copy {
   .img_hover {
     opacity: 1 !important;
   }
-
 }

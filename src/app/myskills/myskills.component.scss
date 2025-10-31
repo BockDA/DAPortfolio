@@ -18,8 +18,6 @@ main {
   font-family: "Josefin";
   display: flex;
   justify-content: center;
-  //gap: 234px;
-
 }
 
 .myskills_grid_container {
@@ -32,7 +30,6 @@ main {
 }
 
 .myskills_grid-item {
-  //@include flex_Box(column, 15px);
   text-align: center;
   font-family: "Josefin";
   color: $primaryBlue;
@@ -183,6 +180,4 @@ main {
   .myskills_Infotext {
     text-align: left !important;
   }
-
-
 }

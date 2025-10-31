@@ -48,10 +48,9 @@ main {
 }
 
 .myprojects_tab {
-  background-color: #89bcd912;
+  background-color: $tabColor;
   width: 100%;
  }
-
 
 
 //---------------------Responsive--------------------------
@@ -68,7 +67,6 @@ main {
 @include tablet {
   main{
    padding-top: 30px;
-
 }
   .font_5 {
     font-size: 48px;

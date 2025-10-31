@@ -10,7 +10,6 @@ main {
   gap: 70px;
   color: $cremeWhite;
   padding-bottom: 200px;
-
 }
 
 .img_backround_mobil {
@@ -29,8 +28,12 @@ main {
   transform: scaleX(1.2);
 }
 
-.hero_picture {}
-
+.hero_picture {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
 
 .hero_section {
   display: grid;
@@ -107,7 +110,7 @@ main {
   padding-top: 90px;
 
   .hero_Name {
-    padding-top: 20px;
+    padding-top: 60px;
 
     p:first-of-type {
       line-height: 1;
@@ -172,8 +175,6 @@ main {
 }
 
 
-
-
 //---------------------Desktop--------------------------
 
 @include desktop {
@@ -213,12 +214,10 @@ main {
     font-size: 48px;
     padding: 0;
     margin: 0;
-
   }
 
   .hero_picture {
     margin-top: 80px;
-
   }
 
   .hero_Personal {
@@ -229,8 +228,6 @@ main {
   .section {
     display: none;
   }
-
-
 
   .hero_Arrow {
     margin: 0;
@@ -294,6 +291,11 @@ main {
 //---------------------MOBIL--------------------------
 
 @include mobile {
+
+  #menyAvPaa {
+    display: inline;
+  }
+
   #menyAvPaa:checked~.hero_section .img_Hero {
     display: none;
   }
@@ -312,11 +314,12 @@ main {
 
   #menyAvPaa:checked~.hero_section .menue_mobil {
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 200px;
+    top: 260px;
     left: 50%;
-    transform: translate(-50%);
-    z-index: 10000;
+    transform: translateX(-50%);
   }
 
   #burger {
@@ -365,6 +368,7 @@ main {
     height: 800px;
   }
 
+
   .hero_bg_section>img.original {
     left: 10%;
     max-width: 300px;
@@ -382,7 +386,7 @@ main {
 //----------- Mobil Small --------------
 
 @include mobilesmall {
-    .img_backround_mobil {
+  .img_backround_mobil {
     max-width: 270px;
     height: 420px;
     margin-top: 60px;
