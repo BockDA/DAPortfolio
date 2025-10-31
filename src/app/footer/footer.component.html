@@ -1,18 +1,22 @@
 <main>
-    
+
     <div class="footer_section">
         <div class="footer_sec_left">
             <a class="font_8" routerLink="/legalNotice">{{ 'FOTTER.NOTICE' | translate }}</a>
             <p class="font_8"><span class="copy">©</span> Christian Bock 2025</p>
         </div>
         <div class="footer_sec_center">
-            <app-logo [dark]="false"></app-logo>
+            <a href="#hero">
+                <app-logo [dark]="false"></app-logo>
+            </a>
         </div>
         <div class="footer_sec_right">
             <div class="section">
                 <div class="section_img">
-                    <img class="img_start" src="assets/icons/email_btn_b.png">
-                    <img class="img_hover" src="assets/icons/email_btn_b_hover.png">
+                    <a href="mailto:info@elektro-bock.com">
+                        <img class="img_start" src="assets/icons/email_btn_b.png">
+                        <img class="img_hover" src="assets/icons/email_btn_b_hover.png">
+                    </a>
                 </div>
                 <div class="section_img">
                     <img class="img_start" src="assets/icons/github_btn_b.png" />
@@ -25,4 +29,4 @@
             </div>
         </div>
     </div>
- </main>
+</main>
