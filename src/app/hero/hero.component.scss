@@ -110,8 +110,6 @@ main {
   padding-top: 90px;
 
   .hero_Name {
-    padding-top: 60px;
-
     p:first-of-type {
       line-height: 1;
       text-align: center;
@@ -180,6 +178,7 @@ main {
 @include desktop {
   main {
     margin: 0;
+    gap: 160px;
   }
 
   .hero_Name {
@@ -233,6 +232,7 @@ main {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
+  
   }
 
   .hero_section.no-hover:hover .hero_bg_section .original {

@@ -5,45 +5,52 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   user-select: none;
-  -webkit-user-select: none; 
+  -webkit-user-select: none;
   -moz-user-select: none;
- }
+}
+
+
+app-root {
+  display: block;
+  //width: 100%;
+  max-width: 1920px;
+}
 
 //Hilfrahmen für Entwicklung
-//* {
-//  outline: 1px solid red;
-//}
+ * {
+  outline: 1px solid red;
+}
 
 body {
   display: flex;
-  flex-direction: column;
+  justify-content: center; //neu
   margin: 0;
-  overflow-x: hidden;
   font-weight: 200;
   font-style: normal;
   font-family: "Anta";
-  background-color: yellow;
+  background-color: $mainColor;
 }
+
 
 //Schriftarten
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Josefin";
   font-style: normal;
   font-weight: 200;
-  src: url("assets/fonts/josefin-sans-v33-latin-200.woff2") format("woff2"); 
+  src: url("assets/fonts/josefin-sans-v33-latin-200.woff2") format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Josefin";
   font-style: normal;
   font-weight: 300;
-  src: url("assets/fonts/josefin-sans-v33-latin-300.woff2") format("woff2"); 
+  src: url("assets/fonts/josefin-sans-v33-latin-300.woff2") format("woff2");
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Josefin";
   font-style: normal;
   font-weight: 400;
@@ -51,11 +58,11 @@ body {
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Josefin";
   font-style: normal;
   font-weight: 500;
-  src: url("assets/fonts/josefin-sans-v33-latin-500.woff2") format("woff2"); 
+  src: url("assets/fonts/josefin-sans-v33-latin-500.woff2") format("woff2");
 }
 
 @font-face {
@@ -63,7 +70,7 @@ body {
   font-family: "Josefin";
   font-style: normal;
   font-weight: 700;
-  src: url("assets/fonts/josefin-sans-v33-latin-700.woff2") format("woff2"); 
+  src: url("assets/fonts/josefin-sans-v33-latin-700.woff2") format("woff2");
 }
 
 @font-face {
@@ -104,6 +111,7 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
+
 .font_7 {
   font-size: 30px;
   font-weight: 500;
@@ -144,14 +152,14 @@ body {
   font-weight: 400;
 }
 
-.font_14{
- font-size: 24px;
- font-weight: bold;
+.font_14 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.font_15{
- font-size: 14px;
- font-weight: 400;
+.font_15 {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 

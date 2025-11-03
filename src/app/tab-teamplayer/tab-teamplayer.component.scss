@@ -1,35 +1,39 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
+
 .player_Cards {
-  @include flex_Box(row, 150px);
+  @include flex_Box(row, 250px);
   font-family: "Josefin";
-  padding: 20px;
-  width: 100%;
-}
+  }
 
 .players_Card_Contents {
   @include flex_Box(column, 20px);
   color: $cremeWhite;
   text-align: center;
+
   .color_Text {
     color: $primaryBlue;
   }
+
   .description_Text {
     z-index: 3;
+    height: auto;
+    width: auto;
     text-align: center;
     max-width: 260px;
     max-height: 180px;
     padding-bottom: 19px;
     overflow-y: auto;
+
     &::-webkit-scrollbar {
       width: 3px;
     }
+
     &::-webkit-scrollbar-thumb {
       background: $primaryBlue;
       border-radius: 6px;
       cursor: pointer;
     }
-
   }
 
   .link_linedln {
@@ -40,6 +44,7 @@
 }
 
 @include background_Animation();
+
 .img_3 {
   display: none;
 }
@@ -53,18 +58,22 @@
   .player_Cards {
     font-family: "Josefin";
     padding: 20px;
-     
   }
 
   .players_Card_Contents {
     width: 150px;
-     max-width:200px;
+    max-width: 200px;
   }
 }
 
 //---------------------TABLET--------------------------
 
 @include tablet {
+
+  .player_Cards {
+    gap: 50px !important;
+  }
+
   .players_Card_Contents {
     width: 60%;
     height: auto;
@@ -72,15 +81,20 @@
 
   .section {
     position: relative;
-    width: 250px; 
-    height: 320px;
+    width: 250px;
+    height: auto;
+  }
 
-    .img_1,
-    .img_2 {
-      width: auto !important;
-      height: auto !important;
-      object-fit: cover;
-    }
+  .img_1 {
+    display: none!important;
+  }
+
+
+  .img_3 {
+    display: block;
+    width: 230px;
+    height: 350px;
+    object-fit: cover !important;
   }
 
   .player_Cards {
@@ -92,9 +106,11 @@
     overflow-y: hidden;
     padding-left: 80px;
     padding-right: 80px;
+
     &::-webkit-scrollbar {
       height: 3px;
     }
+
     &::-webkit-scrollbar-thumb {
       width: 20px;
       background: $primaryBlue;
@@ -102,28 +118,11 @@
       cursor: pointer;
     }
   }
-
-
-
-
 }
 
 //-------------------Mobil-----------------------------------
 
 @include mobile {
-  .img_2 {
-    display: none !important;
-  }
-
-  .img_1 {
-    display: none;
-  }
-
-  .img_3 {
-    display: flex;
-    width: 330px;
-    height: 450px;
-  }
   .section {
     height: 400px;
   }
@@ -137,9 +136,11 @@
     overflow-y: hidden;
     padding-left: 80px;
     padding-right: 80px;
+
     &::-webkit-scrollbar {
       height: 3px;
     }
+
     &::-webkit-scrollbar-thumb {
       width: 20px;
       background: $primaryBlue;

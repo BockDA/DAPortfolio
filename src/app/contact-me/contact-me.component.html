@@ -33,22 +33,37 @@
                 <label for="name">{{ "CONTACT.FORMULAR_NAME" | translate }}</label>
                 <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
                     placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}" required autocomplete="off" />
+                <span class="error_notice">{{'CONTACT.INPUTEEROR_NAME' |translate}}</span>
             </div>
-            <div>
+
+
+
+            <div class="container_mail">
                 <label for="email">{{ "CONTACT.FORMULAR_EMAIL" | translate }}</label>
-                <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                     placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}" required autocomplete="off"
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+                <span class="error_notice">{{'CONTACT.INPUTEEROR_EMAIL' |translate}}</span>
             </div>
         </div>
-        <label for="message">{{ "CONTACT.FORMULAR_MESSAGE" | translate }}</label>
-        <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
-            placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required autocomplete="off"></textarea>
 
-       
+   
+            <label for="message">{{ "CONTACT.FORMULAR_MESSAGE" | translate }}</label>
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
+                placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required autocomplete="off"></textarea>
+            <span class="error_notice">{{'CONTACT.INPUTEEROR_MESSAGE' |translate}}</span>
+
+    
+
+
 
 
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden" />
+
+
+
+
+
         <div class="contac_PrivacyPolicy" [attr.aria-checked]="privacyCtrl.value"
             (click)="privacyCtrl.control.setValue(!privacyCtrl.value)">
             <img [src]="
@@ -81,5 +96,4 @@
     <div *ngIf="mailError" class="toast error">
         <p>{{"CONTACT.TOAST.ERROR" | translate}} </p>
     </div>
-
 </main>

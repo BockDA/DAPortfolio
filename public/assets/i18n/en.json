@@ -90,30 +90,6 @@
         "LINKPROJECT": "https://christian-bock.developerakademie.net/Projekte/Pokedex/index.html",
         "LINKGIT": "https://github.com/BockDA/DA-Pokedex.git"
       }
-    },
-    "P4": {
-      "Tab1": {
-        "DESCRIPTION1": "In progress",
-        "WORKPROCESS1": "",
-        "CONTENT1": "",
-        "DESCRIPTION2": "In progress",
-        "CONTENT2": "",
-        "DESCRIPTION3": "In progress",
-        "CONTENT3": ""
-      },
-      "Tab2": {
-        "TECHNOLOGIES": "Technologies",
-        "IMGS": [
-          "assets/icons/Icon_HTML.png",
-          "assets/icons/Icon_Javascript.png",
-          "assets/icons/Icon_Git.png",
-          "assets/icons/Icon_Api.png"
-        ],
-        "SCREEN": "assets/screenshots/DABubbleinWork.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git, API",
-        "LINKPROJECT": "",
-        "LINKGIT": ""
-      }
     }
   },
   "TEAMPLAYER": {
@@ -155,7 +131,9 @@
     "PRIVACYPOLICY_NOTICE2": " privacy policy ",
     "PRIVACYPOLICY_NOTICE3": "and agree to the processing of my data as described.",
     "SEND_BTN": "Send",
-    "INPUTEEROR": "Input error",
+    "INPUTEEROR_NAME": "The field must not be left empty !",
+    "INPUTEEROR_EMAIL": "Please enter a valid email address !",
+    "INPUTEEROR_MESSAGE": "The field expects at least four characters !",
     "TOAST": {
       "OK": "Email was successfully sent",
       "ERROR": "Error sending email"

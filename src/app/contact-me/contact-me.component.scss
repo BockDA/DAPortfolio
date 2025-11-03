@@ -39,7 +39,7 @@ main {
   justify-content: center;
   gap: 100px;
   color: $cremeWhite;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 .contac_Description p {
@@ -102,9 +102,10 @@ main {
     width: 100%;
   }
 
-  input {
-    height: 60px;
-  }
+}
+
+input {
+  height: 60px;
 }
 
 input[type="text"],
@@ -121,6 +122,8 @@ textarea {
   outline: none;
   font-size: 16px;
   font-family: "Josefin";
+
+
 
   &:focus {
     background-color: $inputColor;
@@ -214,13 +217,32 @@ input[type="submit"]:not(:disabled) {
   background-color: $mainColor;
   border-color: $primaryBlue;
   color: $cremeWhite;
-  transform: scale(1.05);
+  //transform: scale(1.05);
   box-shadow: 0 0 8px rgba($primaryBlue, 0.5);
 }
 
 input.ng-invalid.ng-touched,
 textarea.ng-invalid.ng-touched {
   border: 2px solid $errorRed;
+}
+
+
+
+.error_notice {
+  height: 20px;
+  font-size: 12px;
+  color: $errorRed;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 5px;
+
+}
+
+
+input.ng-invalid.ng-touched+.error_notice,
+textarea.ng-invalid.ng-touched+.error_notice {
+  display: block;
+  opacity: 1;
 }
 
 

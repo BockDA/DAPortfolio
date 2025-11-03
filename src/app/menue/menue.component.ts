@@ -39,7 +39,7 @@ export class MenueComponent {
       document
         .getElementById(sectionId)
         ?.scrollIntoView({ behavior: 'smooth' });
-    }, 300);
+    }, 500);
 
   
   }

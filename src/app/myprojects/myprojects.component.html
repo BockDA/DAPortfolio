@@ -7,13 +7,13 @@
       <button class="font_7" (click)='selectTab(1)' [class.active]='activeTab ===1'>1. Join</button>
       <button class="font_7" (click)='selectTab(2)' [class.active]='activeTab ===2'>2. El Pollo Logo</button>
       <button class="font_7" (click)='selectTab(3)' [class.active]='activeTab ===3'>3. Pokemon</button>
-      <button class="font_7" (click)='selectTab(4)' [class.active]='activeTab ===4'>4. Da Bubble</button>
+      <!--    <button class="font_7" (click)='selectTab(4)' [class.active]='activeTab ===4'>4. Da Bubble</button>-->
     </div>
     <div class="myprojects_tab">
       @if (activeTab===1){<div><app-tab-my-projects [activeTab]="activeTab"></app-tab-my-projects></div>}
       @if (activeTab===2){<div><app-tab-my-projects [activeTab]="activeTab"></app-tab-my-projects></div>}
       @if (activeTab===3){<div><app-tab-my-projects [activeTab]="activeTab"></app-tab-my-projects></div>}
-      @if (activeTab===4){<div><app-tab-my-projects [activeTab]="activeTab"></app-tab-my-projects></div>}
+      <!--     @if (activeTab===4){<div><app-tab-my-projects [activeTab]="activeTab"></app-tab-my-projects></div>}-->
     </div>
   </div>
 </main>

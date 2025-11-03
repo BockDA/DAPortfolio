@@ -90,30 +90,6 @@
         "LINKPROJECT": "https://christian-bock.developerakademie.net/Projekte/Pokedex/index.html",
         "LINKGIT": "https://github.com/BockDA/DA-Pokedex.git"
       }
-    },
-    "P4": {
-      "Tab1": {
-        "DESCRIPTION1": "In Arbeit",
-        "WORKPROCESS1": "",
-        "CONTENT1": "",
-        "DESCRIPTION2": "In Arbeit",
-        "CONTENT2": "",
-        "DESCRIPTION3": "In Arbeit",
-        "CONTENT3": ""
-      },
-      "Tab2": {
-        "TECHNOLOGIES": "Technologien",
-        "IMGS": [
-          "assets/icons/Icon_HTML.png",
-          "assets/icons/Icon_Javascript.png",
-          "assets/icons/Icon_Git.png",
-          "assets/icons/Icon_Api.png"
-        ],
-        "SCREEN": "assets/screenshots/DABubbleinWork.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git, API",
-        "LINKPROJECT": "",
-        "LINKGIT": ""
-      }
     }
   },
   "TEAMPLAYER": {
@@ -155,7 +131,9 @@
     "PRIVACYPOLICY_NOTICE2": " Datenschutzerklärung ",
     "PRIVACYPOLICY_NOTICE3": "gelesen und stimme der Verarbeitung meiner Daten gemäß der Beschreibung zu.",
     "SEND_BTN": "Senden",
-    "INPUTEEROR": "Eingabefehler ",
+    "INPUTEEROR_NAME": "Das Feld darf nicht leer bleiben !",
+    "INPUTEEROR_EMAIL": "Geben Sie einen gültige Mail Adresse ein !",
+    "INPUTEEROR_MESSAGE": "Das Feld erwartet mindestens bvier Zeichen !",
     "TOAST": {
       "OK": "E-mail würde erfolgreich Versand",
       "ERROR": "Fehler beim senden der E-Mail"
