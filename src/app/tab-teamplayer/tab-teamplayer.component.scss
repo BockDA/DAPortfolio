@@ -175,10 +175,10 @@
     &::-webkit-scrollbar-thumb {
       background: $primaryBlue;
       border-radius: 10px;
-      cursor: grab;
+      cursor: pointer;
 
       &:active {
-        cursor: grabbing;
+        cursor: pointer;
         background: lighten($primaryBlue, 10%);
       }
     }
@@ -271,11 +271,11 @@
     &::-webkit-scrollbar-thumb {
       background: $primaryBlue;
       border-radius: 10px;
-      cursor: grab;
+      cursor: pointer;
 
       &:active {
-        cursor: grabbing;
-        background: lighten($primaryBlue, 10%);
+        cursor: pointer;
+        background: $primaryBlue;
       }
     }
   }
