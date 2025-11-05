@@ -1,22 +1,19 @@
 @use "/styles/colors" as *;
 @use "/styles/mixin/mixin" as *;
 
-main {
 
-  //position: sticky;
-  bottom: 0;
+
+main {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 104px;
   background-color: $primaryBlue;
   width: 100vw;
   position: relative;
   left: 50%;
-  right: 50%;
-  margin-left: -50vw; // Trick: raus aus dem zentrierten Layout
+  margin-left: -50vw;
   margin-right: -50vw;
-
-
 
 }
 
@@ -26,31 +23,6 @@ main {
   justify-items: center;
   align-items: center;
   justify-content: space-between;
-  margin-left: 114px;
-  margin-right: 114px;
-}
-
-:host {
-  z-index: 10;
-}
-
-:host ::ng-deep app-logo .logo {
-  cursor: pointer;
-}
-
-:host(.menu-bottom) {
-  position: fixed;
-  left: calc(50% - 50vw);
-  bottom: 0;
-  width: 100vw;
-
-}
-
-:host(.menu-top) {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100vw;
 }
 
 .menue_Entries {
@@ -103,14 +75,37 @@ main {
   }
 }
 
-
 .menue_inner {
   max-width: 1920px;
-  margin: auto;
-
-
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 114px;
+  box-sizing: border-box;
 }
 
+:host {
+  z-index: 100;
+  display: block;
+}
+
+
+:host(.menu-top) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+:host(.menu-bottom) {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+:host ::ng-deep app-logo .logo {
+  cursor: pointer;
+}
 
 
 //---------------------Responsive--------------------------
@@ -125,9 +120,7 @@ main {
 //---------------------TABLET--------------------------
 
 @include tablet {
-  :host {
-    top: 740px;
-  }
+  /* remove top override to allow sticky to work correctly */
 
   .font_3 {
     font-size: 20px !important;
@@ -142,5 +135,43 @@ main {
     display: flex;
     justify-content: start;
     padding: 0px 0px !important;
+  }
+}
+
+//---------------------MOBIL--------------------------
+
+
+@include mobile {
+
+  .font_3 {
+    font-size: 32px !important;
+  }
+
+  /* Default: narrow menu on home/hero page (for mobile hamburger style) */
+  main {
+    width: 90px;
+    left: -70px;
+    top:10px;
+  }
+
+  .menue_inner {
+    padding: 0 16px !important;
+
+  }
+
+  .language_Icon {
+    margin-right: 16px;
+  }
+}
+
+/* Full-width menu on static pages (legal-notice, privacy-policy) via .menu-full-width class */
+:host(.menu-full-width) {
+  @include mobile {
+    main {
+      width: 100vw !important;
+      left: 50% !important;
+      margin-left: -50vw !important;
+      margin-right: -50vw !important;
+    }
   }
 }

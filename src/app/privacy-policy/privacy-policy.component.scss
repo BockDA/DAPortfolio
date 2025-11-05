@@ -1,0 +1,90 @@
+@use "styles/colors" as *;
+@use "styles/mixin/mixin" as *;
+
+main {
+    min-width: 320px;
+    max-width: 1920px;
+    height: 100%;
+    background-color: $mainColor;
+    color: $cremeWhite;
+}
+
+.mobi-back {
+    display: none;
+
+}
+
+section {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+}
+
+.privacy-policy-content {
+    padding-top: 124px;
+    padding-bottom: 140px;
+    margin-left: 40px;
+}
+
+.sec {
+    margin-top: 10px;
+}
+
+.content_line {
+    margin-bottom: 8px;
+}
+
+.privacy-policy-header {
+    font-family: "Josefin";
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+:host ::ng-deep .col {
+    color: $primaryBlue;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+:host ::ng-deep.line {
+    margin-left: 20px !important;
+}
+
+//---------------------MOBIL--------------------------
+@include mobile {
+    .privacy-policy-content {
+        padding-top: 124px;
+        padding-bottom: 230px;
+    }
+
+
+    .mobi-back {
+        display: inline;
+        cursor: pointer;
+        margin-bottom: 20px !important;
+
+        .img {
+            padding-bottom: 20px;
+        }
+    }
+
+
+
+    ::ng-deep app-menue {
+
+        .menue_Entries {
+            display: none !important;
+        }
+
+        .language_Icon {
+            display: none !important;
+
+        }
+
+        .app_logo {
+            display: block !important;
+        }
+    }
+}

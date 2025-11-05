@@ -10,6 +10,7 @@ main {
   gap: 70px;
   color: $cremeWhite;
   padding-bottom: 200px;
+
 }
 
 .img_backround_mobil {
@@ -173,6 +174,8 @@ main {
 }
 
 
+
+
 //---------------------Desktop--------------------------
 
 @include desktop {
@@ -232,7 +235,7 @@ main {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
-  
+
   }
 
   .hero_section.no-hover:hover .hero_bg_section .original {
@@ -292,6 +295,10 @@ main {
 
 @include mobile {
 
+  main {
+    margin-bottom: 80px;
+  }
+
   #menyAvPaa {
     display: inline;
   }
@@ -327,7 +334,7 @@ main {
     cursor: pointer;
     width: 32px;
     height: 32px;
-    right: 20px;
+    right: 40px;
     top: 20px;
     display: flex;
     justify-content: space-between;
@@ -368,6 +375,24 @@ main {
     height: 800px;
   }
 
+  .hero_Personal {
+    gap: 10px;
+
+  }
+
+  .hero_media {
+    margin-bottom: 0 !important;
+  }
+
+  .hero_Name {
+    margin-top: 0 !important;
+  }
+
+  .hero_Arrow {
+    margin-top: 0 !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
   .hero_bg_section>img.original {
     left: 10%;
@@ -383,17 +408,62 @@ main {
 }
 
 
-//----------- Mobil Small --------------
+//----------- Mobil Small (bis 480px) --------------
 
 @include mobilesmall {
+  main {
+    //height: 700px;
+    gap: 20px;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .font_1 {
+    font-size: 40px !important;
+  }
+
+  .font_2 {
+    font-size: 20px !important;
+  }
+
   .img_backround_mobil {
-    max-width: 270px;
-    height: 420px;
-    margin-top: 60px;
+    max-width: 250px;
+    min-width: 220px;
+    height: 380px;
   }
 
   .img_Hero {
-    max-width: 250px !important;
-    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 230px !important;
+    min-width: 200px !important;
+    margin-top: 0;
+  }
+
+  .hero_picture {
+    position: relative;
+  }
+
+  .hero_Personal {
+    padding-top: 60px;
+  }
+
+  .app_Logo {
+    top: 10px;
+    left: 15px !important;
+  }
+
+  #burger {
+    right: 15px;
+    top: 15px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .hero_Arrow {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

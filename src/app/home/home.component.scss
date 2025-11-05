@@ -6,12 +6,61 @@ main {
   background-color: $mainColor;
 }
 
+/* CSS-only menu: starts at bottom, moves to top on scroll, stays visible */
+.menu-intro {
+  /* Empty wrapper - menu is positioned independently */
+  pointer-events: none;
+}
 
+.menu-intro app-menue.menu-sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  pointer-events: auto;
+  /* Smooth transition when moving to top */
+  transition: bottom 0.3s ease-out, top 0.3s ease-out;
+}
+
+/* After scrolling past viewport height, move to top */
+@supports (animation-timeline: scroll()) {
+  .menu-intro app-menue.menu-sticky {
+    animation: menu-to-top linear;
+    animation-timeline: scroll();
+    animation-range: 0vh 100vh;
+  }
+
+  @keyframes menu-to-top {
+    from {
+      bottom: 0;
+      top: auto;
+    }
+
+    to {
+      bottom: auto;
+      top: 0;
+    }
+  }
+}
+
+/* Fallback: menu starts at top (simpler but works everywhere) */
+@supports not (animation-timeline: scroll()) {
+  .menu-intro app-menue.menu-sticky {
+    bottom: auto;
+    top: 0;
+  }
+}
 
 //---------------------MOBIL--------------------------
 
 @include mobile {
   .app_menu {
+    display: none;
+  }
+
+  /* Hide CSS-only menu on mobile */
+  .menu-intro {
     display: none;
   }
 }

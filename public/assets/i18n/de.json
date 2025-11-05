@@ -188,5 +188,42 @@
     ],
     "DATE": "Datum: 10. Oktober 2025"
   },
-  "LEGALNOTICE.NOSECTIONS": "Keine Einträge im Impressum vorhanden."
+  "PRIVACYPOLICY": {
+    "TITLE": "Inhalt",
+    "HEADER": "Datenschutzerklärung",
+    "SECTIONS": [
+      {
+        "TITLE": "Verantwortlicher",
+        "CONTENT": [
+          "<span class='col bold'>Verantwortlicher</span>",
+          "Christian Bock",
+          "E-Mail : cbock2011@gmail.com",
+          "<span class='col bold'>Erhobene Daten</span>",
+          "Kontaktformular-Daten:",
+          "<span class='line'>&bull; Name</span>",
+          "<span class='line'>&bull; E-Mail-Adresse</span>",
+          "<span class='line'>&bull; Nachricht</span>",
+          "Technische Daten (anonymisiert):",
+          "<span class='line'>&bull; Browsertyp</span>",
+          "<span class='line'>&bull; Betriebssystem</span>",
+          "<span class='line'>&bull; Zugriffzeiten</span>",
+          "<span class='col'>Zweck & Verwendung</span>",
+          "<span class='line'>&bull; Beantwortung von Anfragen</span>",
+          "<span class='line'>&bull; Funktionalität & Sicherheit der Webseite</span>",
+          "<span class='line'>&bull; Einhaltung gesetzlicher Vorgaben</span>",
+          "<span class='col '>Aufbewahrung</span>",
+          "<span class='line'>&bull; Kontakformular</span>",
+          "<span class='line'>&bull; Technische Daten</span>",
+          "<span class='col '>Drittanbieter</span>",
+          "<span class='line'>&bull; Google Fonts</span>",
+          "<span class='line'>&bull; Hosting Provider </span>",
+          "<span class='col '> Cookies & Lokaler Speicher </span>",
+          "<span class='line'>Keine Tracking-Cookies. LocalStorage nur für notwendige Funktionen (Sprache, Scroll).</span>",
+          "<span class='col '>Ihre Rechte</span>",
+          "<span class='line'>Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch, Widerruf. </span>",
+          "<span class='line'>Kontakt: cbock2011@gmail.com </span>"
+        ]
+      }
+    ]
+  }
 }

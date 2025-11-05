@@ -10,25 +10,35 @@
 }
 
 
+html {
+  overflow-x: hidden;
+}
+
 app-root {
   display: block;
-  //width: 100%;
+  width: 100%;
   max-width: 1920px;
+  overflow-x: visible;
+  margin: 0 auto;
 }
 
 //Hilfrahmen für Entwicklung
- * {
-  outline: 1px solid red;
-}
+// * {
+//   outline: 1px solid red;
+// }
 
 body {
   display: flex;
-  justify-content: center; //neu
+  justify-content: center;
   margin: 0;
+  padding: 0;
   font-weight: 200;
   font-style: normal;
   font-family: "Anta";
   background-color: $mainColor;
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 100vw;
 }
 
 

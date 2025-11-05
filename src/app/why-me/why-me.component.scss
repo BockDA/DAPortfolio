@@ -6,6 +6,8 @@ main {
   font-family: "Anta";
   color: $cremeWhite;
   width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .whyme_Section {
@@ -27,16 +29,18 @@ main {
   margin-left: 60px;
   align-items: center;
   justify-content: center;
-  gap: -40px;
+  gap: 40px;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .whyme_Description {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   gap: 30px;
   width: 380px;
+  max-width: 100%;
   margin-top: 30px;
 
   :hover {
@@ -50,6 +54,7 @@ main {
   display: flex;
   gap: 30px;
   width: 45%;
+  min-width: 300px;
 }
 
 .font_10 {
@@ -74,6 +79,10 @@ main {
 //---------------------TABLET--------------------------
 
 @include tablet {
+  main {
+    padding: 0 30px;
+  }
+
   .font_5 {
     font-size: 48px;
   }
@@ -81,17 +90,42 @@ main {
   .font_10 {
     font-size: 24px;
   }
-}
 
-@include mobile {
-  .font_5 {
-    font-size: 32px;
+  .whyme_Titel {
+    margin-top: 80px;
+  }
+
+  .whyme_innerSection {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 30px;
+  }
+
+  .whyme_Description {
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .whyme_locale {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
   }
 }
 
 //---------------------MOBIL--------------------------
 
 @include mobile {
+  main {
+    padding: 0 15px;
+  }
+
+  .font_5 {
+    font-size: 32px;
+  }
+
   .font_10 {
     font-size: 16px;
   }
@@ -101,18 +135,23 @@ main {
   }
 
   .whyme_Titel {
-    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .whyme_innerSection {
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 0;
+    gap: 20px;
     pointer-events: none;
   }
 
   .whyme_locale {
+    width: 100%;
+    max-width: 300px;
     margin: 0;
+    justify-content: center;
 
     img {
       width: 32px;
@@ -120,12 +159,59 @@ main {
     }
   }
 
-  .whyme_Description a {
-    display: none;
+  .whyme_Description {
+    width: 100%;
+    max-width: 300px;
+    padding: 0 10px;
+    align-items: center;
+    text-align: center;
+
+    a {
+      display: none;
+    }
+  }
+}
+
+//---------------------MOBIL SMALL (bis 635px)--------------------------
+
+@include mobilesmall {
+  main {
+    padding: 0 10px;
+  }
+
+  .font_5 {
+    font-size: 28px !important;
+  }
+
+  .font_10 {
+    font-size: 14px !important;
+  }
+
+  .font_8 {
+    font-size: 14px !important;
+  }
+
+  .whyme_Titel {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .whyme_innerSection {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .whyme_locale {
+    max-width: 260px;
+
+    img {
+      width: 28px;
+      height: 35px;
+    }
   }
 
   .whyme_Description {
-    max-width: 300px;
-    padding: 0 5px 0 5px;
+    max-width: 280px;
+    padding: 0 5px;
   }
 }

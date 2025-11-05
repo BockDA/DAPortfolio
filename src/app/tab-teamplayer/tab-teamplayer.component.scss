@@ -2,9 +2,14 @@
 @use "styles/mixin/mixin" as *;
 
 .player_Cards {
-  @include flex_Box(row, 250px);
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
   font-family: "Josefin";
-  }
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
 
 .players_Card_Contents {
   @include flex_Box(column, 20px);
@@ -69,13 +74,45 @@
 //---------------------TABLET--------------------------
 
 @include tablet {
-
   .player_Cards {
-    gap: 50px !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 80px !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 60px;
+    padding-right: 60px;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $primaryBlue;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: lighten($primaryBlue, 10%);
+      }
+    }
+  }
+
+  .background_Animation {
+    flex-shrink: 0;
   }
 
   .players_Card_Contents {
-    width: 60%;
+    width: 100%;
+    max-width: 220px;
     height: auto;
   }
 
@@ -83,69 +120,218 @@
     position: relative;
     width: 250px;
     height: auto;
+    min-height: 350px;
   }
 
   .img_1 {
-    display: none!important;
+    display: none !important;
   }
 
+  .img_2 {
+    display: none !important;
+  }
 
   .img_3 {
     display: block;
-    width: 230px;
-    height: 350px;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    min-height: 350px;
     object-fit: cover !important;
-  }
-
-  .player_Cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 100px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-left: 80px;
-    padding-right: 80px;
-
-    &::-webkit-scrollbar {
-      height: 3px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      width: 20px;
-      background: $primaryBlue;
-      border-radius: 6px;
-      cursor: pointer;
-    }
   }
 }
 
 //-------------------Mobil-----------------------------------
 
 @include mobile {
-  .section {
-    height: 400px;
-  }
-
   .player_Cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 100px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-left: 80px;
-    padding-right: 80px;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 50px !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 15px !important;
+    padding-bottom: 25px !important;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    width: 100vw !important;
+    max-width: 100% !important;
+    margin: 0 !important;
 
     &::-webkit-scrollbar {
-      height: 3px;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-      width: 20px;
       background: $primaryBlue;
-      border-radius: 6px;
-      cursor: pointer;
+      border-radius: 10px;
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+        background: lighten($primaryBlue, 10%);
+      }
     }
+  }
+
+  .background_Animation {
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+    min-width: 280px !important;
+    width: 280px !important;
+  }
+
+  .section {
+    position: relative !important;
+    width: 280px !important;
+    height: auto !important;
+    min-height: 420px !important;
+  }
+
+  .img_1 {
+    display: none !important;
+  }
+
+  .img_2 {
+    display: none !important;
+  }
+
+  .img_3 {
+    display: block !important;
+    width: 280px !important;
+    height: 100% !important;
+    min-height: 420px !important;
+    object-fit: cover !important;
+  }
+
+  .players_Card_Contents {
+    width: 100% !important;
+    max-width: 250px !important;
+    padding: 0 15px !important;
+  }
+
+  .tplayer_name {
+    font-size: 20px !important;
+  }
+
+  .description_Text {
+    max-width: 250px !important;
+    max-height: 170px !important;
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  .link_linedln {
+    font-size: 14px !important;
+  }
+}
+
+//---------------------MOBIL SMALL (bis 480px)--------------------------
+
+@include mobilesmall {
+  .player_Cards {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 30px !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    width: 100vw !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+
+    &::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $primaryBlue;
+      border-radius: 10px;
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+        background: lighten($primaryBlue, 10%);
+      }
+    }
+  }
+
+  .background_Animation {
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+    min-width: 240px !important;
+    width: 240px !important;
+  }
+
+  .section {
+    position: relative !important;
+    width: 240px !important;
+    height: auto !important;
+    min-height: 380px !important;
+  }
+
+  .img_1 {
+    display: none !important;
+  }
+
+  .img_2 {
+    display: none !important;
+  }
+
+  .img_3 {
+    display: block !important;
+    width: 240px !important;
+    height: 100% !important;
+    min-height: 380px !important;
+    object-fit: cover !important;
+  }
+
+  .players_Card_Contents {
+    width: 100% !important;
+    max-width: 215px !important;
+    padding: 0 8px !important;
+  }
+
+  .tplayer_name {
+    font-size: 17px !important;
+  }
+
+  .description_Text {
+    max-width: 215px !important;
+    max-height: 145px !important;
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+  }
+
+  .link_linedln {
+    font-size: 12px !important;
+  }
+
+  .font_8 {
+    font-size: 12px !important;
   }
 }

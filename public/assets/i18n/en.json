@@ -9,27 +9,27 @@
     "NAME": "Christian Bock",
     "ROLE": "FRONTEND DEVELOPER",
     "I_AM": "I am",
-    "CTA": "Let's talk!"
+    "CTA": "Let’s talk!"
   },
   "WHYME": {
     "LOCAL1": "I am ",
-    "LOCAL2": "based near Munich.",
-    "DESCRIPTION": "Why are you passionate about programming? Here you can mention key qualities such as analytical thinking, creativity, perseverance, and team spirit. A solution-oriented mindset is always an advantage."
+    "LOCAL2": "based near Munich, Germany.",
+    "DESCRIPTION": "Passionate about programming because it combines analytical thinking with creativity and problem-solving. I enjoy transforming complex requirements into elegant, efficient solutions — with persistence, curiosity, and teamwork as my strongest qualities."
   },
   "MYSKILLS": {
-    "LEARNING": "I am currently learning",
-    "INFOTEXT": "I am motivated to continuously expand my skills and implement innovative solutions. I keep myself up to date with new technologies and current trends."
+    "LEARNING": "Currently learning",
+    "INFOTEXT": "I continuously expand my skillset and enjoy developing modern, scalable applications. I stay up-to-date with new technologies, best practices, and current development trends."
   },
   "PROJECTE": {
     "P1": {
       "Tab1": {
         "DESCRIPTION1": "About the project",
         "WORKPROCESS1": "Duration: 2 months",
-        "CONTENT1": "Task manager inspired by the Kanban system. Create and organize tasks via drag & drop, assign users and categories.",
-        "DESCRIPTION2": "How I organized my work",
-        "CONTENT2": "My code is divided into clearly structured modules (UI, services, Firebase integration) to ensure reusability. Files, variables, and classes are consistently and meaningfully named. Documentation is done directly in the code using JSDoc comments. Code quality is ensured through Prettier and version control with Git.",
-        "DESCRIPTION3": "My experience with teamwork",
-        "CONTENT3": "Our team consisted of four people. My role in this project was the development of the task components. The technologies used were HTML, CSS, and JavaScript; reading and saving data via Firebase was the central part. It was a great team and the collaboration went smoothly."
+        "CONTENT1": "A task management tool inspired by the Kanban system. Create, assign, prioritize and move tasks via drag & drop — including user and category assignment.",
+        "DESCRIPTION2": "How I structured the development",
+        "CONTENT2": "Modular architecture with clear separation of UI components, services, and Firebase integration. Consistent naming conventions and in-code documentation with JSDoc. Code formatting and quality were ensured using Prettier and Git version control.",
+        "DESCRIPTION3": "Team collaboration",
+        "CONTENT3": "Our project team consisted of four people. My main responsibilities included developing the task components and data handling logic. Technologies used: HTML, CSS, JavaScript, Firebase. Collaboration was structured, highly productive, and enjoyable."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologies",
@@ -40,7 +40,7 @@
           "assets/icons/Icon_Firebase.png"
         ],
         "SCREEN": "assets/screenshots/joinDA.png",
-        "MOBILTECHNO": " : HTML, JavaScript, CSS, Firebase",
+        "MOBILTECHNO": ": HTML, JavaScript, CSS, Firebase",
         "LINKPROJECT": "https://www.join-431.developerakademie.net/Join-App-25-04/index.html",
         "LINKGIT": "https://github.com/BockDA/DA-Join.git"
       }
@@ -49,11 +49,11 @@
       "Tab1": {
         "DESCRIPTION1": "About the project",
         "WORKPROCESS1": "Duration: 3 months",
-        "CONTENT1": "Learning and applying object-oriented programming (OOP).",
-        "DESCRIPTION2": "How I organized my work",
-        "CONTENT2": "My code is divided into clear modules (HTML, CSS, Canvas rendering, JS logic) for better maintainability. Files, variables, functions, and classes are consistently and clearly named. Important functions are documented with JSDoc. Complex logic is annotated with short comments. Git is used for version control and clean commit structure.",
+        "CONTENT1": "Learning and applying object-oriented programming (OOP) within an interactive browser game.",
+        "DESCRIPTION2": "How I structured the development",
+        "CONTENT2": "Code organized into reusable modules (HTML layout, CSS styling, canvas rendering, game logic). Clean architecture, consistent naming, documentation with JSDoc, meaningful commits via Git. Focus on maintainability and clarity.",
         "DESCRIPTION3": "Key learnings",
-        "CONTENT3": "I really enjoyed working on this project because I was able to deepen my knowledge in HTML, CSS, Canvas, and JavaScript. Working with the Canvas API for drawings, animations, and interactive elements was particularly exciting."
+        "CONTENT3": "This project significantly strengthened my JavaScript and canvas skills. Working with animations, collision detection and object-oriented design was highly instructive and rewarding."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologies",
@@ -63,7 +63,7 @@
           "assets/icons/Icon_Git.png"
         ],
         "SCREEN": "assets/screenshots/elpolloloco.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git",
+        "MOBILTECHNO": ": HTML, JavaScript, Git",
         "LINKPROJECT": "https://www.christian-bock.developerakademie.net/Projekte/ElPolloLoco/index.html",
         "LINKGIT": "https://github.com/BockDA/DA_ElPolloLoco.git"
       }
@@ -72,11 +72,11 @@
       "Tab1": {
         "DESCRIPTION1": "About the project",
         "WORKPROCESS1": "Duration: 1 week",
-        "CONTENT1": "Using JavaScript, I fetched data from a Pokémon API and processed it as JSON. The results were then displayed dynamically in the browser.",
+        "CONTENT1": "Fetching data from a Pokémon API using JavaScript, processing JSON responses and rendering dynamic UI elements.",
         "DESCRIPTION2": "My approach",
-        "CONTENT2": "First, I created the HTML structure and designed the layout with CSS. Then I built the logic with modular JavaScript. Finally, I implemented API fetching and data handling for dynamic content display.",
+        "CONTENT2": "Structured HTML and CSS layout first, followed by modular JavaScript architecture. Integrated API calls and dynamically generated visual elements based on live fetched data.",
         "DESCRIPTION3": "Key learnings",
-        "CONTENT3": "I really enjoyed this project because I was able to deepen my knowledge in HTML, CSS, and JavaScript. Retrieving and processing data from web APIs was particularly interesting."
+        "CONTENT3": "I strengthened my ability to consume external APIs and generate dynamic UI content. The project improved my understanding of async data handling and responsive rendering."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologies",
@@ -86,57 +86,57 @@
           "assets/icons/Icon_Api.png"
         ],
         "SCREEN": "assets/screenshots/pokemonDa.png",
-        "MOBILTECHNO": " : HTML, JavaScript, API",
+        "MOBILTECHNO": ": HTML, JavaScript, API",
         "LINKPROJECT": "https://christian-bock.developerakademie.net/Projekte/Pokedex/index.html",
         "LINKGIT": "https://github.com/BockDA/DA-Pokedex.git"
       }
     }
   },
   "TEAMPLAYER": {
-    "HEADLINE1": "Are you looking for a team player?",
-    "HEADLINE2": "This is what my colleagues say about me",
+    "HEADLINE1": "Looking for a team player?",
+    "HEADLINE2": "Here’s what my colleagues say about working with me",
     "PLAYER": [
       {
         "TPLAYER_NAME": "Eric Braun",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Christian was a great support in the team. He is very helpful, always patient, and absolutely reliable. His structured way of working often moved us forward – simply someone who makes collaboration pleasant and productive.\"",
+        "DESCRIPTION": "\"Christian was a tremendous asset to our team. He is extremely helpful, always patient and highly reliable. His structured approach consistently moved the project forward — truly someone who makes collaboration enjoyable and productive.\"",
         "PROFILLINK": "LinkedIn Profile"
       },
       {
         "TPLAYER_NAME": "Anton Flynn",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"Christian proved to be a highly competent and dedicated team member. He thinks independently, contributes his own ideas, and works very reliably. His clear and open communication made our collaboration effective and pleasant. His friendly and humorous nature greatly contributed to a positive team atmosphere.\"",
+        "DESCRIPTION": "\"Christian demonstrated outstanding commitment and technical expertise. He works independently, contributes valuable ideas, and communicates clearly. His positive and humorous attitude fostered a highly pleasant and motivating team atmosphere.\"",
         "PROFILLINK": "LinkedIn Profile"
       },
       {
         "TPLAYER_NAME": "Oli P.",
         "PROJECT": "Join",
-        "DESCRIPTION": "\"I had the pleasure of working with Christian on a web development project. He impressed with technical knowledge, clear structure, and solution-oriented thinking. His communication skills and team spirit made the project efficient and successful. Highly recommended!\"",
+        "DESCRIPTION": "\"I had the pleasure of working with Christian on a web development project. His technical knowledge, structured thinking, and solution-driven approach were impressive. His professional communication and team mindset made the project efficient and successful. Highly recommended!\"",
         "PROFILLINK": "LinkedIn Profile"
       }
     ]
   },
   "CONTACT": {
-    "HEADLINE": "Contact me",
-    "DESCRIPTION": "Feel free to contact me if you have a job offer or an opportunity where I can contribute my expertise as an electrical master craftsman and programmer. I am particularly interested in areas such as IoT, embedded systems, smart home technologies, and modern web development (Angular, SCSS, Firebase).",
+    "HEADLINE": "Get in touch",
+    "DESCRIPTION": "Feel free to contact me if you have a job opportunity or a project where my expertise as a master electrician and developer could add value. I’m especially passionate about IoT, embedded systems, smart home solutions, and modern web development (Angular, SCSS, Firebase).",
     "EMAIL": "cbock2011@gmail.com",
     "PHONE": "08029-997896",
     "FORMULAR_NAME": "Name",
-    "FORMULAR_EMAIL": "Email",
+    "FORMULAR_EMAIL": "E-mail",
     "FORMULAR_MESSAGE": "Message",
     "PLACEHOLDER_NAME": "Enter your name...",
-    "PLACEHOLDER_EMAIL": "Enter your email address...",
+    "PLACEHOLDER_EMAIL": "Enter your e-mail address...",
     "PLACEHOLDER_MESSAGE": "Write your message...",
     "PRIVACYPOLICY_NOTICE1": "I have read the ",
     "PRIVACYPOLICY_NOTICE2": " privacy policy ",
-    "PRIVACYPOLICY_NOTICE3": "and agree to the processing of my data as described.",
+    "PRIVACYPOLICY_NOTICE3": "and agree to the processing of my data.",
     "SEND_BTN": "Send",
-    "INPUTEEROR_NAME": "The field must not be left empty !",
-    "INPUTEEROR_EMAIL": "Please enter a valid email address !",
-    "INPUTEEROR_MESSAGE": "The field expects at least four characters !",
+    "INPUTEEROR_NAME": "Please enter your name!",
+    "INPUTEEROR_EMAIL": "Please enter a valid e-mail address!",
+    "INPUTEEROR_MESSAGE": "Message must contain at least four characters!",
     "TOAST": {
-      "OK": "Email was successfully sent",
-      "ERROR": "Error sending email"
+      "OK": "E-mail has been sent successfully",
+      "ERROR": "Error — e-mail could not be sent"
     }
   },
   "FOTTER": {
@@ -151,42 +151,79 @@
     "EMAIL": "cbock2011@gmail.com",
     "SECTIONS": [
       {
-        "TEXT1": "<span class='col bold'>Exploring the platform</span>",
-        "TEXT2": "Email: cbock2011@gmail.com",
+        "TEXT1": "<span class='col bold'>Exploration of the platform</span>",
+        "TEXT2": "E-mail: cbock2011@gmail.com",
         "TEXT3": ""
       },
       {
         "TEXT1": "<span class='col bold'>Acceptance of terms</span>",
-        "TEXT2": "By accessing and using <span class='col'>Portfolio</span> (the product), you agree to the following terms as well as any policies or changes we may present to you from time to time. We, the listed students, reserve the right to change these terms at any time without prior notice.",
+        "TEXT2": "By accessing and using <span class='col'>Portfolio</span> (the product), you accept the terms and any applicable updates or additions we may publish. We, the participating students, reserve the right to modify these terms at any time without notice.",
         "TEXT3": ""
       },
       {
-        "TEXT1": "<span class='col bold'>Scope and ownership of the product</span>",
-        "TEXT2": "<span class='col'>Portfolio</span> was developed as part of a group project in the web development bootcamp of the <span class='col'>Developer Akademie GmbH</span>. It serves educational purposes only and is not intended for extensive personal or commercial use. Therefore, we cannot guarantee consistent availability, reliability, accuracy, or other quality characteristics of the product.",
-        "TEXT3": "The design of <span class='col'>Portfolio</span> is owned by <span class='col'>Developer Akademie GmbH</span>. Any unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited."
+        "TEXT1": "<span class='col bold'>Scope and ownership</span>",
+        "TEXT2": "<span class='col'>Portfolio</span> was developed as part of a group project in the web development bootcamp at the <span class='col'>Developer Akademie GmbH</span>. It is intended for educational purposes only and not for large-scale commercial use. Therefore, no guarantee is given regarding availability, reliability, accuracy, or any other product characteristics.",
+        "TEXT3": "The design of <span class='col'>Portfolio</span> is owned by the <span class='col'>Developer Akademie GmbH</span>. Unauthorized use, reproduction, modification, distribution, or duplication of the design is strictly prohibited."
       },
       {
-        "TEXT1": "<span class='col bold'>Copyrights</span>",
-        "TEXT2": "Apart from the design owned by <span class='col'>Developer Akademie GmbH</span>, we, the listed students, retain all ownership rights to <span class='col'>Portfolio</span>, including all copyrighted materials, trademarks, and other intellectual property rights.",
+        "TEXT1": "<span class='col bold'>Copyright</span>",
+        "TEXT2": "Except for the design owned by <span class='col'>Developer Akademie GmbH</span>, all intellectual property rights related to <span class='col'>Portfolio</span> remain with us, the participating students.",
         "TEXT3": ""
       },
       {
-        "TEXT1": "<span class='col bold'>Use of the product</span>",
-        "TEXT2": "<span class='col'>Portfolio</span> may only be used for lawful purposes and in compliance with all applicable laws and regulations. Any use of <span class='col'>Portfolio</span> for illegal activities or to harass, threaten, or harm others is strictly prohibited. You alone are responsible for your interactions with other users of <span class='col'>Portfolio</span>.",
+        "TEXT1": "<span class='col bold'>Usage regulations</span>",
+        "TEXT2": "You may use <span class='col'>Portfolio</span> only for lawful purposes and in compliance with all applicable laws. Misuse of <span class='col'>Portfolio</span> for illegal activities or to harass, threaten, or harm individuals is prohibited. You are solely responsible for your interactions with other users.",
         "TEXT3": ""
       },
       {
-        "TEXT1": "<span class='col bold'>Disclaimer</span>",
-        "TEXT2": "<span class='col'>Portfolio</span> is provided \"as is\" without any express or implied warranty, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall we, the listed students or <span class='col'>Developer Akademie</span>, be liable for any direct, indirect, incidental, special, consequential, or exemplary damages – including but not limited to lost profits, loss of data, or goodwill – even if advised of the possibility of such damages.",
+        "TEXT1": "<span class='col bold'>Disclaimer of liability</span>",
+        "TEXT2": "<span class='col'>Portfolio</span> is provided \"as is\" without any express or implied warranties, including but not limited to merchantability, fitness for a particular purpose, or non-infringement. In no event shall we, the participating students, or the <span class='col'>Developer Akademie</span> be liable for direct, indirect, incidental, special, consequential, or exemplary damages — including loss of profit or data.",
         "TEXT3": ""
       },
       {
-        "TEXT1": "<span class='col bold'>Indemnification</span>",
-        "TEXT2": "You agree to indemnify and hold us, the listed students, <span class='col'>Developer Akademie</span>, as well as our partners, directors, employees, and agents harmless from any claims, losses, damages, costs, or liabilities (including reasonable attorneys' fees) arising from your use of <span class='col'>Portfolio</span> or any breach of this legal notice.",
-        "TEXT3": "For questions or communications, please contact us at cbock2011@gmail.com."
+        "TEXT1": "<span class='col bold'>Indemnity</span>",
+        "TEXT2": "You agree to indemnify and hold harmless us, the participating students, the <span class='col'>Developer Akademie</span>, and all related parties from any claims, damages, losses, or expenses resulting from your use of <span class='col'>Portfolio</span> or any violation of this legal notice.",
+        "TEXT3": "For inquiries, please contact: cbock2011@gmail.com"
       }
     ],
     "DATE": "Date: October 10, 2025"
   },
-  "LEGALNOTICE.NOSECTIONS": "No entries found in the legal notice."
+  "PRIVACYPOLICY": {
+    "TITLE": "Content",
+    "HEADER": "Privacy Policy",
+    "SECTIONS": [
+      {
+        "TITLE": "Controller",
+        "CONTENT": [
+          "<span class='col bold'>Controller</span>",
+          "Christian Bock",
+          "E-mail: cbock2011@gmail.com",
+          "<span class='col bold'>Data collected</span>",
+          "Contact form data:",
+          "<span class='line'>&bull; Name</span>",
+          "<span class='line'>&bull; E-mail address</span>",
+          "<span class='line'>&bull; Message</span>",
+          "Technical data (automatically collected, anonymized):",
+          "<span class='line'>&bull; Browser type</span>",
+          "<span class='line'>&bull; Operating system</span>",
+          "<span class='line'>&bull; Time of access</span>",
+          "<span class='col'>Purpose of processing</span>",
+          "<span class='line'>&bull; Responding to contact requests</span>",
+          "<span class='line'>&bull; Ensuring website functionality and security</span>",
+          "<span class='line'>&bull; Compliance with legal obligations</span>",
+          "<span class='col'>Data retention</span>",
+          "<span class='line'>&bull; Contact form data</span>",
+          "<span class='line'>&bull; Technical data</span>",
+          "<span class='col'>Third-party services</span>",
+          "<span class='line'>&bull; Google Fonts</span>",
+          "<span class='line'>&bull; Hosting Provider</span>",
+          "<span class='col'>Cookies & Local Storage</span>",
+          "<span class='line'>No tracking cookies are used. LocalStorage is applied exclusively for essential functions (language selection, scroll position).</span>",
+          "<span class='col'>Your rights</span>",
+          "<span class='line'>Right of access, rectification, erasure, restriction, data portability, objection and withdrawal.</span>",
+          "<span class='line'>To exercise your rights, contact: cbock2011@gmail.com</span>"
+        ]
+      }
+    ]
+  }
 }

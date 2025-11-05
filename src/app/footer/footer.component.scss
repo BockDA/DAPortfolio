@@ -1,15 +1,30 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-main {
+:host {
   display: block;
+}
+
+/* Allow pages to fix the footer to the viewport bottom via class on <app-footer> */
+:host(.footer-fixed) {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 95;
+  /* below menu (100) */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   position: relative;
   left: 50%;
-  right: 50%;
-  margin-left: -50vw; // Trick: raus aus dem zentrierten Layout
+  margin-left: -50vw;
   margin-right: -50vw;
-  background-color: $primaryBlue; // Beispiel
+  background-color: $primaryBlue;
   color: $cremeWhite;
   height: 120px;
 }
@@ -26,6 +41,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .footer_sec_left {
@@ -60,8 +76,10 @@ p .copy {
 
 .footer_inner {
   max-width: 1920px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   padding: 20px 40px;
+  box-sizing: border-box;
 }
 
 
@@ -83,6 +101,7 @@ p .copy {
 
   main {
     margin-top: 0;
+    padding: 0;
     height: 214px;
   }
 
@@ -106,7 +125,11 @@ p .copy {
   }
 
   .footer_sec_center {
-    margin-top: 20px;
+    margin-bottom: 80px;
+
+    img {
+      max-width: 80px;
+    }
   }
 
   .footer_sec_right {
@@ -115,7 +138,6 @@ p .copy {
     justify-content: center;
     margin-top: 20px;
   }
-
 
   .section {
     gap: 30px;
@@ -128,5 +150,47 @@ p .copy {
 
   .img_hover {
     opacity: 1 !important;
+  }
+}
+
+//---------------------MOBIL SMALL (bis 635px)--------------------------
+
+@include mobilesmall {
+  .font_8 {
+    font-size: 12px !important;
+  }
+
+  main {
+    height: 200px;
+  }
+
+  .footer_inner {
+    padding: 15px 20px;
+  }
+
+  .footer_sec_left {
+    gap: 30px !important;
+    top: 165px;
+    font-size: 12px;
+  }
+
+  .copy {
+    font-size: 12px !important;
+  }
+
+
+
+  .footer_sec_right {
+    top: 90px;
+    margin-top: 15px;
+  }
+
+  .section {
+    gap: 25px;
+
+    img {
+      width: 26px;
+      height: 26px;
+    }
   }
 }

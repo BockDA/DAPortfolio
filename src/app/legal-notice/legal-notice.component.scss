@@ -19,6 +19,13 @@ section {
   margin-bottom: 80px;
 }
 
+/* Offset content so it doesn't hide under the fixed menu (104px) */
+.legal-notice-content {
+  padding-top: 124px;
+  /* Avoid overlap with fixed footer (desktop/tablet) */
+  padding-bottom: 140px;
+}
+
 .legal_notice_list {
   padding: 0;
   padding-left: 20px;
@@ -50,8 +57,11 @@ section {
     //margin-top: 104px;
   }
 
+  /* Keep a comfortable offset on mobile as well */
   .legal-notice-content {
-    padding-top: 20px;
+    padding-top: 124px;
+    /* Footer is taller on mobile */
+    padding-bottom: 230px;
   }
 
   .legal_notice_header {

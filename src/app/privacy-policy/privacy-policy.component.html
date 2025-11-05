@@ -1,0 +1,19 @@
+<main>
+    <app-menue class="menu-top menu-full-width"></app-menue>
+
+    <section class="privacy-policy-content">
+        <div class="mobi-back">
+            <img src="assets/icons/Arrow_back.png" routerLink="/">
+        </div>
+        <h1 class="privacy-policy-header font_1">
+            {{'PRIVACYPOLICY.HEADER' | translate }}
+        </h1>
+
+        <div *ngFor="let sec of ('PRIVACYPOLICY.SECTIONS' | translate)">
+            <ng-container *ngFor="let line of sec.CONTENT">
+                <p class="content_line" [innerHTML]="line"></p>
+            </ng-container>
+        </div>
+    </section>
+    <app-footer class="footer-fixed"></app-footer>
+</main>
