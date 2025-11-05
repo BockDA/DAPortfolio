@@ -35,15 +35,14 @@ section {
 }
 
 .privacy-policy-header {
-    font-family: "Josefin";
-    font-size: 32px;
+    font-family: "Anta";
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 :host ::ng-deep .col {
     color: $primaryBlue;
-    font-size: 20px;
+    font-size: 24px;
     display: inline-block;
     margin-top: 30px;
 }
@@ -70,10 +69,7 @@ section {
         }
     }
 
-
-
     ::ng-deep app-menue {
-
         .menue_Entries {
             display: none !important;
         }

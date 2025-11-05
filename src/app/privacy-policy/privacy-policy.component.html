@@ -9,7 +9,7 @@
             {{'PRIVACYPOLICY.HEADER' | translate }}
         </h1>
 
-        <div *ngFor="let sec of ('PRIVACYPOLICY.SECTIONS' | translate)">
+        <div  *ngFor="let sec of ('PRIVACYPOLICY.SECTIONS' | translate)">
             <ng-container *ngFor="let line of sec.CONTENT">
                 <p class="content_line" [innerHTML]="line"></p>
             </ng-container>

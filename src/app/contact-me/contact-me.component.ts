@@ -6,18 +6,17 @@ import { HttpClient } from '@angular/common/http';
 import { MyFunctionsService } from '../../services/my-functions.service';
 import { CommonModule } from '@angular/common';
 
-
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [TranslateModule, FormsModule, RouterLink,CommonModule],
+  imports: [TranslateModule, FormsModule, RouterLink, CommonModule],
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss'],
 })
 export class ContactMeComponent {
   constructor(
     public setAktiv: MyFunctionsService,
-    private http: HttpClient 
+    private http: HttpClient
   ) {}
 
   contactData = {
@@ -28,8 +27,7 @@ export class ContactMeComponent {
 
   mailTest = false;
   mailSend = false;
-  mailError=false
-
+  mailError = false;
 
   post = {
     endPoint: 'https://portfolio.elektro-bock.com/sendMail.php',
@@ -69,27 +67,22 @@ export class ContactMeComponent {
             this.emailError();
           },
           complete: () => console.info('Mailversand abgeschlossen'),
-           
         });
-      
-  
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log('Testmodus aktiv — keine echte Mail wird gesendet.');
-        this.emailOK();
+      this.emailOK();
       ngForm.resetForm();
-    
     }
   }
 
   private emailOK() {
     this.mailSend = true;
     setTimeout(() => (this.mailSend = false), 2000);
-   }
-  
+  }
+
   private emailError() {
     this.mailError = true;
     setTimeout(() => (this.mailError = false), 2000);
   }
-
-
 }
+  

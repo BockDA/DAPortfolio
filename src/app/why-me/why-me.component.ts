@@ -3,7 +3,6 @@ import { LogoComponent } from '../logo/logo.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { MyFunctionsService } from '../../services/my-functions.service';
 
-
 @Component({
   selector: 'app-why-me',
   imports: [TranslateModule],
@@ -13,3 +12,4 @@ import { MyFunctionsService } from '../../services/my-functions.service';
 export class WhyMeComponent {
   constructor(public setAktiv: MyFunctionsService) {}
 }
+

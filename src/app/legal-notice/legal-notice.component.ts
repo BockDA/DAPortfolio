@@ -31,7 +31,6 @@ export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
   ) {}
 
   ngOnInit() {
-    // Erstes Laden
     this.loadSections();
 
     // Auf Sprachwechsel reagieren

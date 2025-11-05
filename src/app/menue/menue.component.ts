@@ -26,7 +26,7 @@ export class MenueComponent {
     public setAktiv: MyFunctionsService,
     private translate: TranslateService
   ) {
-      effect(() => {
+    effect(() => {
       const lang = this.isGerman() ? 'de' : 'en';
       this.translate.use(lang);
     });
@@ -34,14 +34,12 @@ export class MenueComponent {
 
   async setPosMenu(sectionId: string) {
     this.setAktiv.setMenuAktiv(sectionId);
-   await this.router.navigate(['/'], { fragment: sectionId });
+    await this.router.navigate(['/'], { fragment: sectionId });
     setTimeout(() => {
       document
         .getElementById(sectionId)
         ?.scrollIntoView({ behavior: 'smooth' });
     }, 500);
-
-  
   }
 
   toggleLanguage() {
@@ -50,6 +48,38 @@ export class MenueComponent {
     this.translate.use(newLang);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

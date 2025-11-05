@@ -7,6 +7,5 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './myskills.component.html',
   styleUrl: './myskills.component.scss'
 })
-export class MyskillsComponent {
+export class MyskillsComponent {}
 
-}

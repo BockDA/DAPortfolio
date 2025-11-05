@@ -14,6 +14,6 @@ export class MyprojectsComponent {
 
   selectTab(tabNumber: number) {
     this.activeTab = tabNumber;
-    console.log('Tab');
   }
 }
+

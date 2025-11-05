@@ -120,8 +120,7 @@ main {
 //---------------------TABLET--------------------------
 
 @include tablet {
-  /* remove top override to allow sticky to work correctly */
-
+ 
   .font_3 {
     font-size: 20px !important;
   }
@@ -146,8 +145,7 @@ main {
   .font_3 {
     font-size: 32px !important;
   }
-
-  /* Default: narrow menu on home/hero page (for mobile hamburger style) */
+  
   main {
     width: 90px;
     left: -70px;
@@ -164,7 +162,6 @@ main {
   }
 }
 
-/* Full-width menu on static pages (legal-notice, privacy-policy) via .menu-full-width class */
 :host(.menu-full-width) {
   @include mobile {
     main {
