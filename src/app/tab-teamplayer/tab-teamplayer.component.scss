@@ -179,7 +179,7 @@
 
       &:active {
         cursor: pointer;
-        background: lighten($primaryBlue, 10%);
+        background: $primaryBlue;
       }
     }
   }
