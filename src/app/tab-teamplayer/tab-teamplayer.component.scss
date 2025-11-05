@@ -101,7 +101,7 @@
       cursor: pointer;
 
       &:hover {
-        background: lighten($primaryBlue, 10%);
+        background: $primaryBlue;
       }
     }
   }
