@@ -14,7 +14,7 @@
   "WHYME": {
     "LOCAL1": "Ich bin ",
     "LOCAL2": "in der Nähe von München ansässig.",
-    "DESCRIPTION": "Warum begeisterst du dich für Programmierung? Du kannst hier wichtige Eigenschaften erwähnen – etwa analytisches Denken, Kreativität, Ausdauer und Teamgeist. Eine lösungsorientierte Denkweise ist dabei immer von Vorteil."
+    "DESCRIPTION": "Mich begeistert bei der Programmierung, wie jetzt bei mir auch im Handwerk, dass man Lösungen erarbeiten muss, um so zu einem Ergebnis zu kommen.Die Kreativität kann man hier bestens ausleben."
   },
   "MYSKILLS": {
     "LEARNING": "Ich lerne derzeit",
@@ -100,19 +100,22 @@
         "TPLAYER_NAME": "Eric Braun",
         "PROJECT": "Join",
         "DESCRIPTION": "\"Christian war eine große Unterstützung im Team. Er ist sehr hilfsbereit, stets geduldig und absolut zuverlässig. Seine strukturierte Arbeitsweise hat uns oft weitergebracht – einfach jemand, mit dem Zusammenarbeit angenehm und produktiv ist.\"",
-        "PROFILLINK": "LinkedIn-Profil"
+        "PROFIL": "LinkedIn-Profil",
+        "PROFILLINK": "https://www.linkedin.com/in/eric-b-48395a37a/"
       },
       {
         "TPLAYER_NAME": "Anton Flynn",
         "PROJECT": "Join",
         "DESCRIPTION": "\"Christian hat sich als äußerst kompetentes und engagiertes Teammitglied erwiesen. Er denkt selbstständig, bringt eigene Ideen ein und arbeitet sehr zuverlässig. Besonders wertvoll war seine klare und offene Kommunikation, die unsere Zusammenarbeit effektiv und angenehm gemacht hat. Durch seine freundliche und humorvolle Art hat er maßgeblich zu einer positiven Teamatmosphäre beigetragen.\"",
-        "PROFILLINK": "LinkedIn-Profil"
+        "PROFIL": "",
+        "PROFILLINK": ""
       },
       {
         "TPLAYER_NAME": "Oli P.",
         "PROJECT": "Join",
         "DESCRIPTION": "\"Ich hatte das Vergnügen, mit Christian an einem Webentwicklungsprojekt zu arbeiten. Er überzeugte durch technisches Wissen, klare Struktur und lösungsorientiertes Denken. Seine Kommunikationsfähigkeit und sein Teamgeist machten das Projekt effizient und erfolgreich. Sehr zu empfehlen!\"",
-        "PROFILLINK": "LinkedIn-Profil"
+        "PROFIL": "",
+        "PROFILLINK": ""
       }
     ]
   },

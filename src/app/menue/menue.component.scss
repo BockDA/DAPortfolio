@@ -4,17 +4,17 @@
 
 
 main {
+
   display: flex;
   justify-content: center;
   align-items: center;
   height: 104px;
   background-color: $primaryBlue;
-  width: 100vw;
+  width: 100%;
   position: relative;
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-
 }
 
 .section_heroMenue {
@@ -79,7 +79,7 @@ main {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 114px;
+  padding: 0 60px;
   box-sizing: border-box;
 }
 
@@ -112,15 +112,15 @@ main {
 
 @include desktop {
   .section_heroMenue {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
 //---------------------TABLET--------------------------
 
 @include tablet {
- 
+
   .font_3 {
     font-size: 20px !important;
   }
@@ -145,11 +145,11 @@ main {
   .font_3 {
     font-size: 32px !important;
   }
-  
+
   main {
     width: 90px;
     left: -70px;
-    top:10px;
+    top: 10px;
   }
 
   .menue_inner {

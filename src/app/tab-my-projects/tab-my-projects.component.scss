@@ -4,10 +4,12 @@
 main {
   display: flex;
   width: 100%;
+  //max-width: 1920px;
   font-family: "Josefin";
   color: $cremeWhite;
   padding: 0 20px;
   box-sizing: border-box;
+  background-color: red;
 }
 
 .tab_firstSection {

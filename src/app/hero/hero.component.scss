@@ -39,6 +39,7 @@ main {
   display: grid;
   width: 100%;
   height: 515px;
+  margin-left: 120px;
 
   .img_Background {
     grid-area: 1 / 1;
@@ -172,6 +173,14 @@ main {
   display: none;
 }
 
+.menue {
+  display: none;
+}
+
+.mobile-logo {
+  display: none;
+}
+
 
 
 
@@ -208,7 +217,7 @@ main {
 @include tablet {
   main {
     flex-direction: column;
-    height: 800px;
+    //height: 800px;
   }
 
   .hero_Name {
@@ -306,6 +315,11 @@ main {
     display: none;
   }
 
+  .hero_section{
+    margin-left: 0px;
+  }
+
+
   :host ::ng-deep #menyAvPaa:checked~.hero_section app-menue {
     .section_heroMenue {
       flex-direction: column;
@@ -328,13 +342,41 @@ main {
     transform: translateX(-50%);
   }
 
+  .menue {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: $primaryBlue;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+    overflow: hidden;
+  }
+
+  .mobile-logo ::ng-deep app-logo {
+    transform: scale(0.7);
+    transform-origin: left center;
+  }
+
+  .hero_section {
+    margin-top: 70px;
+  }
+
   #burger {
-    position: absolute;
     cursor: pointer;
     width: 32px;
     height: 32px;
-    right: 40px;
-    top: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

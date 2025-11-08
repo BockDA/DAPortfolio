@@ -14,7 +14,7 @@
   "WHYME": {
     "LOCAL1": "I am ",
     "LOCAL2": "based near Munich, Germany.",
-    "DESCRIPTION": "Passionate about programming because it combines analytical thinking with creativity and problem-solving. I enjoy transforming complex requirements into elegant, efficient solutions — with persistence, curiosity, and teamwork as my strongest qualities."
+    "DESCRIPTION": "What I find so fascinating about programming, just as it is in my current craft, is that you have to develop solutions to achieve a result. You can really express your creativity here."
   },
   "MYSKILLS": {
     "LEARNING": "Currently learning",
@@ -100,19 +100,22 @@
         "TPLAYER_NAME": "Eric Braun",
         "PROJECT": "Join",
         "DESCRIPTION": "\"Christian was a tremendous asset to our team. He is extremely helpful, always patient and highly reliable. His structured approach consistently moved the project forward — truly someone who makes collaboration enjoyable and productive.\"",
-        "PROFILLINK": "LinkedIn Profile"
+        "PROFIL": "LinkedIn Profile",
+        "PROFILLINK": "https://www.linkedin.com/in/eric-b-48395a37a/"
       },
       {
         "TPLAYER_NAME": "Anton Flynn",
         "PROJECT": "Join",
         "DESCRIPTION": "\"Christian demonstrated outstanding commitment and technical expertise. He works independently, contributes valuable ideas, and communicates clearly. His positive and humorous attitude fostered a highly pleasant and motivating team atmosphere.\"",
-        "PROFILLINK": "LinkedIn Profile"
+        "PROFIL": "",
+        "PROFILLINK": ""
       },
       {
         "TPLAYER_NAME": "Oli P.",
         "PROJECT": "Join",
         "DESCRIPTION": "\"I had the pleasure of working with Christian on a web development project. His technical knowledge, structured thinking, and solution-driven approach were impressive. His professional communication and team mindset made the project efficient and successful. Highly recommended!\"",
-        "PROFILLINK": "LinkedIn Profile"
+        "PROFIL": "",
+        "PROFILLINK": ""
       }
     ]
   },
