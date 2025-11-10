@@ -4,9 +4,10 @@
 main {
   min-width: 320px;
   max-width: 1920px;
-  height: 100%;
   background-color: $mainColor;
   color: $cremeWhite;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .mobi-back {
@@ -14,8 +15,6 @@ main {
 }
 
 section {
-  margin-left: 10px;
-  margin-right: 10px;
   margin-bottom: 80px;
 }
 
@@ -51,7 +50,11 @@ section {
 //---------------------MOBIL--------------------------
 @include mobile {
 
-  
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .legal-notice-content {
     padding-top: 124px;
     padding-bottom: 230px;

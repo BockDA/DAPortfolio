@@ -4,7 +4,6 @@
 
 
 main {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +26,9 @@ main {
 
 .menue_Entries {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 100px;
+
   font-family: "Josefin";
 
   p {
@@ -130,10 +131,19 @@ main {
   }
 
   .menue_Entries {
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    padding: 0px 0px !important;
+    gap: 50px;
+  }
+
+  // Sicherstellen, dass das Menü bei Tablet-Größen die volle Breite nutzt
+  main {
+    //width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .menue_inner {
+    padding: 0 30px;
   }
 }
 

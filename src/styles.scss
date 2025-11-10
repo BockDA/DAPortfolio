@@ -1,7 +1,7 @@
 @use "styles/colors" as *;
 
 * {
-    margin: 0;
+  margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   user-select: none;
@@ -9,18 +9,10 @@
   -moz-user-select: none;
 }
 
-
-app-root {
-  //width: 100%;
-  //max-width: 1920px;
-  //overflow-x: visible;
-  //margin: 0 auto;
-}
-
 //Hilfrahmen für Entwicklung
-// * {
-//   outline: 1px solid red;
-// }
+* {
+  outline: 1px solid red;
+}
 
 body {
   display: flex;

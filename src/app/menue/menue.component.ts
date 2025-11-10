@@ -8,13 +8,14 @@ import {
 } from '../../state/language.state';
 import { LogoComponent } from '../logo/logo.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-menue',
   standalone: true,
   templateUrl: './menue.component.html',
   styleUrls: ['./menue.component.scss'],
-  imports: [LogoComponent, TranslateModule],
+  imports: [LogoComponent, TranslateModule,RouterLink],
 })
 export class MenueComponent {
   statusLanguage = statusLanguage;

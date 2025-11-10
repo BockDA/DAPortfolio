@@ -1,47 +1,48 @@
-
-<main >
+<main>
   <div class="menue_inner">
-  <div class="section_heroMenue">
-    <div class="app_logo">
-      <app-logo [dark]="false"></app-logo>
-    </div>
-    <div class="menue_Entries">
-      <a class="font_3" (click)="setPosMenu('why-me')">
-        <p [class.active]="setAktiv.getMenuAktiv() === 'why-me'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'why-me' 
+    <div class="section_heroMenue">
+      <div class="app_logo">
+        <a [routerLink]="['/']" fragment="hero">
+          <app-logo [dark]="false"></app-logo>
+        </a>
+      </div>
+      <div class="menue_Entries">
+        <a class="font_3" (click)="setPosMenu('why-me')">
+          <p [class.active]="setAktiv.getMenuAktiv() === 'why-me'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'why-me' 
                   ? 'url(assets/icons/backAktivLang.png)' 
                   : 'none'">
-          {{"NAV.WHY_ME" | translate}}
-        </p>
-      </a>
-      <a class="font_3" (click)="setPosMenu('myskills')">
-        <p [class.active]="setAktiv.getMenuAktiv() === 'myskills'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'myskills' 
+            {{"NAV.WHY_ME" | translate}}
+          </p>
+        </a>
+        <a class="font_3" (click)="setPosMenu('myskills')">
+          <p [class.active]="setAktiv.getMenuAktiv() === 'myskills'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'myskills' 
                   ? 'url(assets/icons/backAktivLang.png)' 
                   : 'none'">
-          {{"NAV.SKILLS" | translate}}
-        </p>
-      </a>
-      <a class="font_3" (click)="setPosMenu('myprojects')">
-        <p [class.active]="setAktiv.getMenuAktiv() === 'myprojects'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'myprojects' 
+            {{"NAV.SKILLS" | translate}}
+          </p>
+        </a>
+        <a class="font_3" (click)="setPosMenu('myprojects')">
+          <p [class.active]="setAktiv.getMenuAktiv() === 'myprojects'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'myprojects' 
                   ? 'url(assets/icons/backAktivLang.png)' 
                   : 'none'">
-          {{"NAV.PORTFOLIO" | translate}}
-        </p>
-      </a>
-      <a class="font_3" (click)="setPosMenu('contact')">
-        <p [class.active]="setAktiv.getMenuAktiv() === 'contact'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'contact' 
+            {{"NAV.PORTFOLIO" | translate}}
+          </p>
+        </a>
+        <a class="font_3" (click)="setPosMenu('contact')">
+          <p [class.active]="setAktiv.getMenuAktiv() === 'contact'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'contact' 
                             ? 'url(assets/icons/backAktivLang.png)' 
                             : 'none'">
-          {{"NAV.CONTACT" | translate}}
-        </p>
-      </a>
-    </div>
-    <div class="language_Icon">
-      <button class="font_9" [class.language_aktiv]="isGerman()" (click)="setLanguage('de')"
-        [style.backgroundImage]="isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">DE </button>
+            {{"NAV.CONTACT" | translate}}
+          </p>
+        </a>
+      </div>
+      <div class="language_Icon">
+        <button class="font_9" [class.language_aktiv]="isGerman()" (click)="setLanguage('de')"
+          [style.backgroundImage]="isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">DE </button>
 
-      <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="setLanguage('en')"
-        [style.backgroundImage]="!isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">EN</button>
+        <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="setLanguage('en')"
+          [style.backgroundImage]="!isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">EN</button>
+      </div>
     </div>
-     </div>
-    </div>
+  </div>
 </main>
