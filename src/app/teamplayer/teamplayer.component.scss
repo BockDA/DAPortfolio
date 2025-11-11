@@ -4,12 +4,14 @@
 main {
   max-width: 1920px;
   width: 100%;
+  margin: 0 auto;
   font-family: "Josefin";
   color: $primaryBlue;
   padding-bottom: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  //box-sizing: border-box;
+  //overflow-x: hidden;
 }
 
 .tPlayer_Headline {
@@ -29,6 +31,7 @@ main {
 
 .tPlayer_Section {
   width: 100%;
+  overflow-x: hidden;
 }
 
 //---------------------Responsive--------------------------
@@ -47,6 +50,7 @@ main {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
+    overflow-x: hidden;
   }
 
   .tPlayer_Headline {
@@ -69,12 +73,12 @@ main {
 
 @include mobile {
   main {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 30px;
-    overflow-x: hidden !important;
-    width: 100% !important;
-    max-width: 100vw !important;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
 
   .tPlayer_Headline {
@@ -94,10 +98,10 @@ main {
   }
 
   .tPlayer_Section {
-    width: 100% !important;
-    overflow: visible !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -105,13 +109,13 @@ main {
 
 @include mobilesmall {
   main {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 20px;
-    overflow-x: hidden !important;
-    width: 100% !important;
-    max-width: 100vw !important;
-    box-sizing: border-box !important;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
   }
 
   .tPlayer_Headline {
@@ -137,10 +141,10 @@ main {
   }
 
   .tPlayer_Section {
-    width: 100% !important;
-    overflow: visible !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 }

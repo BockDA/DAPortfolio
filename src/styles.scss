@@ -9,6 +9,12 @@
   -moz-user-select: none;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
 //Hilfrahmen für Entwicklung
 * {
   outline: 1px solid red;
@@ -19,13 +25,11 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
-  //font-weight: 200;
-  //font-style: normal;
   font-family: "Anta";
   background-color: $mainColor;
-  //overflow-x: hidden;
-  //width: 100%;
-  //min-width: 100vw;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 
