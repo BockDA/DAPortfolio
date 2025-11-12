@@ -182,7 +182,25 @@ main {
 }
 
 
+//--Animation
 
+.fade-section {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInRight 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(700px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 //---------------------Desktop--------------------------
 
@@ -315,7 +333,7 @@ main {
     display: none;
   }
 
-  .hero_section{
+  .hero_section {
     margin-left: 0px;
   }
 
