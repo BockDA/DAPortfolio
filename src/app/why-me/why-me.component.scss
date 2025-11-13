@@ -52,6 +52,7 @@ main {
 
 .whyme_locale {
   display: flex;
+  align-items: center;
   gap: 30px;
   width: 45%;
   min-width: 300px;
@@ -62,6 +63,44 @@ main {
     color: $primaryBlue;
   }
 }
+
+//Animation
+span.fade_element {
+  transform: translateX(-100px) !important;
+  display: inline-block !important;
+  transition: all 0.5s ease-out !important;
+
+}
+
+span.fade_element.is-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade_color_change {
+  0% {
+    color: $cremeWhite;
+  }
+
+  100% {
+    color: $primaryBlue;
+  }
+}
+
 
 
 //---------------------Responsive--------------------------

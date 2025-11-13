@@ -183,24 +183,31 @@ main {
 
 
 //--Animation
-
-.fade-section {
-  opacity: 0;
-  transform: translateX(100px);
-  animation: slideInRight 1s ease-out forwards;
+.fade_element {
+  animation: fadeInUp 1.0s forwards,
+    fade_color_change 3.0s forwards;
 }
 
-@keyframes slideInRight {
-  0% {
+@keyframes fadeInUp {
+  from {
     opacity: 0;
-    transform: translateX(700px);
+    transform: translateX(400px);
   }
-
-  100% {
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
+@keyframes fade_color_change {
+  0% {
+    color:$primaryBlue;
+  }
+  100% {
+    color: $cremeWhite;
+  }
+}
+
 
 //---------------------Desktop--------------------------
 
