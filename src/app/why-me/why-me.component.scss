@@ -65,39 +65,39 @@ main {
 }
 
 //Animation
-span.fade_element {
-  transform: translateX(-100px) !important;
-  display: inline-block !important;
-  transition: all 0.5s ease-out !important;
 
+.test {
+  opacity: 0;
 }
 
-span.fade_element.is-visible {
-  opacity: 1 !important;
-  transform: translateX(0) !important;
-
+.test2 {
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out forwards,
+  slideInFromLeft 0.8s ease-out forwards;
+ 
 }
 
 
-@keyframes fadeInUp {
+
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(-400px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
   }
 
   100% {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes fade_color_change {
-  0% {
-    color: $cremeWhite;
-  }
-
-  100% {
-    color: $primaryBlue;
   }
 }
 

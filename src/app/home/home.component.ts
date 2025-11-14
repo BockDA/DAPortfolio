@@ -49,15 +49,17 @@ export class HomeComponent {
   }
 
   ngAfterViewInit(): void {
-    const el = this.menuEl?.nativeElement;
-    if (el) {
-      const measured = el.offsetHeight;
-      if (measured && !isNaN(measured)) {
-        this.menuHeight = measured;
+    setTimeout(() => {
+      const el = this.menuEl?.nativeElement;
+      if (el) {
+        const measured = el.offsetHeight;
+        if (measured && !isNaN(measured)) {
+          this.menuHeight = measured;
+        }
       }
-    }
-    this.computeMetrics();
-    this.onWindowScroll();
+      this.computeMetrics();
+      this.onWindowScroll();
+    }, 0);
   }
 
   private computeMetrics() {
