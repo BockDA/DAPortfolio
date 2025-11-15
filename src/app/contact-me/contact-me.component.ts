@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { MyFunctionsService } from '../../services/my-functions.service';
 import { CommonModule } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-contact-me',
@@ -13,11 +14,12 @@ import { CommonModule } from '@angular/common';
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss'],
 })
-export class ContactMeComponent {
+export class ContactMeComponent implements AfterViewInit, OnDestroy {
   constructor(
     public setAktiv: MyFunctionsService,
-    private http: HttpClient
-  ) {}
+    private http: HttpClient,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) { }
 
   contactData = {
     name: '',
@@ -84,5 +86,23 @@ export class ContactMeComponent {
     this.mailError = true;
     setTimeout(() => (this.mailError = false), 2000);
   }
+
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      const animationConfigs = [
+        { selector: '.contact_Headline_Container', animationClass: 'animat_1', },
+        { selector: '.contac_Description', animationClass: 'animat_1', },
+        { selector: 'contac_Section', animationClass: 'animat_1', },
+      ];
+
+      this.setAktiv.setupAnimations(animationConfigs);
+    }
+  }
+
+  ngOnDestroy() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.setAktiv.disconnectAnimations();
+    }
+  }
 }
-  
+
