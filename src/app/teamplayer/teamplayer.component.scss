@@ -8,10 +8,7 @@ main {
   font-family: "Josefin";
   color: $primaryBlue;
   padding-bottom: 60px;
-  //padding-left: 20px;
-  //padding-right: 20px;
-  //box-sizing: border-box;
-  //overflow-x: hidden;
+
 }
 
 .tPlayer_Headline {
@@ -22,6 +19,7 @@ main {
   margin-top: 40px;
   margin-bottom: 60px;
   gap: 10px;
+  opacity: 0;
 
   p {
     margin: 0;
@@ -29,10 +27,29 @@ main {
   }
 }
 
+.tPlayer_Headline.animat_1 {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
 .tPlayer_Section {
   width: 100%;
   overflow-x: hidden;
 }
+
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
 
 //---------------------Responsive--------------------------
 

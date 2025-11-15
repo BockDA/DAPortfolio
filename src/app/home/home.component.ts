@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, ViewChild, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { HeroComponent } from '../hero/hero.component';
 import { MenueComponent } from '../menue/menue.component';
 import { WhyMeComponent } from '../why-me/why-me.component';
@@ -34,8 +35,12 @@ export class HomeComponent {
 
   @ViewChild('menuEl', { read: ElementRef }) menuEl?: ElementRef<HTMLElement>;
 
+  constructor(@Inject(PLATFORM_ID) private platformId: object) { }
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     const scrollY = window.scrollY || 0;
     const offset = Math.min(scrollY, this.threshold);
     this.menuTranslateY = -offset;
@@ -44,11 +49,15 @@ export class HomeComponent {
 
   @HostListener('window:resize', [])
   onWindowResize() {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     this.computeMetrics();
     this.onWindowScroll();
   }
 
   ngAfterViewInit(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     setTimeout(() => {
       const el = this.menuEl?.nativeElement;
       if (el) {
@@ -63,7 +72,9 @@ export class HomeComponent {
   }
 
   private computeMetrics() {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     this.threshold = Math.max(0, window.innerHeight - this.menuHeight);
   }
 }
-  
+

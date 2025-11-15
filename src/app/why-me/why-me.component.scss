@@ -21,6 +21,13 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 115px;
+  // Start-State: nur unsichtbar, normale Position
+  opacity: 0;
+}
+
+// Animation-Klasse die vom Intersection Observer hinzugefügt wird
+.whyme_Titel.animat_1 {
+  animation: slideInFromRight 0.8s ease-out forwards;
 }
 
 .whyme_innerSection {
@@ -42,6 +49,7 @@ main {
   width: 380px;
   max-width: 100%;
   margin-top: 30px;
+  opacity: 0;
 
   :hover {
     cursor: pointer;
@@ -50,31 +58,30 @@ main {
   }
 }
 
+.whyme_Description.animat_1 {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+
+
 .whyme_locale {
   display: flex;
   align-items: center;
   gap: 30px;
   width: 45%;
   min-width: 300px;
+  opacity: 0;
 }
+
+.whyme_locale.animat_1 {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
 
 .font_10 {
   .color {
     color: $primaryBlue;
   }
-}
-
-//Animation
-
-.test {
-  opacity: 0;
-}
-
-.test2 {
-  opacity: 1;
-  animation: fadeIn 1s ease-in-out forwards,
-  slideInFromLeft 0.8s ease-out forwards;
- 
 }
 
 
@@ -89,7 +96,9 @@ main {
   }
 }
 
-@keyframes slideInFromLeft {
+
+
+@keyframes slideInFromRight {
   0% {
     opacity: 0;
     transform: translateX(200px);
@@ -132,6 +141,7 @@ main {
 
   .whyme_Titel {
     margin-top: 80px;
+    // Responsive Rules - Animation States beibehalten!
   }
 
   .whyme_innerSection {
@@ -176,6 +186,7 @@ main {
   .whyme_Titel {
     margin-top: 40px;
     margin-bottom: 20px;
+    // Mobile Rules - Animation States beibehalten!
   }
 
   .whyme_innerSection {
@@ -233,6 +244,7 @@ main {
   .whyme_Titel {
     margin-top: 30px;
     margin-bottom: 15px;
+    // Mobile Small Rules - Animation States beibehalten!
   }
 
   .whyme_innerSection {

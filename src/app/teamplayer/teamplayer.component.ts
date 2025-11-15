@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { TabTeamplayerComponent } from '../tab-teamplayer/tab-teamplayer.component';
 import { TranslateModule } from '@ngx-translate/core';
-
+import { MyFunctionsService } from '../../services/my-functions.service';
 
 @Component({
   selector: 'app-teamplayer',
@@ -9,4 +9,17 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './teamplayer.component.html',
   styleUrl: './teamplayer.component.scss',
 })
-export class TeamplayerComponent {}
+export class TeamplayerComponent implements AfterViewInit, OnDestroy {
+
+  constructor(private animationService: MyFunctionsService) { }
+
+  ngAfterViewInit(): void {
+    this.animationService.setupAnimations([
+      { selector: '.tPlayer_Headline', animationClass: 'animat_1' }
+    ]);
+  }
+
+  ngOnDestroy(): void {
+    this.animationService.disconnectAnimations();
+  }
+}

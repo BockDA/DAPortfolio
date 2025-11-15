@@ -17,18 +17,29 @@
   padding: 20px;
   //contain: layout;
   height: 500px;
+  opacity: 0;
+
+}
+
+.player_Cards.animat_1 {
+  opacity: 1;
+  overflow: hidden; // Scrollbalken während Animation ausblenden
+  animation:
+    rotateOnly 0.7s ease-out forwards,
+    softScale 2s ease-out forwards 0.7s,
+    showScrollbar 0.1s ease-out forwards 2.7s; // Scrollbalken nach Animation einblenden
+
 }
 
 .players_Card_Contents {
   @include flex_Box(column, 20px);
   color: $cremeWhite;
   text-align: center;
-  // height: 490px;
 
   .color_Text {
     color: $primaryBlue;
-  }
 
+  }
 
 
   Section {
@@ -72,11 +83,58 @@
   width: 250px;
   min-width: 250px;
   max-width: 250px;
+
 }
+
+
 
 .img_3 {
   display: none;
 }
+
+@keyframes rotateOnly {
+  from {
+    transform: rotate(0deg) scale(0.5);
+  }
+
+  to {
+    transform: rotate(360deg) scale(0.5);
+  }
+}
+
+@keyframes softScale {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes showScrollbar {
+  from {
+    overflow: hidden;
+  }
+
+  to {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 
 //---------------------Responsive--------------------------
@@ -316,7 +374,7 @@
   .description_Text {
     max-width: 215px;
     max-height: 145px;
-        line-height: 1.35;
+    line-height: 1.35;
   }
 
 }

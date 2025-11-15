@@ -9,11 +9,19 @@ main {
   align-items: center;
   height: 104px;
   background-color: $primaryBlue;
-  width: 100%;
+  width: 100vw;
   position: relative;
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+}
+
+.menue_inner {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: border-box;
 }
 
 .section_heroMenue {
@@ -164,11 +172,10 @@ main {
 
   .menue_inner {
     padding: 0 16px !important;
-
   }
 
   .language_Icon {
-    margin-right: 16px;
+    margin-right: 0;
   }
 }
 

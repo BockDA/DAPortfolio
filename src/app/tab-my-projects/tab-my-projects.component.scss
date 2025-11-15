@@ -18,7 +18,7 @@ main {
   padding-right: 20px;
   padding-top: 40px;
   width: 50%;
-
+  opacity: 0;
 
 
   .first_paragraph {
@@ -39,13 +39,18 @@ main {
   }
 }
 
+.tab_firstSection.animat_1 {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+
 .tab_secondSection {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 40px;
-  //width: 50%;
   padding-bottom: 20px;
+  opacity: 0;
 
   .mobil_tech {
     display: none;
@@ -115,7 +120,35 @@ main {
   }
 }
 
+// Animation-Klassen außerhalb der verschachtelten Struktur
+.tab_secondSection.animat_2 {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
 
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px); // nach LINKS außerhalb starten
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); // Position normal
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 
 //---------------------Responsive--------------------------
@@ -204,7 +237,7 @@ main {
 
   main {
     //flex-direction: column-reverse;
-   // padding: 0 15px;
+    // padding: 0 15px;
     position: relative;
     margin-bottom: 90px;
   }
