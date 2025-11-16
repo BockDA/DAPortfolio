@@ -193,6 +193,7 @@ main {
     opacity: 0;
     transform: translateX(400px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -201,8 +202,9 @@ main {
 
 @keyframes fade_color_change {
   0% {
-    color:$primaryBlue;
+    color: $primaryBlue;
   }
+
   100% {
     color: $cremeWhite;
   }
@@ -241,8 +243,9 @@ main {
 
 @include tablet {
   main {
-    flex-direction: column;
-    //height: 800px;
+    gap: 30px;
+    padding-top: 40px;
+    height: auto;
   }
 
   .hero_Name {
@@ -252,7 +255,7 @@ main {
   }
 
   .hero_picture {
-    margin-top: 80px;
+    // margin-top: 80px;
   }
 
   .hero_Personal {
@@ -266,8 +269,8 @@ main {
 
   .hero_Arrow {
     margin: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
   }
 
@@ -297,7 +300,7 @@ main {
 
   .hero_picture {
     left: 0px !important;
-    top: 40px !important;
+    // top: 40px !important;
   }
 
   .img_backround_mobil {
@@ -329,7 +332,10 @@ main {
 @include mobile {
 
   main {
-    margin-bottom: 80px;
+    flex-direction: column;
+    //margin-top: 70px;
+    padding: 0px;
+    //margin-bottom: 80px;
   }
 
   #menyAvPaa {
@@ -380,6 +386,10 @@ main {
     justify-content: space-between;
     padding: 0 20px;
     box-sizing: border-box;
+  }
+
+  .app_Logo {
+    display: none;
   }
 
   .mobile-logo {
@@ -443,7 +453,6 @@ main {
 
   .hero_Personal {
     gap: 10px;
-
   }
 
   .hero_media {

@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { MenueComponent } from '../menue/menue.component';
 import { FooterComponent } from '../footer/footer.component';
 import { RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { MyFunctionsService } from '../../services/my-functions.service';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -11,5 +14,57 @@ import { CommonModule } from '@angular/common';
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })
-export class PrivacyPolicyComponent {}
+export class PrivacyPolicyComponent implements OnInit, AfterViewInit, OnDestroy {
+  sections: any[] = [];
+  private langSub?: Subscription;
+
+  constructor(
+    private myFunctions: MyFunctionsService,
+    private translate: TranslateService,
+    private sanitizer: DomSanitizer,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) { }
+
+  ngOnInit() {
+    this.loadSections();
+
+    // Auf Sprachwechsel reagieren
+    this.langSub = this.translate.onLangChange.subscribe(() => {
+      this.loadSections();
+    });
+  }
+
+  private loadSections() {
+    this.translate.get('PRIVACYPOLICY.SECTIONS').subscribe((data) => {
+      if (Array.isArray(data)) {
+        this.sections = data;
+      } else {
+        this.sections = [];
+      }
+    });
+  }
+
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      setTimeout(() => {
+        const offset = 0;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      }, 200);
+
+      // Animation Setup
+      const animationConfigs = [
+        { selector: '.privacy-policy-content', animationClass: 'animat_1' },
+        { selector: '.privacy-policy-header', animationClass: 'animat_1' }
+      ];
+      this.myFunctions.setupAnimations(animationConfigs);
+    }
+  }
+
+  ngOnDestroy() {
+    this.langSub?.unsubscribe();
+    if (isPlatformBrowser(this.platformId)) {
+      this.myFunctions.disconnectAnimations();
+    }
+  }
+}
 

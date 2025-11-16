@@ -1,11 +1,12 @@
-import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 import { MenueComponent } from '../menue/menue.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { CommonModule, NgFor } from '@angular/common';
+import { CommonModule, NgFor, isPlatformBrowser } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 import { RouterLink } from "@angular/router";
+import { MyFunctionsService } from '../../services/my-functions.service';
 
 @Component({
   selector: 'app-legal-notice',
@@ -17,7 +18,7 @@ import { RouterLink } from "@angular/router";
     NgFor,
     FooterComponent,
     RouterLink
-],
+  ],
   templateUrl: './legal-notice.component.html',
   styleUrls: ['./legal-notice.component.scss'],
 })
@@ -27,8 +28,10 @@ export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
 
   constructor(
     private translate: TranslateService,
-    private sanitizer: DomSanitizer
-  ) {}
+    private sanitizer: DomSanitizer,
+    private myFunctions: MyFunctionsService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) { }
 
   ngOnInit() {
     this.loadSections();
@@ -55,12 +58,27 @@ export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngOnDestroy() {
     this.langSub?.unsubscribe();
+    if (isPlatformBrowser(this.platformId)) {
+      this.myFunctions.disconnectAnimations();
+    }
   }
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      const offset = 0; 
-      window.scrollTo({ top: offset, behavior: 'smooth' });
-    }, 200); 
+    if (isPlatformBrowser(this.platformId)) {
+
+
+      // Animation Setup
+      const animationConfigs = [
+        {
+          selector: '.legal-notice-content', animationClass: 'animat_1'
+        },
+        {
+          selector: '.legal_notice_header', animationClass: 'animat_1'
+        }
+
+      ];
+      this.myFunctions.setupAnimations(animationConfigs);
+    }
   }
+
 }

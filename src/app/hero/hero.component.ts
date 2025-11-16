@@ -8,12 +8,13 @@ import { MenueComponent } from "../menue/menue.component";
   selector: 'app-hero',
   imports: [LogoComponent, TranslateModule, MenueComponent],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss',
-  
+  styleUrls:
+    ['./hero.component.scss']
+
 })
 
-export class HeroComponent  {
- 
+export class HeroComponent {
+
   constructor(public setAktiv: MyFunctionsService) { }
   setPosMenu(value: string) {
     this.setAktiv.setMenuAktiv(value);
@@ -21,6 +22,6 @@ export class HeroComponent  {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
- 
+
   }
 }

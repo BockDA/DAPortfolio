@@ -15,7 +15,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   templateUrl: './menue.component.html',
   styleUrls: ['./menue.component.scss'],
-  imports: [LogoComponent, TranslateModule,RouterLink],
+  imports: [LogoComponent, TranslateModule, RouterLink],
 })
 export class MenueComponent {
   statusLanguage = statusLanguage;
@@ -35,12 +35,24 @@ export class MenueComponent {
 
   async setPosMenu(sectionId: string) {
     this.setAktiv.setMenuAktiv(sectionId);
+
+    // Schließe das Burger-Menü in Mobile-Ansicht
+    this.closeBurgerMenu();
+
     await this.router.navigate(['/'], { fragment: sectionId });
     setTimeout(() => {
       document
         .getElementById(sectionId)
         ?.scrollIntoView({ behavior: 'smooth' });
     }, 500);
+  }
+
+  closeBurgerMenu() {
+    // Finde das Checkbox-Element für das Burger-Menü und setze es auf unchecked
+    const burgerCheckbox = document.getElementById('menyAvPaa') as HTMLInputElement;
+    if (burgerCheckbox) {
+      burgerCheckbox.checked = false;
+    }
   }
 
   toggleLanguage() {

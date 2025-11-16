@@ -52,11 +52,12 @@
             </div>
         </div>
 
-        <label for="message">{{ "CONTACT.FORMULAR_MESSAGE" | translate }}</label>
-        <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
-            placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required autocomplete="off"></textarea>
-        <span class="error_notice">{{'CONTACT.INPUTEEROR_MESSAGE' |translate}}</span>
-
+        <div class="container_message">
+            <label for="message">{{ "CONTACT.FORMULAR_MESSAGE" | translate }}</label>
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
+                placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required autocomplete="off"></textarea>
+            <span class="error_notice">{{'CONTACT.INPUTEEROR_MESSAGE' |translate}}</span>
+        </div>
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden" />
 
 

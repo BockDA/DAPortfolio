@@ -21,11 +21,9 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 115px;
-  // Start-State: nur unsichtbar, normale Position
-  opacity: 0;
+   opacity: 0;
 }
 
-// Animation-Klasse die vom Intersection Observer hinzugefügt wird
 .whyme_Titel.animat_1 {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
@@ -128,7 +126,8 @@ main {
 
 @include tablet {
   main {
-    padding: 0 30px;
+    padding-top: 60px;
+   
   }
 
   .font_5 {
@@ -169,6 +168,7 @@ main {
 @include mobile {
   main {
     padding: 0 15px;
+
   }
 
   .font_5 {

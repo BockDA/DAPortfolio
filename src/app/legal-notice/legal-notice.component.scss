@@ -21,7 +21,35 @@ section {
 .legal-notice-content {
   padding-top: 124px;
   padding-bottom: 140px;
+  opacity: 0;
 }
+
+.legal-notice-content.animat_1 {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+
+.legal_notice_header {
+  opacity: 0;
+}
+
+.legal_notice_header.animat_1 {
+  opacity: 1;
+  animation: slideInFromLeft 2s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 .legal_notice_list {
   padding: 0;
@@ -46,6 +74,30 @@ section {
   margin-top: 10px;
 }
 
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
 
 //---------------------MOBIL--------------------------
 @include mobile {
@@ -63,6 +115,8 @@ section {
   .legal_notice_header {
     padding-top: 20px;
   }
+
+
 
   .mobi-back {
     display: inline;

@@ -25,7 +25,13 @@ section {
 .privacy-policy-content {
     padding-top: 124px;
     padding-bottom: 140px;
-    //margin-left: 40px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: none;
+}
+
+.privacy-policy-content.animat_1 {
+    animation: slideInFromRight 1s ease-out forwards;
 }
 
 .sec {
@@ -40,7 +46,15 @@ section {
     font-family: "Anta";
     margin-top: 20px;
     margin-bottom: 20px;
+    opacity: 0;
 }
+
+.privacy-policy-header.animat_1 {
+    opacity: 1;
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+
 
 :host ::ng-deep .col {
     color: $primaryBlue;
@@ -52,6 +66,34 @@ section {
 :host ::ng-deep.line {
     margin-left: 20px;
 }
+
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 
 //---------------------MOBIL--------------------------
 @include mobile {

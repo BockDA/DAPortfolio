@@ -3,30 +3,31 @@
 
 main {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  color: $cremeWhite;
+  //@include flex_Box(row, 30px);
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //gap: 30px;
+
+  // color: $cremeWhite;
   padding-top: 120px;
   //padding-left: 20px;
   //padding-right: 20px;
   //box-sizing: border-box;
-  background-color: yellow;
+  //background-color: yellow;
 }
 
 .myprojects_Section {
   font-family: "Josefin";
   width: 100%;
-  background-color: blue;
-
+  //background-color: blue;
 }
 
 .myprojects_Titel {
   color: $primaryBlue;
   display: flex;
   justify-content: center;
-  opacity: 0;
+  // opacity: 0;
 }
 
 .myprojects_Titel.animat_1 {
@@ -34,7 +35,7 @@ main {
 }
 
 
-.myprojects_tab {}
+
 
 .myprojects_tabs_header {
   display: flex;
@@ -42,7 +43,7 @@ main {
   margin-left: 60px;
   padding-top: 80px;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 20px;
 }
 
 .myprojects_tabs_header button {
@@ -101,7 +102,7 @@ main {
 
 @include tablet {
   main {
-    padding-top: 60px;
+    padding-top: 110px;
     padding-left: 20px;
     padding-right: 20px;
   }

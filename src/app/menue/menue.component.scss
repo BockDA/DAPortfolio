@@ -142,9 +142,8 @@ main {
     gap: 50px;
   }
 
-  // Sicherstellen, dass das Menü bei Tablet-Größen die volle Breite nutzt
+
   main {
-    //width: 100vw;
     left: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
@@ -161,12 +160,13 @@ main {
 @include mobile {
 
   .font_3 {
-    font-size: 32px !important;
+    font-size: 24px !important;
   }
 
   main {
     width: 90px;
-    left: -70px;
+    height: 160px;
+    left: 0px;
     top: 10px;
   }
 
@@ -187,5 +187,13 @@ main {
       margin-left: -50vw !important;
       margin-right: -50vw !important;
     }
+  }
+}
+
+//----------- Mobil Small (bis 480px) --------------
+
+@include mobilesmall {
+  main {
+    height: 30px;
   }
 }

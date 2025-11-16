@@ -8,11 +8,16 @@
             {{'PRIVACYPOLICY.HEADER' | translate }}
         </h1>
 
-          <div *ngFor="let sec of ('PRIVACYPOLICY.SECTIONS' | translate)">
-            <ng-container *ngFor="let line of sec.CONTENT">
-                <p class="content_line" [innerHTML]="line"></p>
-            </ng-container>
-        </div> 
+        <div *ngIf="sections.length; else loading">
+            <div *ngFor="let sec of sections" class="sec">
+                <ng-container *ngFor="let line of sec.CONTENT">
+                    <p class="content_line" [innerHTML]="line"></p>
+                </ng-container>
+            </div>
+        </div>
+        <ng-template #loading>
+            <p class="font_13">Loading...</p>
+        </ng-template>
     </section>
     <app-footer class="footer-fixed"></app-footer>
 </main>
