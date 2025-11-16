@@ -14,7 +14,9 @@ import { RouterLink } from '@angular/router';
   selector: 'app-menue',
   standalone: true,
   templateUrl: './menue.component.html',
-  styleUrls: ['./menue.component.scss'],
+  styleUrls: ['./menue.component.scss',
+    './menue-mobile.scss'
+  ],
   imports: [LogoComponent, TranslateModule, RouterLink],
 })
 export class MenueComponent {

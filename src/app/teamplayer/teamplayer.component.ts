@@ -7,7 +7,9 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   selector: 'app-teamplayer',
   imports: [TranslateModule, TabTeamplayerComponent],
   templateUrl: './teamplayer.component.html',
-  styleUrl: './teamplayer.component.scss',
+  styleUrls: ['./teamplayer.component.scss',
+    './teamplayer-mobile.scss'
+  ],
 })
 export class TeamplayerComponent implements AfterViewInit, OnDestroy {
 

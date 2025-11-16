@@ -1,0 +1,14 @@
+@use "styles/mixin/mixin" as *;
+@use "styles/colors" as *;
+
+//---------------------MOBIL--------------------------
+
+@include mobile {
+    .app_menu {
+        display: none;
+    }
+
+    .menu-intro {
+        display: none;
+    }
+}

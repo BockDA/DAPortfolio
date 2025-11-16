@@ -20,7 +20,9 @@ import { MyFunctionsService } from '../../services/my-functions.service';
     RouterLink
   ],
   templateUrl: './legal-notice.component.html',
-  styleUrls: ['./legal-notice.component.scss'],
+  styleUrls: ['./legal-notice.component.scss',
+    './legal-notice-mobile.scss'
+  ],
 })
 export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
   sections: { TEXT1: SafeHtml; TEXT2: SafeHtml; TEXT3: SafeHtml }[] = [];

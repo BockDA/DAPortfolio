@@ -9,7 +9,9 @@ import { MenueComponent } from "../menue/menue.component";
   imports: [LogoComponent, TranslateModule, MenueComponent],
   templateUrl: './hero.component.html',
   styleUrls:
-    ['./hero.component.scss']
+    ['./hero.component.scss',
+      './hero-mobile.scss'
+    ]
 
 })
 

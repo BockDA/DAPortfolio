@@ -6,7 +6,9 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   selector: 'app-myskills',
   imports: [TranslateModule],
   templateUrl: './myskills.component.html',
-  styleUrl: './myskills.component.scss'
+  styleUrls: ['./myskills.component.scss',
+    './myskills-mobile.scss'
+  ]
 })
 export class MyskillsComponent implements AfterViewInit, OnDestroy {
 

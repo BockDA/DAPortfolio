@@ -6,7 +6,9 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   selector: 'app-why-me',
   imports: [TranslateModule],
   templateUrl: './why-me.component.html',
-  styleUrl: './why-me.component.scss',
+  styleUrls: ['./why-me.component.scss',
+    './why-me-mobile.scss'
+  ],
 })
 export class WhyMeComponent implements AfterViewInit, OnDestroy {
 

@@ -7,7 +7,9 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   selector: 'app-tab-my-projects',
   imports: [TranslateModule, NgFor],
   templateUrl: './tab-my-projects.component.html',
-  styleUrl: './tab-my-projects.component.scss',
+  styleUrls: ['./tab-my-projects.component.scss',
+    './tab-my-projects-mobile.scss'
+  ],
 })
 export class TabMyProjectsComponent implements AfterViewInit, OnDestroy {
   @Input() activeTab!: number;

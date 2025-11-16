@@ -12,7 +12,9 @@ import { Subscription } from 'rxjs';
   selector: 'app-privacy-policy',
   imports: [MenueComponent, FooterComponent, RouterLink, TranslateModule, CommonModule],
   templateUrl: './privacy-policy.component.html',
-  styleUrl: './privacy-policy.component.scss'
+  styleUrls: ['./privacy-policy.component.scss',
+    './privacy-policy-mobile.scss'
+  ]
 })
 export class PrivacyPolicyComponent implements OnInit, AfterViewInit, OnDestroy {
   sections: any[] = [];

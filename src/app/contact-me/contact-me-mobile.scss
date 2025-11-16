@@ -1,0 +1,209 @@
+@use "styles/colors" as *;
+@use "styles/mixin/mixin" as *;
+
+//---------------------Responsive--------------------------
+
+@include desktop {
+    .contac_Introduction {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//---------------------TABLET--------------------------
+
+@include tablet {
+    .font_12 {
+        font-size: 48px;
+    }
+
+    main {
+        padding: 120px 30px 40px;
+    }
+
+    .hero_ArrowUp {
+        top: 90px;
+        left: 85%;
+    }
+
+    .contac_Introduction {
+        margin: 60px 0 !important;
+        width: 100% !important;
+        padding-left: 0;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contac_Section {
+        width: 100%;
+    }
+
+    .contac_Description {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contac_Formular_Section {
+        width: 100%;
+    }
+}
+
+//-------------------------Mobile---------------------------------------
+
+@include mobile {
+    main {
+        padding: 40px 15px 60px;
+        margin-bottom: 100px;
+        position: static;
+    }
+
+    .font_12 {
+        font-size: 32px;
+    }
+
+    .font_13 {
+        font-size: 18px;
+    }
+
+    .font_8 {
+        font-size: 16px;
+    }
+
+    .contact_Headline_Container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero_ArrowUp {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .contac_Introduction {
+        flex-direction: column-reverse;
+        gap: 30px;
+        width: 100%;
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .contac_Section {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .contac_Formular_Section {
+        width: 100% !important;
+    }
+
+    .contac_Field_Sec1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    .contac_PrivacyPolicy {
+        font-size: 14px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .toast {
+        bottom: 150px;
+        width: 200px;
+        font-size: 14px;
+    }
+}
+
+//---------------------MOBIL SMALL (bis 635px)--------------------------
+
+@include mobilesmall {
+    main {
+        padding: 30px 10px;
+    }
+
+    .font_12 {
+        font-size: 28px !important;
+    }
+
+    .font_13 {
+        font-size: 16px !important;
+    }
+
+    .font_8 {
+        font-size: 14px !important;
+    }
+
+    .contact_Headline_Container {
+        gap: 10px;
+    }
+
+    .contac_Introduction {
+        gap: 25px;
+        margin-top: 30px !important;
+    }
+
+    .contac_Section {
+        gap: 10px;
+    }
+
+    .section {
+        gap: 8px;
+    }
+
+    .contac_Field_Sec1 {
+        gap: 15px;
+    }
+
+    input {
+        height: 55px;
+        font-size: 13px;
+    }
+
+    textarea {
+        font-size: 13px;
+    }
+
+    #message {
+        height: 150px;
+    }
+
+    .contac_PrivacyPolicy {
+        font-size: 13px;
+        margin-top: 15px;
+
+        p {
+            font-size: 13px;
+        }
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    input[type="submit"] {
+        width: 95px;
+        height: 44px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .toast {
+        bottom: 130px;
+        width: 180px;
+        font-size: 13px;
+        padding: 12px 18px;
+    }
+}

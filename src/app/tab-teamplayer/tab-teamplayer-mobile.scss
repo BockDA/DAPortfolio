@@ -1,0 +1,244 @@
+@use "styles/colors" as *;
+@use "styles/mixin/mixin" as *;
+
+//---------------------Responsive--------------------------
+
+//....................Desktop..........................
+
+@include desktop {
+    .player_Cards {
+        gap: 120px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .background_Animation {
+        flex: 0 0 280px;
+        width: 280px;
+        min-width: 280px;
+        max-width: 280px;
+    }
+
+    .players_Card_Contents {
+        width: auto;
+    }
+
+
+}
+
+//---------------------TABLET--------------------------
+
+@include tablet {
+    .player_Cards {
+        // Strikte Container-Anpassung für Tablet
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding: 0 20px;
+        box-sizing: border-box;
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 20px;
+        flex-wrap: nowrap;
+        contain: layout;
+    }
+
+    .background_Animation {
+        flex: 0 0 250px;
+        width: 250px;
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .players_Card_Contents {
+        //width: 100%;
+        //max-width: 220px;
+        height: auto;
+    }
+
+    .section {
+        position: relative;
+        // width: 250px;
+        height: auto;
+        min-height: 350px;
+    }
+
+    .img_1 {
+        display: none;
+    }
+
+    .img_2 {
+        display: none;
+    }
+
+    .img_3 {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        min-height: 250px;
+        //object-fit: cover;
+    }
+
+
+
+}
+
+//-------------------Mobil-----------------------------------
+
+@include mobile {
+    .player_Cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 50px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 15px 20px 25px 20px;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+
+        // Container-Anpassung für Mobile
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        margin: 0;
+        box-sizing: border-box;
+        contain: layout;
+    }
+
+    .background_Animation {
+        flex: 0 0 400px;
+        flex-shrink: 0;
+        min-width: 400px;
+        width: 400px;
+        max-width: 400px;
+    }
+
+    .section {
+        position: relative;
+        width: 400px;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .img_1 {
+        display: none;
+    }
+
+    .img_2 {
+        display: none;
+    }
+
+    .img_3 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 480px;
+        object-fit: fill;
+        transform: scale(1.5);
+        transform-origin: center;
+    }
+
+    .players_Card_Contents {
+        width: 100%;
+        max-width: 250px;
+        padding: 0 15px;
+    }
+
+    .tplayer_name {
+        font-size: 20px;
+    }
+
+    .description_Text {
+        max-width: 250px;
+        max-height: 170px;
+        //font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .link_linedln {
+        font-size: 14px;
+    }
+}
+
+//---------------------MOBIL SMALL (bis 480px)--------------------------
+
+@include mobilesmall {
+    .player_Cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 10px 15px 20px 15px;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+
+        // Container-Anpassung für Mobile Small
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        margin: 0;
+        box-sizing: border-box;
+        contain: layout;
+    }
+
+    .background_Animation {
+        flex: 0 0 350px;
+        flex-shrink: 0;
+        min-width: 350px;
+        width: 350px;
+        max-width: 350px;
+    }
+
+    .section {
+        position: relative;
+        width: 350px;
+        height: auto;
+        min-height: 450px;
+    }
+
+    .img_1 {
+        display: none;
+    }
+
+    .img_2 {
+        display: none;
+    }
+
+    .img_3 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 430px;
+        object-fit: fill;
+        transform: scale(1.3);
+        transform-origin: center;
+    }
+
+    .players_Card_Contents {
+        width: 100%;
+        max-width: 215px;
+        padding: 0 8px;
+    }
+
+    .tplayer_name {
+        font-size: 17px;
+    }
+
+    .description_Text {
+        max-width: 215px;
+        max-height: 145px;
+        line-height: 1.35;
+    }
+
+}

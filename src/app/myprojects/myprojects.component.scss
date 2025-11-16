@@ -3,39 +3,24 @@
 
 main {
   width: 100%;
-  //@include flex_Box(row, 30px);
-  //display: flex;
-  //align-items: center;
-  //justify-content: center;
-  //gap: 30px;
-
-  // color: $cremeWhite;
   padding-top: 120px;
-  //padding-left: 20px;
-  //padding-right: 20px;
-  //box-sizing: border-box;
-  //background-color: yellow;
-}
+  }
 
 .myprojects_Section {
   font-family: "Josefin";
   width: 100%;
-  //background-color: blue;
-}
+  }
 
 .myprojects_Titel {
   color: $primaryBlue;
   display: flex;
   justify-content: center;
-  // opacity: 0;
+  opacity: 0;
 }
 
 .myprojects_Titel.animat_1 {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
-
-
-
 
 .myprojects_tabs_header {
   display: flex;
@@ -84,155 +69,5 @@ main {
   100% {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-
-
-//---------------------Responsive--------------------------
-
-@include desktop {
-  .myprojects_tabs_header button {
-    margin-left: 15px;
-    font-size: 24px !important;
-  }
-}
-
-//---------------------TABLET--------------------------
-
-@include tablet {
-  main {
-    padding-top: 110px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .font_5 {
-    font-size: 48px;
-  }
-
-  .myprojects_Section {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .myprojects_tabs_header {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 60px;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .myprojects_tabs_header button {
-    height: 80px;
-    width: auto;
-    min-width: 140px;
-    flex: 1 1 180px;
-    font-size: 20px !important;
-  }
-}
-
-//---------------------MOBIL--------------------------
-
-@include mobile {
-  main {
-    padding-top: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .font_5 {
-    font-size: 32px;
-  }
-
-  .myprojects_Section {
-    width: 100%;
-  }
-
-  .myprojects_Titel {
-    padding: 0 10px;
-  }
-
-  .myprojects_tabs_header {
-    //margin-left: 5px;
-    //margin-right: 5px;
-    padding-top: 30px;
-    //margin: 0;
-    // justify-content: center;
-    //flex-direction: row;
-    //flex-wrap: wrap;
-    //gap: 5px;
-  }
-
-  .myprojects_tabs_header button {
-    height: 55px;
-    width: auto;
-    min-width: 85px;
-    max-width: 105px;
-    flex: 1;
-    margin: 0;
-    border-radius: 10px 10px 0 0;
-    white-space: normal;
-    padding: 5px 6px;
-    line-height: 1.15;
-    text-align: center;
-    //overflow: hidden;
-  }
-
-  .myprojects_tabs_header button.font_7 {
-    font-size: 16px !important;
-  }
-
-  .myprojects_tab {
-    width: 100%;
-  }
-}
-
-//---------------------MOBIL SMALL (bis 480px)--------------------------
-
-@include mobilesmall {
-  main {
-    padding-top: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .font_5 {
-    font-size: 28px !important;
-  }
-
-  .myprojects_Section {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  .myprojects_Titel {
-    padding: 0 10px;
-  }
-
-  .myprojects_tabs_header {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 25px;
-    gap: 4px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .myprojects_tabs_header button {
-    height: 48px;
-    min-width: 70px;
-    max-width: 90px;
-    flex: 1;
-    padding: 4px 5px;
-    white-space: normal;
-    line-height: 1.15;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  .myprojects_tabs_header button.font_7 {
-    font-size: 16px !important;
   }
 }

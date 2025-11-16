@@ -12,7 +12,9 @@ import { isPlatformBrowser } from '@angular/common';
   standalone: true,
   imports: [TranslateModule, FormsModule, RouterLink, CommonModule],
   templateUrl: './contact-me.component.html',
-  styleUrls: ['./contact-me.component.scss'],
+  styleUrls: ['./contact-me.component.scss',
+    './contact-me-mobile.scss'
+  ],
 })
 export class ContactMeComponent implements AfterViewInit, OnDestroy {
   constructor(

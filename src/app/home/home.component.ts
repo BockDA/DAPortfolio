@@ -22,7 +22,9 @@ import { FooterComponent } from "../footer/footer.component";
     FooterComponent
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  styleUrls: ['./home.component.scss',
+    './home-mobile.scss'
+  ]
 })
 export class HomeComponent {
   home = HomeComponent;

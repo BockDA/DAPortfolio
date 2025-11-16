@@ -8,7 +8,9 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   standalone: true,
   imports: [TranslateModule, TabMyProjectsComponent],
   templateUrl: './myprojects.component.html',
-  styleUrls: ['./myprojects.component.scss'],
+  styleUrls: ['./myprojects.component.scss',
+    './myprojects-mobile.scss'
+  ],
 })
 export class MyprojectsComponent implements AfterViewInit, OnDestroy {
   public activeTab = 1;
