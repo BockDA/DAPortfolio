@@ -1,9 +1,6 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-//---------------------Responsive--------------------------
-
-@include desktop {}
 
 //---------------------TABLET--------------------------
 
@@ -20,24 +17,25 @@
         flex-direction: column;
         align-items: center;
         gap: 40px;
+        margin-left: 0px;
     }
 
     .myskills_grid_container {
-        width: 80%;
-        max-width: 500px;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        margin-right: 20px;
         margin-top: 60px;
+
     }
 
     .background_Animation {
-        width: 80%;
-        max-width: 500px;
+        margin-top: 60px;
     }
 
     .section {
         margin-top: 40px;
         height: auto;
+        margin: 0;
+
     }
 
     .myskills_Infotext {
@@ -65,21 +63,12 @@
         font-size: 16px;
     }
 
-    .myskills_Section {
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        gap: 30px;
-        padding: 0 20px;
-    }
-
     .myskills_grid_container {
+        margin: 0;
         width: 100%;
         max-width: 350px;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
-        gap: 25px;
-        margin-top: 40px;
     }
 
     .myskills_grid-item {
@@ -91,11 +80,6 @@
         p {
             display: none;
         }
-    }
-
-    .background_Animation {
-        width: 100%;
-        max-width: 350px;
     }
 
     .section {
@@ -111,23 +95,6 @@
         }
     }
 
-    .section_content_block {
-        gap: 20px;
-        padding: 0 10px;
-    }
-
-    .mobil_img {
-        flex-direction: row-reverse !important;
-        gap: 20px !important;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .infotext_mobil {
-        width: 200px;
-        color: $primaryBlue;
-    }
-
     .bgskills_mobil {
         display: flex !important;
         position: absolute;
@@ -136,11 +103,6 @@
         max-width: 80px;
     }
 
-    .myskills_Infotext {
-        text-align: left !important;
-        width: 100%;
-        max-width: 207px;
-    }
 }
 
 //---------------------MOBIL SMALL (bis 635px)--------------------------
@@ -179,11 +141,7 @@
 
     .background_Animation {
         max-width: 300px;
-    }
-
-    .section_content_block {
-        gap: 15px;
-        padding: 0 5px;
+        gap: 30px;
     }
 
     .infotext_mobil {
@@ -201,8 +159,4 @@
         max-width: 70px;
     }
 
-    .myskills_Infotext {
-        max-width: 180px;
-        font-size: 14px;
-    }
 }

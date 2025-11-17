@@ -12,9 +12,7 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   ],
 })
 export class TeamplayerComponent implements AfterViewInit, OnDestroy {
-
   constructor(private animationService: MyFunctionsService) { }
-
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
       { selector: '.tPlayer_Headline', animationClass: 'animat_1' }

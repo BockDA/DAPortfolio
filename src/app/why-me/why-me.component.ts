@@ -1,5 +1,6 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+
 import { MyFunctionsService } from '../../services/my-functions.service';
 
 @Component({
@@ -20,6 +21,14 @@ export class WhyMeComponent implements AfterViewInit, OnDestroy {
       { selector: '.whyme_locale', animationClass: 'animat_1' },
       { selector: '.whyme_Description', animationClass: 'animat_1' }
     ]);
+  }
+
+  setPosMenu(value: string) {
+    this.setAktiv.setMenuAktiv(value);
+    const element = document.getElementById(value);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   ngOnDestroy(): void {

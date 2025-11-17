@@ -12,9 +12,7 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   ]
 })
 export class TabTeamplayerComponent implements AfterViewInit, OnDestroy {
-
   constructor(private animationService: MyFunctionsService) { }
-
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
       { selector: '.player_Cards', animationClass: 'animat_1' },

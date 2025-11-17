@@ -1,4 +1,81 @@
 @use "/styles/colors" as *;
 @use "/styles/mixin/mixin" as *;
 
+//---------------------Responsive--------------------------
 
+@include desktop {
+    .section_heroMenue {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+//---------------------TABLET--------------------------
+
+@include tablet {
+
+    .font_3 {
+        font-size: 20px !important;
+    }
+
+    .app_logo {
+        display: none;
+    }
+
+    .menue_Entries {
+        gap: 30px;
+    }
+
+
+    main {
+        left: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    .menue_inner {
+        padding-left: 45px;
+    }
+}
+
+//---------------------MOBIL--------------------------
+
+@include mobile {
+    .font_3 {
+        font-size: 24px !important;
+    }
+
+    main {
+        width: 90px;
+        height: 160px;
+        left: 0px;
+        top: 10px;
+    }
+
+    .menue_inner {
+        padding: 0 16px !important;
+    }
+
+    .language_Icon {
+        margin-right: 0;
+    }
+}
+
+:host(.menu-full-width) {
+    @include mobile {
+        main {
+            width: 100vw !important;
+            left: 50% !important;
+            margin-left: -50vw !important;
+            margin-right: -50vw !important;
+        }
+    }
+}
+
+//----------- Mobil Small (bis 480px) --------------
+
+@include mobilesmall {
+    main {
+        height: 30px;
+    }
+}

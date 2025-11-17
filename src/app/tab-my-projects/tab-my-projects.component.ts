@@ -13,9 +13,7 @@ import { MyFunctionsService } from '../../services/my-functions.service';
 })
 export class TabMyProjectsComponent implements AfterViewInit, OnDestroy {
   @Input() activeTab!: number;
-
   constructor(private animationService: MyFunctionsService) { }
-
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
       { selector: '.tab_firstSection', animationClass: 'animat_1' },

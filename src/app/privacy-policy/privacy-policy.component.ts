@@ -19,7 +19,6 @@ import { Subscription } from 'rxjs';
 export class PrivacyPolicyComponent implements OnInit, AfterViewInit, OnDestroy {
   sections: any[] = [];
   private langSub?: Subscription;
-
   constructor(
     private myFunctions: MyFunctionsService,
     private translate: TranslateService,
@@ -29,8 +28,6 @@ export class PrivacyPolicyComponent implements OnInit, AfterViewInit, OnDestroy 
 
   ngOnInit() {
     this.loadSections();
-
-    // Auf Sprachwechsel reagieren
     this.langSub = this.translate.onLangChange.subscribe(() => {
       this.loadSections();
     });
@@ -52,8 +49,6 @@ export class PrivacyPolicyComponent implements OnInit, AfterViewInit, OnDestroy 
         const offset = 0;
         window.scrollTo({ top: offset, behavior: 'smooth' });
       }, 200);
-
-      // Animation Setup
       const animationConfigs = [
         { selector: '.privacy-policy-content', animationClass: 'animat_1' },
         { selector: '.privacy-policy-header', animationClass: 'animat_1' }

@@ -20,7 +20,6 @@
   .section {
     position: relative;
     @include flex_Box(column, 0);
-
   }
 
   .section>img {

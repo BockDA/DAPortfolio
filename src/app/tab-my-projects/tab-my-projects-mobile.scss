@@ -1,12 +1,11 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-//---------------------Responsive--------------------------
+//---------------------DESKTOP--------------------------
 
 @include desktop {
     .tab_firstSection {
         padding-left: 0px;
-
 
         .first_paragraph {
             display: flex;
@@ -33,7 +32,6 @@
     main {
         flex-direction: column;
         gap: 20px;
-
     }
 
     .tab_firstSection {
@@ -41,14 +39,11 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-
-
     }
 
     .first_paragraph {
         max-width: 320px;
         margin-bottom: 30px;
-
     }
 
     .first_paragraph_Section {
@@ -128,7 +123,6 @@
 
     .tab_Project_Preview img {
         width: 100% !important;
-        //max-width: 350px !important;
         height: auto !important;
     }
 
@@ -138,7 +132,6 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        //max-width: 300px;
     }
 
     .tab_Buttons a {

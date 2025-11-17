@@ -49,16 +49,8 @@ main {
 
 .contac_Introduction {
   margin-top: 60px;
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  justify-content: center;
-  gap: 60px;
+  gap: 100px;
   color: $cremeWhite;
-  margin-bottom: 80px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
 }
 
 .contac_Description {
@@ -92,12 +84,10 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
-  opacity: 0;
-
+   opacity: 0;
   .section_img {
     @include icon_toggle();
   }
-
 }
 
 .section.animat_1 {
@@ -124,7 +114,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  //max-width: 911px;
   color: $primaryBlue;
   padding: 0 20px;
   box-sizing: border-box;
@@ -251,18 +240,18 @@ textarea {
   }
 }
 
-.section_submit input.disabled {
-  opacity: 0.6;
-}
-
-.section_submit {
-  cursor: not-allowed;
-}
-
 .section_submit {
   width: 100%;
   display: flex;
   align-items: center;
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+
+  input.disabled {
+    opacity: 0.6;
+  }
 }
 
 input[type="submit"] {
@@ -343,12 +332,12 @@ textarea.ng-invalid.ng-touched+.error_notice {
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
-    transform: translateX(-200px); // nach LINKS außerhalb starten
+    transform: translateX(-200px);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0); // Position normal
+    transform: translateX(0);
   }
 }
 

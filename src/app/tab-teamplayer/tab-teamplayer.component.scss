@@ -8,43 +8,34 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  //max-width: 100%;
   min-width: 0;
-  // box-sizing: border-box;
   overflow-x: auto;
   overflow-y: hidden;
   gap: 280px;
   padding: 20px;
-  //contain: layout;
   height: 500px;
   opacity: 0;
-
 }
 
 .player_Cards.animat_1 {
   opacity: 1;
-  overflow: hidden; // Scrollbalken während Animation ausblenden
+  overflow: hidden;
   animation:
     rotateOnly 0.7s ease-out forwards,
     softScale 2s ease-out forwards 0.7s,
-    showScrollbar 0.1s ease-out forwards 2.7s; // Scrollbalken nach Animation einblenden
-
+    showScrollbar 0.1s ease-out forwards 2.7s;
 }
 
 .players_Card_Contents {
   @include flex_Box(column, 20px);
   color: $cremeWhite;
   text-align: center;
-
   .color_Text {
     color: $primaryBlue;
-
   }
-
 
   Section {
     position: relative;
-    // width: 280px;
     height: 800px;
     min-height: 400px;
   }
@@ -57,7 +48,6 @@
     max-height: 180px;
     padding-bottom: 19px;
     overflow-y: auto;
-
     &::-webkit-scrollbar {
       width: 3px;
     }
@@ -72,21 +62,15 @@
   .link_linedln {
     z-index: 1;
   }
-
-
 }
 
 @include background_Animation();
-
 .background_Animation {
   flex: 0 0 250px;
   width: 250px;
   min-width: 250px;
   max-width: 250px;
-
 }
-
-
 
 .img_3 {
   display: none;
@@ -96,7 +80,6 @@
   from {
     transform: rotate(0deg) scale(0.5);
   }
-
   to {
     transform: rotate(360deg) scale(0.5);
   }
@@ -106,7 +89,6 @@
   from {
     transform: scale(0.5);
   }
-
   to {
     transform: scale(1);
   }
@@ -116,7 +98,6 @@
   from {
     overflow: hidden;
   }
-
   to {
     overflow-x: auto;
     overflow-y: hidden;
@@ -128,11 +109,8 @@
     opacity: 0;
     transform: translateX(200px);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
-

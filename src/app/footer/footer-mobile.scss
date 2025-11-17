@@ -14,7 +14,7 @@
 
 @include mobile {
     .font_8 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     main {
@@ -39,7 +39,7 @@
     }
 
     .copy {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 
     .footer_sec_center {
@@ -75,7 +75,7 @@
 
 @include mobilesmall {
     .font_8 {
-        font-size: 12px !important;
+        font-size: 16px !important;
     }
 
     main {
@@ -89,11 +89,11 @@
     .footer_sec_left {
         gap: 30px !important;
         top: 165px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .copy {
-        font-size: 12px !important;
+        font-size: 16px !important;
     }
 
     .footer_sec_right {

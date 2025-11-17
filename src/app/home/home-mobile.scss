@@ -1,6 +1,18 @@
 @use "styles/mixin/mixin" as *;
 @use "styles/colors" as *;
 
+@media (min-width: 1450px) {
+    main {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1921px) {
+    main {
+        padding: 0 80px;
+    }
+}
+
 //---------------------MOBIL--------------------------
 
 @include mobile {

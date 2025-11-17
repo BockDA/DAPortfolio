@@ -19,12 +19,11 @@ main {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 
-
-
 .myskills_Section {
   font-family: "Josefin";
   display: flex;
   justify-content: center;
+  margin-left: 40px;
   opacity: 0;
 }
 
@@ -39,7 +38,6 @@ main {
   gap: 40px;
   margin-top: 90px;
   width: 50%;
-  //max-width: 600px;
 }
 
 .myskills_grid-item {
@@ -53,7 +51,6 @@ main {
   width: 50%;
   min-width: 300px;
 }
-
 
 //--------------------rechts Seite ---------------------------------//
 
@@ -91,8 +88,6 @@ main {
 .myskills_Infotext {
   width: 207px;
 }
-
-
 
 @keyframes slideInFromRight {
   0% {

@@ -9,8 +9,6 @@
         <div class="contac_Description">
             <p class="font_8">{{ "CONTACT.DESCRIPTION" | translate }}</p>
         </div>
-
-
         <div class="contac_Section">
             <div class="section">
                 <div class="section_img">
@@ -29,12 +27,7 @@
         </div>
     </div>
 
-
-
-
-
     <form class="contac_Formular_Section font_13" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-
         <div class="contac_Field_Sec1">
             <div class="contact_Field">
                 <label for="name">{{ "CONTACT.FORMULAR_NAME" | translate }}</label>
@@ -58,9 +51,6 @@
             <span class="error_notice">{{'CONTACT.INPUTEEROR_MESSAGE' |translate}}</span>
         </div>
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden" />
-
-
-
         <div class="contac_PrivacyPolicy" [attr.aria-checked]="privacyCtrl.value"
             (click)="privacyCtrl.control.setValue(!privacyCtrl.value)">
             <img [src]="
@@ -81,7 +71,6 @@
             <input [class.disabled]="!contactForm.valid" type="submit" value="{{ 'CONTACT.SEND_BTN' | translate }}" />
         </div>
     </form>
-
     <div class="contac_BTN"></div>
     <div class="hero_ArrowUp">
         <a (click)="setPosMenu('hero')"><img src="assets/icons/ArrowUp.png" /></a>

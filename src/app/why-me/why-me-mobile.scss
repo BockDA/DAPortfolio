@@ -1,7 +1,7 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-//---------------------Responsive--------------------------
+//---------------------DESKTOP--------------------------
 
 @include desktop {
     .font_5 {
@@ -18,7 +18,6 @@
 @include tablet {
     main {
         padding-top: 60px;
-
     }
 
     .font_5 {
@@ -31,7 +30,6 @@
 
     .whyme_Titel {
         margin-top: 80px;
-        // Responsive Rules - Animation States beibehalten!
     }
 
     .whyme_innerSection {
@@ -59,7 +57,6 @@
 @include mobile {
     main {
         padding: 0 15px;
-
     }
 
     .font_5 {
@@ -77,7 +74,6 @@
     .whyme_Titel {
         margin-top: 40px;
         margin-bottom: 20px;
-        // Mobile Rules - Animation States beibehalten!
     }
 
     .whyme_innerSection {
@@ -135,7 +131,6 @@
     .whyme_Titel {
         margin-top: 30px;
         margin-bottom: 15px;
-        // Mobile Small Rules - Animation States beibehalten!
     }
 
     .whyme_innerSection {
@@ -145,7 +140,6 @@
 
     .whyme_locale {
         max-width: 260px;
-
         img {
             width: 28px;
             height: 35px;

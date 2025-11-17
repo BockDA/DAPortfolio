@@ -1,8 +1,6 @@
 @use "/styles/colors" as *;
 @use "/styles/mixin/mixin" as *;
 
-
-
 main {
   display: flex;
   justify-content: center;
@@ -19,8 +17,6 @@ main {
 .menue_inner {
   max-width: 1920px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 60px;
   box-sizing: border-box;
 }
 
@@ -36,7 +32,6 @@ main {
   display: flex;
   justify-content: start;
   gap: 100px;
-
   font-family: "Josefin";
 
   p {
@@ -114,86 +109,4 @@ main {
 
 :host ::ng-deep app-logo .logo {
   cursor: pointer;
-}
-
-
-//---------------------Responsive--------------------------
-
-@include desktop {
-  .section_heroMenue {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-//---------------------TABLET--------------------------
-
-@include tablet {
-
-  .font_3 {
-    font-size: 20px !important;
-  }
-
-  .app_logo {
-    display: none;
-  }
-
-  .menue_Entries {
-    gap: 50px;
-  }
-
-
-  main {
-    left: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-
-  .menue_inner {
-    padding: 0 30px;
-  }
-}
-
-//---------------------MOBIL--------------------------
-
-
-@include mobile {
-
-  .font_3 {
-    font-size: 24px !important;
-  }
-
-  main {
-    width: 90px;
-    height: 160px;
-    left: 0px;
-    top: 10px;
-  }
-
-  .menue_inner {
-    padding: 0 16px !important;
-  }
-
-  .language_Icon {
-    margin-right: 0;
-  }
-}
-
-:host(.menu-full-width) {
-  @include mobile {
-    main {
-      width: 100vw !important;
-      left: 50% !important;
-      margin-left: -50vw !important;
-      margin-right: -50vw !important;
-    }
-  }
-}
-
-//----------- Mobil Small (bis 480px) --------------
-
-@include mobilesmall {
-  main {
-    height: 30px;
-  }
 }

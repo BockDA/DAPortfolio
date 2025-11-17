@@ -11,9 +11,7 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   ]
 })
 export class MyskillsComponent implements AfterViewInit, OnDestroy {
-
   constructor(private animationService: MyFunctionsService) { }
-
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
       { selector: '.myskills_Titel', animationClass: 'animat_1' },

@@ -67,20 +67,15 @@ export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
-
-
-      // Animation Setup
-      const animationConfigs = [
+     const animationConfigs = [
         {
           selector: '.legal-notice-content', animationClass: 'animat_1'
         },
         {
           selector: '.legal_notice_header', animationClass: 'animat_1'
         }
-
       ];
       this.myFunctions.setupAnimations(animationConfigs);
     }
   }
-
 }

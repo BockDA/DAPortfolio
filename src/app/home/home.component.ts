@@ -28,7 +28,6 @@ import { FooterComponent } from "../footer/footer.component";
 })
 export class HomeComponent {
   home = HomeComponent;
-
   menuFixedTop = false;
   menuTranslateY = 0;
   useCssMenu = false;
@@ -52,14 +51,12 @@ export class HomeComponent {
   @HostListener('window:resize', [])
   onWindowResize() {
     if (!isPlatformBrowser(this.platformId)) return;
-
     this.computeMetrics();
     this.onWindowScroll();
   }
 
   ngAfterViewInit(): void {
     if (!isPlatformBrowser(this.platformId)) return;
-
     setTimeout(() => {
       const el = this.menuEl?.nativeElement;
       if (el) {
@@ -75,7 +72,6 @@ export class HomeComponent {
 
   private computeMetrics() {
     if (!isPlatformBrowser(this.platformId)) return;
-
     this.threshold = Math.max(0, window.innerHeight - this.menuHeight);
   }
 }

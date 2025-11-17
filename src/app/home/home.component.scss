@@ -7,20 +7,6 @@ main {
   margin: 0 auto;
 }
 
-// Für Bildschirme über 1450px
-@media (min-width: 1450px) {
-  main {
-    padding: 0 40px;
-  }
-}
-
-// Für sehr große Bildschirme über 1920px
-@media (min-width: 1921px) {
-  main {
-    padding: 0 80px;
-  }
-}
-
 .menu-intro {
   pointer-events: none;
 }

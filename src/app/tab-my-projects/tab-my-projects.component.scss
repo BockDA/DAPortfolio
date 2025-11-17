@@ -10,7 +10,6 @@ main {
   padding: 0 20px;
   box-sizing: border-box;
   gap: 180px;
-
 }
 
 .tab_firstSection {
@@ -69,7 +68,6 @@ main {
   }
 
   .tab_Icons img {
-    //width: 34px;
     height: 36px;
   }
 
@@ -82,7 +80,6 @@ main {
 
   .tab_Project_Preview img {
     display: flex;
-    //width: 452px;
     height: 312px;
     border-radius: 16px;
     border-style: solid;
@@ -94,7 +91,6 @@ main {
     justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
-    //
   }
 
   .tab_Buttons a {
@@ -120,7 +116,6 @@ main {
   }
 }
 
-// Animation-Klassen außerhalb der verschachtelten Struktur
 .tab_secondSection.animat_2 {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
@@ -129,12 +124,12 @@ main {
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
-    transform: translateX(-200px); // nach LINKS außerhalb starten
+    transform: translateX(-200px); 
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0); // Position normal
+    transform: translateX(0); 
   }
 }
 
@@ -149,4 +144,3 @@ main {
     transform: translateX(0);
   }
 }
-
