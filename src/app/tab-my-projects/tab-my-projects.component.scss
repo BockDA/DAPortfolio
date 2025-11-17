@@ -4,12 +4,14 @@
 main {
   display: flex;
   width: 100%;
+  max-width: 100vw;
   justify-content: center;
   font-family: "Josefin";
   color: $cremeWhite;
   padding: 0 20px;
   box-sizing: border-box;
   gap: 180px;
+  overflow: hidden;
 }
 
 .tab_firstSection {
@@ -39,6 +41,7 @@ main {
 
 .first_paragraph_Text {
   margin-left: 60px;
+  box-sizing: border-box;
 }
 
 
@@ -124,12 +127,12 @@ main {
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
-    transform: translateX(-200px); 
+    transform: translateX(-200px);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0); 
+    transform: translateX(0);
   }
 }
 

@@ -7,6 +7,7 @@
     main {
         margin: 0;
         gap: 160px;
+        height: 100vh;
     }
 
     .hero_Name {
@@ -32,10 +33,9 @@
 //---------------------TABLET--------------------------
 
 @include tablet {
+
     main {
-        gap: 30px;
-        padding-top: 40px;
-        height: auto;
+        gap: 0px;
     }
 
     .hero_Name {
@@ -58,6 +58,8 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
+
 
     .hero_section.no-hover:hover .hero_bg_section .original {
         opacity: 1 !important;
@@ -83,26 +85,23 @@
         display: none !important;
     }
 
-    .hero_picture {
-        left: 0px !important;
-    }
+
 
     .img_backround_mobil {
         display: block;
         position: absolute;
-        left: 50%;
-        top: 0px;
-        transform: translateX(-50%) rotate(0deg);
-        max-width: 390px;
-        min-width: 250px;
-        height: auto;
+        left: 30%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        max-width: 340px;
+        min-width: 300px;
+        height: 550px;
     }
 
     .img_Hero {
         position: absolute;
-        left: 50%;
+        left: 30%;
         transform: translateX(-50%);
-        width: 30vw !important;
         max-width: 390px;
         min-width: 250px;
         height: auto !important;
@@ -120,8 +119,10 @@
         padding: 0px;
     }
 
+
     #menyAvPaa {
         display: inline;
+        opacity: 0;
     }
 
     #menyAvPaa:checked~.hero_section .img_Hero {
@@ -129,7 +130,7 @@
     }
 
     .hero_section {
-        margin-left: 0px;
+        margin: 0px;
     }
 
 
@@ -154,6 +155,7 @@
         top: 260px;
         left: 50%;
         transform: translateX(-50%);
+   
     }
 
     .menue {
@@ -235,7 +237,7 @@
     }
 
     .hero_Personal {
-        gap: 10px;
+        min-height: 0px;
     }
 
     .hero_media {
@@ -243,7 +245,7 @@
     }
 
     .hero_Name {
-        margin-top: 0 !important;
+        margin-top: 40px;
     }
 
     .hero_Arrow {
@@ -252,16 +254,21 @@
         padding-bottom: 15px;
     }
 
-    .hero_bg_section>img.original {
-        left: 10%;
+    .img_backround_mobil {
+        left: 50%;
+        top: 40%;
         max-width: 300px;
-        min-width: 320px;
-        height: 420px;
+        min-width: 300px;
+        height: 400px;
     }
 
     .img_Hero {
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
         max-width: 300px;
         min-width: 300px;
+        min-height: auto
     }
 }
 
@@ -270,9 +277,9 @@
 
 @include mobilesmall {
     main {
-        gap: 20px;
-        padding: 0 !important;
-        margin: 0 !important;
+        margin-top: 70px;
+        padding-top: 0px;
+        padding-bottom: 100px;
     }
 
     .font_1 {
@@ -285,27 +292,9 @@
 
     .img_backround_mobil {
         max-width: 250px;
-        min-width: 220px;
         height: 380px;
     }
 
-    .img_Hero {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 230px !important;
-        min-width: 200px !important;
-        margin-top: 0;
-    }
-
-    .hero_picture {
-        position: relative;
-    }
-
-    .hero_Personal {
-        padding-top: 60px;
-    }
 
     .app_Logo {
         top: 10px;
@@ -323,4 +312,14 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
+    .img_backround_mobil {
+        top: 35%;
+    }
+
+    .img_Hero {
+        top: 35%;
+    }
+
+
 }
