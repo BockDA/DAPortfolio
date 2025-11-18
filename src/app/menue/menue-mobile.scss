@@ -1,82 +1,89 @@
-@use "/styles/colors" as *;
-@use "/styles/mixin/mixin" as *;
+    @use "/styles/colors" as *;
+    @use "/styles/mixin/mixin" as *;
 
 
-//---------------------TABLET--------------------------
+    //---------------------TABLET--------------------------
 
-@include tablet {
+    @include tablet {
 
-    .app_logo {
-        display: none;
-    }
+        .app_logo {
+            display: none;
+        }
 
-    .menue_Entries {
-        gap: 30px;
+        .menue_Entries {
+            gap: 30px;
 
-    }
+        }
 
-    main {
-        left: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-    }
-
-    .menue_inner {
-        padding-left: 45px;
-    }
-}
-
-//---------------------MOBIL--------------------------
-
-@include mobile {
-
-    main {
-        width: auto;
-        //margin-bottom: 20px;
-        //background-color: red($color: #000000);
-        padding: 0;
-        position: absolute;
-        top: auto;
-        left: 150px;
-    }
-
-
-    .font_3 {
-        font-size: 24px !important;
-    }
-
-    .menue_Entries p {
-        padding: 10px;
-    }
-
-    .menue_inner {
-        padding: 30px 0px 25px;
-        //background-color: yellow;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2000;
-        width: 90vw;
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .language_Icon {
-        margin-right: 0;
-    }
-}
-
-:host(.menu-full-width) {
-    @include mobile {
         main {
-            width: 100vw !important;
-            left: 50% !important;
-            margin-left: -50vw !important;
-            margin-right: -50vw !important;
+            left: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        .menue_inner {
+            padding-left: 45px;
+
         }
     }
-}
+
+    //---------------------MOBIL--------------------------
+
+    @include mobile {
+        main {
+            width: auto;
+            padding: 0;
+            position: absolute;
+            top: auto;
+            left: 150px;
+        }
+
+        .section_heroMenue {
+            padding-top: 65px;
+        }
+
+        .font_3 {
+            font-size: 24px !important;
+        }
+
+        .menue_Entries p {
+            padding: 10px;
+        }
+
+        .menue_Entries {
+            margin-top: 24px;
+        }
+
+
+
+
+        .menue_inner {
+            width: 100%;
+            position: fixed;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2000;
+            width: 90vw;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .language_Icon {
+            margin-right: 0;
+        }
+    }
+
+    :host(.menu-full-width) {
+        @include mobile {
+            main {
+                width: 100vw !important;
+                left: 50% !important;
+                margin-left: -50vw !important;
+                margin-right: -50vw !important;
+            }
+        }
+    }

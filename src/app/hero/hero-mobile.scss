@@ -131,13 +131,14 @@
 
     .hero_section {
         margin: 0px;
+        background-color: aqua;
     }
 
 
     :host ::ng-deep #menyAvPaa:checked~.hero_section app-menue {
         .section_heroMenue {
             flex-direction: column;
-            gap: 20px;
+            gap: 0px;
             background-color: none;
         }
 
@@ -152,7 +153,7 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 260px;
+        top: 250px;
         left: 50%;
         transform: translateX(-50%);
 
