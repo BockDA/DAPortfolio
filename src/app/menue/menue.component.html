@@ -37,10 +37,10 @@
         </a>
       </div>
       <div class="language_Icon">
-        <button class="font_9" [class.language_aktiv]="isGerman()" (click)="setLanguage('de')"
+        <button class="font_9" [class.language_aktiv]="isGerman()" (click)="toggleLanguage()"
           [style.backgroundImage]="isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">DE </button>
 
-        <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="setLanguage('en')"
+        <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="toggleLanguage()"
           [style.backgroundImage]="!isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">EN</button>
       </div>
     </div>

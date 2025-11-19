@@ -11,10 +11,21 @@
   min-width: 0;
   overflow-x: auto;
   overflow-y: hidden;
-  gap: 280px;
+  gap: 290px;
   padding: 20px;
   height: 500px;
   opacity: 0;
+}
+
+.player_Cards::-webkit-scrollbar {
+  height: 26px;
+  background: $mainColor;
+}
+
+.player_Cards::-webkit-scrollbar-thumb {
+  height: 10px;
+  background: $tabColor;
+  border-radius: 8px;
 }
 
 .player_Cards.animat_1 {
@@ -30,6 +41,7 @@
   @include flex_Box(column, 20px);
   color: $cremeWhite;
   text-align: center;
+
   .color_Text {
     color: $primaryBlue;
   }
@@ -48,6 +60,7 @@
     max-height: 180px;
     padding-bottom: 19px;
     overflow-y: auto;
+
     &::-webkit-scrollbar {
       width: 3px;
     }
@@ -65,6 +78,7 @@
 }
 
 @include background_Animation();
+
 .background_Animation {
   flex: 0 0 250px;
   width: 250px;
@@ -80,6 +94,7 @@
   from {
     transform: rotate(0deg) scale(0.5);
   }
+
   to {
     transform: rotate(360deg) scale(0.5);
   }
@@ -89,6 +104,7 @@
   from {
     transform: scale(0.5);
   }
+
   to {
     transform: scale(1);
   }
@@ -98,6 +114,7 @@
   from {
     overflow: hidden;
   }
+
   to {
     overflow-x: auto;
     overflow-y: hidden;
@@ -109,6 +126,7 @@
     opacity: 0;
     transform: translateX(200px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);

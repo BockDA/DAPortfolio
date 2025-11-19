@@ -10,6 +10,7 @@ main {
 }
 
 .myskills_Titel {
+  margin-top: 60px;
   color: $primaryBlue;
   @include flex_Box(column, 0px);
   opacity: 0;

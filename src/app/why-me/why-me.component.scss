@@ -11,6 +11,7 @@ main {
 }
 
 .whyme_Section {
+  margin-top: 60px;
   font-family: "Josefin";
   width: 100%;
   height: auto;
@@ -21,7 +22,7 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 115px;
-   opacity: 0;
+  opacity: 0;
 }
 
 .whyme_Titel.animat_1 {
@@ -86,6 +87,7 @@ main {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -96,9 +98,9 @@ main {
     opacity: 0;
     transform: translateX(200px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-

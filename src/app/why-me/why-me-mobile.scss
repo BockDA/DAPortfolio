@@ -1,154 +1,156 @@
-@use "styles/colors" as *;
-@use "styles/mixin/mixin" as *;
+   @use "styles/colors" as *;
+   @use "styles/mixin/mixin" as *;
 
-//---------------------DESKTOP--------------------------
+   //---------------------DESKTOP--------------------------
 
-@include desktop {
-    .font_5 {
-        font-size: 48px;
-    }
+   @include desktop {
+       .font_5 {
+           font-size: 48px;
+       }
 
-    .whyme_innerSection {
-        margin-left: 0px;
-    }
-}
+       .whyme_innerSection {
+           margin-left: 0px;
+       }
+   }
 
-//---------------------TABLET--------------------------
+   //---------------------TABLET--------------------------
 
-@include tablet {
-    main {
-        padding-top: 60px;
-    }
+   @include tablet {
+       main {
+           padding-top: 60px;
+       }
 
-    .font_5 {
-        font-size: 48px;
-    }
+       .font_5 {
+           font-size: 48px;
+       }
 
-    .font_10 {
-        font-size: 24px;
-    }
+       .font_10 {
+           font-size: 24px;
+       }
 
-    .whyme_Titel {
-        margin-top: 80px;
-    }
+       .whyme_Titel {
+           margin-top: 80px;
+       }
 
-    .whyme_innerSection {
-        flex-direction: column;
-        margin-left: 0;
-        gap: 30px;
-    }
+       .whyme_innerSection {
+           flex-direction: column;
+           margin-left: 0;
+           gap: 30px;
+       }
 
-    .whyme_Description {
-        width: 100%;
-        max-width: 500px;
-        align-items: center;
-        text-align: center;
-    }
+       .whyme_Description {
+           width: 100%;
+           max-width: 500px;
+           align-items: center;
+           text-align: center;
+       }
 
-    .whyme_locale {
-        width: 100%;
-        max-width: 400px;
-        justify-content: center;
-    }
-}
+       .whyme_locale {
+           width: 100%;
+           max-width: 400px;
+           justify-content: center;
+       }
+   }
 
-//---------------------MOBIL--------------------------
+   //---------------------MOBIL--------------------------
 
-@include mobile {
-    main {
-        padding: 0 15px;
-    }
+   @include mobile {
 
-    .font_5 {
-        font-size: 32px;
-    }
+       main {
+           padding: 0 15px 0;
+       }
 
-    .font_10 {
-        font-size: 16px;
-    }
 
-    .font_8 {
-        font-size: 16px;
-    }
+       .font_5 {
+           font-size: 32px;
+       }
 
-    .whyme_Titel {
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
+       .font_10 {
+           font-size: 16px;
+       }
 
-    .whyme_innerSection {
-        flex-direction: column;
-        margin-top: 20px;
-        margin-left: 0;
-        gap: 20px;
-        pointer-events: none;
-    }
+       .font_8 {
+           font-size: 16px;
+       }
 
-    .whyme_locale {
-        width: 100%;
-        max-width: 300px;
-        margin: 0;
-        justify-content: center;
+       .whyme_Titel {
+           margin-top: 40px;
+           margin-bottom: 20px;
+       }
 
-        img {
-            width: 32px;
-            height: 40px;
-        }
-    }
+       .whyme_innerSection {
+           flex-direction: column;
+           margin-top: 20px;
+           margin-left: 0;
+           gap: 20px;
+           pointer-events: none;
+       }
 
-    .whyme_Description {
-        width: 100%;
-        max-width: 300px;
-        padding: 0 10px;
-        align-items: center;
-        text-align: center;
+       .whyme_locale {
+           width: 100%;
+           max-width: 300px;
+           margin: 0;
+           justify-content: center;
 
-        a {
-            display: none;
-        }
-    }
-}
+           img {
+               width: 32px;
+               height: 40px;
+           }
+       }
 
-//---------------------MOBIL SMALL (bis 635px)--------------------------
+       .whyme_Description {
+           width: 100%;
+           max-width: 300px;
+           padding: 0 10px;
+           align-items: center;
+           text-align: center;
 
-@include mobilesmall {
-    main {
-        padding: 0 10px;
-    }
+           a {
+               display: none;
+           }
+       }
+   }
 
-    .font_5 {
-        font-size: 28px !important;
-    }
+   //---------------------MOBIL SMALL (bis 635px)--------------------------
 
-    .font_10 {
-        font-size: 14px !important;
-    }
+   @include mobilesmall {
+       main {
+           padding: 0 10px;
+       }
 
-    .font_8 {
-        font-size: 14px !important;
-    }
+       .font_5 {
+           font-size: 28px !important;
+       }
 
-    .whyme_Titel {
-        margin-top: 30px;
-        margin-bottom: 15px;
-    }
+       .font_10 {
+           font-size: 14px !important;
+       }
 
-    .whyme_innerSection {
-        gap: 15px;
-        margin-top: 15px;
-    }
+       .font_8 {
+           font-size: 14px !important;
+       }
 
-    .whyme_locale {
-        max-width: 260px;
+       .whyme_Titel {
+           margin-top: 30px;
+           margin-bottom: 15px;
+       }
 
-        img {
-            width: 28px;
-            height: 35px;
-        }
-    }
+       .whyme_innerSection {
+           gap: 15px;
+           margin-top: 15px;
+       }
 
-    .whyme_Description {
-        max-width: 280px;
-        padding: 0 5px;
-    }
-}
+       .whyme_locale {
+           max-width: 260px;
+
+           img {
+               width: 28px;
+               height: 35px;
+           }
+       }
+
+       .whyme_Description {
+           max-width: 280px;
+           padding: 0 5px;
+       }
+   }

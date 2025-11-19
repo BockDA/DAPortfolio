@@ -32,14 +32,15 @@
             <div class="contact_Field">
                 <label for="name">{{ "CONTACT.FORMULAR_NAME" | translate }}</label>
                 <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                    placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}" required autocomplete="off" />
+                    placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}" required autocomplete="off"
+                    pattern=".*\S.*" />
                 <span class="error_notice">{{'CONTACT.INPUTEEROR_NAME' |translate}}</span>
             </div>
             <div class="container_mail">
                 <label for="email">{{ "CONTACT.FORMULAR_EMAIL" | translate }}</label>
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                     placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}" required autocomplete="off"
-                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+                    pattern="^(?!.*\.\.)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
                 <span class="error_notice">{{'CONTACT.INPUTEEROR_EMAIL' |translate}}</span>
             </div>
         </div>
@@ -47,7 +48,8 @@
         <div class="container_message">
             <label for="message">{{ "CONTACT.FORMULAR_MESSAGE" | translate }}</label>
             <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
-                placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required autocomplete="off"></textarea>
+                placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" required autocomplete="off"
+                pattern=".*\S.*"></textarea>
             <span class="error_notice">{{'CONTACT.INPUTEEROR_MESSAGE' |translate}}</span>
         </div>
         <input type="checkbox" name="privacy" ngModel required #privacyCtrl="ngModel" class="visually-hidden" />

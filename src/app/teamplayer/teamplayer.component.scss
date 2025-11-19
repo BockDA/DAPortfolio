@@ -30,11 +30,11 @@ main {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 
+
 .tPlayer_Section {
   width: 100%;
   overflow-x: hidden;
 }
-
 
 @keyframes slideInFromRight {
   0% {
@@ -47,5 +47,3 @@ main {
     transform: translateX(0);
   }
 }
-
-

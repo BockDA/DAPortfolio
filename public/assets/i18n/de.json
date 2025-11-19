@@ -41,7 +41,7 @@
         ],
         "SCREEN": "assets/screenshots/joinDA.png",
         "MOBILTECHNO": " : HTML, JavaScript, CSS, Firebase",
-        "LINKPROJECT": "https://www.join-431.developerakademie.net/Join-App-25-04/index.html",
+        "LINKPROJECT": "https://www.join.elektro-bock.com/",
         "LINKGIT": "https://github.com/BockDA/DA-Join.git"
       }
     },
@@ -64,7 +64,7 @@
         ],
         "SCREEN": "assets/screenshots/elpolloloco.png",
         "MOBILTECHNO": " : HTML, JavaScript, Git",
-        "LINKPROJECT": "https://www.christian-bock.developerakademie.net/Projekte/ElPolloLoco/index.html",
+        "LINKPROJECT": "https://elpollolocoda.elektro-bock.com/",
         "LINKGIT": "https://github.com/BockDA/DA_ElPolloLoco.git"
       }
     },

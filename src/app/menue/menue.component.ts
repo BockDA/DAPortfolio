@@ -29,6 +29,17 @@ export class MenueComponent {
     public setAktiv: MyFunctionsService,
     private translate: TranslateService
   ) {
+    // Sprache aus localStorage übernehmen, falls vorhanden (nur im Browser!)
+    const isBrowser = typeof window !== 'undefined' && typeof localStorage !== 'undefined';
+    if (isBrowser) {
+      const storedLang = localStorage.getItem('lang');
+      if (storedLang === 'en' || storedLang === 'de') {
+        this.setLanguage(storedLang);
+        this.translate.use(storedLang);
+        return;
+      }
+    }
+    // Fallback: Sprache aus State
     effect(() => {
       const lang = this.isGerman() ? 'de' : 'en';
       this.translate.use(lang);
@@ -50,7 +61,6 @@ export class MenueComponent {
   }
 
   closeBurgerMenu() {
-    // Finde das Checkbox-Element für das Burger-Menü und setze es auf unchecked
     const burgerCheckbox = document.getElementById('menyAvPaa') as HTMLInputElement;
     if (burgerCheckbox) {
       burgerCheckbox.checked = false;
@@ -61,6 +71,10 @@ export class MenueComponent {
     const newLang = this.isGerman() ? 'en' : 'de';
     this.setLanguage(newLang);
     this.translate.use(newLang);
+    const isBrowser = typeof window !== 'undefined' && typeof localStorage !== 'undefined';
+    if (isBrowser) {
+      localStorage.setItem('lang', newLang);
+    }
   }
 }
 
