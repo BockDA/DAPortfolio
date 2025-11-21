@@ -2,26 +2,20 @@
 @use "styles/mixin/mixin" as *;
 
 main {
-  position: relative;
-  min-height: 100vh;
-  max-height: 100vh;
-  display: flex;
+  display: flex; //position: relative;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 70px;
+  justify-content: space-between;
   color: $cremeWhite;
-  padding-bottom: 200px;
-  //overflow: hidden;
+  height: 100vh;
 }
 
-.img_backround_mobil {
-  display: none;
-}
-
+//Checkbox for mobile menu
 #menyAvPaa {
   display: none;
 }
 
+//Logo Animation
 :host ::ng-deep app-logo .logo img:first-child {
   transition: transform 0.3s ease;
 }
@@ -30,87 +24,41 @@ main {
   transform: scaleX(1.2);
 }
 
+
 .hero_picture {
+  background-color: yellow;
   position: relative;
-  display: flex;
-  width: 100%;
-  height: 400px;
+  width: 50%;
+  //height: 400px;
+  //margin-top: 160px;
 }
 
-.hero_section {
-  display: grid;
-  width: 100%;
-  height: 515px;
-  margin-left: 120px;
-
-  .img_Background {
-    grid-area: 1 / 1;
-    margin-top: 0px;
-    rotate: -45deg;
-  }
-
-  .hero_picture {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 400px;
-    left: 70px;
-  }
-
-  .img_Hero {
-    grid-area: 1 / 1;
-    z-index: 0;
-    width: auto;
-    height: 500px;
-    margin-left: 40px;
-  }
-}
-
-.hero_section:hover {
-  .hero_bg_section {
-    .original {
-      opacity: 0;
-    }
-
-    .hover {
-      opacity: 1;
-    }
-  }
-}
-
-.hero_bg_section {
-  grid-area: 1/1;
-  position: relative;
-}
-
-.hero_bg_section>img {
+.img_first {
   position: absolute;
-  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
 }
 
-.hero_bg_section .original {
-  opacity: 1;
+.img_sec {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
-.hero_bg_section .hover {
-  opacity: 0;
-  transform: scale(1);
-}
 
-.hero_bg_section:hover .original {
-  opacity: 0;
-}
-
-.hero_bg_section:hover .hover {
-  opacity: 1;
-}
+//---------------------right--------------------------
 
 .hero_Personal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding-top: 90px;
+  width: 50%;
+
 
   .hero_Name {
     p:first-of-type {
@@ -125,11 +73,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 60%;
+  width: 100%;
 }
 
 .app_Logo {
-  margin-left: 46%;
+  margin-left: 45%;
 }
 
 .section {
@@ -171,17 +119,16 @@ main {
   }
 }
 
-.menue_mobil {
-  display: none;
-}
-
 .menue {
   display: none;
 }
 
-.mobile-logo {
+.menue_mobil {
   display: none;
 }
+
+
+
 
 
 //--Animation

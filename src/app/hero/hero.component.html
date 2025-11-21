@@ -1,27 +1,26 @@
 <main>
+  <div class="hero_picture">
   <input type="checkbox" id="menyAvPaa">
   <div class="menue">
     <div class="mobile-logo">
       <app-logo [dark]="false"></app-logo>
     </div>
-    <label id="burger" for="menyAvPaa">
-      <div></div>
-      <div></div>
-      <div></div>
-    </label>
-  </div>
-
-  <div class="hero_section no-hover">
-    <div class="hero_bg_section">
-      <img class="img_Background original" src="assets/icons/bgshape.png" />
-      <img class="img_Background hover" src="assets/icons/bgshape_hover.png" />
+    <div>
+      <label id="burger" for="menyAvPaa">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
     </div>
-
-    <img class="img_backround_mobil" src="assets/icons/bgshape.png" />
-    <img class="img_Hero" src="assets/icons/CB_Picture.png" alt="Personal Image" />
-
-    <app-menue class="menue_mobil"></app-menue>
   </div>
+
+
+  <div class="hero_bg_section">
+    <img class="img_first" src="assets/icons/CB_Picture.png" />
+    <img class="img_sec " src="assets/icons/bgshape.png" />
+  </div>
+</div>
+ 
 
   <div class="hero_Personal">
     <div class="hero_media">
@@ -51,9 +50,13 @@
       <p class="font_1 fade_element">Christian Bock</p>
       <p class="font_2 fade_element">{{'HERO.ROLE' | translate}}</p>
     </div>
-    
+
     <div class="hero_Arrow">
-      <a (click)="setPosMenu('why-me')"><img src="assets/icons/Arrowdown.png" /></a> 
-      </div>
+      <a (click)="setPosMenu('why-me')"><img src="assets/icons/Arrowdown.png" /></a>
+    </div>
   </div>
+
+<app-menue class="menue_mobil"></app-menue>
+
+
 </main>
