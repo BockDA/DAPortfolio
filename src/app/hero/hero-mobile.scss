@@ -77,6 +77,8 @@
         height: auto;
     }
 
+
+
     .hero_picture {
         //position: relative;
         //top:440px;
@@ -129,50 +131,24 @@
         //height: 0%;
     }
 
-    #menyAvPaa {
-        background-color: brown;
-        display: inline;
-        opacity: 0;
-    }
 
 
     //Picture CB ausblenen    
-    #menyAvPaa:checked~.hero_section .img_first {
+    #menyAvPaa:checked~.hero_bg_section .img_first {
         display: none;
     }
 
 
-
-
-
-
-    :host ::ng-deep #menyAvPaa:checked~.hero_section app-menue {
-        .section_heroMenue {
-            flex-direction: column;
-            gap: 0px;
-            background-color: none;
-        }
-
-        .menue_Entries {
-            flex-direction: column;
-            gap: 5px;
-        }
-    }
-
-    #menyAvPaa:checked~.menue_mobil {
+    #menyAvPaa:checked~.hero_bg_section .menue_mobil {
         display: flex;
-        align-items: center;
-        justify-content: center;
         position: absolute;
-        top: 250px;
-        left: 50%;
-        transform: translateX(-50%);
-
+        top: 0;
+        left: 0;
     }
 
     .menue {
-        position: fixed;
-        top: 0;
+        position: absolute;
+        top: 1;
         left: 0;
         right: 0;
         height: 70px;
@@ -190,19 +166,33 @@
     }
 
 
+    :host ::ng-deep .menue_inner {
+        background-color: burlywood;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        height: 600px;
+        width: 100%;
+        z-index: 10;
+    }
 
-
-    .mobile-logo {
+    :host ::ng-deep .section_heroMenue {
+        background-color: green;
         display: flex;
-        align-items: center;
-        max-width: 120px;
-        overflow: hidden;
+        flex-direction: column;
     }
 
-    .mobile-logo ::ng-deep app-logo {
-        transform: scale(0.7);
-        transform-origin: left center;
+    :host ::ng-deep .menue_Entries {
+        background-color: red;
+        display: flex;
+        flex-direction: column;
     }
+
+
+
+
+
+
 
 
     #burger {
@@ -239,10 +229,21 @@
 
     .hero_Arrow {
         margin-top: 0 !important;
-        padding-top: 15px;
+        padding-top: 45px;
         padding-bottom: 100px;
     }
 
+    .mobile-logo {
+        display: flex;
+        align-items: center;
+        max-width: 120px;
+        overflow: hidden;
+    }
+
+    .mobile-logo ::ng-deep app-logo {
+        transform: scale(0.7);
+        transform-origin: left center;
+    }
 
 }
 
