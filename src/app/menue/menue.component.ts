@@ -29,7 +29,7 @@ export class MenueComponent {
     public setAktiv: MyFunctionsService,
     private translate: TranslateService
   ) {
-    // Sprache aus localStorage übernehmen, falls vorhanden (nur im Browser!)
+   
     const isBrowser = typeof window !== 'undefined' && typeof localStorage !== 'undefined';
     if (isBrowser) {
       const storedLang = localStorage.getItem('lang');

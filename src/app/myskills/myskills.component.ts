@@ -11,13 +11,23 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   ]
 })
 export class MyskillsComponent implements AfterViewInit, OnDestroy {
-  constructor(private animationService: MyFunctionsService) { }
+  constructor(private animationService: MyFunctionsService, public setAktiv: MyFunctionsService) { }
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
       { selector: '.myskills_Titel', animationClass: 'animat_1' },
       { selector: '.myskills_Section', animationClass: 'animat_2' }
     ]);
   }
+
+
+  setPosMenu(value: string) {
+    this.setAktiv.setMenuAktiv(value);
+    const element = document.getElementById(value);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 
   ngOnDestroy(): void {
     this.animationService.disconnectAnimations();

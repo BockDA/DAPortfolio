@@ -4,19 +4,19 @@
 main {
   width: 100%;
   padding-top: 120px;
-  }
+}
 
 .myprojects_Section {
-      margin-top: 60px;
+  margin-top: 60px;
   font-family: "Josefin";
   width: 100%;
-  }
+}
 
 .myprojects_Titel {
   color: $primaryBlue;
   display: flex;
   justify-content: center;
-  //opacity: 0;
+  opacity: 0;
 }
 
 .myprojects_Titel.animat_1 {

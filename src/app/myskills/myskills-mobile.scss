@@ -51,20 +51,20 @@
 @include mobile {
     main {
         padding-top: 20px;
-        min-height: 550px;
+        min-height: 900px;
     }
 
     .font_5 {
-        font-size: 28px !important;
+        font-size: 28px;
     }
 
     .font_8 {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 
-.myskills_Titel{
-    margin-bottom: 30px;
-}
+    .myskills_Titel {
+        margin-bottom: 30px;
+    }
 
     .myskills_Section {
         gap: 20px;
@@ -90,18 +90,21 @@
     }
 
     .background_Animation {
+        margin-top: 100px;
         max-width: 300px;
         gap: 30px;
     }
 
-
     .myskills_Info_img {
         gap: 40px;
-     
+
+    }
+
+    .btn_letstalk {
+        position: absolute;
+        top: 990px;
+        left:50%;
+        transform: translateX(-50%);
+
     }
 }
-
-
-//---------------------MOBIL SMALL (bis 635px)--------------------------
-
-@include mobilesmall {}

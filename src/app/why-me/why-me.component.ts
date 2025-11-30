@@ -12,9 +12,7 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   ],
 })
 export class WhyMeComponent implements AfterViewInit, OnDestroy {
-
   constructor(public setAktiv: MyFunctionsService) { }
-
   ngAfterViewInit(): void {
     this.setAktiv.setupAnimations([
       { selector: '.whyme_Titel', animationClass: 'animat_1' },

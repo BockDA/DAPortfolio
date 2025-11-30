@@ -2,11 +2,13 @@
 @use "styles/mixin/mixin" as *;
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-top: 100px;
   margin-bottom: 50px;
+  height: 100vh;
 }
 
 .myskills_Titel {
@@ -25,7 +27,7 @@ main {
   display: flex;
   justify-content: center;
   margin-left: 40px;
-  opacity: 0;
+   opacity: 0;
 }
 
 .myskills_Section.animat_2 {
@@ -69,14 +71,16 @@ main {
 }
 
 .myskills_Info_img {
-  @include flex_Box(row, 15px);
-  gap: 10px;
-  width: 36px;
-  height: auto;
+   gap: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 66px;
+  height: 66px;
 }
 
 .bgskills_mobil {
-  display: none !important;
+  display: none;
 }
 
 .mobil_img {
@@ -84,12 +88,25 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 20px;
- 
+
 }
 
 .myskills_Infotext {
   width: 207px;
 }
+
+.btn_letstalk {
+  :hover {
+    cursor: pointer;
+    background-color: $lightGrey;
+    border-radius: 30px;
+  }
+
+  position: absolute;
+  top:740px;
+  left: calc(100% - 400px);
+}
+
 
 @keyframes slideInFromRight {
   0% {
