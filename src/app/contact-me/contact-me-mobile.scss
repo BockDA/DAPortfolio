@@ -64,6 +64,10 @@
     }
 
     .font_8 {
+        font-size: 18px;
+    }
+
+    .font_15 {
         font-size: 16px;
     }
 
@@ -75,7 +79,7 @@
 
     .hero_ArrowUp {
         position: relative;
-        top: 0;
+        top: 10px;
         left: 0;
         transform: none;
     }
@@ -110,16 +114,9 @@
 
     input,
     textarea {
-        font-size: 14px;
+        font-size: 18px;
     }
 
-    .contac_PrivacyPolicy {
-        font-size: 14px;
-
-        p {
-            font-size: 14px;
-        }
-    }
 
     .toast {
         bottom: 150px;
@@ -131,6 +128,8 @@
 //---------------------MOBIL SMALL (bis 635px)--------------------------
 
 @include mobilesmall {
+    /*
+
     main {
         padding: 30px 10px;
     }
@@ -208,4 +207,5 @@
         font-size: 16px;
         padding: 12px 18px;
     }
+        */
 }
