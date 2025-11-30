@@ -7,7 +7,7 @@ main {
   align-items: center;
   justify-content: space-between;
   color: $cremeWhite;
-  height: 100vh;
+  //height: 100vh;
 }
 
 //Checkbox for mobile menu
@@ -26,11 +26,11 @@ main {
 
 
 .hero_picture {
- // background-color: yellow;
+  // background-color: yellow;
   position: relative;
   width: 50%;
-  //height: 400px;
-  //margin-top: 160px;
+  height: 400px;
+  margin-top: 160px;
 }
 
 .img_first {
@@ -91,7 +91,7 @@ main {
   flex-direction: column;
   gap: 15px;
   width: 30px;
-  height: 122px;
+  //height: 122px;
 
   img {
     height: 30px;

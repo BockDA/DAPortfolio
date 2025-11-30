@@ -1,36 +1,28 @@
 <main>
+  <input type="checkbox" id="menyAvPaa">
   <div class="hero_picture">
-    <input type="checkbox" id="menyAvPaa">
-    <div class="menue">
-      <div class="mobile-logo">
-        <app-logo [dark]="false"></app-logo>
-      </div>
-      <div>
-        <label id="burger" for="menyAvPaa">
-          <div></div>
-          <div></div>
-          <div></div>
-        </label>
-      </div>
-    </div>
-
-    <div class="hero_bg_section">
+      
+       <div class="hero_bg_section">
       <img class="img_first" src="assets/icons/CB_Picture.png" />
       <img class="img_sec " src="assets/icons/bgshape.png" />
-      <app-menue class="menue_mobil"></app-menue>
+    <app-menue class="menue_mobil"></app-menue>
+  
     </div>
-
+  
   </div>
+
   <div class="hero_Personal">
     <div class="hero_media">
       <app-logo class="app_Logo" [dark]="true"></app-logo>
-
     </div>
+    
     <div class="hero_Name">
       <p class="font_1 fade_element">Christian Bock</p>
       <p class="font_2 fade_element">{{'HERO.ROLE' | translate}}</p>
     </div>
 
+
+    
     <div class="hero_Arrow">
       <a (click)="setPosMenu('why-me')"><img src="assets/icons/Arrowdown.png" /></a>
     </div>
@@ -59,6 +51,18 @@
     </div>
   </div>
 
+  <div class="menue">
+    <div class="mobile-logo">
+      <app-logo [dark]="false"></app-logo>
+    </div>
+    <div>
+      <label id="burger" for="menyAvPaa">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </div>
+  </div>
 
 
 </main>
