@@ -3,6 +3,13 @@
 
 //---------------------MOBIL--------------------------
 @include mobile {
+
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
     .privacy-policy-content {
         padding-top: 124px;
         padding-bottom: 230px;
@@ -11,21 +18,24 @@
     .mobi-back {
         display: inline;
         cursor: pointer;
-        margin-bottom: 20px;
+
         .img {
             padding-bottom: 20px;
         }
     }
 
+
+    .font_1 {
+        font-size: 32px;
+    }
+
     ::ng-deep app-menue {
         .menue_Entries {
-            display: none !important
+            opacity: 0;
         }
-        .language_Icon {
-            display: none !important;
-        }
+
         .app_logo {
-            display: block !important;
+            display: none;
         }
     }
 }

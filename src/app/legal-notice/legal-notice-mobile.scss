@@ -29,15 +29,13 @@
 
     ::ng-deep app-menue {
         .menue_Entries {
-            display: none !important;
+           opacity: 0;
+            
         }
 
-        .language_Icon {
-            display: none !important;
-        }
 
         .app_logo {
-            display: block !important;
+            display:none;
         }
     }
 

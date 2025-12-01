@@ -55,11 +55,10 @@ main {
   color: $cremeWhite;
 }
 
-.myprojects_tab {
+.active_Tab{
   background-color: $tabColor;
-  width: 100%;
+ 
 }
-
 
 @keyframes slideInFromRight {
   0% {
