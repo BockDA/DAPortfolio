@@ -18,7 +18,10 @@ main {
   margin-top: 40px;
   margin-bottom: 60px;
   gap: 10px;
-  opacity: 0;
+ /*
+   TODO: 
+ */
+  //opacity: 0;
 
   p {
     margin: 0;
@@ -36,6 +39,10 @@ main {
   //overflow-x: hidden;
 }
 
+
+//---------Animation ----------
+/*
+
 @keyframes slideInFromRight {
   0% {
     opacity: 0;
@@ -47,3 +54,5 @@ main {
     transform: translateX(0);
   }
 }
+
+*/

@@ -16,7 +16,10 @@ main {
   color: $primaryBlue;
   display: flex;
   justify-content: center;
-  opacity: 0;
+  /*
+    TODO: 
+  */
+  //opacity: 0;
 }
 
 .myprojects_Titel.animat_1 {
@@ -55,11 +58,15 @@ main {
   color: $cremeWhite;
 }
 
-.active_Tab{
+.active_Tab {
   background-color: $tabColor;
- 
+
 }
 
+
+//---------Animation ----------
+
+/*
 @keyframes slideInFromRight {
   0% {
     opacity: 0;
@@ -71,3 +78,4 @@ main {
     transform: translateX(0);
   }
 }
+*/

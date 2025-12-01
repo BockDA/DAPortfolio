@@ -13,7 +13,7 @@
 
 @include tablet {
     .player_Cards {
-        overflow-x: auto;
+        //overflow-x: auto;
         gap: 120px;
     }
 
@@ -37,13 +37,13 @@
 
 @include mobile {
 
-.font_3{
-    font-size: 24px;
-}
+    .font_3 {
+        font-size: 24px;
+    }
 
-.font_4{
-    font-size: 18px;
-}
+    .font_4 {
+        font-size: 18px;
+    }
 
     .player_Cards {
         justify-content: flex-start;

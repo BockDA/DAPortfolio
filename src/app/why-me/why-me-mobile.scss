@@ -16,7 +16,7 @@
    //---------------------TABLET--------------------------
 
    @include tablet {
-       main {
+       .section_whyme {
            padding-top: 60px;
        }
 
@@ -56,7 +56,7 @@
 
    @include mobile {
 
-       main {
+       .section_whyme {
            width: 100%;
        }
 
@@ -75,6 +75,9 @@
 
        .whyme_Section {
            margin: 0;
+           padding: 0;
+           width: 100%;
+
        }
 
        .whyme_Titel {
@@ -85,19 +88,20 @@
            margin-bottom: 20px;
        }
 
+
        .whyme_innerSection {
            flex-direction: column;
            margin-top: 20px;
-           margin-left: 0;
-           gap: 20px;
+           margin-left: 10px;
+           gap: 10px;
            pointer-events: none;
        }
 
        .whyme_locale {
            width: 100%;
-           max-width: 300px;
            margin: 0;
            justify-content: center;
+
 
            img {
                width: 32px;
@@ -107,11 +111,11 @@
 
        .whyme_Description {
            width: 100%;
-           min-width: 350px;
            padding: 0 10px;
            align-items: center;
            text-align: center;
-                 a {
+
+           a {
                display: none;
            }
        }
@@ -120,7 +124,9 @@
    //---------------------MOBIL SMALL (bis 635px)--------------------------
 
    @include mobilesmall {
-       main {
+
+       /*
+       .section_whyme {
            padding: 0 10px;
        }
 
@@ -161,4 +167,5 @@
            max-width: 280px;
            padding: 0 5px;
        }
+           */
    }

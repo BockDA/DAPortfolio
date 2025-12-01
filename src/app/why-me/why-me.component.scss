@@ -1,14 +1,12 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-main {
+.section_whyme {
   display: flex;
   font-family: "Anta";
   color: $cremeWhite;
   width: 100%;
-  //padding-top: 200px;
   box-sizing: border-box;
- //height: 100vh;
 
 }
 
@@ -24,7 +22,10 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 115px;
-  opacity: 0;
+  /*
+    TODO: 
+  */
+ // opacity: 0;
 }
 
 .whyme_Titel.animat_1 {
@@ -39,7 +40,7 @@ main {
   justify-content: center;
   gap: 40px;
   margin-top: 40px;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
 }
 
 .whyme_Description {
@@ -50,7 +51,10 @@ main {
   width: 380px;
   max-width: 100%;
   margin-top: 30px;
-  opacity: 0;
+ /*
+   TODO: 
+ */
+  //opacity: 0;
 
   :hover {
     cursor: pointer;
@@ -71,8 +75,13 @@ main {
   gap: 30px;
   width: 45%;
   min-width: 300px;
-  opacity: 0;
+  /*
+    TODO: 
+  */
+  //opacity: 0;
 }
+
+
 
 .whyme_locale.animat_1 {
   animation: slideInFromRight 0.8s ease-out forwards;
@@ -85,6 +94,8 @@ main {
   }
 }
 
+//----Aninmation -------
+/*
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -94,6 +105,8 @@ main {
     opacity: 1;
   }
 }
+
+
 
 @keyframes slideInFromRight {
   0% {
@@ -106,3 +119,5 @@ main {
     transform: translateX(0);
   }
 }
+
+*/

@@ -5,7 +5,7 @@
 //---------------------TABLET--------------------------
 
 @include tablet {
-    main {
+    .section_myskills {
         padding-top: 110px;
         min-height: 1200px;
     }
@@ -24,9 +24,8 @@
 
     .myskills_grid_container {
         grid-template-columns: repeat(3, 1fr);
-        margin-right: 20px;
         margin-top: 60px;
-
+        min-width: 800px;
     }
 
     .background_Animation {
@@ -57,7 +56,7 @@
 //---------------------Mobil--------------------------
 
 @include mobile {
-    main {
+    .section_myskills {
         padding-top: 20px;
         min-height: 900px;
     }
@@ -82,7 +81,8 @@
     .myskills_grid_container {
         margin: 0;
         width: 100%;
-        min-width: 350px;
+        max-width: 320px;
+        min-width: 300px;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
     }
@@ -99,12 +99,20 @@
 
     .background_Animation {
         max-width: 300px;
+        min-width: 280px;
         gap: 30px;
+
     }
+
+
+
+    .section img {
+        max-width: 320px;
+    }
+
 
     .myskills_Info_img {
         gap: 40px;
-
     }
 
     .btn_letstalk {

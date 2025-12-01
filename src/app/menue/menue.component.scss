@@ -1,16 +1,16 @@
 @use "/styles/colors" as *;
 @use "/styles/mixin/mixin" as *;
 
-main {
+.section_menue {
+  position: relative;
+  top: 0;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 104px;
   background-color: $primaryBlue;
   width: 100vw;
-  position: relative;
-  top: 0;
-  left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
 

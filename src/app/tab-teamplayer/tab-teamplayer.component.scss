@@ -8,12 +8,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-width: 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  gap: 290px;
+  min-width: 100px;
+
+  //overflow-x: auto;
+  //overflow-y: hidden;
+  gap: 125px;
   padding: 20px;
   height: 500px;
+  /*
+    TODO: 
+  */
   //opacity: 0;
 }
 
@@ -29,12 +33,12 @@
 }
 
 .player_Cards.animat_1 {
-  opacity: 1;
-  overflow: hidden;
-  animation:
-    rotateOnly 0.7s ease-out forwards,
-    softScale 2s ease-out forwards 0.7s,
-    showScrollbar 0.1s ease-out forwards 2.7s;
+  // opacity: 1;
+  //overflow: hidden;
+  //animation:
+  //  rotateOnly 0.7s ease-out forwards,
+  //  softScale 2s ease-out forwards 0.7s,
+  //  showScrollbar 0.1s ease-out forwards 2.7s;
 }
 
 .players_Card_Contents {
@@ -90,6 +94,10 @@
   display: none;
 }
 
+
+//---------Animation ----------
+/*
+
 @keyframes rotateOnly {
   from {
     transform: rotate(0deg) scale(0.5);
@@ -112,12 +120,12 @@
 
 @keyframes showScrollbar {
   from {
-    overflow: hidden;
+    //overflow: hidden;
   }
 
   to {
     overflow-x: auto;
-    overflow-y: hidden;
+    //overflow-y: hidden;
   }
 }
 
@@ -132,3 +140,5 @@
     transform: translateX(0);
   }
 }
+
+*/

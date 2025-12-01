@@ -1,7 +1,7 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-main {
+.section_myskills {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,10 @@ main {
   margin-top: 60px;
   color: $primaryBlue;
   @include flex_Box(column, 0px);
-  opacity: 0;
+  /*
+    TODO: 
+  */
+  //opacity: 0;
 }
 
 .myskills_Titel.animat_1 {
@@ -27,7 +30,10 @@ main {
   display: flex;
   justify-content: center;
   margin-left: 40px;
-  opacity: 0;
+  /*
+    TODO: 
+  */
+  //opacity: 0;
 }
 
 .myskills_Section.animat_2 {
@@ -48,7 +54,23 @@ main {
   font-family: "Josefin";
   color: $primaryBlue;
   border-radius: 8px;
+
+  p {
+    margin-top: 10px;
+
+  }
+
+  img {
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
+
+
 
 .background_Animation {
   width: 50%;
@@ -91,6 +113,13 @@ main {
 
 }
 
+.myskills_Info_img {
+  width: 140px;
+  height: 70px;
+}
+
+
+
 .myskills_Infotext {
   width: 207px;
 }
@@ -107,6 +136,9 @@ main {
   left: calc(100% - 400px);
 }
 
+
+//---------Animation ----------
+/*
 
 @keyframes slideInFromRight {
   0% {
@@ -129,3 +161,5 @@ main {
     opacity: 1;
   }
 }
+
+*/

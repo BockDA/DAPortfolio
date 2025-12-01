@@ -11,14 +11,17 @@ main {
   padding: 0 20px;
   box-sizing: border-box;
   gap: 180px;
-  }
+}
 
 .tab_firstSection {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 40px;
   width: 50%;
-  opacity: 0;
+  /*
+    TODO: 
+  */
+  //opacity: 0;
 }
 
 .tab_firstSection.animat_1 {
@@ -51,7 +54,10 @@ main {
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 20px;
-  opacity: 0;
+  /*
+    TODO: 
+  */
+  //opacity: 0;
 
   .mobil_tech {
     display: none;
@@ -123,6 +129,10 @@ main {
 }
 
 
+
+//---------Animation ----------
+/*
+
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
@@ -146,3 +156,4 @@ main {
     transform: translateX(0);
   }
 }
+*/
