@@ -36,6 +36,15 @@
 //-------------------Mobil-----------------------------------
 
 @include mobile {
+
+.font_3{
+    font-size: 24px;
+}
+
+.font_4{
+    font-size: 18px;
+}
+
     .player_Cards {
         justify-content: flex-start;
         align-items: flex-start;
@@ -82,14 +91,12 @@
         line-height: 1.45;
     }
 
-    .link_linedln {
-        font-size: 14px;
-    }
 }
 
 //---------------------MOBIL SMALL (bis 480px)--------------------------
 
 @include mobilesmall {
+    /*
     .player_Cards {
               gap: 40px;
           }
@@ -132,5 +139,5 @@
         max-height: 145px;
         line-height: 1.35;
     }
-
+*/
 }
