@@ -1,7 +1,6 @@
     @use "/styles/colors" as *;
     @use "/styles/mixin/mixin" as *;
 
-
     //---------------------TABLET--------------------------
 
     @include tablet {
@@ -12,7 +11,6 @@
 
         .menue_Entries {
             gap: 30px;
-
         }
 
         main {
@@ -72,7 +70,6 @@
         .language_Icon {
             margin-right: 0;
         }
-
     }
 
     :host(.menu-full-width) {

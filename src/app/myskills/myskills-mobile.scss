@@ -1,7 +1,6 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-
 //---------------------TABLET--------------------------
 
 @include tablet {
@@ -14,9 +13,10 @@
         font-size: 48px;
     }
 
-    .font_8{
+    .font_8 {
         font-size: 18px;
     }
+
     .myskills_Section {
         width: 100%;
         flex-direction: column;
@@ -39,7 +39,6 @@
         margin-top: 40px;
         height: auto;
         margin: 0;
-
     }
 
     .myskills_Infotext {
@@ -48,11 +47,7 @@
     }
 
     .btn_letstalk {
-        position: absolute;
-        top: 1250px;
-        left: 50%;
-        transform: translateX(-50%);
-
+        top: 380px;
     }
 }
 
@@ -104,21 +99,17 @@
         max-width: 300px;
         min-width: 280px;
         gap: 30px;
-
     }
-
-
 
     .section img {
         max-width: 320px;
     }
-
 
     .myskills_Info_img {
         gap: 40px;
     }
 
     .btn_letstalk {
-        top: 990px;
+        top: 330px;
     }
 }

@@ -13,6 +13,7 @@
   padding-top: 120px;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
 }
 
 .contact_Headline_Container {
@@ -25,10 +26,7 @@
 
 .contac_Headline {
   font-family: "Anta";
-  /*
-    TODO: 
-  */
-  //opacity: 0;
+  opacity: 0;
 }
 
 .contac_Headline.animat_1 {
@@ -43,10 +41,7 @@
   left: 80%;
   transform: translateX(-50%);
   cursor: pointer;
-  /*
-    TODO: 
-  */
-  //opacity: 0;
+  opacity: 0;
 }
 
 .hero_ArrowUp.animat_1 {
@@ -55,6 +50,8 @@
 }
 
 .contac_Introduction {
+  display: flex;
+  flex-direction: row;
   margin: 60px 0 60px;
   gap: 100px;
   color: $cremeWhite;
@@ -65,10 +62,7 @@
   max-width: 450px;
   min-width: 280px;
   flex: 1;
-  /*
-    TODO: 
-  */
-  //opacity: 0;
+  opacity: 0;
 }
 
 .contac_Description.animat_1 {
@@ -94,10 +88,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  /*
-    TODO: 
-  */
-  //opacity: 0;
+  opacity: 0;
 
   .section_img {
     @include icon_toggle();
@@ -107,8 +98,6 @@
 .section.animat_1 {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
-
-
 
 .section:hover {
   color: $primaryBlue;
@@ -141,10 +130,7 @@
 }
 
 .contact_Field {
-  /*
-    TODO: 
-  */
-  //opacity: 0;
+  opacity: 0;
 }
 
 .contact_Field.animat_1 {
@@ -153,16 +139,12 @@
 
 
 .container_mail {
- /*
-   TODO: 
- */
-  //opacity: 0;
+ opacity: 0;
 }
 
 .container_mail.animat_1 {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
-
 
 .contac_Field_Sec1 {
   display: flex;
@@ -210,10 +192,7 @@ textarea {
 .container_message {
   display: flex;
   flex-direction: column;
- /*
-   TODO: 
- */
-  //opacity: 0;
+  opacity: 0;
 }
 
 .container_message.animat_1 {
@@ -353,7 +332,6 @@ textarea.ng-invalid.ng-touched+.error_notice {
 
 //---------Animation ----------
 
-/*
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
@@ -388,4 +366,3 @@ textarea.ng-invalid.ng-touched+.error_notice {
   }
 }
 
-*/

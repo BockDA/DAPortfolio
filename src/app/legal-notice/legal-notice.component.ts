@@ -70,7 +70,7 @@ export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
       window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
       const animationConfigs = [
         {
-          selector: '.legal-notice-content', animationClass: 'animat_1'
+          selector: '.legal_notice_content', animationClass: 'animat_1'
         },
         {
           selector: '.legal_notice_header', animationClass: 'animat_1'

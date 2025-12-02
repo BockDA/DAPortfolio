@@ -1,19 +1,24 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-main {
+.section_privacy-policy {
     min-width: 320px;
-     max-width: 1920px;
-    width: 100vw;
-     margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
     background-color: $mainColor;
     color: $cremeWhite;
     padding-left: 60px;
     padding-right: 60px;
     box-sizing: border-box;
+    overflow-x: hidden;
+
+    @include mobile {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
-.mobi-back {
+.mobi_back {
     display: none;
 }
 
@@ -21,15 +26,19 @@ section {
     margin-bottom: 80px;
 }
 
-.privacy-policy-content {
+.privacy_policy_content {
     padding-top: 124px;
     padding-bottom: 140px;
-    //opacity: 0;
-    transform: translateX(100px);
+    opacity: 0;
+    transform: none;
+
+    @include mobile {
+        transform: none;
+    }
     transition: none;
 }
 
-.privacy-policy-content.animat_1 {
+.privacy_policy_content.animat_1 {
     animation: slideInFromRight 1s ease-out forwards;
 }
 
@@ -41,14 +50,14 @@ section {
     margin-bottom: 8px;
 }
 
-.privacy-policy-header {
+.privacy_policy_header {
     font-family: "Anta";
     margin-top: 20px;
     margin-bottom: 20px;
-    //opacity: 0;
+    opacity: 0;
 }
 
-.privacy-policy-header.animat_1 {
+.privacy_policy_header.animat_1 {
     opacity: 1;
     animation: slideInFromLeft 2s ease-out forwards;
 }
@@ -64,6 +73,7 @@ section {
     margin-left: 20px;
 }
 
+//---------- ANIMATIONS ----------
 
 @keyframes slideInFromRight {
     from {
@@ -88,4 +98,3 @@ section {
         transform: translateX(0);
     }
 }
-

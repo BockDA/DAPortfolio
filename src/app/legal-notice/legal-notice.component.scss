@@ -1,19 +1,24 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-main {
+.section_legal-notice {
   min-width: 320px;
   max-width: 1920px;
-  width: 100vw;
-  margin: 0 auto;
+  width: 100%;
   background-color: $mainColor;
   color: $cremeWhite;
   padding-left: 60px;
   padding-right: 60px;
   box-sizing: border-box;
+  overflow-x: hidden;
+
+  @include mobile {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
-.mobi-back {
+.mobi_back {
   display: none;
 }
 
@@ -21,24 +26,37 @@ section {
   margin-bottom: 80px;
 }
 
-.legal-notice-content {
+.legal_notice_content {
   padding-top: 124px;
   padding-bottom: 140px;
   opacity: 0;
+  transform: none;
+
+  @include mobile {
+    transform: none;
+  }
+
+  transition: none;
 }
 
-.legal-notice-content.animat_1 {
+.legal_notice_content.animat_1 {
   animation: slideInFromRight 1s ease-out forwards;
 }
 
 .legal_notice_header {
+  font-family: "Anta";
+  margin-top: 20px;
+  margin-bottom: 20px;
   opacity: 0;
 }
 
 .legal_notice_header.animat_1 {
-  opacity: 1;
+   opacity: 1;
   animation: slideInFromLeft 2s ease-out forwards;
 }
+
+
+//---------- ANIMATIONS ----------
 
 @keyframes slideInFromRight {
   from {
@@ -99,3 +117,4 @@ section {
     transform: translateX(0);
   }
 }
+

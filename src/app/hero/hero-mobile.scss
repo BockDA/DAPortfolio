@@ -12,6 +12,17 @@
     .font_2 {
         font-size: 28px;
     }
+
+    .img_first {
+        width: 70%;
+        top: 20%;
+    }
+
+    .img_sec {
+        width: 70%;
+        top: 20%;
+    }
+
 }
 
 //---------------------TABLET--------------------------
@@ -23,7 +34,7 @@
         justify-content: space-between;
         align-items: center;
         height: 100vh;
-        //padding: 40px 0;
+
     }
 
     .hero_picture {
@@ -54,15 +65,21 @@
 
     .hero_bg_section {
         .img_first {
-            width: 50%;
+            width: 70%;
             left: 55%;
+            top: 70%;
         }
 
         .img_sec {
-            width: 50%;
+            width: 70%;
             left: 55%;
+            top: 70%;
         }
     }
+
+.hero_Arrow {
+    margin-top: 50px;
+}
 
     .section {
         opacity: 0;
@@ -79,25 +96,15 @@
         position: relative;
         flex-direction: column;
         justify-content: start;
-
-        /*
-          TODO: 
-        */
-        background-color: yellow;
         width: 100%;
         min-height: 850px;
         max-height: 100px;
-
     }
 
 
     .hero_picture {
         margin: 0;
         padding: 0;
-        /*
-       TODO: 
-     */
-        background-color: greenyellow;
         height: 600px;
         width: 100%;
     }
@@ -125,11 +132,6 @@
         transform: translate(-50%, -50%);
         width: 100%;
         height: 120px;
-        /*
-          TODO: 
-        */
-        background-color: blue;
-
     }
 
     .hero_Name {
@@ -143,7 +145,6 @@
         position: absolute;
         top: 0;
         left: 60%;
-
     }
 
     .menue {
@@ -159,7 +160,6 @@
         justify-content: space-between;
         padding: 0 20px;
         box-sizing: border-box;
-
     }
 
     .app_Logo {
@@ -173,15 +173,11 @@
 
     //--- Menue Mobil anzeigen
     //Picture CB ausblenen    
-
-
-
     #menyAvPaa:checked~.hero_bg_section .img_first {
         display: none;
     }
 
     :host ::ng-deep .section_menue {
-        background-color: bisque;
         width: 0;
         margin: 0;
         left: 0;
@@ -199,16 +195,10 @@
     }
 
     :host ::ng-deep .menue_Entries {
-        background-color: lightpink;
         display: flex;
         flex-direction: column;
-
-        //align-items: center;
         gap: 0px;
-
     }
-
-
 
     #burger {
         cursor: pointer;
@@ -225,19 +215,19 @@
         transition: 0.5s;
     }
 
-    main:has(#menyAvPaa:checked) .menue #burger>div {
+    .section_hero:has(#menyAvPaa:checked) .menue #burger>div {
         background-color: $cremeWhite;
     }
 
-    main:has(#menyAvPaa:checked) .menue #burger>div:nth-child(1) {
+    .section_hero:has(#menyAvPaa:checked) .menue #burger>div:nth-child(1) {
         transform: translateY(15px) rotate(45deg);
     }
 
-    main:has(#menyAvPaa:checked) .menue #burger>div:nth-child(2) {
+    .section_hero:has(#menyAvPaa:checked) .menue #burger>div:nth-child(2) {
         opacity: 0;
     }
 
-    main:has(#menyAvPaa:checked) .menue #burger>div:nth-child(3) {
+    .section_hero:has(#menyAvPaa:checked) .menue #burger>div:nth-child(3) {
         transform: translateY(-15px) rotate(-45deg);
     }
 
@@ -260,6 +250,7 @@
         .img_first {
             width: 90%;
         }
+
         .img_sec {
             width: 90%;
         }

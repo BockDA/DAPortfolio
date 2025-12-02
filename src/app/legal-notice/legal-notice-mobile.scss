@@ -3,14 +3,13 @@
 
 //---------------------MOBIL--------------------------
 @include mobile {
-
-    main {
+    .section_legal-notice {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .legal-notice-content {
-        padding-top: 124px;
+    .legal_notice_content {
+        padding-top: 24px;
         padding-bottom: 230px;
     }
 
@@ -18,9 +17,13 @@
         padding-top: 20px;
     }
 
-    .mobi-back {
+    .mobi_back {
         display: inline;
         cursor: pointer;
+
+        .img {
+            padding-bottom: 20px;
+        }
     }
 
     .font_1 {
@@ -29,14 +32,11 @@
 
     ::ng-deep app-menue {
         .menue_Entries {
-           opacity: 0;
-            
+            opacity: 0;
         }
-
 
         .app_logo {
-            display:none;
+            display: none;
         }
     }
-
 }

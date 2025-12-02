@@ -62,12 +62,10 @@ export class ContactMeComponent implements AfterViewInit, OnDestroy {
         )
         .subscribe({
           next: (response: any) => {
-            console.log('Antwort vom Server:', response);
             ngForm.resetForm();
             this.emailOK();
           },
           error: (error: any) => {
-            console.error('Fehler beim Senden:', error);
             this.emailError();
           },
           complete: () => console.info('Mailversand abgeschlossen'),

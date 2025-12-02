@@ -50,8 +50,8 @@ export class PrivacyPolicyComponent implements OnInit, AfterViewInit, OnDestroy 
         window.scrollTo({ top: offset, behavior: 'smooth' });
       }, 200);
       const animationConfigs = [
-        { selector: '.privacy-policy-content', animationClass: 'animat_1' },
-        { selector: '.privacy-policy-header', animationClass: 'animat_1' }
+        { selector: '.privacy_policy_content', animationClass: 'animat_1' },
+        { selector: '.privacy_policy_header', animationClass: 'animat_1' }
       ];
       this.myFunctions.setupAnimations(animationConfigs);
     }
