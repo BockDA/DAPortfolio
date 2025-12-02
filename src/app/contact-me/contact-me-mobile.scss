@@ -11,12 +11,13 @@
 //---------------------TABLET--------------------------
 
 @include tablet {
-    .font_12 {
-        font-size: 48px;
+
+    .section_contact {
+        padding: 120px 30px 40px;
     }
 
-    main {
-        padding: 120px 30px 40px;
+    .font_12 {
+        font-size: 48px;
     }
 
     .hero_ArrowUp {
@@ -49,7 +50,7 @@
 //-------------------------Mobile---------------------------------------
 
 @include mobile {
-    main {
+    .section_contact {
         padding: 40px 15px 60px;
         margin-bottom: 100px;
         position: static;
