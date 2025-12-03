@@ -8,6 +8,7 @@
   font-family: "Josefin";
   color: $primaryBlue;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 
 .tPlayer_Headline {
@@ -18,10 +19,7 @@
   margin-top: 40px;
   margin-bottom: 60px;
   gap: 10px;
-  /*
-   TODO: 
- */
-  //opacity: 0;
+  opacity: 0;
 
   p {
     margin: 0;
@@ -33,15 +31,12 @@
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 
-
 .tPlayer_Section {
   width: 100%;
-  overflow-x: auto;
 }
 
 
 //---------Animation ----------
-/*
 
 @keyframes slideInFromRight {
   0% {
@@ -54,5 +49,3 @@
     transform: translateX(0);
   }
 }
-
-*/

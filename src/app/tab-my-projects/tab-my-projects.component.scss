@@ -1,7 +1,7 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-main {
+.section_tab_MyProjects {
   display: flex;
   width: 100%;
   max-width: 100vw;
@@ -18,10 +18,7 @@ main {
   padding-right: 30px;
   padding-top: 40px;
   width: 50%;
-  /*
-    TODO: 
-  */
-  //opacity: 0;
+  opacity: 0;
 }
 
 .tab_firstSection.animat_1 {
@@ -54,10 +51,7 @@ main {
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 20px;
-  /*
-    TODO: 
-  */
-  //opacity: 0;
+  opacity: 0;
 
   .mobil_tech {
     display: none;
@@ -131,8 +125,6 @@ main {
 
 
 //---------Animation ----------
-/*
-
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
@@ -156,4 +148,3 @@ main {
     transform: translateX(0);
   }
 }
-*/

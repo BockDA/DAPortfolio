@@ -13,8 +13,35 @@
 
 @include tablet {
     .player_Cards {
-        //overflow-x: auto;
-        gap: 120px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 200px;
+        overflow-x: auto;
+        padding: 20px 0;
+        padding-left: 80px;
+    }
+
+    .background_Animation {
+        flex: 0 0 220px;
+        min-width: 220px;
+        width: 220px;
+        max-width: 220px;
+        height: 320px;
+    }
+
+    .section {
+        width: 220px;
+        min-width: 220px;
+        height: 320px;
+    }
+
+    .players_Card_Contents {
+        max-width: 200px;
+        width: 100%;
+        padding: 0 10px;
     }
 
     .img_1 {
@@ -49,7 +76,10 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 10px;
+        min-height: 320px;
         -webkit-overflow-scrolling: touch;
+        margin-top: 0;
+        padding-top: 100px;
     }
 
     .background_Animation {
@@ -64,7 +94,7 @@
         position: relative;
         width: 400px;
         height: auto;
-        min-height: 500px;
+        min-height: 300px;
     }
 
     .img_1 {
@@ -90,54 +120,4 @@
         max-height: 170px;
         line-height: 1.45;
     }
-
-}
-
-//---------------------MOBIL SMALL (bis 480px)--------------------------
-
-@include mobilesmall {
-    /*
-    .player_Cards {
-              gap: 40px;
-          }
-
-    .background_Animation {
-        flex: 0 0 350px;
-        flex-shrink: 0;
-        min-width: 350px;
-        width: 350px;
-        max-width: 350px;
-    }
-
-    .section {
-        position: relative;
-        width: 350px;
-        height: auto;
-        min-height: 450px;
-    }
-
-    .img_1 {
-        display: none;
-    }
-
-    .img_2 {
-        display: none;
-    }
-
-    .players_Card_Contents {
-        width: 100%;
-        max-width: 215px;
-        padding: 0 8px;
-    }
-
-    .tplayer_name {
-        font-size: 17px;
-    }
-
-    .description_Text {
-        max-width: 215px;
-        max-height: 145px;
-        line-height: 1.35;
-    }
-*/
 }

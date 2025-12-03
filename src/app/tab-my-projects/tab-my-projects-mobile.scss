@@ -33,7 +33,7 @@
         font-size: 18px;
     }
 
-    main {
+    .section_tab_MyProjects {
         flex-direction: column;
         gap: 20px;
     }
@@ -67,7 +67,7 @@
 //---------------------MOBIL--------------------------
 
 @include mobile {
-    main {
+    .section_tab_MyProjects {
         position: relative;
         margin-bottom: 90px;
         //overflow: hidden;
@@ -146,85 +146,4 @@
         width: 120px;
         font-size: 16px;
     }
-
-}
-
-//---------------------MOBIL SMALL (bis 480px)--------------------------
-
-@include mobilesmall {
-
-    /*
-    .font_9 {
-        font-size: 13px !important;
-    }
-
-    main {
-        padding: 0 5px;
-        margin-bottom: 75px;
-        overflow-x: hidden;
-    }
-
-    .tab_firstSection {
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 20px;
-    }
-
-    .first_paragraph_Section {
-        padding-left: 5px;
-        padding-right: 5px;
-        gap: 15px;
-    }
-
-    .first_paragraph_Text {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-        margin-left: 10px;
-        font-size: 13px;
-    }
-
-    .first_paragraph {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 30px;
-        gap: 15px;
-    }
-
-    .tab_secondSection {
-        padding-top: 10px;
-        width: 100%;
-    }
-
-    .tab_Technologies {
-        font-size: 14px;
-    }
-
-    .tab_Project_Preview {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .tab_Project_Preview img {
-        width: 100% !important;
-        max-width: calc(100vw - 40px) !important;
-    }
-
-    .tab_Buttons {
-        bottom: -60px;
-        width: 100%;
-        max-width: 100%;
-        gap: 8px;
-        padding: 0 10px;
-    }
-
-    .tab_Buttons a {
-        width: 105px !important;
-        height: 40px !important;
-        font-size: 13px !important;
-    }
-
-    .mobil_tech {
-        font-size: 11px !important;
-    }
-*/
 }

@@ -101,8 +101,6 @@
            width: 100%;
            margin: 0;
            justify-content: center;
-
-
            img {
                width: 32px;
                height: 40px;
@@ -114,58 +112,8 @@
            padding: 0 10px;
            align-items: center;
            text-align: center;
-
            a {
                display: none;
            }
        }
-   }
-
-   //---------------------MOBIL SMALL (bis 635px)--------------------------
-
-   @include mobilesmall {
-
-       /*
-       .section_whyme {
-           padding: 0 10px;
-       }
-
-       .font_5 {
-           font-size: 28px !important;
-       }
-
-       .font_10 {
-           font-size: 18px !important;
-       }
-
-       .font_8 {
-           font-size: 18px !important;
-       }
-
-
-
-       .whyme_Titel {
-           margin-top: 30px;
-           margin-bottom: 15px;
-       }
-
-       .whyme_innerSection {
-           gap: 15px;
-           margin-top: 15px;
-       }
-
-       .whyme_locale {
-           max-width: 260px;
-
-           img {
-               width: 28px;
-               height: 35px;
-           }
-       }
-
-       .whyme_Description {
-           max-width: 280px;
-           padding: 0 5px;
-       }
-           */
    }
