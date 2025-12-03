@@ -77,9 +77,17 @@
         }
     }
 
-.hero_Arrow {
-    margin-top: 50px;
-}
+    .hero_Personal {
+        height: 600px;
+    }
+
+    .hero_Name {
+        margin-top: 160px;
+    }
+
+    .hero_Arrow {
+        margin-top: 50px;
+    }
 
     .section {
         opacity: 0;
@@ -127,7 +135,7 @@
 
     .hero_Personal {
         position: absolute;
-        top: 680px;
+        top: 510px;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;

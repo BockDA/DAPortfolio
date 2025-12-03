@@ -8,11 +8,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  //min-width: 100px;
   gap: 145px;
   padding: 20px;
   height: 500px;
-  // opacity: 0;
+  opacity: 0;
   overflow-x: auto;
 }
 
@@ -31,7 +30,7 @@
 
 .player_Cards.animat_1 {
   animation: slideInFromRight 0.8s ease-out forwards;
-  //opacity: 0;
+  opacity: 0;
 }
 
 .players_Card_Contents {

@@ -55,6 +55,12 @@ section {
   animation: slideInFromLeft 2s ease-out forwards;
 }
 
+@include mobile {
+  :host ::ng-deep app-menue .language_Icon {
+    display: none;
+  }
+}
+
 
 //---------- ANIMATIONS ----------
 
