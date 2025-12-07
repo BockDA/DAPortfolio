@@ -2,9 +2,12 @@
 @use "styles/colors" as *;
 
 main {
+
+
   max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+
 }
 
 .menu-intro {
@@ -44,4 +47,3 @@ main {
   bottom: auto;
   top: 0;
 }
-

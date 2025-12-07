@@ -10,8 +10,8 @@
         }
 
         .menue_Entries {
-           gap: 30px;
-         
+            gap: 30px;
+
         }
 
         main {
@@ -51,10 +51,11 @@
 
         .menue_Entries {
             margin-top: 24px;
+
             p {
-                    width: 200px;
-                    text-align: center;
-                }
+                width: 200px;
+                text-align: center;
+            }
         }
 
         .menue_inner {
@@ -71,20 +72,19 @@
             align-items: center;
             justify-content: center;
 
+            .language_Icon {
+                margin-right: 0;
+            }
         }
 
-        .language_Icon {
-            margin-right: 0;
-        }
-    }
-
-    :host(.menu-full-width) {
-        @include mobile {
-            main {
-                width: 100vw !important;
-                left: 50% !important;
-                margin-left: -50vw !important;
-                margin-right: -50vw !important;
+        :host(.menu-full-width) {
+            @include mobile {
+                main {
+                    width: 100vw !important;
+                    left: 50% !important;
+                    margin-left: -50vw !important;
+                    margin-right: -50vw !important;
+                }
             }
         }
     }

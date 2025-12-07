@@ -1,46 +1,50 @@
 <section class="section_hero">
-  <div class="hero_picture">
-    <input type="checkbox" id="menyAvPaa">
-    <div class="hero_bg_section">
+
+  <input type="checkbox" id="menyAvPaa">
+  <div class="hero_bg_section">
+    <div class="hero_picture">
       <img class="img_first" src="assets/icons/CB_Picture.png" />
-      <img class="img_sec " src="assets/icons/bgshape.png" />
+      <img class="img_sec" src="assets/icons/bgshape.png" />
       <img class="img_sec img_hover " src="assets/icons/bgshapeHover.png" />
+      <img class="img_sec_mobil sec_menue " src="assets/icons/bgshape-mobil.png" /> 
+      <img class="img_sec_mobil" src="assets/icons/cb-mobil.png" />
       <app-menue class="menue_mobil"></app-menue>
     </div>
+
   </div>
 
 
   <div class="hero_Personal">
-    <div class="hero_media">
+
+    <div class="hero_logo">
       <app-logo class="app_Logo" [dark]="true"></app-logo>
     </div>
-       <div class="hero_Name">
+
+    <div class="hero_Name">
       <p class="font_1 fade_element">Christian Bock</p>
       <p class="font_2 fade_element">{{'HERO.ROLE' | translate}}</p>
     </div>
 
-
-    
     <div class="hero_Arrow">
       <a (click)="setPosMenu('why-me')"><img src="assets/icons/Arrowdown.png" /></a>
     </div>
 
 
 
-    <div class="section">
-      <div class="section_img">
+    <div class="hero_media">
+      <div class="hero_media_img">
         <a href="mailto:info@elektro-bock.com">
           <img class="img_start" src="assets/icons/Email_btn.png">
           <img class="img_hover" src="assets/icons/Email_btn_hover.png">
         </a>
       </div>
-      <div class="section_img">
+      <div class="hero_media_img">
         <a href="https://github.com/BockDA" target="_blank" rel="noopener noreferrer">
           <img class="img_start" src="assets/icons/github_btn.png" />
           <img class="img_hover" src="assets/icons/github_btn_hover.png" />
         </a>
       </div>
-      <div class="section_img">
+      <div class="hero_media_img">
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
           <img class="img_start" src="assets/icons/linkin_btn.png" />
           <img class="img_hover" src="assets/icons/linkin_btn_hover.png" />
@@ -61,5 +65,5 @@
       </label>
     </div>
   </div>
- 
+
 </section>
