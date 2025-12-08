@@ -5,49 +5,47 @@
 
 @include tablet {
     .section_myskills {
-        padding-top: 110px;
-        min-height: 1200px;
-    }
+        // padding-top: 110px;
+        //min-height: 100vh;    }
 
-    .font_5 {
-        font-size: 48px;
-    }
+        .font_5 {
+            font-size: 48px;
+        }
 
-    .font_8 {
-        font-size: 18px;
-    }
+        .font_8 {
+            font-size: 18px;
+        }
 
-    .myskills_Section {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        margin-left: 0px;
-    }
+        .myskills_Section {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-left: 0px;
+            height: 100vh;
+        }
 
-    .myskills_grid_container {
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 60px;
-        min-width: 800px;
-    }
+        .myskills_grid_container {
+            grid-template-columns: repeat(3, 1fr);
+            min-width: 800px;
+        }
 
-    .background_Animation {
-        margin-top: 80px;
-    }
+        .background_Animation {
+            min-width: 800px;
+        }
 
-    .section {
-        margin-top: 40px;
-        height: auto;
-        margin: 0;
-    }
+        .section {
+            margin-top: 40px;
+            height: 500px;
+            margin: 0;
+        }
 
-    .myskills_Infotext {
-        width: 100%;
-        max-width: 230px;
-    }
+        .myskills_Infotext {
+            width: 100%;
+            max-width: 230px;
+        }
 
-    .btn_letstalk {
-        top: 380px;
+
     }
 }
 
@@ -57,10 +55,11 @@
     .section_myskills {
         padding-top: 10px;
         min-height: 900px;
+
     }
 
     .font_5 {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .font_8 {
@@ -80,7 +79,7 @@
         margin: 0;
         width: 100%;
         max-width: 320px;
-        min-width: 300px;
+        // min-width: 300px;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
     }
@@ -97,12 +96,12 @@
 
     .background_Animation {
         max-width: 300px;
-        min-width: 280px;
-        gap: 30px;
+        //min-width: 280px;
+        //gap: 30px;
     }
 
     .section img {
-        max-width: 320px;
+        //max-width: 320px;
     }
 
     .myskills_Info_img {
@@ -110,6 +109,14 @@
     }
 
     .btn_letstalk {
-        top: 330px;
+
+        display: flex;
+        position: absolute;
+        //top: 380px;
+        top: 1200px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: blue;
+
     }
 }

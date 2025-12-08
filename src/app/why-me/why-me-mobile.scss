@@ -5,7 +5,7 @@
 
    @include desktop {
        .font_5 {
-           font-size: 48px;
+           //font-size: 48px;
        }
 
        .whyme_innerSection {
@@ -13,15 +13,13 @@
        }
    }
 
+
+
    //---------------------TABLET--------------------------
 
    @include tablet {
        .section_whyme {
            padding-top: 60px;
-       }
-
-       .font_5 {
-           font-size: 48px;
        }
 
        .font_10 {
@@ -35,7 +33,6 @@
        .whyme_innerSection {
            flex-direction: column;
            margin-left: 0;
-           gap: 30px;
        }
 
        .whyme_Description {
@@ -46,9 +43,15 @@
        }
 
        .whyme_locale {
-           width: 100%;
-           max-width: 400px;
-           justify-content: center;
+           position: absolute;
+           top: 350px;
+           left: 50%;
+           transform: translateX(-50%);
+       }
+
+       .btn_letstalk {
+           top: 450px;
+           left: 75%;
        }
    }
 
@@ -58,12 +61,12 @@
 
        .section_whyme {
            width: 100%;
-           padding-top: 10px;
+           height: 370px;
+           padding-top: 0px;
        }
 
-
        .font_5 {
-           font-size: 32px;
+           font-size: 40px;
        }
 
        .font_10 {
@@ -74,47 +77,16 @@
            font-size: 16px;
        }
 
-       .whyme_Section {
-           margin: 0;
-           padding: 0;
-           width: 100%;
-
-       }
-
-       .whyme_Titel {
-           width: 100%;
-           height: 40px;
-           align-items: center;
-           margin-top: 40px;
-           margin-bottom: 20px;
-       }
-
-
-       .whyme_innerSection {
-           flex-direction: column;
-           margin-top: 20px;
-           margin-left: 10px;
-           gap: 10px;
-           pointer-events: none;
-       }
-
        .whyme_locale {
-           width: 100%;
-           margin: 0;
-           justify-content: center;
+           top: 290px;
+           gap: 20px;
            img {
-               width: 32px;
-               height: 40px;
+               height: 60px;
+               width: 65px;
            }
        }
 
-       .whyme_Description {
-           width: 100%;
-           padding: 0 10px;
-           align-items: center;
-           text-align: center;
-           a {
-               display: none;
-           }
+       .btn_letstalk {
+           display: none;
        }
    }

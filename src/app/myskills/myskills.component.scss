@@ -7,8 +7,9 @@
   flex-direction: column;
   width: 100%;
   padding-top: 100px;
-  margin-bottom: 50px;
-  height: 100vh;
+  padding-bottom: 100px;
+  //margin-bottom: 50px;
+  //height: 100vh;
   overflow: hidden;
 }
 
@@ -16,7 +17,7 @@
   margin-top: 60px;
   color: $primaryBlue;
   @include flex_Box(column, 0px);
-  opacity: 0;
+  //opacity: 0;
 }
 
 .myskills_Titel.animat_1 {
@@ -28,7 +29,8 @@
   display: flex;
   justify-content: center;
   margin-left: 40px;
-  opacity: 0;
+  margin-top: 90px;
+  //opacity: 0;
 }
 
 .myskills_Section.animat_2 {
@@ -40,8 +42,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 40px;
-  margin-top: 90px;
   width: 50%;
+  background-color: greenyellow;
 }
 
 .myskills_grid-item {
@@ -67,22 +69,30 @@
 .background_Animation {
   width: 50%;
   min-width: 300px;
+  background-color: red
 }
+
+
+.btn_letstalk {
+  display: none;
+}
+
 
 //--------------------rechts Seite ---------------------------------//
 
 @include background_Animation();
 
 .section_content_block {
-  position: relative;
+  //position: relative;
   color: $cremeWhite;
   gap: 20px;
 }
 
 .section {
-  margin-top: 100px;
-  height: 200px;
+
+  height: 400px;
   width: auto;
+
 }
 
 .myskills_Info_img {
@@ -113,20 +123,6 @@
 
 .myskills_Infotext {
   width: 207px;
-}
-
-.btn_letstalk {
-  :hover {
-    cursor: pointer;
-    background-color: $lightGrey;
-    border-radius: 30px;
-  }
-  position: absolute;
-  top:400px;
-  img{
-    height: 40px;
-    width: 120px;
-  }
 }
 
 
