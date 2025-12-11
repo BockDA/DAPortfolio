@@ -17,7 +17,7 @@
   color: $primaryBlue;
   display: flex;
   justify-content: center;
-  opacity: 0;
+  //opacity: 0;
 }
 
 .myprojects_Titel.animat_1 {
@@ -60,6 +60,9 @@
   background-color: $tabColor;
 }
 
+.btn_tab_mobil {
+  display: none !important
+}
 
 //---------Animation ----------
 

@@ -4,10 +4,6 @@
    //---------------------DESKTOP--------------------------
 
    @include desktop {
-       .font_5 {
-           //font-size: 48px;
-       }
-
        .whyme_innerSection {
            margin-left: 0px;
        }
@@ -80,6 +76,7 @@
        .whyme_locale {
            top: 290px;
            gap: 20px;
+
            img {
                height: 60px;
                width: 65px;

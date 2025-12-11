@@ -6,15 +6,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 140px;
   padding-bottom: 100px;
-  //margin-bottom: 50px;
-  //height: 100vh;
   overflow: hidden;
 }
 
 .myskills_Titel {
-  margin-top: 60px;
   color: $primaryBlue;
   @include flex_Box(column, 0px);
   //opacity: 0;
@@ -43,7 +40,7 @@
   grid-template-rows: repeat(3, auto);
   gap: 40px;
   width: 50%;
-  background-color: greenyellow;
+  background-color: rgb(104, 145, 44);
 }
 
 .myskills_grid-item {
@@ -69,7 +66,7 @@
 .background_Animation {
   width: 50%;
   min-width: 300px;
-  background-color: red
+  // background-color: red
 }
 
 
@@ -89,7 +86,6 @@
 }
 
 .section {
-
   height: 400px;
   width: auto;
 

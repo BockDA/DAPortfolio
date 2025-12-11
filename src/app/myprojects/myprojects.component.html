@@ -4,16 +4,21 @@
       <p class="font_5">{{ "NAV.PORTFOLIO" | translate }}</p>
     </div>
     <div class="myprojects_tabs_header">
-      <button class="font_7" (click)='selectTab(1)' [class.active]='activeTab ===1'>1. Join</button>
-      <button class="font_7" (click)='selectTab(2)' [class.active]='activeTab ===2'>2. El Pollo Logo</button>
+      <button class="font_7 btn_tab" (click)='selectTab(1)' [class.active]='activeTab ===1'>1. Join</button>
+      <button class="font_7 btn_tab" (click)='selectTab(2)' [class.active]='activeTab ===2'>2. El Pollo
+        Logo</button>
+      <button class="font_7 btn_tab_mobil" (click)='selectTab(1)' [class.active]='activeTab ===1'>1. Project</button>
+      <button class="font_7 btn_tab_mobil" (click)='selectTab(2)' [class.active]='activeTab ===2'>2. Project</button>
     </div>
 
     <div class="myprojects_tab">
-      @if (activeTab===1){<div class="active_Tab"><app-tab-my-projects [activeTab]="activeTab"></app-tab-my-projects></div>}
+      @if (activeTab===1){<div class="active_Tab"><app-tab-my-projects [activeTab]="activeTab"></app-tab-my-projects>
+      </div>}
     </div>
 
     <div>
-      @if (activeTab===2){<div class="active_Tab" ><app-tab-my-projects [activeTab]="activeTab"></app-tab-my-projects></div>}
+      @if (activeTab===2){<div class="active_Tab"><app-tab-my-projects [activeTab]="activeTab"></app-tab-my-projects>
+      </div>}
     </div>
   </div>
 </section>

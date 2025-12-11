@@ -23,6 +23,7 @@
   "PROJECTE": {
     "P1": {
       "Tab1": {
+        "PROJECT_NAME": "Join",
         "DESCRIPTION1": "Über das Projekt",
         "WORKPROCESS1": "Dauer: 2 Monate",
         "CONTENT1": "Task-Manager, inspiriert vom Kanban-System. Aufgaben per Drag & Drop erstellen und organisieren, Benutzer und Kategorien zuweisen.",
@@ -40,13 +41,14 @@
           "assets/icons/Icon_Firebase.png"
         ],
         "SCREEN": "assets/screenshots/joinDA.png",
-        "MOBILTECHNO": " : HTML, JavaScript, CSS, Firebase",
+        "MOBILTECHNO": "HTML, JavaScript, CSS, Firebase",
         "LINKPROJECT": "https://join.elektro-bock.com/",
         "LINKGIT": "https://github.com/BockDA/DA-Join.git"
       }
     },
     "P2": {
       "Tab1": {
+        "PROJECT_NAME": "EL Pollo Logo",
         "DESCRIPTION1": "Über das Projekt",
         "WORKPROCESS1": "Dauer: 3 Monate",
         "CONTENT1": "Erlernen und Anwenden objektorientierter Programmierung (OOP).",
@@ -63,13 +65,14 @@
           "assets/icons/Icon_Git.png"
         ],
         "SCREEN": "assets/screenshots/elpolloloco.png",
-        "MOBILTECHNO": " : HTML, JavaScript, Git",
+        "MOBILTECHNO": "HTML, JavaScript, Git",
         "LINKPROJECT": "https://elpollolocoda.elektro-bock.com/",
         "LINKGIT": "https://github.com/BockDA/DA_ElPolloLoco.git"
       }
     },
     "P3": {
       "Tab1": {
+        "PROJECT_NAME": "Pokedex",
         "DESCRIPTION1": "Über das Projekt",
         "WORKPROCESS1": "Dauer: 1 Woche",
         "CONTENT1": "Mit JavaScript habe ich Daten aus einer Pokémon-API abgerufen und als JSON verarbeitet. Die Ergebnisse wurden anschließend dynamisch im Browser angezeigt.",
@@ -86,7 +89,7 @@
           "assets/icons/Icon_Api.png"
         ],
         "SCREEN": "assets/screenshots/pokemonDa.png",
-        "MOBILTECHNO": " : HTML, JavaScript, API",
+        "MOBILTECHNO": "HTML, JavaScript, API",
         "LINKPROJECT": "https://christian-bock.developerakademie.net/Projekte/Pokedex/index.html",
         "LINKGIT": "https://github.com/BockDA/DA-Pokedex.git"
       }

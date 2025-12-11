@@ -5,57 +5,51 @@
 
 @include tablet {
     .section_myskills {
-        // padding-top: 110px;
-        //min-height: 100vh;    }
-
-        .font_5 {
-            font-size: 48px;
-        }
-
-        .font_8 {
-            font-size: 18px;
-        }
-
-        .myskills_Section {
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-            margin-left: 0px;
-            height: 100vh;
-        }
-
-        .myskills_grid_container {
-            grid-template-columns: repeat(3, 1fr);
-            min-width: 800px;
-        }
-
-        .background_Animation {
-            min-width: 800px;
-        }
-
-        .section {
-            margin-top: 40px;
-            height: 500px;
-            margin: 0;
-        }
-
-        .myskills_Infotext {
-            width: 100%;
-            max-width: 230px;
-        }
-
-
+        height: 1250px;
     }
+
+    .font_5 {
+        font-size: 48px;
+    }
+
+    .font_8 {
+        font-size: 18px;
+    }
+
+    .myskills_Titel {
+        background-color: gray;
+        margin-bottom: 50px;
+    }
+
+    .myskills_Section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-left: 0px;
+        height: 100vh;
+    }
+
+    .myskills_grid_container {
+        grid-template-columns: repeat(3, 1fr);
+        min-width: 800px;
+    }
+
+    .myskills_Infotext {
+        width: 100%;
+        max-width: 230px;
+    }
+
 }
+
 
 //---------------------Mobil--------------------------
 
 @include mobile {
     .section_myskills {
-        padding-top: 10px;
-        min-height: 900px;
-
+        padding: 0;
+        margin: 0;
+        height: 900px;
     }
 
     .font_5 {
@@ -66,22 +60,16 @@
         font-size: 16px;
     }
 
-    .myskills_Titel {
-        margin-bottom: 30px;
-    }
 
     .myskills_Section {
         gap: 20px;
-        padding: 0 10px;
+        margin: 0px;
     }
 
     .myskills_grid_container {
-        margin: 0;
         width: 100%;
-        max-width: 320px;
-        // min-width: 300px;
+        min-width: 300px;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
     }
 
     .myskills_grid-item {
@@ -95,28 +83,87 @@
     }
 
     .background_Animation {
-        max-width: 300px;
-        //min-width: 280px;
-        //gap: 30px;
+        position: relative;
+
+        .img_1,
+        .img_2 {
+            display: none;
+        }
     }
 
-    .section img {
-        //max-width: 320px;
+
+    .section_content_block {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .infotext_mobil {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        color: $primaryBlue;
+    }
+
+
+    .section {
+        padding-top: 30px;
+        width: 100vw;
+        background-color: red;
+        height: auto;
+    }
+
+    .mobil_img {
+        display: flex;
+        flex-direction: row-reverse;
+        // justify-content: center;
+        background-color: lightgrey;
+        height: auto;
+
+
     }
 
     .myskills_Info_img {
-        gap: 40px;
+        gap: 0;
+
+        .img1,
+        .img2 {
+            width: 36px;
+            height: 54px;
+        }
+    }
+
+
+    .myskills_Infotext {
+        position: relative;
+        text-align: left !important;
+        //display: block; // kein Flexcontainer mehr!
+        //width: 100%; // schmaler => Text bricht nach unten
+        max-width: 460px; // Obergrenze (spielbar: 230–280px)
+        //height: auto; // Höhe darf mit Text wachsen
+        //min-height: 0; // keine erzwungene Mindesthöhe
+        padding-left: 10px;
+        background-color: yellowgreen;
+        font-size: 18px;
+        line-height: 1.2;
+        white-space: normal; // normaler Umbruch
+        //overflow-wrap: break-word;
+
     }
 
     .btn_letstalk {
-
-        display: flex;
+        display: block;
         position: absolute;
-        //top: 380px;
-        top: 1200px;
+        bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
+
         background-color: blue;
 
     }
 }
+
+//----------- Mobil Small (bis 480px) --------------
+@include mobilesmall {}
