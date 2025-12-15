@@ -1,55 +1,13 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-//---------------------TABLET--------------------------
-
-@include tablet {
-    .section_myskills {
-        height: 1250px;
-    }
-
-    .font_5 {
-        font-size: 48px;
-    }
-
-    .font_8 {
-        font-size: 18px;
-    }
-
-    .myskills_Titel {
-        background-color: gray;
-        margin-bottom: 50px;
-    }
-
-    .myskills_Section {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        margin-left: 0px;
-        height: 100vh;
-    }
-
-    .myskills_grid_container {
-        grid-template-columns: repeat(3, 1fr);
-        min-width: 800px;
-    }
-
-    .myskills_Infotext {
-        width: 100%;
-        max-width: 230px;
-    }
-
-}
-
-
-//---------------------Mobil--------------------------
+// ========= MOBILE ========= //
 
 @include mobile {
     .section_myskills {
-        padding: 0;
+        padding: 40px 0 60px;
         margin: 0;
-        height: 900px;
+        /* keine fixe Höhe! */
     }
 
     .font_5 {
@@ -61,15 +19,23 @@
     }
 
 
+    .myskills_Titel {
+        margin-bottom: 50px;
+    }
+
     .myskills_Section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
-        margin: 0px;
+        margin: 0;
     }
 
     .myskills_grid_container {
         width: 100%;
-        min-width: 300px;
+        min-width: 0;
         grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
     }
 
     .myskills_grid-item {
@@ -82,8 +48,11 @@
         }
     }
 
+    /* Rechte Seite mobil: ohne die großen BG-Bilder */
     .background_Animation {
         position: relative;
+        width: 100%;
+        min-width: 0;
 
         .img_1,
         .img_2 {
@@ -91,79 +60,79 @@
         }
     }
 
+    .section {
+        margin-top: 30px;
+        width: 100%;
+        // background-color: red; // nur Debug, später rausnehmen
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
 
     .section_content_block {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         width: 100%;
     }
 
+    /* Überschrift im Bildbereich */
     .infotext_mobil {
         position: absolute;
-        top: 0px;
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
         font-size: 18px;
         color: $primaryBlue;
+        text-align: center;
     }
 
-
-    .section {
-        padding-top: 30px;
-        width: 100vw;
-        background-color: red;
-        height: auto;
-    }
-
+    /* Icon + Text nebeneinander */
     .mobil_img {
         display: flex;
         flex-direction: row-reverse;
-        // justify-content: center;
-        background-color: lightgrey;
+        gap: 0px;
         height: auto;
-
 
     }
 
     .myskills_Info_img {
-        gap: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+
 
         .img1,
         .img2 {
             width: 36px;
             height: 54px;
+            margin-left: 10px;
         }
     }
 
-
     .myskills_Infotext {
-        position: relative;
-        text-align: left !important;
-        //display: block; // kein Flexcontainer mehr!
-        //width: 100%; // schmaler => Text bricht nach unten
-        max-width: 460px; // Obergrenze (spielbar: 230–280px)
-        //height: auto; // Höhe darf mit Text wachsen
-        //min-height: 0; // keine erzwungene Mindesthöhe
+        //position: relative;
+        //text-align: left;
+        max-width: 240px; // hier steuerst du, wie stark der Text nach unten geht
         padding-left: 10px;
-        background-color: yellowgreen;
-        font-size: 18px;
-        line-height: 1.2;
-        white-space: normal; // normaler Umbruch
-        //overflow-wrap: break-word;
+        background-color: yellowgreen; // nur Debug, kann später raus
+        font-size: 16px;
+        line-height: 1.3;
+        align-self: flex-start;
 
+        p {
+            text-align: left;
+        }
     }
 
     .btn_letstalk {
         display: block;
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-top: 10px;
+        text-align: center;
 
-        background-color: blue;
-
+        a img {
+            display: inline-block;
+        }
     }
 }
-
-//----------- Mobil Small (bis 480px) --------------
-@include mobilesmall {}

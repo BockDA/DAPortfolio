@@ -1,114 +1,39 @@
-@use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-//---------------------DESKTOP--------------------------
-
-@include desktop {
-    .myprojects_tabs_header button {
-        margin-left: 15px;
-        font-size: 24px !important;
-    }
-}
-
-//---------------------TABLET--------------------------
-
-@include tablet {
-    .section_ .section_myprojects {
-        padding-top: 110px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .font_5 {
-        font-size: 48px;
-    }
-
-    .myprojects_Section {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .myprojects_tabs_header {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 60px;
-        justify-content: center;
-        gap: 10px;
-
-    }
-
-    .myprojects_tabs_header button {
-        height: 80px;
-        width: auto;
-        min-width: 140px;
-        flex: 1 1 180px;
-        font-size: 20px !important;
-
-    }
-
-
-
-}
-
-//---------------------MOBIL--------------------------
-
 @include mobile {
-    .section_myprojects {
-        padding-top: 0px;
-  
+
+    // <= 850px bei dir
+    .myprojects_tabs_header .btn_tab {
+        display: none;
     }
 
-
-    .font_5 {
-        font-size: 32px;
-    }
-
-    .font_9 {
-        font-size: 18px;
-    }
-
-    .myprojects_Section {
-        width: 100%;
-    }
-
-    .myprojects_Titel {
-        //  padding: 0 10px;
+    .myprojects_tabs_header .btn_tab_mobil {
+        display: flex;
     }
 
     .myprojects_tabs_header {
         margin-left: 0;
-        //padding-top: 30px;
-        //gap: 30px;
-        //justify-content: center;
+        padding-top: 40px;
+        justify-content: center;
+        gap: 12px;
+        padding-inline: 12px;
     }
 
     .myprojects_tabs_header button {
-        height: 45px;
-        max-width: 100px;
-        flex: 1;
-        margin: 0;
-        border-radius: 10px 10px 0 0;
-        white-space: normal;
-        //padding: 5px 6px;
-        line-height: 1.15;
-        text-align: center;
+        height: 64px;
+        width: 160px;
+        min-width: 140px;
+        max-width: 220px;
+        border-radius: 14px 14px 0 0;
     }
+}
 
-    .btn_tab {
-        display: none !important;
-    }
+@include mobilesmall {
 
-    .btn_tab_mobil {
-        display: flex !important;
-
-
-    }
-
-    .myprojects_tabs_header button.font_7 {
-        font-size: 18px;
-    }
-
-    .myprojects_tab {
-        width: 100%;
+    // <= 480px
+    .myprojects_tabs_header button {
+        width: 140px;
+        min-width: 120px;
+        height: 58px;
     }
 }

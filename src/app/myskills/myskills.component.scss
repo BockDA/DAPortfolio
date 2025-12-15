@@ -1,6 +1,8 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
+// ========= DESKTOP / BASIS ========= //
+
 .section_myskills {
   position: relative;
   display: flex;
@@ -14,7 +16,6 @@
 .myskills_Titel {
   color: $primaryBlue;
   @include flex_Box(column, 0px);
-  //opacity: 0;
 }
 
 .myskills_Titel.animat_1 {
@@ -25,22 +26,23 @@
   font-family: "Josefin";
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
   margin-left: 40px;
   margin-top: 90px;
-  //opacity: 0;
 }
 
 .myskills_Section.animat_2 {
   animation: fadeIn 3s ease-out forwards;
 }
 
+/* Linke Seite: Grid mit Skills */
 .myskills_grid_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, auto);
+  grid-auto-rows: auto;
   gap: 40px;
   width: 50%;
-  background-color: rgb(104, 145, 44);
 }
 
 .myskills_grid-item {
@@ -63,45 +65,29 @@
   }
 }
 
+/* Rechte Seite: Hintergrund + Textblock */
 .background_Animation {
   width: 50%;
   min-width: 300px;
-  // background-color: red
+  position: relative;
 }
-
-
-.btn_letstalk {
-  display: none;
-}
-
-
-//--------------------rechts Seite ---------------------------------//
 
 @include background_Animation();
 
+.section {
+  width: 100%;
+  min-height: 320px;
+}
+
 .section_content_block {
-  //position: relative;
   color: $cremeWhite;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-.section {
-  height: 400px;
-  width: auto;
-
-}
-
-.myskills_Info_img {
-  gap: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 66px;
-  height: 66px;
-}
-
-.bgskills_mobil {
-  display: none;
+.infotext_mobil {
+  display: none; // nur mobil sichtbar
 }
 
 .mobil_img {
@@ -109,21 +95,38 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-
 }
 
 .myskills_Info_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
   width: 140px;
   height: 70px;
+
+  .img1,
+  .img2 {
+    width: 66px;
+    height: 66px;
+  }
 }
 
 .myskills_Infotext {
   width: 207px;
+  text-align: left;
+  line-height: 1.2;
 }
 
+.bgskills_mobil {
+  display: none;
+}
 
-//---------Animation ----------
+.btn_letstalk {
+  display: none; // Desktop versteckt, mobil sichtbar
+}
 
+/* Animationen */
 @keyframes slideInFromRight {
   0% {
     opacity: 0;

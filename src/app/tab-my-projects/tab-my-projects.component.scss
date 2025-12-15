@@ -5,23 +5,21 @@
   position: relative;
   display: flex;
   width: 100%;
-  //max-width: 100vw;
-  height: 560px;
   justify-content: center;
   font-family: "Josefin";
   color: $cremeWhite;
-  // padding: 0 20px;
-  //box-sizing: border-box;
   gap: 80px;
- 
+
+  /* WICHTIG: keine feste Höhe */
+  min-height: 0;
 }
 
 .tab_firstSection {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 40px;
   width: 50%;
-  //opacity: 0;
+  padding: 40px 30px 20px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .tab_firstSection.animat_1 {
@@ -46,26 +44,68 @@
   box-sizing: border-box;
 }
 
+/* Buttons: NICHT absolut, sondern normal im Flow */
+.tab_Buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 
+.tab_Buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 16px;
+  height: 48px;
+  padding: 0 18px;
+  min-width: 120px;
+}
 
+.tab_Buttons a:first-child {
+  background-color: $primaryBlue;
+  color: $cremeWhite;
+}
+
+.tab_Buttons a:last-child {
+  color: $primaryBlue;
+  background-color: $lightGrey;
+  border: 1px solid $primaryBlue;
+}
+
+/* rechte Seite */
 .tab_secondSection {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  //opacity: 0;
+  padding: 40px 30px 20px;
+
+}
+
+.tab_secondSection.animat_2 {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+.project_titel_mobil {
+  display: none;
+}
+
+/* Technologies-Zeile: darf umbrechen */
+.tab_Technologies {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .mobil_tech {
   display: none;
+  /* mobile-only */
 }
 
-.tab_Technologies {
-  display: flex;
-  justify-content: center;
-}
-
+/* Icons */
 .tab_Icons {
   display: flex;
   justify-content: center;
@@ -77,64 +117,23 @@
   height: 36px;
 }
 
+/* Preview responsiv (kein fixes height) */
 .tab_Project_Preview {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   display: flex;
   justify-content: center;
 }
 
 .tab_Project_Preview img {
-  display: flex;
-  height: 312px;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
   border-radius: 16px;
-
-
+  display: block;
+  object-fit: contain;
 }
 
-.tab_Buttons {
-  position: absolute;
-  bottom: 0px;
-  left: 72%;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-
-}
-
-.tab_Buttons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  width: 132px;
-  height: 48px;
-  border-radius: 30px;
-}
-
-.tab_Buttons a:first-child {
-  background-color: $primaryBlue;
-}
-
-.tab_Buttons a:last-child {
-  color: $primaryBlue;
-  border-color: $primaryBlue;
-  background-color: $lightGrey;
-  border-style: solid;
-  border-width: 1px;
-}
-
-
-.tab_secondSection.animat_2 {
-  animation: slideInFromRight 0.8s ease-out forwards;
-}
-
-.project_titel_mobil {
-  display: none;
-}
-
-//---------Animation ----------
+/* Animationen */
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
