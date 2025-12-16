@@ -15,7 +15,7 @@ export class TeamplayerComponent implements AfterViewInit, OnDestroy {
   constructor(private animationService: MyFunctionsService) { }
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
-      { selector: '.tPlayer_Headline', animationClass: 'animat_1' }
+      { selector: '.tPlayer_Headline', animationClass: 'animate-intro' }
     ]);
   }
 

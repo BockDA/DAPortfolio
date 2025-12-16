@@ -33,15 +33,14 @@ section {
   padding-bottom: 140px;
   //opacity: 0;
   transform: none;
+  transition: none;
 
   @include mobile {
     transform: none;
   }
-
-  transition: none;
 }
 
-.legal_notice_content.animat_1 {
+.legal_notice_content.animate-intro {
   animation: slideInFromRight 1s ease-out forwards;
 }
 
@@ -52,7 +51,7 @@ section {
   //opacity: 0;
 }
 
-.legal_notice_header.animat_1 {
+.legal_notice_header.animate-intro {
   opacity: 1;
   animation: slideInFromLeft 2s ease-out forwards;
 }
@@ -87,7 +86,7 @@ section {
 
 :host ::ng-deep .col {
   color: $primaryBlue;
-  
+
 }
 
 

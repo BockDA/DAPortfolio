@@ -19,7 +19,7 @@
   flex-direction: column;
 }
 
-.tab_firstSection.animat_1 {
+.tab_firstSection.animate-intro {
   animation: slideInFromLeft 0.8s ease-out forwards;
 }
 
@@ -77,7 +77,7 @@
   padding: 40px 30px 20px;
 }
 
-.tab_secondSection.animat_2 {
+.tab_secondSection.animate-secondary {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 

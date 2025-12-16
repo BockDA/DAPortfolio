@@ -15,10 +15,10 @@ export class TabTeamplayerComponent implements AfterViewInit, OnDestroy {
   constructor(private animationService: MyFunctionsService) { }
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
-      { selector: '.player_Cards', animationClass: 'animat_1' },
-      { selector: '.background_Animation', animationClass: 'animat_1' },
-      { selector: '.section', animationClass: 'animat_1' },
-      { selector: '.players_Card_Contents', animationClass: 'animat_1' }
+      { selector: '.player_Cards', animationClass: 'animate-intro' },
+      { selector: '.background_Animation', animationClass: 'animate-intro' },
+      { selector: '.section', animationClass: 'animate-intro' },
+      { selector: '.players_Card_Contents', animationClass: 'animate-intro' }
     ]);
   }
 

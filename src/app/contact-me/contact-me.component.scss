@@ -29,7 +29,7 @@
   opacity: 0;
 }
 
-.contac_Headline.animat_1 {
+.contac_Headline.animate-intro {
   opacity: 1;
   animation: slideInFromLeft 0.8s ease-out forwards;
 }
@@ -44,7 +44,7 @@
   opacity: 0;
 }
 
-.hero_ArrowUp.animat_1 {
+.hero_ArrowUp.animate-intro {
   opacity: 1;
   animation: fadeIn 1.8s ease-out forwards;
 }
@@ -65,7 +65,7 @@
   opacity: 0;
 }
 
-.contac_Description.animat_1 {
+.contac_Description.animate-intro {
   animation: slideInFromLeft 0.8s ease-out forwards;
 }
 
@@ -95,16 +95,18 @@
   }
 }
 
-.section.animat_1 {
+.section.animate-intro {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 
 .section:hover {
   color: $primaryBlue;
+
   .section_img {
     .img_start {
       opacity: 0;
     }
+
     .img_hover {
       opacity: 1;
     }
@@ -131,16 +133,16 @@
   opacity: 0;
 }
 
-.contact_Field.animat_1 {
+.contact_Field.animate-intro {
   animation: slideInFromLeft 0.8s ease-out forwards;
 }
 
 
 .container_mail {
- opacity: 0;
+  opacity: 0;
 }
 
-.container_mail.animat_1 {
+.container_mail.animate-intro {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 
@@ -193,7 +195,7 @@ textarea {
   opacity: 0;
 }
 
-.container_message.animat_1 {
+.container_message.animate-intro {
   animation: slideInFromLeft 0.8s ease-out forwards;
 }
 
@@ -363,4 +365,3 @@ textarea.ng-invalid.ng-touched+.error_notice {
     opacity: 1;
   }
 }
-

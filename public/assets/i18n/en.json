@@ -12,25 +12,25 @@
     "CTA": "Let’s talk!"
   },
   "WHYME": {
-    "LOCAL1": "I am ",
-    "LOCAL2": "based near Munich, Germany.",
+    "INTRO_PREFIX": "I am ",
+    "INTRO_SUFFIX": "based near Munich, Germany.",
     "DESCRIPTION": "What I find so fascinating about programming, just as it is in my current craft, is that you have to develop solutions to achieve a result. You can really express your creativity here."
   },
   "MYSKILLS": {
     "LEARNING": "Currently learning",
     "INFOTEXT": "I continuously expand my skillset and enjoy developing modern, scalable applications. I stay up-to-date with new technologies, best practices, and current development trends."
   },
-  "PROJECTE": {
-    "P1": {
+  "PROJECTS": {
+    "JOIN": {
       "Tab1": {
         "PROJECT_NAME": "Join",
-        "DESCRIPTION1": "About the project",
-        "WORKPROCESS1": "Duration: 2 months",
-        "CONTENT1": "A task management tool inspired by the Kanban system. Create, assign, prioritize and move tasks via drag & drop — including user and category assignment.",
-        "DESCRIPTION2": "How I structured the development",
-        "CONTENT2": "Modular architecture with clear separation of UI components, services, and Firebase integration. Consistent naming conventions and in-code documentation with JSDoc. Code formatting and quality were ensured using Prettier and Git version control.",
-        "DESCRIPTION3": "Team collaboration",
-        "CONTENT3": "Our project team consisted of four people. My main responsibilities included developing the task components and data handling logic. Technologies used: HTML, CSS, JavaScript, Firebase. Collaboration was structured, highly productive, and enjoyable."
+        "DESCRIPTION_INTRO": "About the project",
+        "WORK_DURATION": "Duration: 2 months",
+        "CONTENT_INTRO": "A task management tool inspired by the Kanban system. Create, assign, prioritize and move tasks via drag & drop — including user and category assignment.",
+        "DESCRIPTION_APPROACH": "How I structured the development",
+        "CONTENT_APPROACH": "Modular architecture with clear separation of UI components, services, and Firebase integration. Consistent naming conventions and in-code documentation with JSDoc. Code formatting and quality were ensured using Prettier and Git version control.",
+        "DESCRIPTION_LEARNINGS": "Team collaboration",
+        "CONTENT_LEARNINGS": "Our project team consisted of four people. My main responsibilities included developing the task components and data handling logic. Technologies used: HTML, CSS, JavaScript, Firebase. Collaboration was structured, highly productive, and enjoyable."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologies",
@@ -46,16 +46,16 @@
         "LINKGIT": "https://github.com/BockDA/DA-Join.git"
       }
     },
-    "P2": {
+    "EL_POLLO": {
       "Tab1": {
         "PROJECT_NAME": "EL Pollo Logo",
-        "DESCRIPTION1": "About the project",
-        "WORKPROCESS1": "Duration: 3 months",
-        "CONTENT1": "Learning and applying object-oriented programming (OOP) within an interactive browser game.",
-        "DESCRIPTION2": "How I structured the development",
-        "CONTENT2": "Code organized into reusable modules (HTML layout, CSS styling, canvas rendering, game logic). Clean architecture, consistent naming, documentation with JSDoc, meaningful commits via Git. Focus on maintainability and clarity.",
-        "DESCRIPTION3": "Key learnings",
-        "CONTENT3": "This project significantly strengthened my JavaScript and canvas skills. Working with animations, collision detection and object-oriented design was highly instructive and rewarding."
+        "DESCRIPTION_INTRO": "About the project",
+        "WORK_DURATION": "Duration: 3 months",
+        "CONTENT_INTRO": "Learning and applying object-oriented programming (OOP) within an interactive browser game.",
+        "DESCRIPTION_APPROACH": "How I structured the development",
+        "CONTENT_APPROACH": "Code organized into reusable modules (HTML layout, CSS styling, canvas rendering, game logic). Clean architecture, consistent naming, documentation with JSDoc, meaningful commits via Git. Focus on maintainability and clarity.",
+        "DESCRIPTION_LEARNINGS": "Key learnings",
+        "CONTENT_LEARNINGS": "This project significantly strengthened my JavaScript and canvas skills. Working with animations, collision detection and object-oriented design was highly instructive and rewarding."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologies",
@@ -70,16 +70,16 @@
         "LINKGIT": "https://github.com/BockDA/DA_ElPolloLoco.git"
       }
     },
-    "P3": {
+    "POKEDEX": {
       "Tab1": {
         "PROJECT_NAME": "Pokedex",
-        "DESCRIPTION1": "About the project",
-        "WORKPROCESS1": "Duration: 1 week",
-        "CONTENT1": "Fetching data from a Pokémon API using JavaScript, processing JSON responses and rendering dynamic UI elements.",
-        "DESCRIPTION2": "My approach",
-        "CONTENT2": "Structured HTML and CSS layout first, followed by modular JavaScript architecture. Integrated API calls and dynamically generated visual elements based on live fetched data.",
-        "DESCRIPTION3": "Key learnings",
-        "CONTENT3": "I strengthened my ability to consume external APIs and generate dynamic UI content. The project improved my understanding of async data handling and responsive rendering."
+        "DESCRIPTION_INTRO": "About the project",
+        "WORK_DURATION": "Duration: 1 week",
+        "CONTENT_INTRO": "Fetching data from a Pokémon API using JavaScript, processing JSON responses and rendering dynamic UI elements.",
+        "DESCRIPTION_APPROACH": "My approach",
+        "CONTENT_APPROACH": "Structured HTML and CSS layout first, followed by modular JavaScript architecture. Integrated API calls and dynamically generated visual elements based on live fetched data.",
+        "DESCRIPTION_LEARNINGS": "Key learnings",
+        "CONTENT_LEARNINGS": "I strengthened my ability to consume external APIs and generate dynamic UI content. The project improved my understanding of async data handling and responsive rendering."
       },
       "Tab2": {
         "TECHNOLOGIES": "Technologies",
@@ -96,8 +96,8 @@
     }
   },
   "TEAMPLAYER": {
-    "HEADLINE1": "Looking for a team player?",
-    "HEADLINE2": "Here’s what my colleagues say about working with me",
+    "HEADLINE_MAIN": "Looking for a team player?",
+    "HEADLINE_SUB": "Here’s what my colleagues say about working with me",
     "PLAYER": [
       {
         "TPLAYER_NAME": "Eric Braun",
@@ -133,9 +133,9 @@
     "PLACEHOLDER_NAME": "Enter your name...",
     "PLACEHOLDER_EMAIL": "Enter your e-mail address...",
     "PLACEHOLDER_MESSAGE": "Write your message...",
-    "PRIVACYPOLICY_NOTICE1": "I have read the ",
-    "PRIVACYPOLICY_NOTICE2": " privacy policy ",
-    "PRIVACYPOLICY_NOTICE3": "and agree to the processing of my data.",
+    "PRIVACYPOLICY_NOTICE_PREFIX": "I have read the ",
+    "PRIVACYPOLICY_NOTICE_MIDDLE": " privacy policy ",
+    "PRIVACYPOLICY_NOTICE_SUFFIX": "and agree to the processing of my data.",
     "SEND_BTN": "Send",
     "INPUTEEROR_NAME": "Please enter your name!",
     "INPUTEEROR_EMAIL": "Please enter a valid e-mail address!",
@@ -157,39 +157,39 @@
     "EMAIL": "cbock2011@gmail.com",
     "SECTIONS": [
       {
-        "TEXT1": "<span class='col bold'>Exploration of the platform</span>",
-        "TEXT2": "E-mail: cbock2011@gmail.com",
-        "TEXT3": ""
+        "TITLE": "<span class='col bold'>Exploration of the platform</span>",
+        "TEXT": "E-mail: cbock2011@gmail.com",
+        "EXTRA": ""
       },
       {
-        "TEXT1": "<span class='col bold'>Acceptance of terms</span>",
-        "TEXT2": "By accessing and using <span class='col'>Portfolio</span> (the product), you accept the terms and any applicable updates or additions we may publish. We, the participating students, reserve the right to modify these terms at any time without notice.",
-        "TEXT3": ""
+        "TITLE": "<span class='col bold'>Acceptance of terms</span>",
+        "TEXT": "By accessing and using <span class='col'>Portfolio</span> (the product), you accept the terms and any applicable updates or additions we may publish. We, the participating students, reserve the right to modify these terms at any time without notice.",
+        "EXTRA": ""
       },
       {
-        "TEXT1": "<span class='col bold'>Scope and ownership</span>",
-        "TEXT2": "<span class='col'>Portfolio</span> was developed as part of a group project in the web development bootcamp at the <span class='col'>Developer Akademie GmbH</span>. It is intended for educational purposes only and not for large-scale commercial use. Therefore, no guarantee is given regarding availability, reliability, accuracy, or any other product characteristics.",
-        "TEXT3": "The design of <span class='col'>Portfolio</span> is owned by the <span class='col'>Developer Akademie GmbH</span>. Unauthorized use, reproduction, modification, distribution, or duplication of the design is strictly prohibited."
+        "TITLE": "<span class='col bold'>Scope and ownership</span>",
+        "TEXT": "<span class='col'>Portfolio</span> was developed as part of a group project in the web development bootcamp at the <span class='col'>Developer Akademie GmbH</span>. It is intended for educational purposes only and not for large-scale commercial use. Therefore, no guarantee is given regarding availability, reliability, accuracy, or any other product characteristics.",
+        "EXTRA": "The design of <span class='col'>Portfolio</span> is owned by the <span class='col'>Developer Akademie GmbH</span>. Unauthorized use, reproduction, modification, distribution, or duplication of the design is strictly prohibited."
       },
       {
-        "TEXT1": "<span class='col bold'>Copyright</span>",
-        "TEXT2": "Except for the design owned by <span class='col'>Developer Akademie GmbH</span>, all intellectual property rights related to <span class='col'>Portfolio</span> remain with us, the participating students.",
-        "TEXT3": ""
+        "TITLE": "<span class='col bold'>Copyright</span>",
+        "TEXT": "Except for the design owned by <span class='col'>Developer Akademie GmbH</span>, all intellectual property rights related to <span class='col'>Portfolio</span> remain with us, the participating students.",
+        "EXTRA": ""
       },
       {
-        "TEXT1": "<span class='col bold'>Usage regulations</span>",
-        "TEXT2": "You may use <span class='col'>Portfolio</span> only for lawful purposes and in compliance with all applicable laws. Misuse of <span class='col'>Portfolio</span> for illegal activities or to harass, threaten, or harm individuals is prohibited. You are solely responsible for your interactions with other users.",
-        "TEXT3": ""
+        "TITLE": "<span class='col bold'>Usage regulations</span>",
+        "TEXT": "You may use <span class='col'>Portfolio</span> only for lawful purposes and in compliance with all applicable laws. Misuse of <span class='col'>Portfolio</span> for illegal activities or to harass, threaten, or harm individuals is prohibited. You are solely responsible for your interactions with other users.",
+        "EXTRA": ""
       },
       {
-        "TEXT1": "<span class='col bold'>Disclaimer of liability</span>",
-        "TEXT2": "<span class='col'>Portfolio</span> is provided \"as is\" without any express or implied warranties, including but not limited to merchantability, fitness for a particular purpose, or non-infringement. In no event shall we, the participating students, or the <span class='col'>Developer Akademie</span> be liable for direct, indirect, incidental, special, consequential, or exemplary damages — including loss of profit or data.",
-        "TEXT3": ""
+        "TITLE": "<span class='col bold'>Disclaimer of liability</span>",
+        "TEXT": "<span class='col'>Portfolio</span> is provided \"as is\" without any express or implied warranties, including but not limited to merchantability, fitness for a particular purpose, or non-infringement. In no event shall we, the participating students, or the <span class='col'>Developer Akademie</span> be liable for direct, indirect, incidental, special, consequential, or exemplary damages — including loss of profit or data.",
+        "EXTRA": ""
       },
       {
-        "TEXT1": "<span class='col bold'>Indemnity</span>",
-        "TEXT2": "You agree to indemnify and hold harmless us, the participating students, the <span class='col'>Developer Akademie</span>, and all related parties from any claims, damages, losses, or expenses resulting from your use of <span class='col'>Portfolio</span> or any violation of this legal notice.",
-        "TEXT3": "For inquiries, please contact: cbock2011@gmail.com"
+        "TITLE": "<span class='col bold'>Indemnity</span>",
+        "TEXT": "You agree to indemnify and hold harmless us, the participating students, the <span class='col'>Developer Akademie</span>, and all related parties from any claims, damages, losses, or expenses resulting from your use of <span class='col'>Portfolio</span> or any violation of this legal notice.",
+        "EXTRA": "For inquiries, please contact: cbock2011@gmail.com"
       }
     ],
     "DATE": "Date: October 10, 2025"

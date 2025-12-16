@@ -15,9 +15,9 @@ export class WhyMeComponent implements AfterViewInit, OnDestroy {
   constructor(public setAktiv: MyFunctionsService) { }
   ngAfterViewInit(): void {
     this.setAktiv.setupAnimations([
-      { selector: '.whyme_Titel', animationClass: 'animat_1' },
-      { selector: '.whyme_locale', animationClass: 'animat_1' },
-      { selector: '.whyme_Description', animationClass: 'animat_1' }
+      { selector: '.whyme_Titel', animationClass: 'animate-intro' },
+      { selector: '.whyme_locale', animationClass: 'animate-intro' },
+      { selector: '.whyme_Description', animationClass: 'animate-intro' }
     ]);
   }
 

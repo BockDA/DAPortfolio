@@ -90,13 +90,13 @@ export class ContactMeComponent implements AfterViewInit, OnDestroy {
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
       const animationConfigs = [
-        { selector: '.contac_Headline', animationClass: 'animat_1', },
-        { selector: '.contact_Headline_Container', animationClass: 'animat_1', },
-        { selector: '.contac_Description', animationClass: 'animat_1', },
-        { selector: '.contact_Field', animationClass: 'animat_1', },
-        { selector: '.container_mail', animationClass: 'animat_1', },
-        { selector: '.container_message', animationClass: 'animat_1', },
-        { selector: '.hero_ArrowUp', animationClass: 'animat_1', }
+        { selector: '.contac_Headline', animationClass: 'animate-intro', },
+        { selector: '.contact_Headline_Container', animationClass: 'animate-intro', },
+        { selector: '.contac_Description', animationClass: 'animate-intro', },
+        { selector: '.contact_Field', animationClass: 'animate-intro', },
+        { selector: '.container_mail', animationClass: 'animate-intro', },
+        { selector: '.container_message', animationClass: 'animate-intro', },
+        { selector: '.hero_ArrowUp', animationClass: 'animate-intro', }
       ];
 
       this.setAktiv.setupAnimations(animationConfigs);

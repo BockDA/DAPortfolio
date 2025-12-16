@@ -14,8 +14,8 @@ export class MyskillsComponent implements AfterViewInit, OnDestroy {
   constructor(private animationService: MyFunctionsService, public setAktiv: MyFunctionsService) { }
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
-      { selector: '.myskills_Titel', animationClass: 'animat_1' },
-      { selector: '.myskills_Section', animationClass: 'animat_2' }
+      { selector: '.myskills_Titel', animationClass: 'animate-intro' },
+      { selector: '.myskills_Section', animationClass: 'animate-secondary' }
     ]);
   }
 

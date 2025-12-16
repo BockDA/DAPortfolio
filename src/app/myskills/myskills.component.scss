@@ -16,7 +16,7 @@
   @include flex_Box(column, 0px);
 }
 
-.myskills_Titel.animat_1 {
+.myskills_Titel.animate-intro {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 
@@ -30,7 +30,7 @@
   margin-top: 90px;
 }
 
-.myskills_Section.animat_2 {
+.myskills_Section.animate-secondary {
   animation: fadeIn 3s ease-out forwards;
 }
 

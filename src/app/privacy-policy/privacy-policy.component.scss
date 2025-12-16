@@ -31,14 +31,14 @@ section {
     padding-bottom: 140px;
     opacity: 0;
     transform: none;
+    transition: none;
 
     @include mobile {
         transform: none;
     }
-    transition: none;
 }
 
-.privacy_policy_content.animat_1 {
+.privacy_policy_content.animate-intro {
     animation: slideInFromRight 1s ease-out forwards;
 }
 
@@ -57,7 +57,7 @@ section {
     opacity: 0;
 }
 
-.privacy_policy_header.animat_1 {
+.privacy_policy_header.animate-intro {
     opacity: 1;
     animation: slideInFromLeft 2s ease-out forwards;
 }

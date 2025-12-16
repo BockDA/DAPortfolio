@@ -25,7 +25,7 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   ],
 })
 export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
-  sections: { TEXT1: SafeHtml; TEXT2: SafeHtml; TEXT3: SafeHtml }[] = [];
+  sections: { TITLE: SafeHtml; TEXT: SafeHtml; EXTRA: SafeHtml }[] = [];
   private langSub?: Subscription;
 
   constructor(
@@ -48,9 +48,9 @@ export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
     this.translate.get('LEGALNOTICE.SECTIONS').subscribe((data) => {
       if (Array.isArray(data)) {
         this.sections = data.map((s: any) => ({
-          TEXT1: this.sanitizer.bypassSecurityTrustHtml(s.TEXT1),
-          TEXT2: this.sanitizer.bypassSecurityTrustHtml(s.TEXT2),
-          TEXT3: this.sanitizer.bypassSecurityTrustHtml(s.TEXT3),
+          TITLE: this.sanitizer.bypassSecurityTrustHtml(s.TITLE ?? s.TEXT1 ?? ''),
+          TEXT: this.sanitizer.bypassSecurityTrustHtml(s.TEXT ?? s.TEXT2 ?? ''),
+          EXTRA: this.sanitizer.bypassSecurityTrustHtml(s.EXTRA ?? s.TEXT3 ?? ''),
         }));
       } else {
         this.sections = [];
@@ -70,10 +70,10 @@ export class LegalNoticeComponent implements OnInit, OnDestroy, AfterViewInit {
       window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
       const animationConfigs = [
         {
-          selector: '.legal_notice_content', animationClass: 'animat_1'
+          selector: '.legal_notice_content', animationClass: 'animate-intro'
         },
         {
-          selector: '.legal_notice_header', animationClass: 'animat_1'
+          selector: '.legal_notice_header', animationClass: 'animate-intro'
         }
       ];
       this.myFunctions.setupAnimations(animationConfigs);

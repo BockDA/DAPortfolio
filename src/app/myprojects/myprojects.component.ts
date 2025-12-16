@@ -19,7 +19,7 @@ export class MyprojectsComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
-      { selector: '.myprojects_Titel', animationClass: 'animat_1' }
+      { selector: '.myprojects_Titel', animationClass: 'animate-intro' }
     ]);
   }
 

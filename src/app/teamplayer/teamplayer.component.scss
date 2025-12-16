@@ -1,6 +1,18 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
+.player_Cards.animate-intro {
+  // Add your animation styles here
+}
+
+.players_Card_Contents.animate-intro {
+  // Add your animation styles here
+}
+
+.background_Animation.animate-intro {
+  // Add your animation styles here
+}
+
 .section_teamplayer {
   max-width: 1920px;
   width: 100%;
@@ -27,7 +39,7 @@
   }
 }
 
-.tPlayer_Headline.animat_1 {
+.tPlayer_Headline.animate-intro {
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 

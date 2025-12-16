@@ -16,12 +16,26 @@ export class TabMyProjectsComponent implements AfterViewInit, OnDestroy {
   constructor(private animationService: MyFunctionsService) { }
   ngAfterViewInit(): void {
     this.animationService.setupAnimations([
-      { selector: '.tab_firstSection', animationClass: 'animat_1' },
-      { selector: '.tab_secondSection', animationClass: 'animat_2' }
+      { selector: '.tab_firstSection', animationClass: 'animate-intro' },
+      { selector: '.tab_secondSection', animationClass: 'animate-secondary' }
     ]);
   }
 
   ngOnDestroy(): void {
     this.animationService.disconnectAnimations();
+  }
+
+  getProjectKey(): string {
+    // Map numeric tabs to semantic project keys
+    switch (this.activeTab) {
+      case 1:
+        return 'JOIN';
+      case 2:
+        return 'EL_POLLO';
+      case 3:
+        return 'POKEDEX';
+      default:
+        return 'JOIN';
+    }
   }
 }

@@ -20,9 +20,9 @@
         </div>
         <div *ngIf="sections.length; else loading">
             <div *ngFor="let s of sections" class="sec">
-                <p [innerHTML]="s.TEXT1"></p>
-                <p [innerHTML]="s.TEXT2"></p>
-                <p [innerHTML]="s.TEXT3"></p>
+                <p [innerHTML]="s.TITLE"></p>
+                <p [innerHTML]="s.TEXT"></p>
+                <p [innerHTML]="s.EXTRA"></p>
                 <br />
             </div>
         </div>
