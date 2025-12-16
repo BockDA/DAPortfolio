@@ -2,34 +2,37 @@
 @use "styles/mixin/mixin" as *;
 
 @include mobile {
+    .font_7 {
+        font-size: 18px;
+    }
 
     .section_tab_MyProjects {
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 18px;
-        padding: 40px 10px 40px;
+        padding: 5px 10px 40px;
         margin: 0;
         box-sizing: border-box;
     }
 
-    /* macht Kinder von tab_secondSection zu direkten Flex-Items */
     .tab_secondSection {
         display: contents;
     }
-
-    /* ========== OBEN: Titel / Workprocess / Technologies ========== */
 
     .project_titel_mobil {
         order: 1;
         display: block;
         color: $primaryBlue;
-        margin: 0;
-        //text-align: center;
+        margin-bottom: 20px;
     }
 
     .workprocess {
+        position: absolute;
+        top: 45px;
         order: 2;
-        margin: 0;
+        font-size: 16px;
+        padding-bottom: 10px;
         text-align: center;
     }
 
@@ -40,9 +43,12 @@
         gap: 6px;
         justify-content: flex-start;
         align-items: baseline;
+
+        p {
+            font-size: 16px;
+        }
     }
 
-    /* falls du in deinem HTML ein extra ":"-p hast */
     .tab_Technologies p:nth-child(2) {
         display: none;
     }
@@ -51,13 +57,12 @@
         display: block;
         text-align: left;
         line-height: 1.3;
+        font-size: 16px;
     }
 
     .tab_Icons {
         display: none;
     }
-
-    /* ========== PREVIEW ========== */
 
     .tab_Project_Preview {
         order: 4;
@@ -75,8 +80,6 @@
         display: block;
     }
 
-    /* ========== TEXTBLOCK ========== */
-
     .tab_firstSection {
         order: 5;
         width: 100%;
@@ -91,9 +94,8 @@
         max-width: 100%;
         margin-left: 0;
         box-sizing: border-box;
+        gap: 10px;
     }
-
-    /* ========== BUTTONS UNTER TEXTBLOCK ========== */
 
     .tab_Buttons {
         order: 6;
@@ -111,5 +113,9 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .points {
+        color: $primaryBlue;
     }
 }

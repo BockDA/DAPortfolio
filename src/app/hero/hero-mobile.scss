@@ -13,8 +13,6 @@
         width: 550px;
     }
 
-
-
     //---------------------TABLET--------------------------
 
     @include tablet {}
@@ -31,7 +29,6 @@
     .img_sec {
         width: 430px;
     }
-
 }
 
 //---------------------MOBIL--------------------------
@@ -84,8 +81,6 @@
         height: auto;
     }
 
-
-
     //---------unten------------------
 
     .hero_Personal {
@@ -137,7 +132,6 @@
 
 
     //--- Menue Mobil anzeigen
-    //Picture CB ausblenen    
     #menyAvPaa:checked~.hero_bg_section .img_sec_mobil {
         display: none;
     }
@@ -194,15 +188,8 @@
         transform: translateY(-15px) rotate(-45deg);
     }
 
-
     .mobile-logo ::ng-deep app-logo {
         transform: scale(0.7);
         transform-origin: left center;
     }
-
 }
-
-
-//----------- Mobil Small (bis 480px) --------------
-
-@include mobilesmall {}

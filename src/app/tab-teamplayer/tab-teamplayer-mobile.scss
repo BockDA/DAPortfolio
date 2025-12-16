@@ -6,7 +6,6 @@
 @include desktop {
     .player_Cards {
         gap: 135px;
-
     }
 }
 
@@ -20,11 +19,10 @@
         justify-content: flex-start;
         align-items: center;
         gap: 210px;
-        //overflow-x: auto;
+        overflow-x: auto;
         padding: 20px 0;
         padding-left: 80px;
     }
-
 
     .section {
         width: 220px;
@@ -51,8 +49,6 @@
         display: flex;
         max-width: 480px;
     }
-
-
 }
 
 
@@ -69,37 +65,20 @@
     }
 
     .player_Cards {
-        //justify-content: flex-start;
         align-items: flex-start;
         gap: 150px;
-        //min-height: 520px;
         -webkit-overflow-scrolling: touch;
-        //margin-top: 0;
         padding-top: 50px;
     }
 
     .background_Animation {
-        //flex: 0 0 400px;
-        //flex-shrink: 0;
-        //min-width: 320px;
-        //display: flex;
-        // justify-content: center;
-        //align-items: center;
-
         height: 350px;
-        //min-height: 600px;
-        //width: 400px;
-        //max-width: 400px;
-        // background-color: aqua;
     }
 
     .section {
         position: relative;
-        //background-color: yellow;
-        //height: 950px;
         min-width: 300px;
         justify-content: center;
-
     }
 
     .img_1 {
@@ -136,6 +115,5 @@
     .description_Text {
         line-height: 1.1;
         font-size: 16px;
-        
-       }
+    }
 }

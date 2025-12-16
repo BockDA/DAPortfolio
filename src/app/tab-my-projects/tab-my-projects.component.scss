@@ -9,8 +9,6 @@
   font-family: "Josefin";
   color: $cremeWhite;
   gap: 80px;
-
-  /* WICHTIG: keine feste Höhe */
   min-height: 0;
 }
 
@@ -19,7 +17,6 @@
   padding: 40px 30px 20px;
   display: flex;
   flex-direction: column;
-
 }
 
 .tab_firstSection.animat_1 {
@@ -44,7 +41,6 @@
   box-sizing: border-box;
 }
 
-/* Buttons: NICHT absolut, sondern normal im Flow */
 .tab_Buttons {
   margin-top: auto;
   display: flex;
@@ -74,13 +70,11 @@
   border: 1px solid $primaryBlue;
 }
 
-/* rechte Seite */
 .tab_secondSection {
   width: 50%;
   display: flex;
   flex-direction: column;
   padding: 40px 30px 20px;
-
 }
 
 .tab_secondSection.animat_2 {
@@ -91,7 +85,6 @@
   display: none;
 }
 
-/* Technologies-Zeile: darf umbrechen */
 .tab_Technologies {
   display: flex;
   align-items: baseline;
@@ -102,10 +95,8 @@
 
 .mobil_tech {
   display: none;
-  /* mobile-only */
 }
 
-/* Icons */
 .tab_Icons {
   display: flex;
   justify-content: center;
@@ -117,7 +108,6 @@
   height: 36px;
 }
 
-/* Preview responsiv (kein fixes height) */
 .tab_Project_Preview {
   margin: 30px 0;
   display: flex;

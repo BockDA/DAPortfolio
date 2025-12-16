@@ -41,7 +41,7 @@
   left: 80%;
   transform: translateX(-50%);
   cursor: pointer;
-  //opacity: 0;
+  opacity: 0;
 }
 
 .hero_ArrowUp.animat_1 {
@@ -101,12 +101,10 @@
 
 .section:hover {
   color: $primaryBlue;
-
   .section_img {
     .img_start {
       opacity: 0;
     }
-
     .img_hover {
       opacity: 1;
     }

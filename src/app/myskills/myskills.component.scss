@@ -1,8 +1,6 @@
 @use "styles/colors" as *;
 @use "styles/mixin/mixin" as *;
 
-// ========= DESKTOP / BASIS ========= //
-
 .section_myskills {
   position: relative;
   display: flex;
@@ -36,7 +34,6 @@
   animation: fadeIn 3s ease-out forwards;
 }
 
-/* Linke Seite: Grid mit Skills */
 .myskills_grid_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -65,7 +62,6 @@
   }
 }
 
-/* Rechte Seite: Hintergrund + Textblock */
 .background_Animation {
   width: 50%;
   min-width: 300px;
@@ -87,7 +83,7 @@
 }
 
 .infotext_mobil {
-  display: none; // nur mobil sichtbar
+  display: none;
 }
 
 .mobil_img {
@@ -123,7 +119,7 @@
 }
 
 .btn_letstalk {
-  display: none; // Desktop versteckt, mobil sichtbar
+  display: none;
 }
 
 /* Animationen */

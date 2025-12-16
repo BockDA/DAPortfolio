@@ -1,4 +1,4 @@
-import { Component, computed, effect } from '@angular/core';
+import { Component, HostListener, computed, effect } from '@angular/core';
 import { Router } from '@angular/router';
 import { MyFunctionsService } from '../../services/my-functions.service';
 import {
@@ -23,13 +23,14 @@ export class MenueComponent {
   statusLanguage = statusLanguage;
   isGerman = isGerman;
   setLanguage = setLanguage;
+  logoDark = true; // white logo on mobile by default
 
   constructor(
     private router: Router,
     public setAktiv: MyFunctionsService,
     private translate: TranslateService
   ) {
-   
+
     const isBrowser = typeof window !== 'undefined' && typeof localStorage !== 'undefined';
     if (isBrowser) {
       const storedLang = localStorage.getItem('lang');
@@ -44,6 +45,9 @@ export class MenueComponent {
       const lang = this.isGerman() ? 'de' : 'en';
       this.translate.use(lang);
     });
+
+    // Initialize logo color by viewport
+    this.updateLogoColor();
   }
 
   async setPosMenu(sectionId: string) {
@@ -61,9 +65,14 @@ export class MenueComponent {
   }
 
   closeBurgerMenu() {
-    const burgerCheckbox = document.getElementById('menyAvPaa') as HTMLInputElement;
-    if (burgerCheckbox) {
-      burgerCheckbox.checked = false;
+    const heroCheckbox = document.getElementById('menyAvPaa') as HTMLInputElement;
+    if (heroCheckbox) {
+      heroCheckbox.checked = false;
+    }
+
+    const localMenuToggle = document.getElementById('menuToggle') as HTMLInputElement;
+    if (localMenuToggle) {
+      localMenuToggle.checked = false;
     }
   }
 
@@ -75,6 +84,22 @@ export class MenueComponent {
     if (isBrowser) {
       localStorage.setItem('lang', newLang);
     }
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.updateLogoColor();
+  }
+
+  private updateLogoColor() {
+    const isBrowser = typeof window !== 'undefined';
+    if (!isBrowser) {
+      this.logoDark = true;
+      return;
+    }
+    const width = window.innerWidth;
+    // Mobile/tablet: use white logo (dark background), Desktop: use black logo
+    this.logoDark = width <= 820;
   }
 }
 

@@ -9,15 +9,12 @@
   color: $cremeWhite;
   height: 100vh;
   overflow: hidden;
-
 }
 
 .hero_bg_section {
   position: relative;
   width: 50%;
   height: 100vh;
-  background-color: yellow;
-
 }
 
 .hero_picture {
@@ -25,9 +22,7 @@
   bottom: calc(100px);
   left: 50%;
   transform: translateX(-50%);
-  background-color: red;
 }
-
 
 .img_first {
   width: 600px;
@@ -66,7 +61,6 @@
   opacity: 1;
 }
 
-
 #menyAvPaa {
   display: none;
 }
@@ -86,7 +80,6 @@
   position: relative;
   width: 50%;
   height: 100vh;
-  background-color: rgb(0, 110, 255);
 }
 
 .hero_Name {
@@ -113,7 +106,6 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-
 }
 
 .hero_media {
@@ -124,7 +116,6 @@
   flex-direction: column;
   gap: 15px;
   width: 30px;
-
   img {
     height: 30px;
     width: 30px;
@@ -141,8 +132,6 @@
   left: 50%;
   bottom: 15%;
   transform: translateX(-50%);
-
-
   :hover {
     cursor: pointer;
     background-color: $lightGrey;
@@ -162,9 +151,8 @@
 }
 
 //-----------------Animation-----------------
-ade_element {
-  animation: fadeInUp 1.0s forwards,
-    fade_color_change 3.0s forwards;
+.fade_element {
+  animation: fadeInUp 1s ease-out forwards, fade_color_change 3s ease-out forwards;
 }
 
 @keyframes fadeInUp {

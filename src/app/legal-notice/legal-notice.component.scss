@@ -18,6 +18,8 @@
   }
 }
 
+
+
 .mobi_back {
   display: none;
 }
@@ -29,7 +31,7 @@ section {
 .legal_notice_content {
   padding-top: 124px;
   padding-bottom: 140px;
-  opacity: 0;
+  //opacity: 0;
   transform: none;
 
   @include mobile {
@@ -47,11 +49,11 @@ section {
   font-family: "Anta";
   margin-top: 20px;
   margin-bottom: 20px;
-  opacity: 0;
+  //opacity: 0;
 }
 
 .legal_notice_header.animat_1 {
-   opacity: 1;
+  opacity: 1;
   animation: slideInFromLeft 2s ease-out forwards;
 }
 
@@ -85,11 +87,9 @@ section {
 
 :host ::ng-deep .col {
   color: $primaryBlue;
+  
 }
 
-:host ::ng-deep .col {
-  color: $primaryBlue;
-}
 
 :host ::ng-deep .bold {
   font-weight: bold;
@@ -123,4 +123,3 @@ section {
     transform: translateX(0);
   }
 }
-

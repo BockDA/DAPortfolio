@@ -10,7 +10,6 @@
   height: 507px;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: brown;
 }
 
 .whyme_Section {
@@ -25,7 +24,7 @@
   display: flex;
   justify-content: center;
   margin-top: 150px;
-  //opacity: 0;
+  opacity: 0;
 }
 
 .whyme_Titel.animat_1 {
@@ -50,7 +49,7 @@
   width: 380px;
   max-width: 100%;
   margin-top: 30px;
-  // opacity: 0;
+  opacity: 0;
 
   :hover {
     cursor: pointer;
@@ -69,7 +68,7 @@
   gap: 30px;
   width: 45%;
   min-width: 300px;
-  // opacity: 0;
+  opacity: 0;
 }
 
 .whyme_locale.animat_1 {
@@ -82,7 +81,6 @@
   }
 }
 
-
 .btn_letstalk {
   :hover {
     cursor: pointer;
@@ -93,10 +91,7 @@
   position: absolute;
   top:450px;
   left:75%;
-
 }
-
-
 
 //----Aninmation -------
 

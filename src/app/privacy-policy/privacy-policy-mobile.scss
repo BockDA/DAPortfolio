@@ -11,7 +11,7 @@
 
 
     .privacy_policy_content {
-        padding-top: 24px;
+        padding-top: 84px; // 60px fixed header + 24px spacing
         padding-bottom: 230px;
     }
 
@@ -19,6 +19,7 @@
     .mobi_back {
         display: inline;
         cursor: pointer;
+
         .img {
             padding-bottom: 20px;
         }
@@ -33,6 +34,7 @@
         .menue_Entries {
             opacity: 0;
         }
+
         .app_logo {
             display: none;
         }

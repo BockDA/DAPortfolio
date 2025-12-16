@@ -19,7 +19,6 @@
   justify-content: center;
 }
 
-/* Tabs */
 .myprojects_tabs_header {
   display: flex;
   flex-wrap: wrap;
@@ -30,8 +29,7 @@
 }
 
 .myprojects_tabs_header button {
-  /* gemeinsames Button-Styling */
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
 
@@ -57,7 +55,6 @@
   color: $cremeWhite;
 }
 
-/* Desktop: lange Tabs sichtbar, Mobile-Tabs versteckt */
 .myprojects_tabs_header .btn_tab {
   display: flex;
 }

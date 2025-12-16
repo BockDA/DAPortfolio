@@ -87,4 +87,123 @@
                 }
             }
         }
+
+        /* When menu is used as a top header on mobile, keep it fixed at the top */
+        :host(.menu-top) {
+            .section_menue {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                right: auto;
+                height: 60px;
+                background-color: $mainColor;
+                width: 100vw;
+                margin-left: -50vw;
+                margin-right: -50vw;
+                z-index: 2000;
+            }
+
+            .menue_inner {
+                position: static;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 100%;
+                max-width: 100%;
+                display: block;
+                padding: 0;
+                /* keine Innenabstände, damit exakter 10px-Rand wirkt */
+            }
+
+            .section_heroMenue {
+                padding-top: 0;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                gap: 12px;
+            }
+
+            /* Logo links sichtbar lassen */
+            .app_logo {
+                display: block !important;
+                margin-left: 10px;
+                /* ca. 10px Abstand vom linken Rand */
+            }
+
+            /* Sprachauswahl im mobilen Header ausblenden (Platz für Burger) */
+            .language_Icon {
+                display: none;
+            }
+
+            /* Versteckter Toggle */
+
+            /* Burger-Button rechts */
+            .burger-btn {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                /* 10px vom rechten Rand */
+            }
+
+            .burger-btn span {
+                display: block;
+                width: 24px;
+                height: 2px;
+                background-color: $cremeWhite;
+            }
+
+            /* Menüeinträge standardmäßig ausblenden, als Dropdown unter dem Header */
+            .menue_Entries {
+                display: none !important;
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                width: 100vw;
+                margin-left: -50vw;
+                margin-right: -50vw;
+                background-color: $mainColor;
+                z-index: 2000;
+                padding: 12px 0 24px 0;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .menue_Entries p {
+                width: auto;
+                text-align: center;
+            }
+
+            /* Bei geöffnetem Toggle Dropdown anzeigen */
+            .menu-toggle:checked~.menue_Entries {
+                display: flex !important;
+                opacity: 1 !important;
+            }
+
+            /* Logo-Größe im mobilen Header (nur Bild) */
+            ::ng-deep app-logo img.logo {
+                max-height: 24px;
+                height: 24px;
+                width: auto;
+            }
+
+            /* Schriftzug unter dem Logo verkleinern */
+            ::ng-deep app-logo .font_4 {
+                font-size: 12px;
+                line-height: 14px;
+                color: $cremeWhite;
+            }
+
+            /* "Developer" (zweites Logo-Bild) noch kleiner wie Ch.Bock */
+            ::ng-deep app-logo .logo img.logo:last-of-type {
+                max-height: 12px;
+                height: 12px;
+                width: auto;
+            }
+        }
     }

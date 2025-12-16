@@ -1,11 +1,15 @@
 <section class="section_menue">
   <div class="menue_inner">
     <div class="section_heroMenue">
+      <!-- Lokaler Toggle für Burger-Menü auf mobilen Seiten außerhalb des Hero-Bereichs -->
+      <input type="checkbox" id="menuToggle" class="menu-toggle" />
+
       <div class="app_logo">
         <a [routerLink]="['/']" fragment="hero">
-          <app-logo [dark]="false"></app-logo>
+          <app-logo [dark]="logoDark"></app-logo>
         </a>
       </div>
+
       <div class="menue_Entries">
         <a class="font_3" (click)="setPosMenu('why-me')">
           <p [class.active]="setAktiv.getMenuAktiv() === 'why-me'" [style.backgroundImage]="setAktiv.getMenuAktiv() === 'why-me' 
@@ -43,6 +47,13 @@
         <button class="font_9" [class.language_aktiv]="!isGerman()" (click)="toggleLanguage()"
           [style.backgroundImage]="!isGerman() ? 'url(assets/icons/backAktivLang.png)' : 'none'">EN</button>
       </div>
+
+      <!-- Burger-Button (rechts) für mobile Header -->
+      <label class="burger-btn" for="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
     </div>
   </div>
 </section>

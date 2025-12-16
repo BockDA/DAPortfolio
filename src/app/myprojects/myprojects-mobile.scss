@@ -1,14 +1,13 @@
 @use "styles/mixin/mixin" as *;
 
 @include mobile {
-
-    // <= 850px bei dir
     .myprojects_tabs_header .btn_tab {
         display: none;
     }
 
     .myprojects_tabs_header .btn_tab_mobil {
         display: flex;
+        font-size: 18px;
     }
 
     .myprojects_tabs_header {
@@ -29,8 +28,6 @@
 }
 
 @include mobilesmall {
-
-    // <= 480px
     .myprojects_tabs_header button {
         width: 140px;
         min-width: 120px;
