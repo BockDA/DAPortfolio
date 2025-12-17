@@ -1,14 +1,14 @@
 <div class="player_Cards" #playerCards>
     <div class="background_Animation" *ngFor="let player of ('TEAMPLAYER.PLAYER' | translate)">
         <div class="section">
-            <img class="img_1" src="assets/icons/myskills_Back.png" />
-            <img class="img_2" src="assets/icons/myskills_Back_Hover.png">
-            <img class="img_3" src="assets/icons/myskills_Back_mobil.png">
+            <img class="img-base" src="assets/icons/myskills_Back.png" />
+            <img class="img-hover" src="assets/icons/myskills_Back_Hover.png">
+            <img class="img-mobile" src="assets/icons/myskills_Back_mobil.png">
             <div class="players_Card_Contents">
-                <p class="font_3 tplayer_name">{{player.TPLAYER_NAME }}</p>
-                <p class="font_4">Projekt<span class="color_Text project_link"> {{player.PROJECT}}</span></p>
-                <p class="font_4 description_Text">{{ player.DESCRIPTION }}</p>
-                <a class="font_4 color_Text link_linedln" [href]="player.PROFILLINK" target="_blank"
+                <p class="font_c tplayer_name">{{player.TPLAYER_NAME }}</p>
+                <p class="font_d">Projekt<span class="color_Text project_link"> {{player.PROJECT}}</span></p>
+                <p class="font_d description_Text">{{ player.DESCRIPTION }}</p>
+                <a class="font_d color_Text link_linedln" [href]="player.PROFILLINK" target="_blank"
                     rel="noopener noreferrer">
                     {{ player.PROFIL }}
                 </a>

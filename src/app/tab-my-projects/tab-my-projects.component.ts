@@ -26,7 +26,6 @@ export class TabMyProjectsComponent implements AfterViewInit, OnDestroy {
   }
 
   getProjectKey(): string {
-    // Map numeric tabs to semantic project keys
     switch (this.activeTab) {
       case 1:
         return 'JOIN';

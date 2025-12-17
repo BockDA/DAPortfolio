@@ -1,12 +1,12 @@
 <section class="section_contact">
     <div class="contact_Headline_Container">
         <div class="contac_Headline">
-            <p class="font_12">{{ "CONTACT.HEADLINE" | translate }}</p>
+            <p class="font_l">{{ "CONTACT.HEADLINE" | translate }}</p>
         </div>
     </div>
     <div class="contac_Introduction">
         <div class="contac_Description">
-            <p class="font_8">{{ "CONTACT.DESCRIPTION" | translate }}</p>
+            <p class="font_h">{{ "CONTACT.DESCRIPTION" | translate }}</p>
         </div>
         <div class="contac_Section">
             <div class="section">
@@ -14,19 +14,19 @@
                     <img class="img_start" src="assets/icons/email.png" />
                     <img class="img_hover" src="assets/icons/email_hover.png" />
                 </div>
-                <p class="font_13">{{ "CONTACT.EMAIL" | translate }}</p>
+                <p class="font_m">{{ "CONTACT.EMAIL" | translate }}</p>
             </div>
             <div class="section">
                 <div class="section_img">
                     <img class="img_start" src="assets/icons/phone.png" />
                     <img class="img_hover" src="assets/icons/phone_hover.png" />
                 </div>
-                <p class="font_13">{{ "CONTACT.PHONE" | translate }}</p>
+                <p class="font_m">{{ "CONTACT.PHONE" | translate }}</p>
             </div>
         </div>
     </div>
 
-    <form class="contac_Formular_Section font_13" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <form class="contac_Formular_Section font_m" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="contac_Field_Sec1">
             <div class="contact_Field">
                 <label for="name">{{ "CONTACT.FORMULAR_NAME" | translate }}</label>
@@ -59,7 +59,7 @@
             ? 'assets/icons/policy_check_box_checked.png'
             : 'assets/icons/policy_check_box.png'
         " />
-            <p class="font_15">
+            <p class="font_o">
                 {{ "CONTACT.PRIVACYPOLICY_NOTICE_PREFIX" | translate }}
                 <a routerLink="/privacyPolicy">{{
                     "CONTACT.PRIVACYPOLICY_NOTICE_MIDDLE" | translate

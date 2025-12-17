@@ -3,55 +3,55 @@
     <div class="first_paragraph">
       <div class="first_paragraph_Section">
         <img src="assets/icons/circle_full.png">
-        <p class="font_7 points">
-          {{'PROJECTS.'+getProjectKey()+'.Tab1.DESCRIPTION_INTRO'|translate}}
+        <p class="font_g points">
+          {{'PROJECTS.'+getProjectKey()+'.OVERVIEW.DESCRIPTION_INTRO'|translate}}
         </p>
-        <p class="font_8 workprocess">{{'PROJECTS.'+getProjectKey()+'.Tab1.WORK_DURATION'|translate}}</p>
+        <p class="font_h workprocess">{{'PROJECTS.'+getProjectKey()+'.OVERVIEW.WORK_DURATION'|translate}}</p>
       </div>
       <div class="first_paragraph_Text">
-        <p class="font_9 description">{{'PROJECTS.'+getProjectKey()+'.Tab1.CONTENT_INTRO'|translate}}</p>
+        <p class="font_i description">{{'PROJECTS.'+getProjectKey()+'.OVERVIEW.CONTENT_INTRO'|translate}}</p>
       </div>
     </div>
     <div class="first_paragraph">
       <div class="first_paragraph_Section">
         <img src="assets/icons/circle_full.png">
-        <p class="font_7 points">
-          {{'PROJECTS.'+getProjectKey()+'.Tab1.DESCRIPTION_APPROACH'|translate}}
+        <p class="font_g points">
+          {{'PROJECTS.'+getProjectKey()+'.OVERVIEW.DESCRIPTION_APPROACH'|translate}}
         </p>
       </div>
       <div class="first_paragraph_Text">
-        <p class="font_9 description">{{'PROJECTS.'+getProjectKey()+'.Tab1.CONTENT_APPROACH'|translate}}</p>
+        <p class="font_i description">{{'PROJECTS.'+getProjectKey()+'.OVERVIEW.CONTENT_APPROACH'|translate}}</p>
       </div>
     </div>
     <div class="first_paragraph">
       <div class="first_paragraph_Section">
         <img src="assets/icons/circle_full.png">
-        <p class="font_7 points">
-          {{'PROJECTS.'+getProjectKey()+'.Tab1.DESCRIPTION_LEARNINGS'|translate}}
+        <p class="font_g points">
+          {{'PROJECTS.'+getProjectKey()+'.OVERVIEW.DESCRIPTION_LEARNINGS'|translate}}
         </p>
       </div>
       <div class="first_paragraph_Text">
-        <p class="font_9 description">{{'PROJECTS.'+getProjectKey()+'.Tab1.CONTENT_LEARNINGS'|translate}}</p>
+        <p class="font_i description">{{'PROJECTS.'+getProjectKey()+'.OVERVIEW.CONTENT_LEARNINGS'|translate}}</p>
       </div>
     </div>
   </div>
   <div class="tab_secondSection">
-    <p class="project_titel_mobil font_14">{{'PROJECTS.'+getProjectKey()+'.Tab1.PROJECT_NAME'|translate}}</p>
-    <div class="tab_Technologies font_9">
-      <p>{{'PROJECTS.'+getProjectKey()+'.Tab2.TECHNOLOGIES'|translate}}</p>
+    <p class="project_titel_mobil font_n">{{'PROJECTS.'+getProjectKey()+'.OVERVIEW.PROJECT_NAME'|translate}}</p>
+    <div class="tab_Technologies font_i">
+      <p>{{'PROJECTS.'+getProjectKey()+'.TECH.TECHNOLOGIES'|translate}}</p>
       <p>:</p>
-      <p class="mobil_tech">{{'PROJECTS.'+getProjectKey()+'.Tab2.MOBILTECHNO'|translate}}</p>
+      <p class="mobil_tech">{{'PROJECTS.'+getProjectKey()+'.TECH.MOBILTECHNO'|translate}}</p>
     </div>
     <div class="tab_Icons">
-      <img *ngFor="let img of('PROJECTS.'+getProjectKey()+'.Tab2.IMGS'|translate)" [src]="img">
+      <img *ngFor="let img of('PROJECTS.'+getProjectKey()+'.TECH.IMGS'|translate)" [src]="img">
     </div>
     <div class="tab_Project_Preview">
-      <img [src]="'PROJECTS.'+getProjectKey()+'.Tab2.SCREEN' |translate">
+      <img [src]="'PROJECTS.'+getProjectKey()+'.TECH.SCREEN' |translate">
     </div>
     <div class="tab_Buttons">
-      <a class="font_9" [href]="('PROJECTS.' + getProjectKey() + '.Tab2.LINKPROJECT') | translate" target="_blank">Live
+      <a class="font_i" [href]="('PROJECTS.' + getProjectKey() + '.TECH.LINKPROJECT') | translate" target="_blank">Live
         Test</a>
-      <a class="font_9" [href]="('PROJECTS.' + getProjectKey() + '.Tab2.LINKGIT') | translate"
+      <a class="font_i" [href]="('PROJECTS.' + getProjectKey() + '.TECH.LINKGIT') | translate"
         target="_blank">GitHub</a>
     </div>
   </div>

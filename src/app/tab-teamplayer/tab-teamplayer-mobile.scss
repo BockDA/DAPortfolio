@@ -37,15 +37,15 @@
         gap: 10px;
     }
 
-    .img_1 {
+    .img-base {
         display: none;
     }
 
-    .img_2 {
+    .img-hover {
         display: none;
     }
 
-    .img_3 {
+    .img-mobile {
         display: flex;
         max-width: 480px;
     }
@@ -56,11 +56,11 @@
 
 @include mobile {
 
-    .font_3 {
+    .font_c {
         font-size: 24px;
     }
 
-    .font_4 {
+    .font_d {
         font-size: 18px;
     }
 
@@ -81,15 +81,15 @@
         justify-content: center;
     }
 
-    .img_1 {
+    .img-base {
         display: none;
     }
 
-    .img_2 {
+    .img-hover {
         display: none;
     }
 
-    .img_3 {
+    .img-mobile {
         max-width: 370px;
     }
 

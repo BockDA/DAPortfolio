@@ -32,7 +32,15 @@
     opacity: 1;
   }
 
+  .section .img-base {
+    opacity: 1;
+  }
+
   .section .img_2 {
+    opacity: 0;
+  }
+
+  .section .img-hover {
     opacity: 0;
   }
 
@@ -40,7 +48,15 @@
     opacity: 0;
   }
 
+  .section:hover .img-base {
+    opacity: 0;
+  }
+
   .section:hover .img_2 {
+    opacity: 1;
+  }
+
+  .section:hover .img-hover {
     opacity: 1;
   }
 
@@ -134,9 +150,3 @@
     @content;
   }
 }
-
-
-
-
-
-

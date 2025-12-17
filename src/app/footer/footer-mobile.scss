@@ -12,7 +12,7 @@
 //---------------------MOBIL--------------------------
 
 @include mobile {
-    .font_8 {
+    .font_h {
         font-size: 16px;
     }
 
@@ -73,11 +73,11 @@
 //---------------------MOBIL SMALL (bis 635px)--------------------------
 
 @include mobilesmall {
-    .font_8 {
+    .font_h {
         font-size: 16px !important;
     }
 
-   .section_footer {
+    .section_footer {
         height: 200px;
     }
 

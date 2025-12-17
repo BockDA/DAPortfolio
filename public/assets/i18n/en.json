@@ -22,7 +22,7 @@
   },
   "PROJECTS": {
     "JOIN": {
-      "Tab1": {
+      "OVERVIEW": {
         "PROJECT_NAME": "Join",
         "DESCRIPTION_INTRO": "About the project",
         "WORK_DURATION": "Duration: 2 months",
@@ -32,7 +32,7 @@
         "DESCRIPTION_LEARNINGS": "Team collaboration",
         "CONTENT_LEARNINGS": "Our project team consisted of four people. My main responsibilities included developing the task components and data handling logic. Technologies used: HTML, CSS, JavaScript, Firebase. Collaboration was structured, highly productive, and enjoyable."
       },
-      "Tab2": {
+      "TECH": {
         "TECHNOLOGIES": "Technologies",
         "IMGS": [
           "assets/icons/Icon_HTML.png",
@@ -47,7 +47,7 @@
       }
     },
     "EL_POLLO": {
-      "Tab1": {
+      "OVERVIEW": {
         "PROJECT_NAME": "EL Pollo Logo",
         "DESCRIPTION_INTRO": "About the project",
         "WORK_DURATION": "Duration: 3 months",
@@ -57,7 +57,7 @@
         "DESCRIPTION_LEARNINGS": "Key learnings",
         "CONTENT_LEARNINGS": "This project significantly strengthened my JavaScript and canvas skills. Working with animations, collision detection and object-oriented design was highly instructive and rewarding."
       },
-      "Tab2": {
+      "TECH": {
         "TECHNOLOGIES": "Technologies",
         "IMGS": [
           "assets/icons/Icon_HTML.png",
@@ -71,7 +71,7 @@
       }
     },
     "POKEDEX": {
-      "Tab1": {
+      "OVERVIEW": {
         "PROJECT_NAME": "Pokedex",
         "DESCRIPTION_INTRO": "About the project",
         "WORK_DURATION": "Duration: 1 week",
@@ -81,7 +81,7 @@
         "DESCRIPTION_LEARNINGS": "Key learnings",
         "CONTENT_LEARNINGS": "I strengthened my ability to consume external APIs and generate dynamic UI content. The project improved my understanding of async data handling and responsive rendering."
       },
-      "Tab2": {
+      "TECH": {
         "TECHNOLOGIES": "Technologies",
         "IMGS": [
           "assets/icons/Icon_HTML.png",

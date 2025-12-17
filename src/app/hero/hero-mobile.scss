@@ -4,7 +4,7 @@
 //---------------------Desktop--------------------------
 
 @include desktop {
-    .font_1 {
+    .font_a {
         font-size: 72px;
     }
 
@@ -17,11 +17,11 @@
 
     @include tablet {}
 
-    .font_1 {
+    .font_a {
         font-size: 60px;
     }
 
-    .font_2 {
+    .font_b {
         font-size: 24px;
     }
 
@@ -34,11 +34,11 @@
 //---------------------MOBIL--------------------------
 
 @include mobile {
-    .font_1 {
+    .font_a {
         font-size: 45px;
     }
 
-    .font_2 {
+    .font_b {
         font-size: 24px;
     }
 

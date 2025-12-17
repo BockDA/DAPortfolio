@@ -22,7 +22,7 @@
   },
   "PROJECTS": {
     "JOIN": {
-      "Tab1": {
+      "OVERVIEW": {
         "PROJECT_NAME": "Join",
         "DESCRIPTION_INTRO": "Über das Projekt",
         "WORK_DURATION": "Dauer: 2 Monate",
@@ -32,7 +32,7 @@
         "DESCRIPTION_LEARNINGS": "Meine Erfahrung mit Teamarbeit",
         "CONTENT_LEARNINGS": "Unser Team bestand aus 4 Personen. Meine Aufgabe in diesem Projekt war die Erstellung der Task-Komponenten. Eingesetzte Technologien waren HTML, CSS und JavaScript; das Lesen und Speichern der Daten über Firebase war der zentrale Bestandteil. Es war ein großartiges Team und die Zusammenarbeit verlief reibungslos."
       },
-      "Tab2": {
+      "TECH": {
         "TECHNOLOGIES": "Technologien",
         "IMGS": [
           "assets/icons/Icon_HTML.png",
@@ -47,7 +47,7 @@
       }
     },
     "EL_POLLO": {
-      "Tab1": {
+      "OVERVIEW": {
         "PROJECT_NAME": "EL Pollo Logo",
         "DESCRIPTION_INTRO": "Über das Projekt",
         "WORK_DURATION": "Dauer: 3 Monate",
@@ -57,7 +57,7 @@
         "DESCRIPTION_LEARNINGS": "Zentrale Erkenntnisse",
         "CONTENT_LEARNINGS": "Ich habe sehr gerne an diesem Projekt gearbeitet, da ich mein Wissen in HTML, CSS, Canvas und JavaScript vertiefen konnte. Die Arbeit mit der Canvas-API für Zeichnungen, Animationen und interaktive Elemente war besonders spannend."
       },
-      "Tab2": {
+      "TECH": {
         "TECHNOLOGIES": "Technologien",
         "IMGS": [
           "assets/icons/Icon_HTML.png",
@@ -71,7 +71,7 @@
       }
     },
     "POKEDEX": {
-      "Tab1": {
+      "OVERVIEW": {
         "PROJECT_NAME": "Pokedex",
         "DESCRIPTION_INTRO": "Über das Projekt",
         "WORK_DURATION": "Dauer: 1 Woche",
@@ -81,7 +81,7 @@
         "DESCRIPTION_LEARNINGS": "Zentrale Erkenntnisse",
         "CONTENT_LEARNINGS": "Ich habe dieses Projekt sehr genossen, da ich mein Wissen in HTML, CSS und JavaScript vertiefen konnte. Besonders interessant war das Abrufen und Verarbeiten von Daten aus Web-APIs."
       },
-      "Tab2": {
+      "TECH": {
         "TECHNOLOGIES": "Technologien",
         "IMGS": [
           "assets/icons/Icon_HTML.png",

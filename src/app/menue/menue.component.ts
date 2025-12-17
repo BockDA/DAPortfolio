@@ -23,7 +23,7 @@ export class MenueComponent {
   statusLanguage = statusLanguage;
   isGerman = isGerman;
   setLanguage = setLanguage;
-  logoDark = true; // white logo on mobile by default
+  logoDark = false;
 
   constructor(
     private router: Router,
@@ -37,23 +37,19 @@ export class MenueComponent {
       if (storedLang === 'en' || storedLang === 'de') {
         this.setLanguage(storedLang);
         this.translate.use(storedLang);
-        return;
       }
     }
-    // Fallback: Sprache aus State
+
     effect(() => {
       const lang = this.isGerman() ? 'de' : 'en';
       this.translate.use(lang);
     });
 
-    // Initialize logo color by viewport
     this.updateLogoColor();
   }
 
   async setPosMenu(sectionId: string) {
     this.setAktiv.setMenuAktiv(sectionId);
-
-    // Schließe das Burger-Menü in Mobile-Ansicht
     this.closeBurgerMenu();
 
     await this.router.navigate(['/'], { fragment: sectionId });
@@ -94,11 +90,9 @@ export class MenueComponent {
   private updateLogoColor() {
     const isBrowser = typeof window !== 'undefined';
     if (!isBrowser) {
-      this.logoDark = true;
       return;
     }
     const width = window.innerWidth;
-    // Mobile/tablet: use white logo (dark background), Desktop: use black logo
     this.logoDark = width <= 820;
   }
 }
