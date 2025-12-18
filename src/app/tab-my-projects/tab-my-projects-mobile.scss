@@ -35,6 +35,14 @@
         //text-align: center;
     }
 
+    .tab_secondSection>.workprocess {
+        display: block;
+    }
+
+    .first_paragraph_Section .workprocess {
+        display: none;
+    }
+
     .tab_Technologies {
         order: 3;
         display: flex;

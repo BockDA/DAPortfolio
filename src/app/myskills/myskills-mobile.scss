@@ -66,6 +66,14 @@
         padding-right: 20px;
     }
 
+    .img_3 {
+        display: block;
+        justify-content: end;
+
+
+    }
+
+
     .section_content_block {
         display: flex;
         flex-direction: row;
@@ -87,32 +95,31 @@
         display: flex;
         flex-direction: row-reverse;
         gap: 0px;
-        height: auto;
+
     }
 
     .myskills_Info_img {
+        position: relative;
         display: flex;
         flex-direction: row;
-        gap: 0px;
-
-        .img1,
-        .img2 {
-            width: 36px;
-            height: 54px;
-            margin-left: 10px;
-        }
+        gap: 12px;
     }
 
-    .myskills_Infotext {
-        max-width: 240px;
-        padding-left: 10px;
-        font-size: 16px;
-        line-height: 1.3;
-        align-self: flex-start;
+    .img_backMobil {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 65px;
+        height: auto;
+    }
 
-        p {
-            text-align: left;
-        }
+    .mobil_img .myskills_Infotext {
+        max-width: 180px;
+        text-align: left;
+        margin-left: 15px;
     }
 
     .btn_letstalk {

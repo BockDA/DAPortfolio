@@ -66,12 +66,19 @@
 
     .player_Cards {
         align-items: flex-start;
-        gap: 150px;
+        justify-content: flex-start;
+        gap: 60px;
+        padding-left: max(10px, calc(50% - 150px));
+        padding-right: max(10px, calc(50% - 150px));
         -webkit-overflow-scrolling: touch;
         padding-top: 50px;
     }
 
     .background_Animation {
+        flex: 0 0 300px;
+        width: 300px;
+        min-width: 300px;
+        max-width: 300px;
         height: 350px;
     }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 import { MenueComponent } from '../menue/menue.component';
+import { LogoComponent } from '../logo/logo.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule, NgFor, isPlatformBrowser } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
@@ -13,6 +14,7 @@ import { MyFunctionsService } from '../../services/my-functions.service';
   standalone: true,
   imports: [
     MenueComponent,
+    LogoComponent,
     TranslateModule,
     CommonModule,
     NgFor,

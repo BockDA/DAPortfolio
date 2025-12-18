@@ -36,13 +36,6 @@
            text-align: center;
        }
 
-       .whyme_locale {
-           position: absolute;
-           top: 350px;
-           left: 50%;
-           transform: translateX(-50%);
-       }
-
        .btn_letstalk {
            top: 450px;
            left: 75%;
@@ -71,15 +64,19 @@
            font-size: 16px;
        }
 
-       .whyme_locale {
-           top: 290px;
-           gap: 20px;
+       .whyme_innerSection {
+           gap: 0px;
+       }
 
+       .whyme_locale {
            img {
-               height: 60px;
-               width: 65px;
+               height: 40px;
+               width: 45px;
            }
        }
+
+
+
 
        .font_e {
            font-size: 40px;

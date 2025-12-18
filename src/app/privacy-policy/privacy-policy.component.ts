@@ -7,10 +7,11 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { MyFunctionsService } from '../../services/my-functions.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
+import { LogoComponent } from '../logo/logo.component';
 
 @Component({
   selector: 'app-privacy-policy',
-  imports: [MenueComponent, FooterComponent, RouterLink, TranslateModule, CommonModule],
+  imports: [MenueComponent, FooterComponent, RouterLink, TranslateModule, CommonModule, LogoComponent],
   templateUrl: './privacy-policy.component.html',
   styleUrls: ['./privacy-policy.component.scss',
     './privacy-policy-mobile.scss'

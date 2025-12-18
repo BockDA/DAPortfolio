@@ -3,19 +3,11 @@
 
 .section_privacy-policy {
     min-width: 320px;
-    max-width: 1920px;
     width: 100%;
     background-color: $mainColor;
     color: $cremeWhite;
-    padding-left: 60px;
-    padding-right: 60px;
     box-sizing: border-box;
     overflow-x: hidden;
-
-    @include mobile {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
 }
 
 .mobi_back {
@@ -23,23 +15,31 @@
 }
 
 section {
-    margin-bottom: 80px;
+    margin-bottom: 0;
 }
 
 .privacy_policy_content {
+    max-width: 1920px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 124px;
-    padding-bottom: 140px;
+    padding-bottom: 0;
     opacity: 0;
     transform: none;
     transition: none;
 
     @include mobile {
+        padding-left: 10px;
+        padding-right: 10px;
         transform: none;
     }
 }
 
 .privacy_policy_content.animate-intro {
-    animation: slideInFromRight 1s ease-out forwards;
+    animation: slideInFromRight 125ms ease-out forwards;
 }
 
 .sec {
@@ -59,7 +59,7 @@ section {
 
 .privacy_policy_header.animate-intro {
     opacity: 1;
-    animation: slideInFromLeft 2s ease-out forwards;
+    animation: slideInFromLeft 525ms ease-out forwards;
 }
 
 :host ::ng-deep .col {
@@ -71,12 +71,6 @@ section {
 
 :host ::ng-deep.line {
     margin-left: 20px;
-}
-
-@include mobile {
-    :host ::ng-deep app-menue .language_Icon {
-        display: none;
-    }
 }
 
 //---------- ANIMATIONS ----------

@@ -33,7 +33,7 @@
 .first_paragraph_Section {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .first_paragraph_Text {
@@ -82,6 +82,10 @@
 }
 
 .project_titel_mobil {
+  display: none;
+}
+
+.tab_secondSection>.workprocess {
   display: none;
 }
 

@@ -4,14 +4,175 @@
 //---------------------MOBIL--------------------------
 @include mobile {
     .section_legal-notice {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+      .legal_menu_desktop {
+        display: none;
+    }
+
+    .legal_menu_toggle {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .legal_mobile_header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        background-color: $primaryBlue;
+        z-index: 2100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .mobile-logo {
+        transform: scale(0.6);
+        transform-origin: left center;
+    }
+
+    .legal_burger {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .legal_burger>div {
+        height: 2px;
+        background-color: $cremeWhite;
+        transition: 0.5s;
+    }
+ 
+    #legalMenuToggle:checked~.legal_mobile_header .legal_burger>div:nth-child(1) {
+        transform: translateY(15px) rotate(45deg);
+    }
+
+    #legalMenuToggle:checked~.legal_mobile_header .legal_burger>div:nth-child(2) {
+        opacity: 0;
+    }
+
+    #legalMenuToggle:checked~.legal_mobile_header .legal_burger>div:nth-child(3) {
+        transform: translateY(-15px) rotate(-45deg);
+    }
+
+    .legal_menu_overlay {
+        position: fixed;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2050;
+        width: 270px;
+        height: 320px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .legal_menu_bg {
+        position: absolute;
+        top: -44px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 270px;
+        height: auto;
+        display: block;
+        z-index: 0;
+    }
+
+    #legalMenuToggle:checked~.legal_menu_overlay {
+        display: flex;
+    }
+
+       :host ::ng-deep app-menue.legal_menue_mobil {
+        display: none;
+    }
+
+    #legalMenuToggle:checked~.legal_menu_overlay app-menue.legal_menue_mobil {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        left: auto;
+        transform: none;
+        width: 100%;
+        height: auto;
+    }
+
+    :host ::ng-deep app-menue.legal_menue_mobil .section_menue {
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background: transparent;
+    }
+
+    :host ::ng-deep app-menue.legal_menue_mobil .menue_inner {
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: auto;
+    }
+
+    :host ::ng-deep app-menue.legal_menue_mobil .section_heroMenue {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    :host ::ng-deep app-menue.legal_menue_mobil .app_logo {
+        display: none;
+    }
+
+    :host ::ng-deep app-menue.legal_menue_mobil .menu-toggle,
+    :host ::ng-deep app-menue.legal_menue_mobil .burger-btn {
+        display: none;
+    }
+
+    :host ::ng-deep app-menue.legal_menue_mobil .menue_Entries {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 0;
+        align-items: center;
+    }
+
+    :host ::ng-deep app-menue.legal_menue_mobil .menue_Entries p {
+        width: 200px;
+        text-align: center;
+    }
+
+    :host ::ng-deep app-menue.legal_menue_mobil .language_Icon {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 100%;
     }
 
 
     .legal_notice_content {
-        padding-top: 84px; // 60px fixed header + 24px spacing
-        padding-bottom: 230px;
+        padding-top: 94px; 
+        padding-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .legal_notice_header {
@@ -31,13 +192,5 @@
         font-size: 32px;
     }
 
-    ::ng-deep app-menue {
-        .menue_Entries {
-            opacity: 0;
-        }
-
-        .app_logo {
-            display: none;
-        }
-    }
+   
 }

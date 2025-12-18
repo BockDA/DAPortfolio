@@ -1,5 +1,24 @@
 <section class="section_privacy-policy">
-    <app-menue class="menu-top menu-full-width"></app-menue>
+    <!-- Desktop/normal menu (mobile gets a Hero-like menu instead) -->
+    <app-menue class="menu-top menu-full-width privacy_menu_desktop"></app-menue>
+
+    <!-- Hero-like mobile menu -->
+    <input type="checkbox" id="privacyMenuToggle" class="privacy_menu_toggle" />
+    <div class="privacy_mobile_header">
+        <div class="mobile-logo">
+            <app-logo [dark]="false"></app-logo>
+        </div>
+        <label class="privacy_burger" for="privacyMenuToggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </div>
+    <div class="privacy_menu_overlay">
+        <img class="privacy_menu_bg" src="assets/icons/bgshape-mobil.png" alt="" />
+        <app-menue class="privacy_menue_mobil"></app-menue>
+    </div>
+
     <div class="privacy_policy_content">
         <div class="mobi_back">
             <img src="assets/icons/Arrow_back.png" routerLink="/">
@@ -19,5 +38,5 @@
             <p class="font_m">Loading...</p>
         </ng-template>
     </div>
-    <app-footer class="footer-fixed"></app-footer>
+    <app-footer></app-footer>
 </section>

@@ -1,6 +1,20 @@
 <section class="section_legal-notice">
-
-    <app-menue class="menu-top menu-full-width"></app-menue>
+    <app-menue class="menu-top menu-full-width legal_menu_desktop"></app-menue>
+    <input type="checkbox" id="legalMenuToggle" class="legal_menu_toggle" />
+    <div class="legal_mobile_header">
+        <div class="mobile-logo">
+            <app-logo [dark]="false"></app-logo>
+        </div>
+        <label class="legal_burger" for="legalMenuToggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </div>
+    <div class="legal_menu_overlay">
+        <img class="legal_menu_bg" src="assets/icons/bgshape-mobil.png" alt="" />
+        <app-menue class="legal_menue_mobil"></app-menue>
+    </div>
     <div class="legal_notice_content">
         <div class="mobi_back">
             <img src="assets/icons/Arrow_back.png" routerLink="/">
@@ -33,8 +47,5 @@
             {{ 'LEGALNOTICE.DATE' | translate }}
         </p>
     </div>
-    <app-footer class="footer-fixed"></app-footer>
-
-
-
+    <app-footer></app-footer>
 </section>
