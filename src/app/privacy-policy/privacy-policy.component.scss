@@ -8,6 +8,15 @@
     color: $cremeWhite;
     box-sizing: border-box;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy_menu_toggle,
+.privacy_mobile_header,
+.privacy_menu_overlay {
+    display: none;
 }
 
 .mobi_back {
@@ -23,6 +32,7 @@ section {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    flex: 1 0 auto;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 124px;
@@ -97,4 +107,8 @@ section {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.section_privacy-policy>app-footer {
+    margin-top: auto;
 }

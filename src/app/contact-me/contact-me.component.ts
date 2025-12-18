@@ -6,11 +6,12 @@ import { HttpClient } from '@angular/common/http';
 import { MyFunctionsService } from '../../services/my-functions.service';
 import { CommonModule } from '@angular/common';
 import { isPlatformBrowser } from '@angular/common';
+import { NoDoubleDotsEmailDirective } from './no-double-dots-email.directive';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [TranslateModule, FormsModule, RouterLink, CommonModule],
+  imports: [TranslateModule, FormsModule, RouterLink, CommonModule, NoDoubleDotsEmailDirective],
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss',
     './contact-me-mobile.scss'
@@ -68,10 +69,10 @@ export class ContactMeComponent implements AfterViewInit, OnDestroy {
           error: (error: any) => {
             this.emailError();
           },
-          complete: () => console.info('Mailversand abgeschlossen'),
+          //complete: () => console.info('Mailversand abgeschlossen'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log('Testmodus aktiv — keine echte Mail wird gesendet.');
+      //console.log('Testmodus aktiv — keine echte Mail wird gesendet.');
       this.emailOK();
       ngForm.resetForm();
     }

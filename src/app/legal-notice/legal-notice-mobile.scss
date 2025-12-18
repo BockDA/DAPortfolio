@@ -8,11 +8,12 @@
         padding-right: 0;
     }
 
-      .legal_menu_desktop {
+    .legal_menu_desktop {
         display: none;
     }
 
     .legal_menu_toggle {
+        display: block;
         position: absolute;
         opacity: 0;
         pointer-events: none;
@@ -52,7 +53,7 @@
         background-color: $cremeWhite;
         transition: 0.5s;
     }
- 
+
     #legalMenuToggle:checked~.legal_mobile_header .legal_burger>div:nth-child(1) {
         transform: translateY(15px) rotate(45deg);
     }
@@ -94,7 +95,7 @@
         display: flex;
     }
 
-       :host ::ng-deep app-menue.legal_menue_mobil {
+    :host ::ng-deep app-menue.legal_menue_mobil {
         display: none;
     }
 
@@ -169,7 +170,7 @@
 
 
     .legal_notice_content {
-        padding-top: 94px; 
+        padding-top: 94px;
         padding-bottom: 0;
         padding-left: 20px;
         padding-right: 20px;
@@ -192,5 +193,5 @@
         font-size: 32px;
     }
 
-   
+
 }

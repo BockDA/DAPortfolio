@@ -39,7 +39,7 @@
                 <label for="email">{{ "CONTACT.FORMULAR_EMAIL" | translate }}</label>
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                     placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}" required autocomplete="off"
-                    pattern="^(?!.*\.\.)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+                    noDoubleDotsEmail />
                 <span class="error_notice">{{'CONTACT.INPUTEEROR_EMAIL' |translate}}</span>
             </div>
         </div>

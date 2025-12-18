@@ -1,6 +1,11 @@
 @use "styles/mixin/mixin" as *;
 
 @include mobile {
+    .section_myprojects {
+        padding-top: 0px;
+    }
+
+
     .myprojects_tabs_header .btn_tab {
         display: none;
     }

@@ -8,6 +8,15 @@
   color: $cremeWhite;
   box-sizing: border-box;
   overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.legal_menu_toggle,
+.legal_mobile_header,
+.legal_menu_overlay {
+  display: none;
 }
 
 
@@ -21,11 +30,12 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  flex: 1 0 auto;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 124px;
   padding-bottom: 0;
-  //opacity: 0;
+  opacity: 0;
   transform: none;
   transition: none;
 
@@ -44,7 +54,7 @@
   font-family: "Anta";
   margin-top: 20px;
   margin-bottom: 20px;
-  //opacity: 0;
+  opacity: 0;
 }
 
 .legal_notice_header.animate-intro {
@@ -117,4 +127,8 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.section_legal-notice>app-footer {
+  margin-top: auto;
 }

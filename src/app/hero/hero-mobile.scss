@@ -34,6 +34,8 @@
 //---------------------MOBIL--------------------------
 
 @include mobile {
+
+
     .font_a {
         font-size: 45px;
     }
@@ -85,7 +87,7 @@
 
     .hero_Personal {
         width: 100%;
-        height: 40vh;
+        height: 300px;
     }
 
     .hero_Name {

@@ -8,12 +8,12 @@
         padding-right: 0;
     }
 
-    /* Use Hero-like mobile menu on this page */
     .privacy_menu_desktop {
         display: none;
     }
 
     .privacy_menu_toggle {
+        display: block;
         position: absolute;
         opacity: 0;
         pointer-events: none;
@@ -97,7 +97,7 @@
         display: flex;
     }
 
-    /* Style the embedded app-menue like the Hero mobile dropdown */
+    
     :host ::ng-deep app-menue.privacy_menue_mobil {
         display: none;
     }
@@ -173,7 +173,7 @@
 
 
     .privacy_policy_content {
-        padding-top: 94px; // 70px fixed header + 24px spacing
+        padding-top: 94px; 
         padding-bottom: 0;
         padding-left: 20px;
         padding-right: 20px;
